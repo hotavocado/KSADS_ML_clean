@@ -1,0 +1,269 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cpho0,specific_phobia,,descriptive,"
+Earlier you said that you were very afraid of (list endorsed fears).  I'd like to ask you more about (that/those).
+
+
+SYMPTOMS
+
+
+INTERVIEWER:  For each of the fears endorsed, ask about Frequency, Distress and Avoidance using the questions and response choices below. If fear is not current, ask about worst time.
+
+
+INTERVIEWER: Refer to card/picture.
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho1,specific_phobia,,descriptive,"
+Participant Card 2 (Fears)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho2,specific_phobia,,descriptive,Have you ever been very afraid of any animals or bugs such as:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho001,specific_phobia,,radio,1. Dogs?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho001,NA,NA
+dcpho002,specific_phobia,,radio,2. Snakes?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho001,NA,NA
+dcpho003,specific_phobia,,radio,3. Spiders?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho001,NA,NA
+dcpho004,specific_phobia,,radio,4. Bees?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho001,NA,NA
+dcpho005,specific_phobia,,radio,5. Any other animal or insect?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho001,NA,NA
+dcpho006,specific_phobia,,notes,Specify (Other animal or insect),,,,NA,NA,NA,[dcpho005] = '1',,LH,NA,,NA,NA
+cpho3,specific_phobia,,descriptive,"
+Have you ever been really afraid of being high up or in a high place like:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho007,specific_phobia,,radio,6. A really high building?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho007,NA,NA
+dcpho008,specific_phobia,,radio,7. A high balcony?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho007,NA,NA
+dcpho009,specific_phobia,,radio,8. A roof?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho007,NA,NA
+dcpho010,specific_phobia,,radio,9. A high staircase?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho007,NA,NA
+dcpho011,specific_phobia,,radio,10. Other situations involving high places or being high up?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho007,NA,NA
+dcpho012,specific_phobia,,notes,Specify (Other situations involving high places/being high up),,,,NA,NA,NA,[dcpho011] = '1',,LH,NA,,NA,NA
+cpho4,specific_phobia,,descriptive,"
+Have you ever felt really afraid of water, situations involving water, or weather, like:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho013,specific_phobia,,radio,"11. Swimming pools, lakes, or ocean?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho013,NA,NA
+dcpho014,specific_phobia,,radio,12. Storms?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho013,NA,NA
+dcpho015,specific_phobia,,radio,13. Thunder or lightning?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho013,NA,NA
+dcpho016,specific_phobia,,radio,14. Other situations involving water or weather?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho013,NA,NA
+dcpho017,specific_phobia,,notes,Specify (Other situation involving water/weather),,,,NA,NA,NA,[dcpho016] = '1',,LH,NA,,NA,NA
+cpho5,specific_phobia,,descriptive,"
+Have you ever felt very afraid of:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho018,specific_phobia,,radio,15. Going to the doctor or dentist?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho018,NA,NA
+dcpho019,specific_phobia,,radio,16. Seeing a needle or getting a shot or injection?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho018,NA,NA
+dcpho020,specific_phobia,,radio,17. Seeing blood from a cut or scrape?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho018,NA,NA
+dcpho021,specific_phobia,,radio,18. Other medical experiences?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho018,NA,NA
+dcpho022,specific_phobia,,notes,Specify (Other medical experiences),,,,NA,NA,NA,[dcpho021] = '1',,LH,NA,,NA,NA
+cpho6,specific_phobia,,descriptive,"
+Have you ever been really afraid of closed spaces like:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho023,specific_phobia,,radio,19. Elevators?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho023,NA,NA
+dcpho024,specific_phobia,,radio,20. Closets?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho023,NA,NA
+dcpho025,specific_phobia,,radio,21. Tunnels?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho023,NA,NA
+dcpho026,specific_phobia,,radio,22. Caves?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho023,NA,NA
+dcpho027,specific_phobia,,radio,23. Other small spaces?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho023,NA,NA
+dcpho028,specific_phobia,,notes,Specify (Other small spaces),,,,NA,NA,NA,[dcpho027] = '1',,LH,NA,,NA,NA
+dcpho029,specific_phobia,,radio,24. Have you ever been really afraid of flying or of airplanes?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho029,NA,NA
+dcpho030,specific_phobia,,radio,"25. Have you ever been really afraid of cars, buses, or other ways of traveling?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho029,NA,NA
+cpho7,specific_phobia,,descriptive,"
+Have you ever been very afraid of:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho031,specific_phobia,,radio,26. Loud noises?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho031,NA,NA
+dcpho032,specific_phobia,,radio,27. People in costume?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho031,NA,NA
+dcpho033,specific_phobia,,radio,28. Being in the dark?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho031,NA,NA
+dcpho034,specific_phobia,,radio,29. Anything else?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho031,NA,NA
+dcpho035,specific_phobia,,notes,Specify (Other),,,,NA,NA,NA,[dcpho034] = '1',,LH,NA,,NA,NA
+cpho8,specific_phobia,,descriptive,"
+INTERVIEWER: If no to all, END Specific Phobia section.
+",,,,NA,NA,NA,[dcpho001] = '0' and [dcpho002] = '0' and  [dcpho003] = '0' and  [dcpho004] = '0' and [dcpho005] = '0' and [dcpho007] = '0' and [dcpho008] = '0' and [dcpho009] = '0' and [dcpho010] = '0' and [dcpho011] = '0'  and [dcpho013] = '0' and [dcpho014] = '0' and [dcpho015] = '0' and [dcpho016] = '0' and [dcpho018] = '0' and [dcpho019] = '0' and [dcpho020] = '0' and [dcpho021] = '0' and [dcpho023] = '0' and [dcpho024] = '0' and [dcpho025] = '0' and [dcpho026] = '0' and [dcpho027] = '0' and [dcpho029] = '0' and [dcpho030] = '0' and [dcpho031] = '0' and [dcpho032] = '0' and [dcpho033] = '0' and [dcpho034] = '0',,,NA,,NA,NA
+cpho9,specific_phobia,,descriptive,"
+INTERVIEWER: If multiple fears within category are endorsed pick worst to assess. List up to three of these worst fears below. Record the corresponding number from the list.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho9a,specific_phobia,,descriptive,"Most distressing and avoided fear(s) (animals, heights, medical, etc):",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho036,specific_phobia,,text,Fear 1,,FEAR,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpho037,specific_phobia,,text,Fear 1 (Code),,CODE RESPONSE,number,1,29,NA,,,RH,NA,,NA,NA
+dcpho038,specific_phobia,,text,Fear 2,,FEAR,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpho039,specific_phobia,,text,Fear 2 (Code),,CODE RESPONSE,number,1,29,NA,,,RH,NA,,NA,NA
+dcpho040,specific_phobia,,text,Fear 3,,FEAR,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpho041,specific_phobia,,text,Fear 3 (Code),,CODE RESPONSE,number,1,29,NA,,,RH,NA,,NA,NA
+cpho10,specific_phobia,,descriptive,"
+1. WORST FEAR CATEGORY 
+
+
+INTERVIEWER: Do not assess multiple phobias in the same category; only the worst from each category.
+
+
+I will now ask you about (your first fear listed): [dcpho036]. When you were most afraid of (your first fear): [dcpho036]: 
+  
+
+INTERVIEWER: Read responses never, sometimes, almost always after each question.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho042,specific_phobia,,radio,"When you knew you had to (or had to do) (fear), did you become very nervous, scared, upset?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho042,NA,NA
+dcpho043,specific_phobia,,radio,"Did facing (fear) almost always make you feel scared (e.g. feeling nervous inside, crying, throwing a tantrum or needing to be near your parents)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho042,NA,NA
+dcpho044,specific_phobia,,radio,Were you much more scared of (fear) than people your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho042,NA,NA
+dcpho045,specific_phobia,,radio,Was (fear) so upsetting that you tried to stay away from it?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho042,NA,NA
+dcpho046,specific_phobia,,radio,Did being afraid of (fear) keep you from doing things you should or wanted to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho042,NA,NA
+dcpho047a,specific_phobia,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcpho046] = '1',,RH,NA,,NA,NA
+dcpho047b,specific_phobia,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcpho046] = '1',,RH,NA,,NA,NA
+dcpho047c,specific_phobia,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcpho046] = '1',,RH,NA,,NA,NA
+cpho11,specific_phobia,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at  the thermometer on this card.",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho12,specific_phobia,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho13,specific_phobia,,descriptive,"
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho14,specific_phobia,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcphp048,specific_phobia,,dropdown,How much did having this fear upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cpho15,specific_phobia,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho049,specific_phobia,,dropdown,"How much did the fear you told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcpho050,specific_phobia,,radio,Did you stay home from school because of your fear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpho051,specific_phobia,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcpho050] = '1',,,NA,,NA,NA
+cpho16,specific_phobia,,descriptive,"
+INTERVIEWER: If no more fears, SKIP to Episodes/Course.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho17,specific_phobia,,descriptive,"
+2. WORST FEAR CATEGORY 
+
+
+INTERVIEWER: Do not assess multiple phobias in the same category; only the worst from each category.
+
+
+I will now ask you about (your second fear listed): [dcpho038]. When you were most afraid of (your second fear): [dcpho038] 
+  
+
+INTERVIEWER: Read responses never, sometimes, almost always after each question.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho052,specific_phobia,,radio,"When you knew you had to (or had to do) (fear), did you become very nervous, scared, upset?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho052,NA,NA
+dcpho053,specific_phobia,,radio,"Did facing (fear) almost always make you feel scared (e.g. feeling nervous inside, crying, throwing a tantrum or needing to be near your parents)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho052,NA,NA
+dcpho054,specific_phobia,,radio,Were you much more scared of (fear) than people your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho052,NA,NA
+dcpho055,specific_phobia,,radio,Was (fear) so upsetting that you tried to stay away from it?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho052,NA,NA
+dcpho056,specific_phobia,,radio,Did being afraid of (fear) keep you from doing things you should or wanted to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho052,NA,NA
+dcpho057a,specific_phobia,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcpho056] = '1',,RH,NA,,NA,NA
+dcpho057b,specific_phobia,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcpho056] = '1',,RH,NA,,NA,NA
+dcpho057c,specific_phobia,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcpho056] = '1',,RH,NA,,NA,NA
+cpho18a,specific_phobia,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at  the thermometer on this card.",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho18b,specific_phobia,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho18,specific_phobia,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho058,specific_phobia,,dropdown,How much did having this fear upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cpho19,specific_phobia,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho059,specific_phobia,,dropdown,"How much did the fear you told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcpho060,specific_phobia,,radio,Did you stay home from school because of your fear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpho061,specific_phobia,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcpho060] = '1',,,NA,,NA,NA
+cpho20,specific_phobia,,descriptive,"
+INTERVIEWER: If no more fears, SKIP to Episodes/Course.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho21,specific_phobia,,descriptive,"
+3. WORST FEAR CATEGORY 
+
+
+INTERVIEWER: Do not assess multiple phobias in the same category; only the worst from each category.
+
+
+I will now ask you about (your third fear listed): [dcpho040]. When you were most afraid of (your third fear): [dcpho040] 
+  
+
+INTERVIEWER: Read responses never, sometimes, almost always after each question.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho062,specific_phobia,,radio,"When you knew you had to (or had to do) (fear), did you become very nervous, scared, upset?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho062,NA,NA
+dcpho063,specific_phobia,,radio,"Did facing (fear) almost always make you feel scared (e.g. feeling nervous inside, crying, throwing a tantrum or needing to be near your parents)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho062,NA,NA
+dcpho064,specific_phobia,,radio,Were you much more scared of (fear) than people your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho062,NA,NA
+dcpho065,specific_phobia,,radio,Was (fear) so upsetting that you tried to stay away from it?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho062,NA,NA
+dcpho066,specific_phobia,,radio,Did being afraid of (fear) keep you from doing things you should or wanted to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpho062,NA,NA
+dcpho067a,specific_phobia,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcpho066] = '1',,RH,NA,,NA,NA
+dcpho067b,specific_phobia,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcpho066] = '1',,RH,NA,,NA,NA
+dcpho067c,specific_phobia,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcpho066] = '1',,RH,NA,,NA,NA
+cpho22a,specific_phobia,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at  the thermometer on this card.",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho22b,specific_phobia,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho22,specific_phobia,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho068,specific_phobia,,dropdown,How much did having this fear upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cpho23,specific_phobia,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho069,specific_phobia,,dropdown,"How much did the fear you told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcpho070,specific_phobia,,radio,Did you stay home from school because of your fear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpho071,specific_phobia,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcpho070] = '1',,,NA,,NA,NA
+cpho24,specific_phobia,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho25,specific_phobia,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpho25a,specific_phobia,,descriptive,How old were you the first time you had these fears?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho072,specific_phobia,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpho073,specific_phobia,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+cpho26,specific_phobia,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho074,specific_phobia,,radio,Are you still afraid of [insert fear]?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpho075,specific_phobia,,dropdown,How old were you the last time you had this fear?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpho074] = '0',,,NA,,NA,NA
+cpho27,specific_phobia,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho076,specific_phobia,,radio,"Since you were (age of onset), was there ever a time when you were not afraid of (insert fear)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cpho27a,specific_phobia,,descriptive,What was the longest period of time that (insert fear) did not bother you?,,,,NA,NA,NA,[dcpho076] = '1',,,NA,,NA,NA
+dcpho077,specific_phobia,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpho076] = '1',,RH,NA,,NA,NA
+dcpho078,specific_phobia,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcpho076] = '1',,RH,NA,,NA,NA
+dcpho079,specific_phobia,,text,N of Years,,YEARS,number,NA,NA,NA,[dcpho076] = '1',,RH,NA,,NA,NA
+dcpho080,specific_phobia,,radio,Did you have this fear for at least 6 months (most of the school year)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cpho28,specific_phobia,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpho081,specific_phobia,,radio,"Did anyone, like a teacher or relative, suggest that you get help for  any of these fears?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpho082,specific_phobia,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, minister/priest or other professional to get help for (list fears)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cpho29a,specific_phobia,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+cpho29,specific_phobia,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho083,specific_phobia,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho084,specific_phobia,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho085,specific_phobia,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho086,specific_phobia,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho087,specific_phobia,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho088,specific_phobia,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho30,specific_phobia,,descriptive,"
+
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho089,specific_phobia,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho090,specific_phobia,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho091,specific_phobia,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho092,specific_phobia,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho093,specific_phobia,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpho082] = '1',,RH,NA,,NA,NA
+dcpho094,specific_phobia,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpho093] = '0',,,NA,,NA,NA
+dcpho095,specific_phobia,,notes,"What did the professional(s) (doctors) say that you had 
+(diagnoses given)? List:",,,,NA,NA,NA,[dcpho082] = '1',,LH,NA,,NA,NA
+cpho31,specific_phobia,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcpho082] = '1',,,NA,,NA,NA
+dcpho096,specific_phobia,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpho082] = '1',,RH,NA,dcpho096,NA,NA
+dcpho097,specific_phobia,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpho082] = '1',,RH,NA,dcpho096,NA,NA
+dcpho098,specific_phobia,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpho082] = '1',,RH,NA,dcpho096,NA,NA
+dcpho099,specific_phobia,,notes,Specify (Other),,,,NA,NA,NA,[dcpho098] = '1',,LH,NA,,NA,NA
+dcpho100,specific_phobia,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpho082] = '1',,RH,NA,,NA,NA
+cpho32,specific_phobia,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+dcpho101,specific_phobia,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+dcpho102,specific_phobia,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+dcpho103,specific_phobia,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+dcpho104,specific_phobia,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+dcpho105,specific_phobia,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+dcpho106,specific_phobia,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+dcpho107,specific_phobia,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+dcpho108,specific_phobia,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcpho100] = '1',,,NA,,NA,NA
+cpho_end,specific_phobia,,descriptive,"
+INTERVIEWER: END Specific Phobia section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

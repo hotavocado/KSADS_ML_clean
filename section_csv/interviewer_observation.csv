@@ -1,0 +1,73 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+dcino001,interviewer_observation,"
+INTERVIEWER: Rate the following items in regard to the subject being interviewed.
+",notes,Record the names of any family members (or others) present or within earshot during part or the entire interview.,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcino002,interviewer_observation,,text,Length of interview,,,,NA,NA,NA,,,RH,NA,,NA,NA
+dcino003,interviewer_observation,,text,N of Hours,,HOURS,number,NA,NA,NA,,,,NA,,NA,NA
+dcino004,interviewer_observation,,text,N of Minutes,,MINUTES,number,NA,NA,NA,,,,NA,,NA,NA
+dcino005,interviewer_observation,,radio,"
+Quality of Information on Facts about Child
+","1, Account believed to accurate | 2, Uncertain | 3, Account believed inaccurate",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcino006,interviewer_observation,,radio,"
+Quality of Information on Feelings of Child
+","1, Account believed to accurate | 2, Uncertain | 3, Account believed inaccurate",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcino007,interviewer_observation,,radio,"
+Respondent's Interest in the Interview
+
+AT START:","1, Bored | 2, Indifferent | 3, Mildly Interested | 4, Highly Interested",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcino008,interviewer_observation,,radio,"
+Respondent's Interest in the Interview
+
+AT CLOSE:","1, Bored | 2, Indifferent | 3, Mildly Interested | 4, Highly Interested",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcino009,interviewer_observation,,radio,"
+Privacy Disturbance
+
+","1, No one else present, no interruptions | 2, Minor children around, occasional phone calls, visitors came, but no significant interference with flow of interview | 3, Others  (1) within earshot for part of time, and/or (2) resulting in some disruption of flow of interview | 4, Continuous presence of others with significant disruption of flow of interview",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino010,interviewer_observation,,radio,"
+Estimate of Overall Quality of Interview
+","1, Probably poor | 2, Questionable | 3, Satisfactory | 4, Very good",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino011,interviewer_observation,,radio,"
+Grooming
+","1, Positive self-care evident (hair combed, clothing coordinated, etc.) | 2, Some self-care failure (untied laces, wrinkled and untucked) | 3, Disheveled",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino012,interviewer_observation,,radio,"
+General Attractiveness (Rate total appearance, including clothes)
+","1, Very attractive | 2, Attractive | 3, Ordinary | 4, Rather unattractive | 5, Ugly, deformed, difficult to look at",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino013,interviewer_observation,"
+Physical Characteristics
+
+For this section, use the following scale to code responses.",radio,Obesity,"0, No problems | 1, Dubious | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino013,NA,NA
+dcino014,interviewer_observation,,radio,Thinness,"0, No problems | 1, Dubious | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino013,NA,NA
+dcino015,interviewer_observation,,radio,Handicap,"0, No problems | 1, Dubious | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino013,NA,NA
+dcino016,interviewer_observation,,notes,"If yes, specify:",,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcino017,interviewer_observation,,radio,Unusual motor habits or patterns,"0, No problems | 1, Dubious | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino017,NA,NA
+dcino018,interviewer_observation,,radio,Tics,"0, No problems | 1, Dubious | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino017,NA,NA
+dcino019,interviewer_observation,,radio,"Stereotyped and bizarre movements (voluntary, including compulsions, ritual, and masturbatory activity)","0, No problems | 1, Dubious | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino017,NA,NA
+dcino020,interviewer_observation,,radio,"Other movements (thumb-sucking, nose-picking, hair pulling, persistent yawning, scratching, lip-licking)","0, No problems | 1, Dubious | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino017,NA,NA
+dcino021,interviewer_observation,,notes,Specify,,,,NA,NA,NA,[dcino020] = '1' and [dcino020] = '2' and [dcino020] = '3' and [dcino020] = '4',,LV,NA,,NA,NA
+dcino022,interviewer_observation,,radio,"
+Respondent's Degree of Activity During the Interview
+","1, Overactive (agitated, restless, talkative) | 2, Normal | 3, Under active (slow to respond, in-observant)",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino023,interviewer_observation,,radio,"
+Eye Contact
+","0, No problem, appropriate contact | 1, Dubious, some avoidance or excess | 2, Mild, some inappropriate avoidance or excess | 3, Moderate, mostly avoidance or excess | 4, Severe, total avoidance or staring into eyes",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino024,interviewer_observation,,radio,"If above item is rated 1-4, specify:","1, Avoidance | 2, Excess",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcino025,interviewer_observation,"
+Attitude Toward Interviewer (verbal expression)
+
+Use the following scale to code responses for this section.",radio,"Negative behavior (ranges from mild disrespect to sarcasm, rudeness, cursing)","0, No problem | 1, Vague | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino025,NA,NA
+dcino026,interviewer_observation,,radio,Positive behavior (ranges from ingratiating comments to seductiveness and total compliance),"0, No problem | 1, Vague | 2, Mild | 3, Moderate | 4, Severe",,,NA,NA,NA,,,,NA,dcino025,NA,NA
+dcino027,interviewer_observation,,radio,"
+Estimate of Respondent's Intelligence
+","1, Very low (dull, uncomprehending) | 2, Low (slow, needs explaining) | 3, Average | 4, Better than average (quick to comprehend)",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino028,interviewer_observation,,radio,"
+Observed Anxiety
+
+(Overall judgment: based on apprehension, expression, autonomic disturbance, tremulousness, tension, and preoccupation AT INTERVIEW with topics of anxiety or worry).","1, None or very little anxiety | 2, Some anxiety | 3, Marked anxiety or anxiety very readily provoked | 9, N/A or no info",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino029,interviewer_observation,,radio,"
+Relationship with Examiner
+
+","1, Good rapport established and maintained | 2, Rather difficult to gain or maintain rapport (for any reason, e.g., autism, negativism, belligerence, uncooperativeness, etc. | 3, Rapport with child not obtained or severely limited (for any reason) | 9, N/A, no info",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcino030,interviewer_observation,,radio,"
+Inhibition
+
+","1, Some reserve, as normal with a strange adult | 2, Treats examiner in an easy, friendly manner with little or no reserve.  (Rather uninhibited for the interview situation). | 3, Treats examiner as if a longstanding friend of his own age. That is, markedly uninhibited and over friendly for the interview situation. May make unprompted remarks about the room or the examiner's clothes, asks a lot of questions, etc.) | 4, Disregard of the interviewer or his instructions. (Shown by proceeding with own interests with little regard to the demands of the interviewer. May ask spontaneous questions or make unprompted comments, but not friendly. This kind of disregard is self-centered rather than outgoing and overfriendly.) | 9, N/A or no info",,,NA,NA,NA,,,LV,NA,,NA,NA

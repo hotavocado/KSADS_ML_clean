@@ -1,0 +1,125 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+csep0,separation_anxiety,,descriptive,"
+Earlier you told me that you worried about your parents or grown-ups who took care of you.  I'd now like to ask you some more questions about that. 
+
+
+SYMPTOMS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsep001,separation_anxiety,,radio,"During this time, who did you have trouble being away from?","1, Mom | 2, Dad | 3, Both | 4, Other Adult",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcsep002,separation_anxiety,,text,Specify (Other),,,,NA,NA,NA,[dcsep001] = '4',,RH,NA,,NA,NA
+dcsep003,separation_anxiety,,notes,Describe,,,,NA,NA,NA,[dcsep001] = '1' or  [dcsep001] = '2' or [dcsep001] = '3' or [dcsep001] = '4',,LH,NA,,NA,NA
+csep1,separation_anxiety,,descriptive,During that time:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcsep004,separation_anxiety,,radio,"Did you feel really scared, upset or worried when you were away from (attachment figure(s))? 
+INTERVIEWER: Code yes only if excessive; If reported before age 6, must be of panic proportions.                                         
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep004,NA,NA
+dcsep005,separation_anxiety,,radio,Did you worry that something bad might happen to your (attachment figure(s))?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep004,NA,NA
+dcsep007,separation_anxiety,,notes,What did you think might happen?,,,,NA,NA,NA,[dcsep005] = '1',,LH,NA,,NA,NA
+dcsep008,separation_anxiety,,radio,Did you ever worry that she/he might leave and not come back?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep009,separation_anxiety,,radio,"Did you worry that something bad might happen to you so you couldn't see your (attachment figure(s)) again, like getting lost or kidnapped?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep010,separation_anxiety,,radio,"When you knew that you were going to be away from home or (attachment figure(s)), did you get very upset and worry?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep011,separation_anxiety,,radio,Did you feel so nervous or afraid to go to school that you wouldn't go or you had to be forced to go?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep012,separation_anxiety,,radio,Was this because you wanted to stay with your (attachment figure(s))?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep011] = '1',,,NA,dcsep008,NA,NA
+dcsep013,separation_anxiety,,radio,Was this only during the first few days of school?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep011] = '1',,,NA,dcsep008,NA,NA
+dcsep014,separation_anxiety,,radio,Did your (attachment figure(s)) ever stay with you in school?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep015,separation_anxiety,,radio,Were there any other places you would not go because you are afraid to be away from (attachment figure)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep016,separation_anxiety,,radio,Did you need your (attachment figure(s)) to stay with you while you fell asleep?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep017,separation_anxiety,,radio,Was it hard for you to sleep away from home without (attachment figure(s))?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep018,separation_anxiety,,radio,"When you were at home with your (attachment figure(s)), were you scared of being alone in your room or any place in the house? For example, if you were in your room and your parents (attachment figure) were in the kitchen, did you go to the kitchen to be with your (attachment figure)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep019,separation_anxiety,,radio,Did you have a lot of bad dreams about getting hurt or about something bad happening so you couldn't see your (attachment figure(s))?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+dcsep020,separation_anxiety,,radio,"Did you get sick to your stomach, have headaches, or throw-up when your (attachment figure) had to go out without you?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep008,NA,NA
+csep2,separation_anxiety,,descriptive,"
+INTERVIEWER: If no to all, END Separation Anxiety section.
+",,,,NA,NA,NA,[dcsep004] = '0' and [dcsep005] = '0'  and [dcsep008] = '0' and [dcsep009] = '0'  and [dcsep010] = '0' and [dcsep011] = '0'  and [dcsep014] = '0'  and [dcsep015] = '0'  and [dcsep016] = '0'  and [dcsep017] = '0'  and [dcsep018] = '0'  and [dcsep019] = '0'  and [dcsep020] = '0',,,NA,,NA,NA
+dcsep021,separation_anxiety,,radio,Did you have this/these on school days?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep020] = '1',,,NA,dcsep021,NA,NA
+dcsep022,separation_anxiety,,radio,Did you have this/these on weekends too?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep020] = '1',,,NA,dcsep021,NA,NA
+dcsep023,separation_anxiety,,radio,"Was there always something to explain these ______, like a cold or flu or swollen tonsils?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep020] = '1',,,NA,dcsep021,NA,NA
+dcsep024,separation_anxiety,,radio,Do you think you worried about these/this thing(s) (list endorsed symptoms) too much or more than you should?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep024,NA,NA
+dcsep025,separation_anxiety,,radio,Did you worry about these things more than children your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep024,NA,NA
+dcsep026,separation_anxiety,,radio,"You mentioned (one, two, several) worries about being away from (attachment figure(s)).  When these worries were the worst, how often did you have them?","1, Less than half the days | 2, About half the days | 3, Most days | 4, Every day | 9, Don't know",,,NA,NA,NA,,,LH,NA,,NA,NA
+csep3,separation_anxiety,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at the thermometer/scale.
+
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+csep4,separation_anxiety,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+csep5,separation_anxiety,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsep027,separation_anxiety,,dropdown,How much did having these worries (about the attachment figure) upset or bother you? Please rate on scale.,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+csep6,separation_anxiety,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsep028,separation_anxiety,,dropdown,"How much did the worries you have told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcsep029,separation_anxiety,,radio,Did you stay home from school because of these worries about (the attachment figure)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcsep030,separation_anxiety,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcsep029] = '1',,,NA,,NA,NA
+csep7,separation_anxiety,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+csep8,separation_anxiety,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsep031,separation_anxiety,,dropdown,How old were you the first time you had these worries?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+csep9,separation_anxiety,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsep032,separation_anxiety,,radio,Do you have these worries now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcsep033,separation_anxiety,,dropdown,How old were you the last time you had these worries?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsep032] = '0',,,NA,,NA,NA
+csep10,separation_anxiety,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsep034,separation_anxiety,,radio,"Since you were (age of onset), was there ever a time when you were not worried about being apart from (attachment figure(s))?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+csep11,separation_anxiety,,descriptive,What was the longest period of time that you did not worry about this?,,,,NA,NA,NA,[dcsep034] = '1',,,NA,,NA,NA
+dcsep035,separation_anxiety,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcsep034] = '1',,RH,NA,,NA,NA
+dcsep036,separation_anxiety,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcsep034] = '1',,RH,NA,,NA,NA
+dcsep037,separation_anxiety,,text,N of Years,,YEARS,number,NA,NA,NA,[dcsep034] = '1',,RH,NA,,NA,NA
+csep12,separation_anxiety,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsep038,separation_anxiety,,radio,"Did anyone, like a teacher or relative, suggest that you get help for (list symptoms)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep038,NA,NA
+dcsep039,separation_anxiety,,radio,"Did you ever go to see a doctor, nurse, counselor, social worker, psychologist, minister/priest or other professional to get help for (list symptoms)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsep038,NA,NA
+csep14,separation_anxiety,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+csep13,separation_anxiety,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep040,separation_anxiety,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep041,separation_anxiety,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep042,separation_anxiety,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep043,separation_anxiety,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep044,separation_anxiety,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep045,separation_anxiety,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+csep15,separation_anxiety,,descriptive,"
+
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep046,separation_anxiety,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep047,separation_anxiety,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep048,separation_anxiety,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep049,separation_anxiety,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep050,separation_anxiety,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep039] = '1',,RH,NA,,NA,NA
+dcsep051,separation_anxiety,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsep050] = '0',,,NA,,NA,NA
+dcsep052,separation_anxiety,,notes,What did the professional(s) (doctors) say that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dcsep039] = '1',,LH,NA,,NA,NA
+csep16,separation_anxiety,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcsep039] = '1',,,NA,,NA,NA
+dcsep053,separation_anxiety,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep039] = '1',,RH,NA,dcsep053,NA,NA
+dcsep054,separation_anxiety,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep039] = '1',,RH,NA,dcsep053,NA,NA
+dcsep055,separation_anxiety,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep039] = '1',,RH,NA,dcsep053,NA,NA
+dcsep056,separation_anxiety,,notes,Specify (Other),,,,NA,NA,NA,[dcsep055] = '1',,LH,NA,,NA,NA
+dcsep057,separation_anxiety,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsep039] = '1',,RH,NA,,NA,NA
+csep17,separation_anxiety,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+dcsep058,separation_anxiety,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+dcsep059,separation_anxiety,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+dcsep060,separation_anxiety,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+dcsep061,separation_anxiety,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+dcsep062,separation_anxiety,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+dcsep063,separation_anxiety,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+dcsep064,separation_anxiety,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+dcsep065,separation_anxiety,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcsep057] = '1',,,NA,,NA,NA
+csep_end,separation_anxiety,,descriptive,"
+INTERVIEWER: END Separation Anxiety section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

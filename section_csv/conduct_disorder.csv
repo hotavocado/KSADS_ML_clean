@@ -1,0 +1,203 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+ccdd0,conduct_disorder,,descriptive,"
+Earlier you told me you might do things that may get you into trouble with adults like breaking rules or getting into trouble with the police or other authorities. I am now going to ask you some questions about this. 
+
+
+SYMPTOMS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ccdd1,conduct_disorder,,descriptive,"
+Stayed Out Late
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd001,conduct_disorder,,radio,Did you ever get into trouble because you stayed out at night later than your parents permitted? (> 2 hours),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd002,conduct_disorder,,dropdown,How old were you the first time you stayed out at night later than your parents permitted?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dccdd001] = '1',,,NA,,NA,NA
+ccdd2,conduct_disorder,,descriptive,"
+Has Run Away from Home Overnight
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd003,conduct_disorder,,radio,Did you ever run away from home overnight?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd004,conduct_disorder,,text,How many times?,,TIMES,number,NA,NA,NA,[dccdd003] = '1',,,NA,,NA,NA
+dccdd005,conduct_disorder,,dropdown,How old were you the first time you ran away from home?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dccdd003] = '1',,RH,NA,,NA,NA
+ccdd3,conduct_disorder,,descriptive,"
+Stolen from Family
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd006,conduct_disorder,,radio,Did you ever secretly steal money or other things from your family or from the other people you live with?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd4,conduct_disorder,,descriptive,"
+Stolen without Confrontation
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd007,conduct_disorder,,radio,Did you ever shoplift or steal something from others or a store worth at least $5?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd5,conduct_disorder,,descriptive,"
+Often Lies
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ccdd6,conduct_disorder,,descriptive,Did you often tell lies:,,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd008,conduct_disorder,,radio,To trick people into giving you things?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd009,conduct_disorder,,radio,To get people to do what you want them to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd010,conduct_disorder,,radio,To get out of doing things you were supposed to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd7,conduct_disorder,,descriptive,"
+Often Truant from School
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd011,conduct_disorder,,radio,Did you often skip school?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd012,conduct_disorder,,text,How many times did you skip school?,,TIMES,number,NA,NA,NA,[dccdd011] = '1',,RH,NA,,NA,NA
+dccdd013,conduct_disorder,,dropdown,How old were you the first time you skipped school?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dccdd011] = '1',,,NA,,NA,NA
+ccdd8,conduct_disorder,,descriptive,"
+Has Broken into Someone Else's Property
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd014,conduct_disorder,,radio,"Did you ever break into a house, a building, or a car?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd9,conduct_disorder,,descriptive,"
+Has Deliberately Destroyed Others' Property
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd015,conduct_disorder,,radio,"Did you ever deliberately damage someone else's property, by doing something like breaking windows, slashing tires, or writing on buildings?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd016,conduct_disorder,,text,How many times?,,TIMES,number,NA,NA,NA,[dccdd015] = '1',,,NA,,NA,NA
+ccdd10,conduct_disorder,,descriptive,"
+Deliberately Engaged in Fire Setting
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd018,conduct_disorder,,radio,Did you ever start a fire to try to cause serious damage?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd11,conduct_disorder,,descriptive,"
+Physically Cruel to Animals
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd019,conduct_disorder,,radio,Have you ever been physically cruel to an animal and hurt it on purpose?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd12,conduct_disorder,,descriptive,"
+Often Bullies Others
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd020,conduct_disorder,,radio,"Did you often bully others? (Hitting, threatening or scaring someone who was younger or smaller)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd021,conduct_disorder,,radio,Was this only with your brother or sister?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dccdd020] = '1',,RH,NA,,NA,NA
+ccdd13,conduct_disorder,,descriptive,"
+Deliberately Threatened/Frightened Someone
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd022,conduct_disorder,,radio,Did you threaten or frighten someone on purpose?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd023,conduct_disorder,,radio,Was this only with your brother or sister?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dccdd022] = '1',,RH,NA,,NA,NA
+ccdd14,conduct_disorder,,descriptive,"
+Often Initiates Physical Fights
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd024,conduct_disorder,,radio,Did you often start physical fights with others?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd15,conduct_disorder,,descriptive,"
+Physically Cruel to People
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd025,conduct_disorder,,radio,Were you ever physically cruel to another person and hurt him or her on purpose?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd16,conduct_disorder,,descriptive,"
+Tried to Hurt Someon with a Weapon
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd026,conduct_disorder,,radio,"Did you ever try to hurt someone with a weapon like a bat, brick, broken bottle, knife, or gun?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd17,conduct_disorder,,descriptive,"
+Stolen with Confrontation of a Victim
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd027,conduct_disorder,,radio,"Did you ever threaten someone, hold someone up, or attack someone to steal from them?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd18,conduct_disorder,,descriptive,"
+Forced Someone into Sexual Activity
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd028,conduct_disorder,,radio,Did you ever trick or threaten someone into having sex with you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd029,conduct_disorder,,radio,Did anyone ever accuse you of making them do something sexual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd030,conduct_disorder,,notes,"If yes, what happened?  
+INTERVIEWER: Rate yes only if it sounds like they forced, manipulated, or threatened someone else into sexual activity.
+
+",,,,NA,NA,NA,[dccdd029] = '1',,LH,NA,,NA,NA
+ccdd20,conduct_disorder,,descriptive,"
+INTERVIEWER: If no to all, END Conduct Disorder section.
+",,,,NA,NA,NA,[dccdd001] = '0'  and [dccdd003] = '0'  and [dccdd006] = '0'  and [dccdd007] = '0'  and [dccdd008] = '0'  and [dccdd009] = '0'  and [dccdd010] = '0'  and [dccdd011] = '0'  and [dccdd014] = '0'  and [dccdd015] = '0'  and [dccdd018] = '0'  and [dccdd019] = '0'  and [dccdd020] = '0'  and [dccdd022] = '0'  and [dccdd024] = '0'  and [dccdd025] = '0'  and [dccdd026] = '0'  and [dccdd027] = '0'  and [dccdd028] = '0'  and [dccdd029] = '0',,,NA,,NA,NA
+ccdd21,conduct_disorder,,descriptive,"
+DISTRESS/IMPAIRMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd031,conduct_disorder,,radio,Were you ever suspended from school?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd032,conduct_disorder,,text,How many times?,,TIMES,number,NA,NA,NA,[dccdd031] = '1',,,NA,,NA,NA
+dccdd033,conduct_disorder,,radio,Were you ever expelled from school?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dccdd033,NA,NA
+dccdd034,conduct_disorder,,radio,Were you ever in trouble with the police? (includes probation),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dccdd033,NA,NA
+dccdd035,conduct_disorder,,radio,Have you ever actually been arrested or sent to juvenile court for something you have done?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dccdd034] = '1',,,NA,dccdd033,NA,NA
+dccdd036,conduct_disorder,,notes,Why were you arrested or sent to juvenile court?  Explain:,,,,NA,NA,NA,[dccdd034] = '1',,LH,NA,,NA,NA
+dccdd037,conduct_disorder,,radio,Have you ever been involved in juvenile court for family problems?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd22,conduct_disorder,,descriptive,"
+Please look at the thermometer on this card.  
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ccdd23,conduct_disorder,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ccdd24,conduct_disorder,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd038,conduct_disorder,,dropdown,How much did having these behavior(s) upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+ccdd25,conduct_disorder,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd039,conduct_disorder,,dropdown,"Family: How much did these behaviors change your relationships with your family? 
+(Probe: Did your family say something about this to you?  Did family members seem upset, angry, or annoyed with you because of your behavior?) 
+","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dccdd040,conduct_disorder,,dropdown,"Social: How much did these behaviors change your relationships with your friends? 
+(Probe: Did you find yourself spending much less time than usual with your friends?  Did your friends say something about your behavior) 
+","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dccdd041,conduct_disorder,,dropdown,"School: How much did these behaviors change your relationships with your teachers or classmates?  -change how well you did at school, on tests, homework, or grades?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+dccdd042,conduct_disorder,,radio,Did you stay home or were you sent home from school because of your behavior?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd043,conduct_disorder,,text,How many days of school did you miss because of your difficulties with attention or overactivity? (lifetime),,DAYS,number,NA,NA,NA,[dccdd042] = '1',,,NA,,NA,NA
+ccdd26,conduct_disorder,,descriptive,"
+GLOBAL IMPAIRMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd044,conduct_disorder,,dropdown,"
+INTERVIEWER: What number describes how impaired the participant was during the episode?
+","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",GLOBAL IMPAIRMENT,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+ccdd27,conduct_disorder,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ccdd28,conduct_disorder,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ccdd28a,conduct_disorder,,descriptive,How old were you the first time you did these (list behaviors)?,,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd045,conduct_disorder,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd046,conduct_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd29,conduct_disorder,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd047,conduct_disorder,,radio,Do you still (list behaviors)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccdd048,conduct_disorder,,dropdown,How old were you the last time you did this behavior?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dccdd047] = '0',,,NA,,NA,NA
+ccdd30,conduct_disorder,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd049,conduct_disorder,,radio,"Since you were (age of onset), was there ever a time when you did not (insert behavior)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ccdd31,conduct_disorder,,descriptive,What was the longest period of time that you did not do (list behavior)?,,,,NA,NA,NA,[dccdd049] = '1',,,NA,,NA,NA
+dccdd050,conduct_disorder,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dccdd049] = '1',,RH,NA,,NA,NA
+dccdd051,conduct_disorder,,text,N of Months,,MONTHS,number,NA,NA,NA,[dccdd049] = '1',,RH,NA,,NA,NA
+dccdd052,conduct_disorder,,text,N of Years,,YEARS,number,NA,NA,NA,[dccdd049] = '1',,RH,NA,,NA,NA
+ccdd32,conduct_disorder,,descriptive,"
+HELP-SEEKING TREATMENT (Lifetime)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccdd053,conduct_disorder,,radio,"Did anyone, like a teacher or family member, suggest that you get help for any of these behaviors?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dccdd053,NA,NA
+dccdd054,conduct_disorder,,radio,Were you placed in special classes at school because of your (list behaviors)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dccdd053,NA,NA
+dccdd055,conduct_disorder,,radio,Did a judge or probation officer ever require you to obtain treatment?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dccdd053,NA,NA
+dccdd056,conduct_disorder,,radio,"Did you ever go to see a doctor, nurse, social worker, school counselor, psychologist, minister/priest or other professional to get help for (list behavior)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dccdd053,NA,NA
+ccdd33,conduct_disorder,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+ccdd32a,conduct_disorder,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd057,conduct_disorder,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd058,conduct_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd059,conduct_disorder,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd060,conduct_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd061,conduct_disorder,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd062,conduct_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+ccdd34,conduct_disorder,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd063,conduct_disorder,,radio,N/A,"7, N/A",,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd064,conduct_disorder,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd065,conduct_disorder,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd066,conduct_disorder,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd067,conduct_disorder,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,RH,NA,,NA,NA
+dccdd068,conduct_disorder,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dccdd067] = '0',,,NA,,NA,NA
+dccdd069,conduct_disorder,,notes,What did the professional(s) (doctors) say was the problem that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,LH,NA,,NA,NA
+ccdd35,conduct_disorder,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,,NA,NA
+dccdd070,conduct_disorder,,radio,Out-patient (Like going to see someone in an office or participating in a group not in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,dccdd070,NA,NA
+dccdd071,conduct_disorder,,radio,In-patient (Staying in a hospital or a residential program),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,dccdd070,NA,NA
+dccdd072,conduct_disorder,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,,NA,dccdd070,NA,NA
+dccdd073,conduct_disorder,,notes,Specify (Other),,,,NA,NA,NA,[dccdd072] = '1',,LH,NA,,NA,NA
+dccdd074,conduct_disorder,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dccdd055] = '1' or [dccdd056] = '1',,RH,NA,,NA,NA
+ccdd36,conduct_disorder,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+dccdd075,conduct_disorder,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+dccdd076,conduct_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+dccdd077,conduct_disorder,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+dccdd078,conduct_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+dccdd079,conduct_disorder,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+dccdd080,conduct_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+dccdd081,conduct_disorder,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+dccdd082,conduct_disorder,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dccdd074] = '1',,,NA,,NA,NA
+ccdd_end,conduct_disorder,,descriptive,"
+INTERVIEWER: END Conduct Disorder section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

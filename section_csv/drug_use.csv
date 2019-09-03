@@ -1,0 +1,616 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cdgu0,drug_use,,descriptive,"
+Earlier you told me about some substances/drugs you have tried. I am going to ask you a little more about that. 
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cdgu2,drug_use,,radio,"
+INTERVIEWER: IS PARTICIPANT AGE 12 OR OLDER? 
+","0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu1,drug_use,,descriptive,"
+INTERVIEWER: Ask to 12 and over ONLY. Refer back to the screener and complete sections that were endorced.
+",,,,NA,NA,NA,[cdgu2] = '1',,,NA,,NA,NA
+cdgu2a,drug_use,,descriptive,"
+INTERVIEWER: If under 12 years, END Alcohol section.
+",,,,NA,NA,NA,[cdgu2] = '0',,,NA,,NA,NA
+cdgu3,drug_use,,descriptive,"
+INTERVIEWER: For each section endorsed use child's language rather than proper terminology. For example, if child says he/she smoked 'weed' use this term throughout the section rather than the term marijuana. 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cdgu4,drug_use,,descriptive,"
+MARIJUANA, HASHISH, HASH OIL, THC
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu001,drug_use,,radio,"Have you ever used marijuana (pot or weed), hashish, or hash oil?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu5,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Solvents. 
+",,,,NA,NA,NA,[dcdgu001] = '0',,,NA,,NA,NA
+dcdgu002,drug_use,,notes,Which did you use?,,,,NA,NA,NA,[dcdgu001] = '1',,LH,NA,,NA,NA
+dcdgu003,drug_use,,radio,"When you used marijuana or hashish the most, how often did you use it? 
+
+INTERVIEWER: Code for month of greatest use. 
+","1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu001] = '1',,LV,NA,,NA,NA
+dcdgu004,drug_use,,dropdown,How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu005,drug_use,,text,For how many months did you use marijuana or hashish that much?,,MONTHS,number,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu006,drug_use,,dropdown,How old were you when you first tried marijuana or hashish?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+cdgu6a,drug_use,,descriptive,"How old were you when you first used marijuana or hashish regularly, that is, at least three times a week?",,,,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu007,drug_use,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu008,drug_use,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+cdgu6b,drug_use,,descriptive,"
+CURRENT FREQUENCY
+",,,,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu009,drug_use,,radio,How often do you usually use marijuana or hashish?,"1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu001] = '1',,LV,NA,,NA,NA
+cdgu7a,drug_use,,descriptive,"
+If past use but no current use:
+ When did you stop using marijuana or hashish?",,,,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu010,drug_use,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu011,drug_use,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu012,drug_use,,text,N of Years,,YEARS,number,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+cdgu7,drug_use,,descriptive,"
+CONSEQUENCES
+",,,,NA,NA,NA,[dcdgu001] = '1',,,NA,,NA,NA
+dcdgu013,drug_use,,radio,"When you used marijuana or hashish regularly (or the most) did you ever act silly, wild or reckless?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu001] = '1',,,NA,dcdgu013,NA,NA
+dcdgu014,drug_use,,radio,"When using marijuana or hashish, did your mind ever play tricks on you so you started to interpret ordinary things as having special meaning? Did you get suspicious or ""paranoid,"" have visions, hear voices, or have funny sensations?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu001] = '1',,,NA,dcdgu013,NA,NA
+cdgu8,drug_use,,descriptive,"
+
+SOLVENTS/INHALENTS (LIKE SNIFFING GLUE OR PAINT)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu015,drug_use,,radio,"Have you ever used any inhalants like glue, cleaning fluid, gasoline or paint to get high?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu015,NA,NA
+dcdgu016,drug_use,,radio,"Have you ever used amyl nitrite or 'poppers,' 'whippets,' or 'rush' to get high, or any other substance to get high?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu015,NA,NA
+cdgu9,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to LSD.
+",,,,NA,NA,NA,[dcdgu015] = '0' and [dcdgu016] = '0',,,NA,,NA,NA
+dcdgu07,drug_use,,notes,Which did you use?,,,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,LH,NA,,NA,NA
+dcdgu18,drug_use,,radio,"When you used solvents/inhalents the most, how often did you use it? 
+","1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,LV,NA,,NA,NA
+dcdgu19,drug_use,,dropdown,How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu20,drug_use,,text,For how many months did you use solvents/inhalents that much?,,MONTHS,number,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu21,drug_use,,dropdown,How old were you when you first tried solvents/inhalents?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+cdgu10a,drug_use,,descriptive,"How old were you when you first used solvents/inhalents regularly, that is, at least three times a week?",,,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu022,drug_use,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu023,drug_use,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+cdgu10,drug_use,,descriptive,"
+CURRENT FREQUENCY
+
+",,,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu024,drug_use,,radio,How often do you usually use solvents/inhalents?,"1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,LV,NA,,NA,NA
+cdgu11,drug_use,,descriptive,"
+If past use but no current use:
+ When did you stop using solvents/inhalents?",,,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu025,drug_use,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu026,drug_use,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu027,drug_use,,text,N of Years,,YEARS,number,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+cdgu12,drug_use,,descriptive,"
+CONSEQUENCES
+",,,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,,NA,,NA,NA
+dcdgu028,drug_use,,radio,"Did using solvents ever affect your health 
+PROBE: Like kidney, liver, nerve, or lung problems?
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu015] = '1' or [dcdgu016] = '1',,RH,NA,,NA,NA
+cdgu13,drug_use,,descriptive,"
+LSD AND OTHER HALLUCINOGENS (LIKE MUSHROOMS) 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu029,drug_use,,radio,"Have you ever used LSD, mescaline, peyote, psilocybin, PCP, 'mushrooms,' 'acid,' 'dust,' or any other hallucinogen or psychedelic?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu14,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Stimulants.
+",,,,NA,NA,NA,[dcdgu029] = '0',,,NA,,NA,NA
+dcdgu030,drug_use,,notes,Which did you use?,,,,NA,NA,NA,[dcdgu029] = '1',,LH,NA,,NA,NA
+dcdgu031,drug_use,,radio,"When you used hallucinogens the most, how often did you use it? 
+","1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu029] = '1',,LV,NA,,NA,NA
+dcdgu032,drug_use,,dropdown,How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu033,drug_use,,text,For how many months did you use hallucinogens that much?,,MONTHS,number,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu034,drug_use,,dropdown,How old were you when you first tried hallucinogens?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+cdgu15a,drug_use,,descriptive,"How old were you when you first used hallucinogens regularly, that is, at least three times a week?",,,,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu035,drug_use,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu036,drug_use,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+cdgu15,drug_use,,descriptive,"
+CURRENT FREQUENCY
+",,,,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu037,drug_use,,radio,How often do you usually use hallucinogens?,"1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu029] = '1',,LV,NA,,NA,NA
+cdgu16,drug_use,,descriptive,"
+If past use but no current use:
+ When did you stop using hallucinogens?",,,,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu038,drug_use,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu039,drug_use,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu040,drug_use,,text,N of Years,,YEARS,number,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+cdgu17,drug_use,,descriptive,"
+CONSEQUENCES
+",,,,NA,NA,NA,[dcdgu029] = '1',,,NA,,NA,NA
+dcdgu041,drug_use,,radio,Did you ever have an accident or injury when you'd been using hallucinogens?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu029] = '1',,,NA,dcdgu041,NA,NA
+dcdgu042,drug_use,,radio,Were you ever brought to the hospital or emergency room after using hallucinogens?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu029] = '1',,,NA,dcdgu041,NA,NA
+dcdgu043,drug_use,,radio,Has this happened just once or has it happened more than that?,"1, 1 time| 2, 2 or more times | 3, Unknown",,,NA,NA,NA,[dcdgu041] = '1' or [dcdgu042] = '1',,RH,NA,,NA,NA
+cdgu18,drug_use,,descriptive,"
+
+AMPHETAMINE-LIKE STIMULANTS 
+(RX OVERUSE, DIET PILLS TO GET HIGH, ECSTACY, CRYSTAL METH)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu044,drug_use,,radio,"Have you ever used stimulants like speed, diet pills, benzedrine, meth (methamphetamine), Dexedrine, or some other form of speed or 'uppers' either without a doctor's prescription or more than was prescribed?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu19,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Cocaine.
+",,,,NA,NA,NA,[dcdgu044] = '0',,,NA,,NA,NA
+dcdgu045,drug_use,,notes,Which did you use?,,,,NA,NA,NA,[dcdgu044] = '1',,LH,NA,,NA,NA
+dcdgu046,drug_use,,radio,"When you used stimulants the most, how often did you use it? 
+","1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu044] = '1',,LV,NA,,NA,NA
+dcdgu047,drug_use,,dropdown,How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu048,drug_use,,dropdown,How old were you when you first tried stimulants?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu049,drug_use,,text,"For how many months did you use stimulants that much, that is at least 3 times a week?",,MONTHS,number,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+cdgu20a,drug_use,,descriptive,"How old were you when you first used stimulants regularly, that is, at least three times a week?",,,,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu050,drug_use,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu051,drug_use,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+cdgu20,drug_use,,descriptive,"
+CURRENT FREQUENCY
+",,,,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu052,drug_use,,radio,How often do you usually use stimulants?,"1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu044] = '1',,LV,NA,,NA,NA
+cdgu21,drug_use,,descriptive,"
+If past use but no current use:
+ When did you stop using stimulants?",,,,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu053,drug_use,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu054,drug_use,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu055,drug_use,,text,N of Years,,YEARS,number,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+cdgu22,drug_use,,descriptive,"
+CONSEQUENCES
+",,,,NA,NA,NA,[dcdgu044] = '1',,,NA,,NA,NA
+dcdgu056,drug_use,,radio,"When using stimulants, did you ever become unconscious?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu044] = '1',,,NA,dcdgu056,NA,NA
+dcdgu057,drug_use,,radio,Did you ever get chest pains when using stimulants?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu044] = '1',,,NA,dcdgu056,NA,NA
+dcdgu058,drug_use,,radio,"When using stimulants did your mind ever play tricks on you so you started to interpret ordinary things are having special meaning, or did you get suspicious or 'paranoid,' or have visions, hear voices, or have funny sensations?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu044] = '1',,,NA,dcdgu056,NA,NA
+dcdgu059,drug_use,,radio,"When using stimulants, did you ever do violent things that were out of character for you?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu044] = '1',,,NA,dcdgu056,NA,NA
+dcdgu060,drug_use,,radio,Did you ever use enough stimulants so you stayed awake for 36 hours straight or had to take sleeping pills or downers to get to sleep?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu044] = '1',,,NA,dcdgu056,NA,NA
+cdgu23,drug_use,,descriptive,"
+
+COCAINE/CRACK (POWDER, CRANK) 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu061,drug_use,,radio,Have you ever used cocaine or 'crack'?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu24,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Sedatives/Tranquilizer Use.
+",,,,NA,NA,NA,[dcdgu061] = '0',,,NA,,NA,NA
+dcdgu062,drug_use,,notes,Which did you use?,,,,NA,NA,NA,[dcdgu061] = '1',,LH,NA,,NA,NA
+dcdgu063,drug_use,,radio,How did you first try cocoaine?,"1, Snorting |2, Crack (or rock base)| 3, Freebasing | 4, Injection| 5, With heroin (speedballing)|6, Others (paste, etc)",,,NA,NA,NA,[dcdgu061] = '1',,LH,NA,,NA,NA
+dcdgu064,drug_use,,radio,"When you were doing cocaine the most, how were you using it?","1, Snorting |2, Crack (or rock base)| 3, Freebasing | 4, Injection| 5, With heroin (speedballing)|6, Others (paste, etc)",,,NA,NA,NA,[dcdgu061] = '1',,LH,NA,,NA,NA
+dcdgu065,drug_use,,dropdown,How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+dcdgu066,drug_use,,radio,"When you used cocaine the most, how often did you use it?","1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu061] = '1',,LV,NA,,NA,NA
+dcdgu067,drug_use,,text,For how many months did you use cocaine that much?,,MONTHS,number,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+cdgu25,drug_use,,descriptive,"
+CURRENT FREQUENCY
+",,,,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+dcdgu068,drug_use,,radio,How often to you usually use cocaine?,"1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu061] = '1',,LV,NA,,NA,NA
+cdgu26,drug_use,,descriptive,"
+If past use but no current use:
+ When did you stop using cocaine?",,,,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+dcdgu069,drug_use,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+dcdgu070,drug_use,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+dcdgu071,drug_use,,text,N of Years,,YEARS,number,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+cdgu26a,drug_use,,descriptive,"How old were you when you first used cocaine regularly, that is, at least three times a week?",,,,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+dcdgu072,drug_use,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+dcdgu073,drug_use,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+cdgu27,drug_use,,descriptive,"
+CONSEQUENCES
+",,,,NA,NA,NA,[dcdgu061] = '1',,,NA,,NA,NA
+dcdgu074,drug_use,,radio,"When using cocaine, did you ever become unconscious?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu061] = '1',,,NA,dcdgu073,NA,NA
+dcdgu075,drug_use,,radio,Did you ever get chest pains when using cocaine?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu061] = '1',,,NA,dcdgu073,NA,NA
+dcdgu076,drug_use,,radio,"When using cocaine, did your mind ever play tricks on you so you started to think that ordinary things had special meaning, or did you get suspicious or 'paranoid,' or have visions, hear voices, or have funny sensations?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu061] = '1',,,NA,dcdgu073,NA,NA
+dcdgu077,drug_use,,notes,Describe,,,,NA,NA,NA,[dcdgu076] = '1',,LH,NA,,NA,NA
+dcdgu078,drug_use,,radio,"When using cocaine, did you ever do violent things that would be very unusual for you?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu061] = '1',,RH,NA,,NA,NA
+dcdgu079,drug_use,,notes,Describe,,,,NA,NA,NA,[dcdgu078] = '1',,LH,NA,,NA,NA
+cdgu28,drug_use,,descriptive,"
+
+SEDATIVES, TRANQUILIZERS, HYPNOTICS, RX OVERUSE (LIKE ""DOWNERS"" E.G. VALIUM)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu080,drug_use,,radio,"Have you ever used downers, or pills that made you sleepy or relaxed such as sleeping pills, barbiturates, Seconal, Quaaludes, Valium, Librium, alprazolam or Xanax? 
+
+When you used downers have you ever taken five or more pills in a day without a doctor's supervision?  
+
+Why did you take them? 
+
+To help you to get to sleep? 
+
+Was it because you had taken speed, amphetamines or another stimulant and you wanted to stop feeling high?
+","1, Never used | 2, No, only limited use | 3, No, only to counteract other drugs | 4, Yes, has used three times the ordinary Rx | 9, Unknown",,,NA,NA,NA,,,LV,NA,,NA,NA
+cdgu29,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Narcotics.
+",,,,NA,NA,NA,[dcdgu080] = '1',,,NA,,NA,NA
+dcdgu081,drug_use,,notes,Which did you use?,,,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,LH,NA,,NA,NA
+cdgu30,drug_use,,descriptive,What did you use: (see below),,,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu082,drug_use,,radio,Sedatives,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,dcdgu082,NA,NA
+dcdgu083,drug_use,,radio,Barbituates,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,dcdgu082,NA,NA
+dcdgu084,drug_use,,radio,Tranquilizers,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,dcdgu082,NA,NA
+dcdgu085,drug_use,,radio,Combination of above,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,dcdgu082,NA,NA
+dcdgu086,drug_use,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,dcdgu082,NA,NA
+dcdgu087,drug_use,,notes,Specify (Other),,,,NA,NA,NA,[dcdgu086] = '1',,LH,NA,,NA,NA
+dcdgu088,drug_use,,radio,"When you used downers the most, how often did you use them?","1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,LV,NA,,NA,NA
+dcdgu089,drug_use,,dropdown,How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu090,drug_use,,text,For how many months did you use downers that much?,,MONTHS,number,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu091,drug_use,,dropdown,How old were you when you first used downers?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+cdgu31a,drug_use,,descriptive,"How old were you when you first used downers regularly, that is at least three times a week?",,,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu092,drug_use,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu093,drug_use,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+cdgu31,drug_use,,descriptive,"
+CURRENT FREQUENCY
+",,,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu094,drug_use,,radio,How often do you usually use downers?,"1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,LV,NA,,NA,NA
+cdgu32,drug_use,,descriptive,"
+If past use but no current use:
+ When did you stop using downers?",,,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu095,drug_use,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu096,drug_use,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu097,drug_use,,text,N of Years,,YEARS,number,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+cdgu33,drug_use,,descriptive,"
+CONSEQUENCES
+",,,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,,NA,NA
+dcdgu098,drug_use,,radio,Were you ever taken to the emergency room because you could not be woken up?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,dcdgu098,NA,NA
+dcdgu099,drug_use,,radio,Did you ever become unconscious due to sedative use?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu080] = '2' or [dcdgu080] = '3' or [dcdgu080] = '4',,,NA,dcdgu098,NA,NA
+cdgu34,drug_use,,descriptive,"
+
+NARCOTICS/OPIATES/RX OVERUSE (HEROIN, OXYCOTIN, PERCOCET)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu100,drug_use,,radio,"Have you ever taken heroin, morphine, darvon, opium, codeine, Demerol, percodan, dilaudid, talwin, or a similar narcotic either without a doctor's prescription or more than was prescribed?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu35,drug_use,,descriptive,"
+INTERVIEWER: If respondent is positive for any drugs, go to Symptoms (Abuse/Dependence).
+",,,,NA,NA,NA,[dcdgu100] = '0',,,NA,,NA,NA
+dcdgu101,drug_use,,notes,Which did you use?,,,,NA,NA,NA,[dcdgu100] = '1',,LH,NA,,NA,NA
+dcdgu102,drug_use,,radio,Were they prescribed by a physician?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu100] = '1',,RH,NA,,NA,NA
+dcdgu103,drug_use,,radio,Did you take them more often or take more pills than prescribed?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu100] = '1',,RH,NA,,NA,NA
+dcdgu104,drug_use,,radio,"When you used narcotics the most, how much did you use them?","1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu100] = '1',,LV,NA,,NA,NA
+dcdgu105,drug_use,,notes,"How did you take them? 
+PROBE: IV/Injection Use
+",,,,NA,NA,NA,[dcdgu100] = '1',,LH,NA,,NA,NA
+dcdgu106,drug_use,,dropdown,How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu107,drug_use,,text,For how many months did you use narcotics that much?,,MONTHS,number,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu108,drug_use,,dropdown,How old were you when you first used narcotics?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+cdgu36a,drug_use,,descriptive,"How old were you when you first used illegally obtained narcotics regularly, that is at least three times a week?",,,,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu109,drug_use,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu110,drug_use,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+cdgu36,drug_use,,descriptive,"
+CURRENT FREQUENCY
+",,,,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu111,drug_use,,radio,How often do you usually use narcotics?,"1, Tried fewer than 10 times | 2, Less than once a week | 3, Once or twice a week | 4, Three to five times a week | 5, Almost every day | 6, Two to three times a day | 7, More than three times daily | 9, Unknown",,,NA,NA,NA,[dcdgu100] = '1',,LV,NA,,NA,NA
+cdgu37,drug_use,,descriptive,"
+If past use but no current use:
+ When did you stop using narcotics?",,,,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu112,drug_use,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu113,drug_use,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu114,drug_use,,text,N of Years,,YEARS,number,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+cdgu38,drug_use,,descriptive,"
+CONSEQUENCES
+",,,,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+dcdgu115,drug_use,,radio,"When you have been using narcotics, have you gotten into trouble with the law, or been arrested?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu100] = '1',,,NA,dcdgu115,NA,NA
+dcdgu116,drug_use,,radio,"When you have been using narcotics, have you found yourself spending more time with other friends who use them rather than with friends who don't?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu100] = '1',,,NA,dcdgu115,NA,NA
+dcdgu117,drug_use,,text,Are you in a methadone program? For how many months all together have you been taking legally prescribed methadone in a methadone program?,,MONTHS,number,NA,NA,NA,[dcdgu100] = '1',,,NA,,NA,NA
+cdgu39a,drug_use,,descriptive,"
+
+PSYCHOACTIVE SUBSTANCE ABUSE AND DEPENDENCE
+
+DIRECTIONS: Going back to when you were using drugs the most (or, if current  - when you use drugs - fill in the blank, type of drug(s) the most), please answer the following questions:
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cdgu39,drug_use,,descriptive,"
+SYMPTOMS: ABUSE/DEPENDENCE
+
+
+ABUSE
+
+Did your drug ever cause you to:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu118,drug_use,,radio,"Have problems at home, work or school?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu118,NA,NA
+dcdgu119,drug_use,,radio,Have problems at school like getting in trouble or suspended?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu118,NA,NA
+dcdgu120,drug_use,,radio,Have lower grades at school or fail classes?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu118,NA,NA
+dcdgu121,drug_use,,radio,Get into physical fights?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu118,NA,NA
+dcdgu122,drug_use,,radio,Lose friends?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu118,NA,NA
+dcdgu123,drug_use,,radio,Did you continue to use drugs even though you knew it caused you any of these problems?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu118] = '1' or [dcdgu119] = '1' or [dcdgu120] = '1' or [dcdgu121] = '1'  or [dcdgu122] = '1',,,NA,dcdgu118,NA,NA
+dcdgu124,drug_use,,dropdown,How old were you the first time you...?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu118] = '1' or [dcdgu119] = '1' or [dcdgu120] = '1' or [dcdgu121] = '1'  or [dcdgu122] = '1',,,NA,,NA,NA
+dcdgu125,drug_use,,radio,Did you miss school to do drugs or because you were high?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu40,drug_use,,descriptive,With which drug(s) has that happened?  How many times?,,,,NA,NA,NA,[dcdgu125] = '1',,,NA,,NA,NA
+dcdgu126,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu125] = '1',,,NA,dcdgu126,NA,NA
+dcdgu127,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu125] = '1',,,NA,dcdgu126,NA,NA
+dcdgu128,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu125] = '1',,,NA,dcdgu126,NA,NA
+dcdgu129,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu125] = '1',,,NA,dcdgu126,NA,NA
+dcdgu130,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu125] = '1',,,NA,dcdgu126,NA,NA
+dcdgu131,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu125] = '1',,,NA,dcdgu126,NA,NA
+dcdgu132,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu125] = '1',,,NA,dcdgu126,NA,NA
+dcdgu133,drug_use,,radio,Did you go to school right after you had been using drugs or did you use drugs while you were at school?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu41,drug_use,,descriptive,With which drug(s) has that happened?  How many times?,,,,NA,NA,NA,[dcdgu133] = '1',,,NA,,NA,NA
+dcdgu134,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu133] = '1',,,NA,dcdgu134,NA,NA
+dcdgu135,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu133] = '1',,,NA,dcdgu134,NA,NA
+dcdgu136,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu133] = '1',,,NA,dcdgu134,NA,NA
+dcdgu137,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu133] = '1',,,NA,dcdgu134,NA,NA
+dcdgu138,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu133] = '1',,,NA,dcdgu134,NA,NA
+dcdgu139,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu133] = '1',,,NA,dcdgu134,NA,NA
+dcdgu140,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu133] = '1',,,NA,dcdgu134,NA,NA
+dcdgu141,drug_use,,radio,Did you use drugs before you did something important or while you were doing something important- like babysitting or working?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu42,drug_use,,descriptive,With which drug(s) has that happened?  How many times?,,,,NA,NA,NA,[dcdgu141] = '1',,,NA,,NA,NA
+dcdgu142,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu141] = '1',,,NA,dcdgu142,NA,NA
+dcdgu143,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu141] = '1',,,NA,dcdgu142,NA,NA
+dcdgu144,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu141] = '1',,,NA,dcdgu142,NA,NA
+dcdgu145,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu141] = '1',,,NA,dcdgu142,NA,NA
+dcdgu146,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu141] = '1',,,NA,dcdgu142,NA,NA
+dcdgu147,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu141] = '1',,,NA,dcdgu142,NA,NA
+dcdgu148,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu141] = '1',,,NA,dcdgu142,NA,NA
+dcdgu149,drug_use,,radio,Have you ever been arrested because you had gotten into trouble with the police or you were high or had been using drugs?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcdgu150,drug_use,,dropdown,How old were you the first time this happened?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu149] = '1',,,NA,,NA,NA
+cdgu43,drug_use,,descriptive,With which drug(s) has that happened?  How many times?,,,,NA,NA,NA,[dcdgu149] = '1',,,NA,,NA,NA
+dcdgu151,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu149] = '1',,,NA,dcdgu151,NA,NA
+dcdgu152,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu149] = '1',,,NA,dcdgu151,NA,NA
+dcdgu153,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu149] = '1',,,NA,dcdgu151,NA,NA
+dcdgu154,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu149] = '1',,,NA,dcdgu151,NA,NA
+dcdgu155,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu149] = '1',,,NA,dcdgu151,NA,NA
+dcdgu156,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu149] = '1',,,NA,dcdgu151,NA,NA
+dcdgu157,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu149] = '1',,,NA,dcdgu151,NA,NA
+dcdgu158,drug_use,,radio,"Have you been using drugs in a situation where you could get hurt - like when using knives, riding a bike, crossing against traffic, swimming, or driving in a car?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu44,drug_use,,descriptive,With which drug(s) has that happened?  How many times?,,,,NA,NA,NA,[dcdgu158] = '1',,,NA,,NA,NA
+dcdgu159,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu158] = '1',,,NA,dcdgu159,NA,NA
+dcdgu160,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu158] = '1',,,NA,dcdgu159,NA,NA
+dcdgu161,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu158] = '1',,,NA,dcdgu159,NA,NA
+dcdgu162,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu158] = '1',,,NA,dcdgu159,NA,NA
+dcdgu163,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu158] = '1',,,NA,dcdgu159,NA,NA
+dcdgu164,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu158] = '1',,,NA,dcdgu159,NA,NA
+dcdgu165,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu158] = '1',,,NA,dcdgu159,NA,NA
+dcdgu166,drug_use,,radio,Did you actually get hurt in any of these situations?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu158] = '1',,RH,NA,,NA,NA
+dcdgu167,drug_use,,notes,Explain,,,,NA,NA,NA,[dcdgu158] = '1',,LH,NA,,NA,NA
+dcdgu168,drug_use,,radio,Have you used drugs with alcohol or while taking medications or pills that you knew were dangerous to mix with drugs?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu45,drug_use,,descriptive,"
+INTERVIEWER: If no to all Abuse questions and never used any substance more than once a week, END Drug section.
+",,,,NA,NA,NA,[dcdgu118] = '0' and [dcdgu119] = '0' and [dcdgu120] = '0' and [dcdgu121] = '0' and [dcdgu122] = '0' and  [dcdgu125] = '0' and  [dcdgu133] = '0' and  [dcdgu141] = '0' and  [dcdgu149] = '0' and  [dcdgu158] = '0' and  [dcdgu168] = '0',,,NA,,NA,NA
+cdgu46,drug_use,,descriptive,"
+SYMPTOMS: DEPENDENCE
+
+
+Substance often taken in larger amounts or over a longer period than peron intended:</div
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu169,drug_use,,radio,"a. Have you ever found that once you started using drugs, you ended up using more or longer than you intended?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu47,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Persistent Desire.
+",,,,NA,NA,NA,[dcdgu169] = '0',,,NA,,NA,NA
+cdgu47a,drug_use,,descriptive,b. With which drugs has that happened?  Has this happened just once or twice or has it happened more than that (see below)?,,,,NA,NA,NA,[dcdgu169] = '1',,,NA,,NA,NA
+dcdgu170,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu169] = '1',,,NA,dcdgu170,NA,NA
+dcdgu171,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu169] = '1',,,NA,dcdgu170,NA,NA
+dcdgu172,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu169] = '1',,,NA,dcdgu170,NA,NA
+dcdgu173,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu169] = '1',,,NA,dcdgu170,NA,NA
+dcdgu174,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu169] = '1',,,NA,dcdgu170,NA,NA
+dcdgu175,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu169] = '1',,,NA,dcdgu170,NA,NA
+dcdgu176,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu169] = '1',,,NA,dcdgu170,NA,NA
+cdgu48,drug_use,,descriptive,"
+Persistent desire or one or more unsuccessful efforts to cut down or control substance abuse:
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu177,drug_use,,radio,a. Have you cut back or limited use of drugs? Did you want to?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu49,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to A Great Deal of Time.
+",,,,NA,NA,NA,[dcdgu177] = '0',,,NA,,NA,NA
+cdgu49a,drug_use,,descriptive,b. With which drugs?,,,,NA,NA,NA,[dcdgu177] = '1',,,NA,,NA,NA
+dcdgu178,drug_use,,radio,Marijuana,"0, Never| 1, Cut back first try|2, Went back",,,NA,NA,NA,[dcdgu177] = '1',,,NA,dcdgu178,NA,NA
+dcdgu179,drug_use,,radio,Solvents/Inhalants,"0, Never| 1, Cut back first try|2, Went back",,,NA,NA,NA,[dcdgu177] = '1',,,NA,dcdgu178,NA,NA
+dcdgu180,drug_use,,radio,Hallucinogens,"0, Never| 1, Cut back first try|2, Went back",,,NA,NA,NA,[dcdgu177] = '1',,,NA,dcdgu178,NA,NA
+dcdgu181,drug_use,,radio,Stimulants,"0, Never| 1, Cut back first try|2, Went back",,,NA,NA,NA,[dcdgu177] = '1',,,NA,dcdgu178,NA,NA
+dcdgu182,drug_use,,radio,Cocaine,"0, Never| 1, Cut back first try|2, Went back",,,NA,NA,NA,[dcdgu177] = '1',,,NA,dcdgu178,NA,NA
+dcdgu183,drug_use,,radio,Sedatives,"0, Never| 1, Cut back first try|2, Went back",,,NA,NA,NA,[dcdgu177] = '1',,,NA,dcdgu178,NA,NA
+dcdgu184,drug_use,,radio,Narcotics,"0, Never| 1, Cut back first try|2, Went back",,,NA,NA,NA,[dcdgu177] = '1',,,NA,dcdgu178,NA,NA
+dcdgu185,drug_use,,radio,"c. After the first time you cut back, did you go back to using so much again?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu177] = '1',,RH,NA,,NA,NA
+cdgu50a,drug_use,,descriptive,"
+A great deal of time spent in activities to get the substance, taking the substance, or recovering from its effects:
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu186,drug_use,,radio,a. Have you ever spent a lot of time thinking about drugs or making sure you had them around?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu50,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Frequent Intoxicated and Withdrawal Symptoms.
+",,,,NA,NA,NA,[dcdgu186] = '0',,,NA,,NA,NA
+cdgu51,drug_use,,descriptive,b. With which has that happened?,,,,NA,NA,NA,[dcdgu186] = '1',,,NA,,NA,NA
+dcdgu187,drug_use,,radio,Marijuana,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu186] = '1',,,NA,dcdgu188,NA,NA
+dcdgu188,drug_use,,radio,Solvents/Inhalants,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu186] = '1',,,NA,dcdgu188,NA,NA
+dcdgu189,drug_use,,radio,Hallucinogens,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu186] = '1',,,NA,dcdgu188,NA,NA
+dcdgu190,drug_use,,radio,Stimulants,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu186] = '1',,,NA,dcdgu188,NA,NA
+dcdgu191,drug_use,,radio,Cocaine,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu186] = '1',,,NA,dcdgu188,NA,NA
+dcdgu192,drug_use,,radio,Sedatives,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu186] = '1',,,NA,dcdgu188,NA,NA
+dcdgu193,drug_use,,radio,Narcotics,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu186] = '1',,,NA,dcdgu188,NA,NA
+dcdgu194,drug_use,,radio,"
+Frequent intoxication with withdrawal symptoms when expected to fulfill major role obligations at work, school, or home:
+
+a. Have you ever been high or sick from drugs when you were supposed to go to school, work, take care of responsibilities, or drive (not applicable for 12-15)?  Did you ever stay home because of being high, sick, or hung over?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcdgu195,drug_use,,radio,"
+OR Recurrent use in situations in which use is physically hazardous:
+
+b. Have you ever done anything reckless or dangerous while you were high?  Have you ever driven a car/boat/bike while you were high? (Probe for arrests, speeding tickets, DWI, etc.)  Have you ever done anything that put you or someone else in danger while you were on drugs?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cdgu54,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Important Social, Occupational.
+",,,,NA,NA,NA,[dcdgu194] = '0' and [dcdgu195] = '0',,,NA,,NA,NA
+cdgu55,drug_use,,descriptive,c. With which drugs has either of these things happened?  Has either of these things happened just once or twice or has it happened more than that? (see below),,,,NA,NA,NA,[dcdgu194] = '1' or [dcdgu195] = '1',,,NA,,NA,NA
+dcdgu196,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu194] = '1' or [dcdgu195] = '1',,,NA,dcdgu196,NA,NA
+dcdgu197,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu194] = '1' or [dcdgu195] = '1',,,NA,dcdgu196,NA,NA
+dcdgu198,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu194] = '1' or [dcdgu195] = '1',,,NA,dcdgu196,NA,NA
+dcdgu199,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu194] = '1' or [dcdgu195] = '1',,,NA,dcdgu196,NA,NA
+dcdgu200,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu194] = '1' or [dcdgu195] = '1',,,NA,dcdgu196,NA,NA
+dcdgu201,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu194] = '1' or [dcdgu195] = '1',,,NA,dcdgu196,NA,NA
+dcdgu202,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu194] = '1' or [dcdgu195] = '1',,,NA,dcdgu196,NA,NA
+dcdgu203,drug_use,,radio,"
+Important social, occupational, or recreation activities given up or reduced because of substance abuse:
+
+a. Have you ever been using drugs so much that you started to use drugs instead of going to school or working or spending time at hobbies or with family or friends?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cdgu57,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Continued Substance Use
+",,,,NA,NA,NA,[dcdgu203] = '0',,,NA,,NA,NA
+cdgu58,drug_use,,descriptive,b. With which drugs has that happened? (see below),,,,NA,NA,NA,[dcdgu203] = '1',,,NA,,NA,NA
+dcdgu204,drug_use,,radio,Marijuana,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu203] = '1',,,NA,dcdgu204,NA,NA
+dcdgu205,drug_use,,radio,Solvents/Inhalants,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu203] = '1',,,NA,dcdgu204,NA,NA
+dcdgu206,drug_use,,radio,Hallucinogens,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu203] = '1',,,NA,dcdgu204,NA,NA
+dcdgu207,drug_use,,radio,Stimulants,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu203] = '1',,,NA,dcdgu204,NA,NA
+dcdgu208,drug_use,,radio,Cocaine,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu203] = '1',,,NA,dcdgu204,NA,NA
+dcdgu209,drug_use,,radio,Sedatives,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu203] = '1',,,NA,dcdgu204,NA,NA
+dcdgu210,drug_use,,radio,Narcotics,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu203] = '1',,,NA,dcdgu204,NA,NA
+dcdgu211,drug_use,,radio,"
+Continued substance use despite knowledge of having a persistent or recurrent social, psychological, or physical problem that is caused or exacerbated by the use of the substance.
+
+a. Have you continued to use drugs even when it caused problems?  For example, at school, or with friends or family, the law, or your health?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cdgu60,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Marked Tolerance.
+",,,,NA,NA,NA,[dcdgu211] = '0',,,NA,,NA,NA
+cdgu61,drug_use,,descriptive,b. With which drug(s) has that happened? (see below),,,,NA,NA,NA,[dcdgu211] = '1',,,NA,,NA,NA
+dcdgu212,drug_use,,radio,Marijuana,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu211] = '1',,,NA,dcdgu212,NA,NA
+dcdgu213,drug_use,,radio,Solvents/Inhalants,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu211] = '1',,,NA,dcdgu212,NA,NA
+dcdgu214,drug_use,,radio,Hallucinogens,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu211] = '1',,,NA,dcdgu212,NA,NA
+dcdgu215,drug_use,,radio,Stimulants,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu211] = '1',,,NA,dcdgu212,NA,NA
+dcdgu216,drug_use,,radio,Cocaine,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu211] = '1',,,NA,dcdgu212,NA,NA
+dcdgu217,drug_use,,radio,Sedatives,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu211] = '1',,,NA,dcdgu212,NA,NA
+dcdgu218,drug_use,,radio,Narcotics,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu211] = '1',,,NA,dcdgu212,NA,NA
+dcdgu219,drug_use,,radio,"
+Marked Tolerance: Need for markedly increased amounts of the substance in order to achieve intoxication or desired effect, or markedly diminished effect with continued use of the same amount.
+
+a. Have you ever found you had to use more to get high than you did when you first started using drugs?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cdgu63,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Characteristic Withdrawal.
+",,,,NA,NA,NA,[dcdgu219] = '0',,,NA,,NA,NA
+cdgu64,drug_use,,descriptive,b. With which drug(s) has that happened? (see below),,,,NA,NA,NA,[dcdgu219] = '1',,,NA,,NA,NA
+dcdgu220,drug_use,,radio,Marijuana,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu219] = '1',,,NA,dcdgu220,NA,NA
+dcdgu221,drug_use,,radio,Solvents/Inhalants,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu219] = '1',,,NA,dcdgu220,NA,NA
+dcdgu222,drug_use,,radio,Hallucinogens,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu219] = '1',,,NA,dcdgu220,NA,NA
+dcdgu223,drug_use,,radio,Stimulants,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu219] = '1',,,NA,dcdgu220,NA,NA
+dcdgu224,drug_use,,radio,Cocaine,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu219] = '1',,,NA,dcdgu220,NA,NA
+dcdgu225,drug_use,,radio,Sedatives,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu219] = '1',,,NA,dcdgu220,NA,NA
+dcdgu226,drug_use,,radio,Narcotics,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu219] = '1',,,NA,dcdgu220,NA,NA
+dcdgu227,drug_use,,radio,"
+Characteristic withdrawal symptoms (drugs)
+
+a. When you stopped or cut back on drugs, was there any change in how you felt? Did you feel sick in any way? Did your sleep change?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cdgu66,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Substance Taken to Relieve.
+",,,,NA,NA,NA,[dcdgu227] = '0',,,NA,,NA,NA
+cdgu67,drug_use,,descriptive,b. With which drug has that happened?,,,,NA,NA,NA,[dcdgu227] = '1',,,NA,,NA,NA
+dcdgu228,drug_use,,radio,Marijuana,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu227] = '1',,RH,NA,,NA,NA
+dcdgu229,drug_use,,checkbox,Marijuana symptoms,"1, Headaches | 2, Nausea | 3, Weakness 3-4 days afterward",,,NA,NA,NA,[dcdgu228] = '1',,LH,NA,,NA,NA
+dcdgu230,drug_use,,radio,Solvents/Inhalants,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu227] = '1',,RH,NA,,NA,NA
+dcdgu231,drug_use,,radio,Hallucinogens,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu227] = '1',,RH,NA,,NA,NA
+dcdgu232,drug_use,,radio,Stimulants,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu227] = '1',,RH,NA,,NA,NA
+dcdgu233,drug_use,,checkbox,Stimulant symptoms,"1, Fatigue | 2, Disturbed Sleep | 3, Increased Dreaming",,,NA,NA,NA,[dcdgu232] = '1',,LH,NA,,NA,NA
+dcdgu234,drug_use,,radio,Cocaine,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu227] = '1',,RH,NA,,NA,NA
+dcdgu235,drug_use,,checkbox,Cocaine symptoms,"1, Fatigue | 2, Disturbed Sleep | 3, Increased Dreaming",,,NA,NA,NA,[dcdgu234] = '1',,LH,NA,,NA,NA
+dcdgu236,drug_use,,radio,Sedatives,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu227] = '1',,RH,NA,,NA,NA
+dcdgu237,drug_use,,checkbox,Sedative symptoms,"1, Nausea | 2, Trembling | 3, Weakness | 4, Faintness | 5, Depression",,,NA,NA,NA,[dcdgu236] = '1',,LH,NA,,NA,NA
+dcdgu238,drug_use,,radio,Narcotics,"0, No | 1, Yes",,,NA,NA,NA,[dcdgu227] = '1',,RH,NA,,NA,NA
+dcdgu239,drug_use,,checkbox,Narcotic symptoms,"1, Insomnia | 2, Sweat | 3, Flushing | 4, Gooseflesh | 5, Runny Nose | 6, Stomach Cramps | 7, Diarrhea | 8, Nausea | 9, Muscle Pains | 10, Twitching",,,NA,NA,NA,[dcdgu238] = '1',,LV,NA,,NA,NA
+cdgu68,drug_use,,descriptive,c. How many times has this happened?,,,,NA,NA,NA,[dcdgu227] = '1',,,NA,,NA,NA
+dcdgu254,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu227] = '1',,,NA,dcdgu254,NA,NA
+dcdgu255,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu227] = '1',,,NA,dcdgu254,NA,NA
+dcdgu256,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu227] = '1',,,NA,dcdgu254,NA,NA
+dcdgu257,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu227] = '1',,,NA,dcdgu254,NA,NA
+dcdgu258,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu227] = '1',,,NA,dcdgu254,NA,NA
+dcdgu259,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu227] = '1',,,NA,dcdgu254,NA,NA
+dcdgu260,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu227] = '1',,,NA,dcdgu254,NA,NA
+dcdgu261,drug_use,,radio,"
+Substance often taken to relieve or avoid withdrawal symptoms. 
+
+a. Have you ever used drugs to keep yourself from getting withdrawal symptoms, that is uncomfortable physical feelings after you stopped using alcohol or drugs?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cdgu70,drug_use,,descriptive,"
+INTERVIEWER: If no, SKIP to Other Characteristics.
+",,,,NA,NA,NA,[dcdgu261] = '0',,,NA,,NA,NA
+cdgu71,drug_use,,descriptive,b. With which has that happened? Has this happened just once or twice or has it happened more than that? (See below)?,,,,NA,NA,NA,[dcdgu261] = '1',,,NA,,NA,NA
+dcdgu262,drug_use,,radio,Marijuana,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu261] = '1',,,NA,dcdgu262,NA,NA
+dcdgu263,drug_use,,radio,Solvents/Inhalants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu261] = '1',,,NA,dcdgu262,NA,NA
+dcdgu264,drug_use,,radio,Hallucinogens,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu261] = '1',,,NA,dcdgu262,NA,NA
+dcdgu265,drug_use,,radio,Stimulants,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu261] = '1',,,NA,dcdgu262,NA,NA
+dcdgu266,drug_use,,radio,Cocaine,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu261] = '1',,,NA,dcdgu262,NA,NA
+dcdgu267,drug_use,,radio,Sedatives,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu261] = '1',,,NA,dcdgu262,NA,NA
+dcdgu268,drug_use,,radio,Narcotics,"0, No| 1, Once | 2, Twice | 3, Three or more times",,,NA,NA,NA,[dcdgu261] = '1',,,NA,dcdgu262,NA,NA
+cdgu72,drug_use,,descriptive,"
+
+DSM-IV: Psychoactive substance dependence: At least three of symptoms #1-7, some of which have persisted for one year, or have occurred repeatedly over a long period of time. 
+
+INTERVIEWER: If at least three for each substance used continue, otherwise, SKIP to Distress/Impairment.
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cdgu73,drug_use,,descriptive,"
+Other Characteristics.
+ 
+I'd like to ask you some more questions about your drug use.
+
+What drug(s) do you prefer if availability were no problem?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu269,drug_use,,radio,Marijuana,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu269,NA,NA
+dcdgu270,drug_use,,radio,Solvents/Inhalants,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu269,NA,NA
+dcdgu271,drug_use,,radio,Hallucinogens,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu269,NA,NA
+dcdgu272,drug_use,,radio,Stimulants,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu269,NA,NA
+dcdgu273,drug_use,,radio,Cocaine,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu269,NA,NA
+dcdgu274,drug_use,,radio,Sedatives,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu269,NA,NA
+dcdgu275,drug_use,,radio,Narcotics,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu269,NA,NA
+dcdgu276,drug_use,,radio,Did you ever 'go straight' and stop doing any drugs for a month or more?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu269,NA,NA
+dcdgu277,drug_use,,text,What is the longest you went without drugs?,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcdgu278,drug_use,,dropdown,How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+cdgu74,drug_use,,descriptive,Which of these drugs have you used in the past six months?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu279,drug_use,,radio,Marijuana,"0, No | 1, Yes",,,NA,NA,NA,,,,NA,dcdgu279,NA,NA
+dcdgu280,drug_use,,radio,Solvents/Inhalants,"0, No | 1, Yes",,,NA,NA,NA,,,,NA,dcdgu279,NA,NA
+dcdgu281,drug_use,,radio,Hallucinogens,"0, No | 1, Yes",,,NA,NA,NA,,,,NA,dcdgu279,NA,NA
+dcdgu282,drug_use,,radio,Stimulants,"0, No | 1, Yes",,,NA,NA,NA,,,,NA,dcdgu279,NA,NA
+dcdgu283,drug_use,,radio,Cocaine,"0, No | 1, Yes",,,NA,NA,NA,,,,NA,dcdgu279,NA,NA
+dcdgu284,drug_use,,radio,Sedatives,"0, No | 1, Yes",,,NA,NA,NA,,,,NA,dcdgu279,NA,NA
+dcdgu285,drug_use,,radio,Narcotics,"0, No | 1, Yes",,,NA,NA,NA,,,,NA,dcdgu279,NA,NA
+cdgu75,drug_use,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at the thermometer/scale. 
+
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cdgu76,drug_use,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cdgu77,drug_use,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu286,drug_use,,dropdown,How much did doing this/these drug(s) upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cdgu78,drug_use,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu287,drug_use,,dropdown,"How much has the drug use you have told me about caused problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcdgu288,drug_use,,radio,Did you miss school to go use or because you were high?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcdgu289,drug_use,,text,How many times (lifetime)?,,TIMES,number,NA,NA,NA,[dcdgu288] = '1',,,NA,,NA,NA
+cdgu79,drug_use,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cdgu79a,drug_use,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu290,drug_use,,radio,Are you still using (list drugs)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcdgu291,drug_use,,dropdown,How old were you the last time you used (list drug)?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu290] = '0',,,NA,,NA,NA
+cdgu80,drug_use,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu292,drug_use,,radio,"Since you were (age of onset), was there ever a time when you were not using (list drug)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cdgu80a,drug_use,,descriptive,What was the longest period of time that you did not have these concerns?,,,,NA,NA,NA,[dcdgu292] = '1',,,NA,,NA,NA
+dcdgu293,drug_use,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcdgu292] = '1',,,NA,,NA,NA
+dcdgu294,drug_use,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcdgu292] = '1',,,NA,,NA,NA
+dcdgu295,drug_use,,text,N of Years,,YEARS,number,NA,NA,NA,[dcdgu292] = '1',,,NA,,NA,NA
+cdgu81,drug_use,,descriptive,"
+HELP-SEEKING TREATMENT (Lifetime)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcdgu296,drug_use,,radio,"Did anyone, like a teacher or family member, suggest that you get help for your drug use?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu296,NA,NA
+dcdgu297,drug_use,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, minister/priest or other professional to get help for (list drugs)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcdgu296,NA,NA
+cdgu83,drug_use,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+cdgu82,drug_use,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu298,drug_use,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu299,drug_use,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu300,drug_use,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu301,drug_use,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu302,drug_use,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu303,drug_use,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+cdgu84,drug_use,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu304,drug_use,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu305,drug_use,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu306,drug_use,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu307,drug_use,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu308,drug_use,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu297] = '1',,RH,NA,,NA,NA
+dcdgu309,drug_use,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcdgu308] = '0',,,NA,,NA,NA
+dcdgu310,drug_use,,notes,What did the professional(s) (doctors) say was the problem that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dcdgu297] = '1',,LH,NA,,NA,NA
+cdgu85a,drug_use,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcdgu297] = '1',,,NA,,NA,NA
+dcdgu311,drug_use,,radio,Out-patient (Going to see someone at an office to see someone or participants in a group treatment NOT in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu297] = '1',,,NA,dcdgu311,NA,NA
+dcdgu312,drug_use,,radio,In-patient (Residential/hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu297] = '1',,,NA,dcdgu311,NA,NA
+dcdgu313,drug_use,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu297] = '1',,,NA,dcdgu311,NA,NA
+dcdgu314,drug_use,,notes,Specify (Other),,,,NA,NA,NA,[dcdgu313] = '1',,LH,NA,,NA,NA
+dcdgu315,drug_use,,radio,Self-help Group,"7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu297] = '1',,RH,NA,,NA,NA
+dcdgu316,drug_use,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcdgu297] = '1',,RH,NA,,NA,NA
+cdgu85,drug_use,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+dcdgu317,drug_use,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+dcdgu318,drug_use,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+dcdgu319,drug_use,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+dcdgu320,drug_use,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+dcdgu321,drug_use,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+dcdgu322,drug_use,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+dcdgu323,drug_use,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+dcdgu324,drug_use,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcdgu316] = '1',,,NA,,NA,NA
+cdgu_end,drug_use,,descriptive,"
+INTERVIEWER: END Drug Use section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

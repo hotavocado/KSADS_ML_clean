@@ -1,0 +1,488 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cpsy0,psychosis,,descriptive,"
+Earlier you told me about some experiences that you have had (list child's behaviors). Now I am going to ask you a little about those.
+
+
+
+SYMPTOMS
+
+HALLUCINATIONS
+
+INTERVIEWER:  To be rated positively, a hallucination should have been present throughout the day for several days or intermittently throughout a one-week period.
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy1,psychosis,,descriptive,"
+AUDITORY
+
+NON VERBAL SOUNDS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy001,psychosis,,radio,Did you ever hear sounds or noises that other people couldn't hear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy2,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy001] = '1',,,NA,,NA,NA
+dcpsy002,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy001] = '1',,,NA,,NA,NA
+dcpsy003,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy001] = '1',,,NA,,NA,NA
+dcpsy004,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy001] = '1',,,NA,,NA,NA
+dcpsy005,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy001] = '1',,,NA,,NA,NA
+cpsy3,psychosis,,descriptive,"
+COMMENTING VOICES 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy006,psychosis,,radio,"Have you ever heard a voice saying what you were doing, feeling or thinking, and nobody else could hear it?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cspy4,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy006] = '1',,,NA,,NA,NA
+dcpsy007,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy006] = '1',,,NA,,NA,NA
+dcpsy008,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy006] = '1',,,NA,,NA,NA
+dcpsy009,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy006] = '1',,,NA,,NA,NA
+dcpsy010,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy006] = '1',,,NA,,NA,NA
+cspy5,psychosis,,descriptive,"
+CONVERSING VOICES 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy011,psychosis,,radio,Have you ever heard two or more voices talking to each other that nobody else could hear? What were the voices saying?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy6,psychosis,,descriptive,How long did it last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy011] = '1',,,NA,,NA,NA
+dcpsy012,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy011] = '1',,,NA,,NA,NA
+dcpsy013,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy011] = '1',,,NA,,NA,NA
+dcpsy014,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy011] = '1',,,NA,,NA,NA
+dcpsy015,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy011] = '1',,,NA,,NA,NA
+cpsy7,psychosis,,descriptive,"
+COMMAND HALLUCINATIONS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy016,psychosis,,radio,Have you ever heard voices telling you to do something and nobody else could hear it?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy8,psychosis,,descriptive,How long did it last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy016] = '1',,,NA,,NA,NA
+dcpsy017,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy016] = '1',,,NA,,NA,NA
+dcpsy018,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy016] = '1',,,NA,,NA,NA
+dcpsy019,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy016] = '1',,,NA,,NA,NA
+dcpsy020,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy016] = '1',,,NA,,NA,NA
+cpsy9,psychosis,,descriptive,"
+PERSECUTORY HALLUCINATIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy021,psychosis,,radio,Have you ever heard voices making fun of you? Threatening you? Saying bad things about you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy10,psychosis,,descriptive,How long did it last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy021] = '1',,,NA,,NA,NA
+dcpsy022,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy021] = '1',,,NA,,NA,NA
+dcpsy023,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy021] = '1',,,NA,,NA,NA
+dcpsy024,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy021] = '1',,,NA,,NA,NA
+dcpsy025,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy021] = '1',,,NA,,NA,NA
+cpsy11,psychosis,,descriptive,"
+THOUGHT BROADCASTING
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy026,psychosis,,radio,"Have you ever heard your thoughts spoken out loud, from outside your head so that you or others could hear what you were thinking?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy12,psychosis,,descriptive,How long did it last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy026] = '1',,,NA,,NA,NA
+dcpsy027,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy026] = '1',,,NA,,NA,NA
+dcpsy028,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy026] = '1',,,NA,,NA,NA
+dcpsy029,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy026] = '1',,,NA,,NA,NA
+dcpsy030,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy026] = '1',,,NA,,NA,NA
+cpsy13,psychosis,,descriptive,"
+OTHER VERBAL HALLUCINATIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy031,psychosis,,radio,Have you ever heard any other voices other people could not hear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy14,psychosis,,descriptive,How long did it last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy031] = '1',,,NA,,NA,NA
+dcpsy032,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy031] = '1',,,NA,,NA,NA
+dcpsy033,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy031] = '1',,,NA,,NA,NA
+dcpsy034,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy031] = '1',,,NA,,NA,NA
+dcpsy035,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy031] = '1',,,NA,,NA,NA
+dcpsy036,psychosis,,notes,Description:,,,,NA,NA,NA,[dcpsy031] = '1',,LH,NA,,NA,NA
+cpsy15,psychosis,,descriptive,"
+VISUAL
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy037,psychosis,,radio,Have you ever seen visions or seen things which other people could not see?  Did it come from a shadow? How clearly did you see these things? Were you awake or asleep?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy16,psychosis,,descriptive,How long did it last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy037] = '1',,,NA,,NA,NA
+dcpsy038,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy037] = '1',,,NA,,NA,NA
+dcpsy039,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy037] = '1',,,NA,,NA,NA
+dcpsy040,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy037] = '1',,,NA,,NA,NA
+dcpsy041,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy037] = '1',,,NA,,NA,NA
+cpsy17,psychosis,,descriptive,"
+OLFACTORY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy042,psychosis,,radio,Have you ever smelled strange odors other people could not smell?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy18,psychosis,,descriptive,How long did it last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy042] = '1',,,NA,,NA,NA
+dcpsy043,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy042] = '1',,,NA,,NA,NA
+dcpsy044,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy042] = '1',,,NA,,NA,NA
+dcpsy045,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy042] = '1',,,NA,,NA,NA
+dcpsy046,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy042] = '1',,,NA,,NA,NA
+cpsy19,psychosis,,descriptive,"
+TACTILE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy047,psychosis,,radio,Have you ever had strange feelings in your body like things were crawling on you or someone touching you and nothing or no one was there?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy20,psychosis,,descriptive,How long did it last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy047] = '1',,,NA,,NA,NA
+dcpsy048,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy047] = '1',,,NA,,NA,NA
+dcpsy049,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy047] = '1',,,NA,,NA,NA
+dcpsy050,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy047] = '1',,,NA,,NA,NA
+dcpsy051,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy047] = '1',,,NA,,NA,NA
+cpsy21a,psychosis,,descriptive,"
+DURATION
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy21,psychosis,,descriptive,Duration of period when hallucinations occurred (can be intermittent over this time):,,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy052,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcpsy053,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+cpsy22,psychosis,,descriptive,"
+ASSOCIATED CONDITIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy054,psychosis,,radio,Were you drinking a lot then?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy054,NA,NA
+dcpsy055,psychosis,,radio,Had you just stopped drinking?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy054,NA,NA
+dcpsy056,psychosis,,radio,"Were you taking drugs- like LSD, speed, crystal meth, ecstacy, mushrooms?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy054,NA,NA
+dcpsy057,psychosis,,radio,Were you physically ill then?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy054,NA,NA
+dcpsy058,psychosis,,radio,Do your parents and family believe in (_____) also? (Part of shared religious or subculture belief system.),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy054,NA,NA
+dcpsy059,psychosis,,notes,"
+At this point, the interviewer should establish some chronology for him/herself regarding the number of episodes, duration, severity of each, and record this information in notes.
+NOTES:
+
+",,,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy24,psychosis,,descriptive,"
+SYMPTOMS
+
+
+DELUSIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy25,psychosis,,descriptive,"
+DELUSIONS OF CONTROL OR INFLUENCE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy060,psychosis,,radio,Have you ever felt that you were under someone else's control? Whose?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy060,NA,NA
+dcpsy061,psychosis,,radio,"Have you ever felt that you could be made to do something against your will, like say or think to do things, without your wanting to?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy060,NA,NA
+cpsy26,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy061] = '1',,,NA,,NA,NA
+dpsy062,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy061] = '1',,,NA,,NA,NA
+dpsy063,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy061] = '1',,,NA,,NA,NA
+dpsy064,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy061] = '1',,,NA,,NA,NA
+dpsy065,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy061] = '1',,,NA,,NA,NA
+cpsy27,psychosis,,descriptive,"
+THOUGHT BROADCASTING
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy066,psychosis,,radio,Have you ever felt that people could hear what you were thinking?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy28,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy066] = '1',,,NA,,NA,NA
+dcpsy067,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy066] = '1',,,NA,,NA,NA
+dcpsy068,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy066] = '1',,,NA,,NA,NA
+dcpsy069,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy066] = '1',,,NA,,NA,NA
+dcpsy070,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy066] = '1',,,NA,,NA,NA
+cpsy29,psychosis,,descriptive,"
+THOUGHT INSERTION
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy071,psychosis,,radio,Have you ever felt that people could put thoughts in your mind? What thoughts were they?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy30,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy071] = '1',,,NA,,NA,NA
+dcpsy072,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy071] = '1',,,NA,,NA,NA
+dcpsy073,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy071] = '1',,,NA,,NA,NA
+dcpsy074,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy071] = '1',,,NA,,NA,NA
+dcpsy075,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy071] = '1',,,NA,,NA,NA
+cpsy31,psychosis,,descriptive,"
+THOUGHT READING
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy076,psychosis,,radio,Have you ever felt that people could know what you were thinking or read in your mind?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy32,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy076] = '1',,,NA,,NA,NA
+dcpsy077,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy076] = '1',,,NA,,NA,NA
+dcpsy078,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy076] = '1',,,NA,,NA,NA
+dcpsy079,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy076] = '1',,,NA,,NA,NA
+dcpsy080,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy076] = '1',,,NA,,NA,NA
+cpsy33,psychosis,,descriptive,"
+SOMATIC DELUSIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy081,psychosis,,radio,Have you ever felt that something was happening to your insides or that something was living inside you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy34,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy081] = '1',,,NA,,NA,NA
+dcpsy082,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy081] = '1',,,NA,,NA,NA
+dcpsy083,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy081] = '1',,,NA,,NA,NA
+dcpsy084,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy081] = '1',,,NA,,NA,NA
+dcpsy085,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy081] = '1',,,NA,,NA,NA
+cpsy35,psychosis,,descriptive,"
+DELUSIONS OF GRANDIOSITY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy086,psychosis,,radio,Have you ever felt that you were a very important person or that you had special powers?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy36,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy086] = '1',,,NA,,NA,NA
+dcpsy087,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy086] = '1',,,NA,,NA,NA
+dcpsy088,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy086] = '1',,,NA,,NA,NA
+dcpsy089,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy086] = '1',,,NA,,NA,NA
+dcpsy090,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy086] = '1',,,NA,,NA,NA
+cpsy37,psychosis,,descriptive,"
+NIHILISTIC DELUSIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy091,psychosis,,radio,Have you ever felt that the world was coming to an end soon? (Explore),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy38,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy091] = '1',,,NA,,NA,NA
+dcpsy092,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy091] = '1',,,NA,,NA,NA
+dcpsy093,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy091] = '1',,,NA,,NA,NA
+dcpsy094,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy091] = '1',,,NA,,NA,NA
+dcpsy095,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy091] = '1',,,NA,,NA,NA
+cpsy39,psychosis,,descriptive,"
+DELUSIONS OF REFERENCE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy096,psychosis,,radio,Have you ever felt people were talking about you behind your back?  What about people in TV or radio?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy096,NA,NA
+dcpsy097,psychosis,,radio,Have you ever thought there were secret meanings for you in what ordinary people did?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy096,NA,NA
+cpsy40,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy096] = '1' or [dcpsy097] = '1',,,NA,,NA,NA
+dcpsy098,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy096] = '1' or [dcpsy097] = '1',,,NA,,NA,NA
+dcpsy099,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy096] = '1' or [dcpsy097] = '1',,,NA,,NA,NA
+dcpsy100,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy096] = '1' or [dcpsy097] = '1',,,NA,,NA,NA
+dcpsy101,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy096] = '1' or [dcpsy097] = '1',,,NA,,NA,NA
+cpsy41,psychosis,,descriptive,"
+PERSECUTORY DELUSIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy102,psychosis,,radio,Have you ever felt people were going after you to hurt you or get at you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy102,NA,NA
+dcpsy103,psychosis,,radio,Has there ever been a plot against you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy102,NA,NA
+cpsy42,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy102] = '1' or [dcpsy103] = '1',,,NA,,NA,NA
+dcpsy104,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy102] = '1' or [dcpsy103] = '1',,,NA,,NA,NA
+dcpsy105,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy102] = '1' or [dcpsy103] = '1',,,NA,,NA,NA
+dcpsy106,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy102] = '1' or [dcpsy103] = '1',,,NA,,NA,NA
+dcpsy107,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy102] = '1' or [dcpsy103] = '1',,,NA,,NA,NA
+cpsy43,psychosis,,descriptive,"
+DELUSIONS OF GUILT OR SIN
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy108,psychosis,,radio,Have you ever felt like you were being (or should be) punished because you were evil? (Explore),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy44,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy108] = '1',,,NA,,NA,NA
+dcpsy109,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy108] = '1',,,NA,,NA,NA
+dcpsy110,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy108] = '1',,,NA,,NA,NA
+dcpsy111,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy108] = '1',,,NA,,NA,NA
+dcpsy112,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy108] = '1',,,NA,,NA,NA
+dcpsy113,psychosis,,radio,"
+OTHER BIZARRE DELUSIONS
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy114,psychosis,,notes,Specify:,,,,NA,NA,NA,[dcpsy113] = '1',,LH,NA,,NA,NA
+cpsy45,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy113] = '1',,,NA,,NA,NA
+dcpsy115,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy113] = '1',,,NA,,NA,NA
+dcpsy116,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy113] = '1',,,NA,,NA,NA
+dcpsy117,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy113] = '1',,,NA,,NA,NA
+dcpsy118,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy113] = '1',,,NA,,NA,NA
+cpsy46,psychosis,,descriptive,"
+DURATION
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy119,psychosis,,text,Duration of period when delusions occurred (can be intermittent over this time):,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+cpsy47,psychosis,,descriptive,"
+ASSOCIATED CONDITIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy120,psychosis,,radio,Were you drinking a lot then?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy120,NA,NA
+dcpsy121,psychosis,,radio,Had you just stopped drinking?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy120,NA,NA
+dcpsy122,psychosis,,radio,"Were you taking drugs- like LSD, speed, crystal meth, ecstacy, mushrooms?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy120,NA,NA
+dcpsy123,psychosis,,radio,Were you physically ill then?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy120,NA,NA
+dcpsy124,psychosis,,radio,Do your parents and family believe in (_____) also? (Part of shared religious or subculture belief system.),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy120,NA,NA
+dcpsy125,psychosis,,notes,"
+At this point, the interviewer should establish some chronology for him/herself regarding the number of episodes, duration, severity of each, and record this information in notes.
+NOTES:
+
+",,,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy49,psychosis,,descriptive,"
+GENERAL PROBES
+
+FORMAL THOUGHT DISORDER
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy126,psychosis,,radio,Have there been times when people said they had trouble understanding what you were saying?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy50,psychosis,,descriptive,"
+INTERVIEWER: If no evidence of psychotic symptoms, END Psychosis section. 
+
+
+INTERVIEWER: If there are psychotic symptoms, SKIP to Other Phenomena.
+
+
+",,,,NA,NA,NA,[dcpsy126] = '0',,,NA,,NA,NA
+cpsy51,psychosis,,descriptive,How long did this last?,,,,NA,NA,NA,[dcpsy126] = '1',,,NA,,NA,NA
+dcpsy127,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy126] = '1',,,NA,,NA,NA
+dcpsy128,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy126] = '1',,,NA,,NA,NA
+dcpsy129,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy126] = '1',,,NA,,NA,NA
+dcpsy130,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy126] = '1',,,NA,,NA,NA
+dcpsy131,psychosis,,radio,Was your speech mixed up?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy126] = '1',,,NA,dcpsy131,NA,NA
+dcpsy132,psychosis,,radio,Did you make sense?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy126] = '1',,,NA,dcpsy131,NA,NA
+dcpsy133,psychosis,,radio,Could you make yourself understood if people told you that you couldn't be understood?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy126] = '1',,,NA,dcpsy131,NA,NA
+dcpsy134,psychosis,,radio,"Were you ""high"" at the time?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy126] = '1',,,NA,dcpsy131,NA,NA
+dcpsy135,psychosis,,radio,Were you sick?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy126] = '1',,,NA,dcpsy131,NA,NA
+dcpsy136,psychosis,,radio,Had you taken pills?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy126] = '1',,,NA,dcpsy131,NA,NA
+dcpsy137,psychosis,,radio,"Did people have trouble understanding you when you weren't ""high""?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy126] = '1',,,NA,dcpsy131,NA,NA
+dcpsy138,psychosis,,notes,"
+INTERVIEWER: If thought disorder was present, was it associated with any of the following?
+",,,,NA,NA,NA,[dcpsy126] = '1',,LH,NA,,NA,NA
+cpsy51a,psychosis,,descriptive,"
+OTHER PHENOMENA
+
+
+CATATONIA
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy139,psychosis,,radio,Did you ever find that you couldn't move? Could you? Did you stay still for a long time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy52,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy139] = '1',,,NA,,NA,NA
+dcpsy140,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy139] = '1',,,NA,,NA,NA
+dcpsy141,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy139] = '1',,,NA,,NA,NA
+dcpsy142,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy139] = '1',,,NA,,NA,NA
+dcpsy143,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy139] = '1',,,NA,,NA,NA
+cpsy53,psychosis,,descriptive,"
+GROSSLY BIZARRE BEHAVIOR
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy144,psychosis,,radio,"Did you do anything that called attention to yourself?  Like the way you dressed, acted or the things you said?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy54,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy144] = '1',,,NA,,NA,NA
+dcpsy145,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy144] = '1',,,NA,,NA,NA
+dcpsy146,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy144] = '1',,,NA,,NA,NA
+dcpsy147,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy144] = '1',,,NA,,NA,NA
+dcpsy148,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy144] = '1',,,NA,,NA,NA
+cpsy55,psychosis,,descriptive,"
+INAPPROPRIATE OR FLAT AFFECT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy149,psychosis,,radio,Was your face different from usual?  Did people have trouble figuring out how you were feeling by looking at your expression?  Please tell me about this?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy56,psychosis,,descriptive,How long did this last (Estimate duration and dates)?,,,,NA,NA,NA,[dcpsy149] = '1',,,NA,,NA,NA
+dcpsy150,psychosis,,text,N of Minutes,,MINUTES,number,NA,NA,NA,[dcpsy149] = '1',,,NA,,NA,NA
+dcpsy151,psychosis,,text,N of Hours,,HOURS,number,NA,NA,NA,[dcpsy149] = '1',,,NA,,NA,NA
+dcpsy152,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy149] = '1',,,NA,,NA,NA
+dcpsy153,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy149] = '1',,,NA,,NA,NA
+cpsy57,psychosis,,descriptive,"
+PSYCHOSIS SUMMARY/ROLE FUNCTIONING
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy58,psychosis,,descriptive,"
+ SOCIAL ISOLATION OR WITHDRAWAL
+ Did you keep to yourself and not spend time with friends?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy154,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy154,NA,NA
+dcpsy155,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy154,NA,NA
+cspy59,psychosis,,descriptive,"
+ MARKED IMPAIRMENT IN ROLE FUNCTIONING
+  Did not do as well in school as before, stopped doing usual activities?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy156,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy156,NA,NA
+dcpsy157,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy156,NA,NA
+cpsy60,psychosis,,descriptive,"
+ MARKEDLY PECULIAR BEHAVIOR
+  Did things that other people couldn't understand or thought were strange, things you wouldn't usually do?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy158,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy158,NA,NA
+dcpsy159,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy158,NA,NA
+cpsy61,psychosis,,descriptive,"
+ MARKED IMPAIRMENT IN PERONAL HYGIENE AND GROOMING
+  Did you let your appearance go?  Did you stop caring about how you looked?  Did you bathe as usual?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy160,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy160,NA,NA
+dcpsy161,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy160,NA,NA
+cpsy62,psychosis,,descriptive,"
+  BLUNTED, FLAT OR INAPPROPRIATE AFFECT
+  Did people say your expression was different, that it was hard to tell how you were feeling, that you looked off in space?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy162,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy162,NA,NA
+dcpsy163,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy162,NA,NA
+cpsy63,psychosis,,descriptive,"
+ DIGRESSIVE, VAGUE, OVER-ELABORATE, CIRCUMSTANCIAL, METAPHORICAL OR POVERTY OF SPEECH 
+ Was it hard for people to understand what you wanted to say?  Did they have trouble following you?  Did you stop saying very much?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy164,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy164,NA,NA
+dcpsy165,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy164,NA,NA
+cpsy64,psychosis,,descriptive,"
+ ODD OR BIZARRE IDEATION OR MAGICAL THINKING
+ Did you have unusual ideas, believe things you hadn't believed before?  Were there things that only you believed or cared about?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy166,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy166,NA,NA
+dcpsy167,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy166,NA,NA
+cpsy65,psychosis,,descriptive,"
+ UNUSUAL PERCEPTUAL EXPERICENCES
+ Did you see or hear unusual things or have strange feelings?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy168,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy168,NA,NA
+dcpsy169,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy168,NA,NA
+cpsy66,psychosis,,descriptive,"
+MARKED LACK OF INITIATIVE, INTERESTS, OR ENERGY
+You didn't do as much, didn't have your usual energy, didn't keep up with things you usually did?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy170,psychosis,,radio,Prodromal (Before acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy170,NA,NA
+dcpsy171,psychosis,,radio,Residual (After acute psychotic symptomology),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpsy170,NA,NA
+cpsy67,psychosis,,descriptive,"
+ASSOCIATED CONDITIONS
+
+
+INTERVIEWER:Probe to find out if the above psychotic symptoms were associated with any of the following: 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy172,psychosis,,radio,"Physical Illness: At the time that you were having (insert symptoms) were you also physically ill? (e.g., high fever, migraine, epilepsy)","0, NA/No Info | 1, Never | 2, Sometimes | 3, Always",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy173,psychosis,,notes,Describe,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy174,psychosis,,radio,"Taking Prescribed Medication? (e.g., Serpasil, birth control pills, antihistamines or cold pills, antihypertensives, cortisone or other steriods, or diet pills)","0, NA/No Info | 1, Never | 2, Sometimes | 3, Always",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy175,psychosis,,notes,Describe,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy176,psychosis,,radio,Using Alcohol/Drugs?,"0, NA/No Info | 1, Never | 2, Sometimes | 3, Always",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy177,psychosis,,notes,Describe,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy178,psychosis,,radio,Depressed (Feeling very sad)?,"0, NA/No Info | 1, Never | 2, Sometimes | 3, Always",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy179,psychosis,,notes,Describe,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy180,psychosis,,radio,Manic (Feeling very energetic/active)?,"0, NA/No Info | 1, Never | 2, Sometimes | 3, Always",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy181,psychosis,,notes,Describe,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy182,psychosis,,radio,Schizophrenia?,"0, NA/No Info | 1, Never | 2, Sometimes | 3, Always",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy183,psychosis,,notes,Describe,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy184,psychosis,,radio,Other?,"0, NA/No Info | 1, Never | 2, Sometimes | 3, Always",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy185,psychosis,,notes,Describe,,,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy69,psychosis,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy70,psychosis,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy71,psychosis,,descriptive,How old were you the first time you had these behaviors/feelings?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy186,psychosis,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcpsy187,psychosis,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+cpsy72,psychosis,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy188,psychosis,,radio,Are you still having these (behaviors/feelings) now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpsy189,psychosis,,dropdown,How old were you the last time you had these behaviors/feelings?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpsy188] = '0',,RH,NA,,NA,NA
+cpsy73,psychosis,,descriptive,Duration of most recent episode: How long did you feel (___________)?,,,,NA,NA,NA,[dcpsy188] = '0',,,NA,,NA,NA
+dcpsy190,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy188] = '0',,RH,NA,,NA,NA
+dcpsy191,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy188] = '0',,RH,NA,,NA,NA
+dcpsy192,psychosis,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcpsy188] = '0',,RH,NA,,NA,NA
+dcpsy193,psychosis,,radio,Most recent episode most severe: Was that the worst you have felt?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy188] = '0',,RH,NA,,NA,NA
+dcpsy194,psychosis,,radio,If yes to having behaviors NOW: (Current episode most severe) Is this the worst you have felt?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+cpsy77,psychosis,,descriptive,Duration of current episode: How long have you been feeling this way?,,,,NA,NA,NA,[dcpsy188] = '1',,,NA,,NA,NA
+dcpsy195,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+dcpsy196,psychosis,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+dcpsy197,psychosis,,text,N of Years,,YEARS,number,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+dcpsy198,psychosis,,text,Total number of episodes (Separated by at least 2 months): How many different times have you (_____)?,,TIMES,number,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+cpsy80,psychosis,,descriptive,"Duration of most recent episode: 
+*If most severe episode is the current episode, recode from above.  
+
+*If most severe episode is the most resent, recode from above.  
+
+*If most severe is neither ask: When you felt your worst, how long did that feeling last?",,,,NA,NA,NA,[dcpsy188] = '1',,,NA,,NA,NA
+dcpsy199,psychosis,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+dcpsy200,psychosis,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+dcpsy201,psychosis,,text,N of Years,,YEARS,number,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+dcpsy202,psychosis,,dropdown,Onset of most severe episode: How old were you then?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpsy188] = '1',,RH,NA,,NA,NA
+cpsy82,psychosis,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy203,psychosis,,radio,"Since you were (age of onset), was there ever a time when you did not have these behaviors/feelings?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cpsy83,psychosis,,descriptive,What was the longest period of time that (behavior/feeling) did not bother you?,,,,NA,NA,NA,[dcpsy203] = '1',,,NA,,NA,NA
+dcpsy204,psychosis,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpsy203] = '1',,RH,NA,,NA,NA
+dcpsy205,psychosis,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcpsy203] = '1',,RH,NA,,NA,NA
+dcpsy206,psychosis,,text,N of Years,,YEARS,number,NA,NA,NA,[dcpsy203] = '1',,RH,NA,,NA,NA
+cpsy84,psychosis,,descriptive,"
+DISTRESS/IMPAIRMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy86,psychosis,,descriptive,"Please look at the thermometer/scale.  Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy87,psychosis,,descriptive,"
+DISTRESS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpsy85,psychosis,,descriptive,"
+Participant Card 8 (Distress/Impairment) 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy207,psychosis,,dropdown,How much did your feelings/behaviors associated with this event upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cpsy88,psychosis,,descriptive,"
+IMPAIRMENT (Please rate on scale)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy208,psychosis,,dropdown,"How much have the feelings/behaviors that you have told me about caused problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcpsy209,psychosis,,radio,Did you stay home from school because of the way you were feeling?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cpsy89,psychosis,,descriptive,If yes: How many days of school did you miss because of (insert symptoms)? (lifetime),,,,NA,NA,NA,[dcpsy209] = '1',,,NA,,NA,NA
+dcpsy210,psychosis,,text,Days,,DAYS,number,NA,NA,NA,[dcpsy209] = '1',,,NA,,NA,NA
+dcpsy211,psychosis,,text,Weeks,,WEEKS,number,NA,NA,NA,[dcpsy209] = '1',,,NA,,NA,NA
+dcpsy212,psychosis,,text,Months,,MONTHS,number,NA,NA,NA,[dcpsy209] = '1',,,NA,,NA,NA
+cpsy90,psychosis,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpsy213,psychosis,,radio,"Did anyone, like a teacher or relative, suggest that you get help for (list behaviors/feelings)?","0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcpsy211,NA,NA
+dcpsy214,psychosis,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, minister/priest or other professional to get help for (list behaviors/feelings)?","0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcpsy211,NA,NA
+cpsy91,psychosis,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+cpsy92,psychosis,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy215,psychosis,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy216,psychosis,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy217,psychosis,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy218,psychosis,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy219,psychosis,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy220,psychosis,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+cpsy92a,psychosis,,descriptive,"
+
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy221,psychosis,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy222,psychosis,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy223,psychosis,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy224,psychosis,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy225,psychosis,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy214] = '1',,LH,NA,,NA,NA
+dcpsy226,psychosis,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpsy225] = '0',,,NA,,NA,NA
+dcpsy227,psychosis,,notes,"What did the professional(s) (doctors) say that you had 
+(diagnoses given)? List:",,,,NA,NA,NA,[dcpsy214] = '1',,LH,NA,,NA,NA
+cpsy93,psychosis,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcpsy214] = '1',,,NA,,NA,NA
+dcpsy228,psychosis,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy214] = '1',,,NA,dcpsy228,NA,NA
+dcpsy229,psychosis,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy214] = '1',,,NA,dcpsy228,NA,NA
+dcpsy230,psychosis,,radio,Other (Anything else child tells you),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy214] = '1',,,NA,dcpsy228,NA,NA
+dcpsy231,psychosis,,notes,Specify (Other),,,,NA,NA,NA,[dcpsy230] = '1',,LH,NA,,NA,NA
+dcpsy232,psychosis,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpsy214] = '1',,LH,NA,,NA,NA
+cpsy94,psychosis,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcpsy232] = '1',,,NA,,NA,NA
+dcpsy233,psychosis,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcpsy232] = '1',,RH,NA,,NA,NA
+dcpsy234,psychosis,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcpsy232] = '1',,,NA,,NA,NA
+dcpsy235,psychosis,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcpsy232] = '1',,RH,NA,,NA,NA
+dcpsy236,psychosis,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcpsy232] = '1',,,NA,,NA,NA
+dcpsy237,psychosis,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcpsy232] = '1',,RH,NA,,NA,NA
+dcpsy238,psychosis,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcpsy232] = '1',,,NA,,NA,NA
+dcpsy239,psychosis,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcpsy232] = '1',,RH,NA,,NA,NA
+dcpsy240,psychosis,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcpsy232] = '1',,,NA,,NA,NA
+cpsy_end,psychosis,,descriptive,"
+INTERVIEWER: END Psychosis section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

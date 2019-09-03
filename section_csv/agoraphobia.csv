@@ -1,0 +1,194 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cagr0,agoraphobia,,descriptive,"
+Earlier you said that you have been very nervous or afraid of (list endorsed fears).  I'd now like to ask you more about (that/those).
+
+
+SYMPTOMS
+
+Have you ever been very afraid of?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr001,agoraphobia,,radio,1. Riding in a car?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr001,NA,NA
+dcagr002,agoraphobia,,radio,"2. Riding in a bus, train or subway?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr001,NA,NA
+dcagr003,agoraphobia,,radio,3. Going over bridges or through tunnels?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr001,NA,NA
+dcagr004,agoraphobia,,radio,4. Being far from home or leaving familiar places?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr001,NA,NA
+dcagr005,agoraphobia,,radio,5. Being in the house alone? (For younger children: Being alone in a room or in a different part of the house from your parents.),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr001,NA,NA
+dcagr006,agoraphobia,,notes,Describe,,,,NA,NA,NA,[dcagr005] = '1',,LH,NA,,NA,NA
+dcagr007,agoraphobia,,radio,6. Being in a room alone?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr007,NA,NA
+dcagr008,agoraphobia,,radio,"7. Going outside of your house by yourself (i.e., to play)? 
+
+INTERVIEWER: Code NO if due to separation anxiety.
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr007,NA,NA
+dcagr009,agoraphobia,,notes,Describe,,,,NA,NA,NA,[dcagr008] = '1',,LH,NA,,NA,NA
+dcagr010,agoraphobia,,radio,8. Being in crowds or crowded places?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr011,agoraphobia,,radio,9. Standing in line in a public place?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr012,agoraphobia,,radio,10. Being in stores or shopping malls?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr013,agoraphobia,,radio,11. Being in classrooms or cafeteria at school?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr014,agoraphobia,,radio,12. Being in a restaurant?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr015,agoraphobia,,radio,"13. Being in a movie theater or in a church, temple, or mosque?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr016,agoraphobia,,radio,"14. Being in a wide, open field or street?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr017,agoraphobia,,radio,15. Being in a park or playground?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr018,agoraphobia,,radio,16. Anything else?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr010,NA,NA
+dcagr019,agoraphobia,,text,Specify (Other),,,,NA,NA,NA,[dcagr018] = '1',,RH,NA,,NA,NA
+cagr1,agoraphobia,,descriptive,"
+INTERVIEWER:If no to all,  END Agoraphobia section.
+",,,,NA,NA,NA,[dcagr001] = '0' and [dcagr002] = '0' and [dcagr003] = '0' and [dcagr004] = '0' and [dcagr005] = '0' and [dcagr007] = '0' and [dcagr008] = '0' and [dcagr010] = '0' and [dcagr011] = '0' and [dcagr012] = '0' and [dcagr013] = '0' and [dcagr014] = '0' and [dcagr015] = '0' and [dcagr016] = '0' and [dcagr017] = '0' and [dcagr018] = '0',,,NA,,NA,NA
+cagr2,agoraphobia,,descriptive,"
+INTERVIEWER:  Be sure to distinguish between Agoraphobia, Specific Phobias and Separation Anxiety here (e.g. if the child is fearful because he/she is away from his/her parent this suggests Separation Anxiety, not Agoraphobia). Key criterion for Agoraphobia are listed below under Nature of Fear.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cagr3,agoraphobia,,descriptive,"
+NATURE OF FEAR
+
+When you were in (this/these) situation(s) (list specifics from above), were  you ever afraid that:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr020,agoraphobia,,radio,You might get trapped?,"0, Never | 1, Sometimes | 2, Almost Always | 7, Not Applicable | 9, Unknown",,,NA,NA,NA,,,,NA,dcagr020,NA,NA
+dcagr021,agoraphobia,,radio,You couldn't escape?,"0, Never | 1, Sometimes | 2, Almost Always | 7, Not Applicable | 9, Unknown",,,NA,NA,NA,,,,NA,dcagr020,NA,NA
+dcagr022,agoraphobia,,radio,You wouldn't be able to get help if you needed it?,"0, Never | 1, Sometimes | 2, Almost Always | 7, Not Applicable | 9, Unknown",,,NA,NA,NA,,,,NA,dcagr020,NA,NA
+dcagr023,agoraphobia,,radio,It would be embarrassing to escape?,"0, Never | 1, Sometimes | 2, Almost Always | 7, Not Applicable | 9, Unknown",,,NA,NA,NA,,,,NA,dcagr020,NA,NA
+dcagr024,agoraphobia,,radio,Other?,"0, Never | 1, Sometimes | 2, Almost Always | 7, Not Applicable | 9, Unknown",,,NA,NA,NA,,,,NA,dcagr020,NA,NA
+dcagr025,agoraphobia,,text,Specify (Other),,,,NA,NA,NA,[dcagr024] = '1',,,NA,,NA,NA
+dcagr026,agoraphobia,,notes,"Why were you nervous or afraid in these situations? 
+
+
+INTERVIEWER:If no to all above, consider assessing under specific phobia and/or separation anxiety. Specify:",,,,NA,NA,NA,[dcagr020] = '0' and [dcagr021] = '0' and [dcagr022] = '0' and [dcagr023] = '0' and [dcagr024] = '0',,LH,NA,,NA,NA
+cagr4,agoraphobia,,descriptive,"
+INTERVIEWER: List the worst situation below. Record the corresponding number. 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cagr5a,agoraphobia,,descriptive,"
+Participant Card 4 (Other Fears)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr027,agoraphobia,,text,Most distressing and avoided situation:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr028,agoraphobia,,text,Most distressing and avoided code:,,CODE RESPONSE,number,1,15,NA,,,,NA,,NA,NA
+cagr5,agoraphobia,,descriptive,"
+WORST FEAR CATEGORY 
+
+
+
+I will now ask you about (your fear listed): [dcagr027]. When you were most afraid of (your  fear): [dcagr027]: 
+  
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cagr6,agoraphobia,,descriptive,"
+INTERVIEWER: Please read responses never, sometimes, almost always. 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cagr7,agoraphobia,,descriptive,When you were most afraid of (list fear):,,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr029,agoraphobia,,radio,How often did you feel nervous or afraid (insert situation)?,"0, Never | 1, Sometimes | 2, Almost Always | 7, N/A | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcagr030,agoraphobia,,radio,Did this scare you too much? Do you think you were more scared than you should have been?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr030,NA,NA
+dcagr031,agoraphobia,,radio,Were you much more scared by this than other people your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr030,NA,NA
+dcagr032,agoraphobia,,radio,"When you have to do (fear), did you feel very nervous, scared, or upset?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr030,NA,NA
+dcagr033,agoraphobia,,radio,"When you had to do (fear), did you become very nervous, scared or upset right away?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr030,NA,NA
+dcagr034,agoraphobia,,radio,"When you had to do (fear), did your heart ever beat very fast, or did you feel sweaty or have trouble breathing?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr030,NA,NA
+dcagr035,agoraphobia,,radio,"When you had to do (fear), did you feel like crying, losing your temper, or like you couldn't move around?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr030,NA,NA
+dcagr036,agoraphobia,,radio,Did being afraid of (fear) keep you from doing things you should or wanted to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr030,NA,NA
+dcagr037a,agoraphobia,,text,Example 1,,,,NA,NA,NA,[dcagr036] = '1',,RH,NA,,NA,NA
+dcagr037b,agoraphobia,,text,Example 2,,,,NA,NA,NA,[dcagr036] = '1',,RH,NA,,NA,NA
+dcagr037c,agoraphobia,,text,Example 3,,,,NA,NA,NA,[dcagr036] = '1',,RH,NA,,NA,NA
+dcagr038,agoraphobia,,radio,"Did you change your behavior in any way (e.g. any change in daily activities, such as avoiding going to theaters or shopping malls)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr038,NA,NA
+dcagr039,agoraphobia,,radio,Was this fear so upsetting that you tried to get out of doing (fear)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr038,NA,NA
+dcagr040,agoraphobia,,radio,Did you have to force yourself to do (fear)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr038,NA,NA
+dcagr041,agoraphobia,,radio,Did you start to get nervous as soon as you knew you had to face (fear)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr038,NA,NA
+dcagr042,agoraphobia,,radio,"When you were with a parent or friend, did (fear) upset you as much?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr038,NA,NA
+dcagr043,agoraphobia,,radio,"When you were with a parent or friend, were you able to face (fear)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr038,NA,NA
+cagr8,agoraphobia,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at the thermometer/scale.
+
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cagr9,agoraphobia,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cag10,agoraphobia,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr044,agoraphobia,,dropdown,How much did having this fear upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cagr11,agoraphobia,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr045,agoraphobia,,dropdown,"How much did the fear you told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcagr046,agoraphobia,,radio,Did you stay home from school because of your fear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cagr12,agoraphobia,,descriptive,How many days of school did you miss? (lifetime),,,,NA,NA,NA,[dcagr046] = '1',,,NA,,NA,NA
+dcagr047,agoraphobia,,text,N of Days,,DAYS,number,NA,NA,NA,[dcagr046] = '1',,,NA,,NA,NA
+dcagr048,agoraphobia,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcagr046] = '1',,,NA,,NA,NA
+dcagr049,agoraphobia,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcagr046] = '1',,,NA,,NA,NA
+dcagr050,agoraphobia,,radio,"Did you ever avoid going to fun activities/events like amusement parks, movies, or parties because of your fear?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcagr051,agoraphobia,,text,How many times?,,TIMES,number,NA,NA,NA,[dcagr050] = '1',,,NA,,NA,NA
+cagr13,agoraphobia,,descriptive,"
+ASSOCIATED CONDITIONS
+
+
+
+ANXIETY
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr052,agoraphobia,,radio,"Were you afraid of (fear) only when you were anxious or worried about something else, or when you were  having panic attacks?
+
+INTERVIEWER: Define panic attacks, as necessary.
+
+","0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,,,RH,NA,dcagr052,NA,NA
+dcagr053,agoraphobia,,radio,Were you afraid of (fear) only when you were separated from your parents?,"0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,,,,NA,dcagr052,NA,NA
+cagr14,agoraphobia,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cagr15,agoraphobia,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cagr16,agoraphobia,,descriptive,How old were you the first time you were afraid of (fear)?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr054,agoraphobia,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcagr055,agoraphobia,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+cagr17,agoraphobia,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr056,agoraphobia,,radio,Are you still afraid of (fear)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcagr057,agoraphobia,,dropdown,How old were you the last time you had one of these attacks?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcagr056] = '0',,,NA,,NA,NA
+cagr18,agoraphobia,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr058,agoraphobia,,radio,"Since you were (age of onset), was there ever a time when you were not afraid of (fear)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cagr19,agoraphobia,,descriptive,What was the longest period of time that (fear) did not bother you?,,,,NA,NA,NA,[dcagr058] = '1',,,NA,,NA,NA
+dcagr059,agoraphobia,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcagr058] = '1',,RH,NA,,NA,NA
+dcagr060,agoraphobia,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcagr058] = '1',,RH,NA,,NA,NA
+dcagr061,agoraphobia,,text,N of Years,,YEARS,number,NA,NA,NA,[dcagr058] = '1',,RH,NA,,NA,NA
+cagr20,agoraphobia,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcagr062,agoraphobia,,radio,"Did anyone, like a teacher or relative, suggest that you get help for (list symptoms)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr062,NA,NA
+dcagr063,agoraphobia,,radio,"Did you ever go to see a doctor, nurse, counselor, social worker, psychologist, minister/priest or other professional to get help for (list symptoms)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcagr062,NA,NA
+cagr22,agoraphobia,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+cagr21,agoraphobia,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr064,agoraphobia,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr065,agoraphobia,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr066,agoraphobia,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr067,agoraphobia,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr068,agoraphobia,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr069,agoraphobia,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+cagr23,agoraphobia,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr070,agoraphobia,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr071,agoraphobia,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr072,agoraphobia,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr073,agoraphobia,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr074,agoraphobia,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcagr063] = '1',,RH,NA,,NA,NA
+dcagr075,agoraphobia,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcagr074] = '0',,,NA,,NA,NA
+dcagr076,agoraphobia,,notes,What did the professional(s) (doctors) say that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dcagr063] = '1',,LH,NA,,NA,NA
+cagr24,agoraphobia,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcagr063] = '1',,,NA,,NA,NA
+dcagr077,agoraphobia,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcagr063] = '1',,RH,NA,dcagr077,NA,NA
+dcagr078,agoraphobia,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcagr063] = '1',,RH,NA,dcagr077,NA,NA
+dcagr079,agoraphobia,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcagr063] = '1',,RH,NA,dcagr077,NA,NA
+dcagr080,agoraphobia,,notes,Specify (Other),,,,NA,NA,NA,[dcagr079] = '1',,LH,NA,,NA,NA
+dcagr081,agoraphobia,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcagr063] = '1',,RH,NA,,NA,NA
+cagr026,agoraphobia,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+dcagr082,agoraphobia,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+dcagr083,agoraphobia,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+dcagr084,agoraphobia,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+dcagr085,agoraphobia,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+dcagr086,agoraphobia,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+dcagr087,agoraphobia,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+dcagr088,agoraphobia,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+dcagr089,agoraphobia,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcagr081] = '1',,,NA,,NA,NA
+cagr_end,agoraphobia,,descriptive,"
+INTERVIEWER: END Agoraphobia section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

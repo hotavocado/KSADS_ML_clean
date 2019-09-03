@@ -1,0 +1,165 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cgad0,overanxiousgad,,descriptive,"
+Earlier, you told me that (insert endorsed symptoms from screener). 
+
+
+CONTENT OF WORRY
+
+
+I will first ask you about what you worried about during (that/these times).
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad001,overanxiousgad,,radio,"Did you worry a lot about things before they happened? (For example, did you worry about starting school in the fall, taking a test, or going to see a doctor?)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad001,NA,NA
+dcgad002,overanxiousgad,,radio,"Did you worry a lot about little things you've done in the past? (For example, did you worry about how well you behaved or whether you said or did the right thing?)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad001,NA,NA
+dcgad003,overanxiousgad,,radio,Did you worry a lot about how well you did your school work?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad001,NA,NA
+dcgad004,overanxiousgad,,radio,Did you worry a lot about how good you were in sports or dance or other activities?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad001,NA,NA
+dcgad005,overanxiousgad,,radio,Did you worry a lot about whether people liked you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad001,NA,NA
+dcgad006,overanxiousgad,,radio,Did you worry a lot about what other people thought about you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad001,NA,NA
+dcgad007,overanxiousgad,,radio,Did you often ask your parents or teachers if you're doing a good job or doing your work correctly?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad001,NA,NA
+dcgad008,overanxiousgad,,radio,"When you were uncomfortable with a situation, did you ask a lot of questions of your parents to try to make yourself feel better?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad001,NA,NA
+dcgad009,overanxiousgad,,notes,What other kinds of things did you worry about during (that/these times)?,,,,NA,NA,NA,,,LH,NA,,NA,NA
+cgad1,overanxiousgad,,descriptive,"
+INTERVIEWER: Code content of worries in category below.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad010,overanxiousgad,,radio,"Being on time, keeping schedules","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad010,NA,NA
+dcgad011,overanxiousgad,,radio,Perfectionism; never making mistakes,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad010,NA,NA
+dcgad012,overanxiousgad,,radio,Health of self,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad010,NA,NA
+dcgad013,overanxiousgad,,radio,Health of others,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad010,NA,NA
+dcgad014,overanxiousgad,,radio,"Family situations (divorce, finances)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad010,NA,NA
+dcgad015,overanxiousgad,,radio,"Things going on in the world (war, terrorism, crime, floods, tornadoes)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad010,NA,NA
+dcgad016,overanxiousgad,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad010,NA,NA
+dcgad017,overanxiousgad,,notes,Specify (Other),,,,NA,NA,NA,[dcgad016] = '1',,LH,NA,,NA,NA
+dcgad018,overanxiousgad,,radio,"Was it hard for you to stop yourself from worrying about this/these thing(s)? 
+INTERVIEWER: Code yes if difficult to stop worrying about at least one of these things.)
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad018,NA,NA
+dcgad019,overanxiousgad,,radio,Do you think you worried too much or more than you should?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad018,NA,NA
+dcgad020,overanxiousgad,,radio,Did your parents or teachers think you worried too much?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad018,NA,NA
+dcgad021,overanxiousgad,,radio,Are you always like this?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad018,NA,NA
+dcgad022,overanxiousgad,,radio,"When these worries were the worst, how often did you have them?","1, Less than half the days | 2, About half the days | 3, Most days | 4, Every day | 9, Don't know",,,NA,NA,NA,[dcgad021] = '1',,LH,NA,,NA,NA
+cgad2,overanxiousgad,,descriptive,"
+SYMPTOMS
+
+
+I just asked you about different worries that you have.  Now I will ask you if you get any physical feelings in your body when you worry.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cgad3,overanxiousgad,,descriptive,"When you were worrying about (list things mentioned), did you:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad023,overanxiousgad,,radio,"Get headaches or stomachaches, lump in your throat or other physical problems even when you were not sick?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad024,overanxiousgad,,radio,Feel like you had butterflies in your stomach a lot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad025,overanxiousgad,,radio,Have problems relaxing or feel very tense?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad026,overanxiousgad,,radio,"Feel very restless or jumpy, like it was hard to sit still?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad027,overanxiousgad,,radio,Get tired very easily?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad028,overanxiousgad,,radio,"Have trouble keeping your mind on things? 
+ (Probe: Were you so nervous you couldn't concentrate?)
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad029,overanxiousgad,,radio,Find that your mind sometimes went blank?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad030,overanxiousgad,,radio,"Feel more grouchy, irritable, or bothered even by little things?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad031,overanxiousgad,,radio,Have tight muscles or feel achy?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad032,overanxiousgad,,radio,Have trouble sleeping?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad033,overanxiousgad,,radio,Feel tired when you woke up in the morning?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcgad023,NA,NA
+dcgad034,overanxiousgad,,radio,"If yes to symptoms, When these problems were the worst, how often did you have them?","1, Less than half the days | 2, About half the days | 3, Most days | 4, Every day | 9, Don't know",,,NA,NA,NA,[dcgad023] = '1' or [dcgad024] = '1' or [dcgad025] = '1' or [dcgad026] = '1' or [dcgad027] = '1' or [dcgad028] = '1' or [dcgad029] = '1' or [dcgad030] = '1' or [dcgad031] = '1' or [dcgad032] = '1' or [dcgad033] = '1',,LH,NA,,NA,NA
+cgad4,overanxiousgad,,descriptive,"
+ASSOCIATED CONDITIONS (EPISODE)
+
+
+
+ALCOHOL AND DRUGS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad035,overanxiousgad,,radio,Did you have these worries only when you were using alcohol or drugs?,"0, Neither | 1, Alcohol | 2, Drugs | 3, Both | 9, Don't know",,,NA,NA,NA,,,LH,NA,,NA,NA
+cgad4a,overanxiousgad,,descriptive,"
+MEDICAL
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad036,overanxiousgad,,radio,Did you have these worries only when you had a serious physical problem or illness?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcgad037,overanxiousgad,,notes,Specify (Problem/Illness),,,,NA,NA,NA,[dcgad036] = '1',,LH,NA,,NA,NA
+dcgad038,overanxiousgad,,radio,Did you have these worries only when you were using a specific kind of medicine that your doctor told you to take?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcgad039,overanxiousgad,,text,Medication 1,,MEDICATION,,NA,NA,NA,[dcgad038] = '1',,,NA,,NA,NA
+dcgad040,overanxiousgad,,text,Medication 2,,MEDICATION,,NA,NA,NA,[dcgad038] = '1',,,NA,,NA,NA
+dcgad041,overanxiousgad,,text,Medication 3,,MEDICATION,,NA,NA,NA,[dcgad038] = '1',,,NA,,NA,NA
+cgad5,overanxiousgad,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+
+
+INTERVIEWER: Remind child how to use thermometer/scale, if necessary, and have them rate each question below.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cgad6,overanxiousgad,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cgad7,overanxiousgad,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad042,overanxiousgad,,dropdown,How much have the worries that you have told me about upset or bother you? Please rate on scale.,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cgad8,overanxiousgad,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad043,overanxiousgad,,dropdown,"How much have the worries you have told me about caused problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcgad044,overanxiousgad,,radio,Did you stay home from school because of your worry?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcgad045,overanxiousgad,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcgad044] = '1',,,NA,,NA,NA
+cgad9,overanxiousgad,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cgad10,overanxiousgad,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cgad11,overanxiousgad,,descriptive,How old were you the first time you had these worries?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad046,overanxiousgad,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcgad047,overanxiousgad,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+cgad12,overanxiousgad,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad048,overanxiousgad,,radio,Do you have these worries now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcgad049,overanxiousgad,,dropdown,How old were you the last time you had these worries?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcgad048] = '0',,,NA,,NA,NA
+cgad13,overanxiousgad,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad050,overanxiousgad,,radio,"Since you were (age of onset), was there ever a time when you were not worried about these or other things?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cgad14,overanxiousgad,,descriptive,What was the longest period of time that you did not worry?,,,,NA,NA,NA,[dcgad050] = '1',,,NA,,NA,NA
+dcgad051,overanxiousgad,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcgad050] = '1',,RH,NA,,NA,NA
+dcgad052,overanxiousgad,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcgad050] = '1',,RH,NA,,NA,NA
+dcgad053,overanxiousgad,,text,N of Years,,YEARS,number,NA,NA,NA,[dcgad050] = '1',,RH,NA,,NA,NA
+cgad15,overanxiousgad,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcgad054,overanxiousgad,,radio,"Did anyone, like a teacher or relative, suggest that you get help for  (list symptoms)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcgad055,overanxiousgad,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, minister/priest or other professional to get help for (list symptoms)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cgad17,overanxiousgad,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+cgad16,overanxiousgad,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad056,overanxiousgad,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad057,overanxiousgad,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad058,overanxiousgad,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad059,overanxiousgad,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad060,overanxiousgad,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad061,overanxiousgad,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+cgad17a,overanxiousgad,,descriptive,"
+
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad062,overanxiousgad,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad063,overanxiousgad,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad064,overanxiousgad,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad065,overanxiousgad,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad066,overanxiousgad,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcgad055] = '1',,RH,NA,,NA,NA
+dcgad067,overanxiousgad,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcgad066] = '0',,,NA,,NA,NA
+dcgad068,overanxiousgad,,notes,"What did the professional(s) (doctors) say that you had 
+(diagnoses given)? List:",,,,NA,NA,NA,[dcgad055] = '1',,LH,NA,,NA,NA
+cgad18,overanxiousgad,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcgad055] = '1',,,NA,,NA,NA
+dcgad069,overanxiousgad,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcgad055] = '1',,RH,NA,dcgad069,NA,NA
+dcgad070,overanxiousgad,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcgad055] = '1',,RH,NA,dcgad069,NA,NA
+dcgad071,overanxiousgad,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcgad055] = '1',,RH,NA,dcgad069,NA,NA
+dcgad072,overanxiousgad,,notes,Specify (Other),,,,NA,NA,NA,[dcgad071] = '1',,LH,NA,,NA,NA
+dcgad073,overanxiousgad,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcgad055] = '1',,RH,NA,,NA,NA
+cgad19,overanxiousgad,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+dcgad074,overanxiousgad,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+dcgad075,overanxiousgad,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+dcgad076,overanxiousgad,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+dcgad077,overanxiousgad,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+dcgad078,overanxiousgad,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+dcgad079,overanxiousgad,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+dcgad080,overanxiousgad,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+dcgad081,overanxiousgad,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcgad073] = '1',,,NA,,NA,NA
+cgad_end,overanxiousgad,,descriptive,"
+INTERVIEWER: END Overanxious/GAD section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

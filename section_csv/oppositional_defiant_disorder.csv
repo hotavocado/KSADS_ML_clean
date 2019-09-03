@@ -1,0 +1,156 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+codd0,oppositional_defiant_disorder,,descriptive,"
+Earlier you told me that you do things that might get you into trouble, like talking back to parents/teachers or losing your temper. I am now going to ask you some questions about that. 
+
+
+SYMPTOMS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+codd1,oppositional_defiant_disorder,,descriptive,"
+Loses Temper
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd001,oppositional_defiant_disorder,,radio,"Did you often lose your temper, scream and yell at people, or break things when you got angry?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd2,oppositional_defiant_disorder,,descriptive,"
+Argues with Adults
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd002,oppositional_defiant_disorder,,radio,Did you argue with or talk back to your parents more often than your friends did?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcodd003,oppositional_defiant_disorder,,radio,Did you argue with or talk back to your teachers more often than your classmates did?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd3,oppositional_defiant_disorder,,descriptive,"
+Defies Adults or Rules
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd004,oppositional_defiant_disorder,,radio,"Did you often refuse to do what your parents or teachers asked you to do, for example chores or tasks at school?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcodd005,oppositional_defiant_disorder,,radio,Did you often get into trouble for breaking rules at home or school?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd4,oppositional_defiant_disorder,,descriptive,"
+Deliberately Annoys other People
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd006,oppositional_defiant_disorder,,radio,Did you often do things on purpose to bother or annoy other people? (code no if only with sibling),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd5,oppositional_defiant_disorder,,descriptive,"
+Blames Others for Mistakes
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd007,oppositional_defiant_disorder,,radio,Did you often blame other people for your mistakes? (code no if only with sibling),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd6,oppositional_defiant_disorder,,descriptive,"
+Irritable or Easily Annoyed
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd008,oppositional_defiant_disorder,,radio,Were you often irritable or grouchy?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcodd009,oppositional_defiant_disorder,,radio,Would other people often annoy you or make you angry?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd7,oppositional_defiant_disorder,,descriptive,"
+Angry/Resentful
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd010,oppositional_defiant_disorder,,radio,Have you often gotten angry because you thought things were unfair?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd8,oppositional_defiant_disorder,,descriptive,"
+Spiteful/Vindictive
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd011,oppositional_defiant_disorder,,radio,"Have you often tried to get back at people or get even with them by doing things like hurting them, messing up their things, or telling lies about them?  (code no if only with sibling)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd9,oppositional_defiant_disorder,,descriptive,"
+Swears or Uses Obscene Language
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd012,oppositional_defiant_disorder,,radio,Did you often get into trouble for swearing or using bad language?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd10,oppositional_defiant_disorder,,descriptive,"
+INTERVIEWER: If no to all, END Oppositional Defiant Disorder section.
+",,,,NA,NA,NA,[dcodd001] = '0' and [dcodd002] = '0' and [dcodd003] = '0' and [dcodd004] = '0' and [dcodd005] = '0' and  [dcodd006] = '0' and [dcodd007] = '0' and [dcodd008] = '0' and [dcodd009] = '0' and [dcodd010] = '0' and [dcodd011] = '0' and [dcodd012] = '0',,,NA,,NA,NA
+codd11,oppositional_defiant_disorder,,descriptive,"
+Did you do these behaviors:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd013,oppositional_defiant_disorder,,radio,With your parents?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,dcodd013,NA,NA
+dcodd014,oppositional_defiant_disorder,,radio,With your teachers?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,dcodd013,NA,NA
+dcodd015,oppositional_defiant_disorder,,radio,With other adults?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,dcodd013,NA,NA
+dcodd016,oppositional_defiant_disorder,,radio,"How often did you (behaviors)?  Was it: nearly every day, a few days a week, about once a week, or less than once a week?","1, Nearly every day | 2, A few days a week | 3, About once a week | 4, Less than once a week | 9, Unknown",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcodd017,oppositional_defiant_disorder,,radio,Did you do these behaviors for at least six months or more?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd12,oppositional_defiant_disorder,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at the thermometer/scale. Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+codd13,oppositional_defiant_disorder,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+codd14,oppositional_defiant_disorder,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd018,oppositional_defiant_disorder,,dropdown,How much did having these behaviors upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+codd15,oppositional_defiant_disorder,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd019,oppositional_defiant_disorder,,dropdown,"Family: How much did these behaviors change your relationships with your family? 
+(Probe: Did your family say something about this to you?  Did family members seem upset, angry, or annoyed with you because of your behavior?) 
+","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcodd020,oppositional_defiant_disorder,,dropdown,"Social: How much did these behaviors change your relationships with your friends? 
+(Probe: Did you find yourself spending much less time than usual with your friends?  Did your friends say something about your behavior) 
+","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcodd021,oppositional_defiant_disorder,,dropdown,"School: How much did these behaviors change your relationships with your teachers or classmates?  -change how well you did at school, on tests, homework, or grades?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcodd022,oppositional_defiant_disorder,,radio,Did you stay home or were you sent home from school because of your behavior?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcodd023,oppositional_defiant_disorder,,text,How many days of school did you miss because of your difficulties with attention or overactivity? (lifetime),,DAYS,number,NA,NA,NA,[dcodd022] = '1',,,NA,,NA,NA
+codd16,oppositional_defiant_disorder,,descriptive,"
+GLOBAL IMPAIRMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd024,oppositional_defiant_disorder,,dropdown,"
+INTERVIEWER: What number describes how impaired the participant was during the episode?
+","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",GLOBAL IMPAIRMENT,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+codd17,oppositional_defiant_disorder,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+codd18,oppositional_defiant_disorder,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+codd19,oppositional_defiant_disorder,,descriptive,How old were you the first time you did these (list behaviors)?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd025,oppositional_defiant_disorder,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcodd026,oppositional_defiant_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+codd20,oppositional_defiant_disorder,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd027,oppositional_defiant_disorder,,radio,Do you still (list behaviors)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcodd028,oppositional_defiant_disorder,,dropdown,How old were you the last time you did this behavior?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcodd027] = '0',,,NA,,NA,NA
+codd21,oppositional_defiant_disorder,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd029,oppositional_defiant_disorder,,radio,"Since you were (age of onset), was there ever a time when you did not (insert behavior)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+codd21a,oppositional_defiant_disorder,,descriptive,What was the longest period of time that you did not do (list behavior)?,,,,NA,NA,NA,[dcodd029] = '1',,,NA,,NA,NA
+dcodd030,oppositional_defiant_disorder,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcodd029] = '1',,RH,NA,,NA,NA
+dcodd031,oppositional_defiant_disorder,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcodd029] = '1',,RH,NA,,NA,NA
+dcodd032,oppositional_defiant_disorder,,text,N of Years,,YEARS,number,NA,NA,NA,[dcodd029] = '1',,RH,NA,,NA,NA
+codd22,oppositional_defiant_disorder,,descriptive,"
+HELP-SEEKING TREATMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcodd033,oppositional_defiant_disorder,,radio,"Did anyone, like a teacher or family member, suggest that you get help for any of these behaviors?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcodd033,NA,NA
+dcodd034,oppositional_defiant_disorder,,radio,Were you placed in special classes at school because of your (list symptoms)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcodd033,NA,NA
+dcodd035,oppositional_defiant_disorder,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, minister/priest or other professional to get help for (list behaviors)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcodd033,NA,NA
+codd24,oppositional_defiant_disorder,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+codd23,oppositional_defiant_disorder,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd036,oppositional_defiant_disorder,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd037,oppositional_defiant_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd038,oppositional_defiant_disorder,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd039,oppositional_defiant_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd040,oppositional_defiant_disorder,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd041,oppositional_defiant_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+codd25,oppositional_defiant_disorder,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd042,oppositional_defiant_disorder,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd043,oppositional_defiant_disorder,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd044,oppositional_defiant_disorder,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd045,oppositional_defiant_disorder,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd046,oppositional_defiant_disorder,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcodd035] = '1',,RH,NA,,NA,NA
+dcodd047,oppositional_defiant_disorder,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcodd046] = '0',,,NA,,NA,NA
+dcodd048,oppositional_defiant_disorder,,notes,What did the professional(s) (doctors) say was the problem that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dcodd035] = '1',,LH,NA,,NA,NA
+codd26,oppositional_defiant_disorder,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcodd035] = '1',,,NA,,NA,NA
+dcodd049,oppositional_defiant_disorder,,radio,Out-patient (Seeing someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcodd035] = '1',,,NA,dcodd049,NA,NA
+dcodd050,oppositional_defiant_disorder,,radio,In-patient (Staying in a hospital or a residential program),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcodd035] = '1',,,NA,dcodd049,NA,NA
+dcodd051,oppositional_defiant_disorder,,radio,Special classes at school,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcodd035] = '1',,,NA,dcodd049,NA,NA
+dcodd052,oppositional_defiant_disorder,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcodd035] = '1',,,NA,dcodd049,NA,NA
+dcodd053,oppositional_defiant_disorder,,notes,Specify (Other),,,,NA,NA,NA,[dcodd052] = '1',,LH,NA,,NA,NA
+dcodd054,oppositional_defiant_disorder,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcodd035] = '1',,RH,NA,,NA,NA
+codd27,oppositional_defiant_disorder,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+dcodd055,oppositional_defiant_disorder,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+dcodd056,oppositional_defiant_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+dcodd057,oppositional_defiant_disorder,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+dcodd058,oppositional_defiant_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+dcodd059,oppositional_defiant_disorder,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+dcodd060,oppositional_defiant_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+dcodd061,oppositional_defiant_disorder,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+dcodd062,oppositional_defiant_disorder,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcodd054] = '1',,,NA,,NA,NA
+codd_end,oppositional_defiant_disorder,,descriptive,"
+INTERVIEWER: END Oppositional Defiant Disorder section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

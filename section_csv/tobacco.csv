@@ -1,0 +1,177 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+ctob0,tobacco,,descriptive,"
+SMOKING TOBACCO
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dctob001,tobacco,,radio,"How old were you the very first time you ever smoked, even a puff of a cigarette, cigar, or pipe?","7, N/A",,,NA,NA,NA,,,,NA,,NA,NA
+dctob002,tobacco,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+dctob003,tobacco,,radio,How old were you the very first time you ever used smokeless tobacco?,"7, N/A",,,NA,NA,NA,,,,NA,,NA,NA
+dctob004,tobacco,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+ctob1,tobacco,,descriptive,"
+CURRENT USE 
+
+In the past 12 months, which form of tobacco did you use the most:",,,,NA,NA,NA,,,,NA,,NA,NA
+dctob005,tobacco,,radio,Cigarettes?,"7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob005,NA,NA
+dctob006,tobacco,,radio,Cigars?,"7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob005,NA,NA
+dctob007,tobacco,,radio,Pipes?,"7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob005,NA,NA
+dctob008,tobacco,,radio,Chewing Tobacco?,"7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob005,NA,NA
+dctob009,tobacco,,radio,Other?,"7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob005,NA,NA
+dctob010,tobacco,,radio,"How often did you use 
+INTERVIEWER: (INSERT tobacco product).
+","1, Everyday or almost everyday | 2, 3-5 times per week | 3, 1-2 times per week | 4, 2-3 times per month | 5, Once per month | 6, Less than once a month | 7, Not at all | 9, Unknown",,,NA,NA,NA,,,LV,NA,,NA,NA
+dctob011,tobacco,,radio,About how many did you smoke or use per day on average?,"7, N/A",,,NA,NA,NA,,,,NA,,NA,NA
+dctob012,tobacco,,text,N per day,,NUMBER PER DAY,number,NA,NA,NA,,,,NA,,NA,NA
+dctob013,tobacco,,radio,How long did you smoke this much?,"7, N/A",,,NA,NA,NA,,,,NA,,NA,NA
+dctob014,tobacco,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dctob015,tobacco,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dctob016,tobacco,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+ctob2,tobacco,,descriptive,"
+PAST USE 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dctob017,tobacco,,radio,Was there ever a time when you smoked/used (insert tobacco product) at least once a week?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dctob018,tobacco,,checkbox,What is the reason that you never smoked or used tobacco regularly? (Check all that apply),"1, Never had opportunity | 2, Never interested | 3, Didn't like smell | 4, Exposure to smoke from parents or other family members | 5, Concern about health risks | 6, Religious or cultural beliefs | 7, Parents told child not to smoke | 8, Not legal | 9, Unknown | 10, Other",,,NA,NA,NA,[dctob017] = '0',,LV,NA,,NA,NA
+dctob019,tobacco,,text,Specify (Other),,,,NA,NA,NA,[dctob018(10)] = '1',,,NA,,NA,NA
+dctob020,tobacco,,text,Specify (Other),,,,NA,NA,NA,[dctob018(10)] = '1',,,NA,,NA,NA
+dctob021,tobacco,,radio,What is the most number of cigarettes you ever smoked?,"7, N/A",,,NA,NA,NA,[dctob017] = '0',,,NA,,NA,NA
+dctob022,tobacco,,text,Most N of cigarettes ever smoked,,NUMBER PER DAY,number,NA,NA,NA,[dctob017] = '0',,,NA,,NA,NA
+dctob023,tobacco,,radio,What is the most number of cigars or pipes you ever smoked,"7, N/A",,,NA,NA,NA,[dctob017] = '0',,,NA,,NA,NA
+dctob024,tobacco,,text,Most N of cigars/pipes ever smoked,,NUMBER PER DAY,number,NA,NA,NA,[dctob017] = '0',,,NA,,NA,NA
+dctob025,tobacco,,radio,How many times did you ever use chewing tobacco,"7, N/A",,,NA,NA,NA,[dctob017] = '0',,,NA,,NA,NA
+dctob026,tobacco,,text,Times ever used chewing tobacco,,NUMBER PER DAY,number,NA,NA,NA,[dctob017] = '0',,,NA,,NA,NA
+ctob3,tobacco,,descriptive,"
+INTERVIEWER: If never used tobacco weekly, END Tobacco section.
+",,,,NA,NA,NA,[dctob017] = '0',,,NA,,NA,NA
+dctob027,tobacco,,dropdown,How old were you the very first time you smoked tobacco at least once a week?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+ctob4,tobacco,,descriptive,For how long did you smoke this much?,,,,NA,NA,NA,,,,NA,,NA,NA
+dctob028,tobacco,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dctob029,tobacco,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dctob030,tobacco,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+dctob031,tobacco,,radio,Was there ever a time in your life when you smoked every day?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dctob032,tobacco,,dropdown,"If yes, How old were you the very first time you smoked tobacco everyday?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",YEARS OLD,autocomplete,NA,NA,NA,[dctob031] = '1',,,NA,,NA,NA
+ctob5,tobacco,,descriptive,"If yes, For how long did you smoke daily or almost daily?",,,,NA,NA,NA,[dctob031] = '1',,,NA,,NA,NA
+dctob033,tobacco,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dctob031] = '1',,,NA,,NA,NA
+dctob034,tobacco,,text,N of Months,,MONTHS,number,NA,NA,NA,[dctob031] = '1',,,NA,,NA,NA
+dctob035,tobacco,,text,N of Years,,YEARS,number,NA,NA,NA,[dctob031] = '1',,,NA,,NA,NA
+ctob6,tobacco,,descriptive,"
+DEPENDENCE SYMPTOMS
+
+
+The next questions are about some problems you may have had because of smoking/using tobacco.
+
+ 
+INTERVIEWER: If they report both smoking and smokeless tobacco use, record symptoms for most severe. 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dctob036,tobacco,,radio,"Was there ever a time when you often wanted to (smoke/use tobacco) so badly that you couldn't stop yourself from (having a cigarette, cigar, or pipe / using)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob036,NA,NA
+dctob037,tobacco,,radio,Did you find it difficult to think of anything else?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob036] = '1',,,NA,dctob036,NA,NA
+dctob038,tobacco,,radio,Over time did you become so used to tobacco that you were able to smoke without getting sick to your stomach or without feeling grouchy or restless?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob036,NA,NA
+dctob039,tobacco,,radio,"Did you ever have times when you purposely stopped, cut down, or went without (smoking /tobacco)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob036,NA,NA
+dctob040,tobacco,,dropdown,How old were you the first time?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dctob039] = '1',,,NA,,NA,NA
+dctob041,tobacco,,text,How many times did you try to cut down or quit?,,TIMES,number,NA,NA,NA,[dctob039] = '1',,,NA,,NA,NA
+dctob042,tobacco,,text,How many times did you try to cut down or quit and found that you could not?,,TIMES,number,NA,NA,NA,[dctob039] = '1',,,NA,,NA,NA
+dctob043,tobacco,,radio,"People who cut down or stop smoking after smoking regularly for some time may not feel well. During these times, did you ever feel really tired, or have headaches, problems going to the bathroom, upset stomach, weakness or trouble sleeping?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob043,NA,NA
+dctob044,tobacco,,radio,"During these times, did you ever have emotional problems like feeling irritable, nervous, restless, depressed or have trouble concentrating?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob043,NA,NA
+dctob045,tobacco,,radio,Did you ever have times when you (smoked/used tobacco) to keep from having problems like these?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob044] = '1',,,NA,dctob043,NA,NA
+dctob046,tobacco,,radio,Did you have times when you (smoked/used tobacco) even though you promised yourself that you wouldn't?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob043,NA,NA
+dctob047,tobacco,,radio,Were there ever times when you (smoked/used tobacco) more often or for more days in a row than you planned?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob043,NA,NA
+dctob048,tobacco,,radio,Were there times when you tried to stop or cut down on your (smoking/tobacco use) and found that you were not able to?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob043,NA,NA
+ctob7,tobacco,,descriptive,"
+For smokers only:
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dctob049,tobacco,,radio,"Did you ever have times when you chain-smoked, that is, started another cigarette as soon as you finished one?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob050,NA,NA
+dctob050,tobacco,,radio,Did you ever have a time when you gave up or cut down on important activities - like sports or hanging out with friends and family - so you could (smoke/use tobacco)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob050,NA,NA
+dctob051,tobacco,,radio,"Did tobacco ever cause you any physical problems like coughing, difficulty breathing, lung trouble, or problems with your heart or blood pressure?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob050,NA,NA
+dctob052,tobacco,,radio,Did you continue to (smoked/use tobacco) even though you had these problems?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob051] = '1',,,NA,dctob050,NA,NA
+dctob053,tobacco,,radio,"Did tobacco ever cause you any emotional problems like irritability, nervousness, restlessness, difficulty concentrating, or feeling sad?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob050,NA,NA
+dctob054,tobacco,,radio,Did you continue to (smoked/use tobacco) even though you had these emotional problems?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob053] = '1',,,NA,dctob050,NA,NA
+ctob8,tobacco,,descriptive,"
+INTERVIEWER: If NO to all, SKIP to Quitting. 
+",,,,NA,NA,NA,[dctob036] = '0' and [dctob038] = '0' and [dctob039] = '0'  and [dctob043] = '0' and [dctob044] = '0'  and [dctob046] = '0' and [dctob047] = '0' and [dctob048] = '0'  and [dctob049] = '0' and [dctob050] = '0' and [dctob051] = '0'  and [dctob053] = '0',,,NA,,NA,NA
+ctob9,tobacco,,descriptive,"
+COURSE
+
+
+ONSET
+
+",,,,NA,NA,NA,[dctob036] = '1' or [dctob038] = '1' or [dctob039] = '1'  or [dctob043] = '1' or [dctob044] = '1'  or [dctob046] = '1' or [dctob047] = '1' or [dctob048] = '1'  or [dctob049] = '1' or [dctob050] = '1'  or [dctob051] = '1'  or [dctob053] = '1',,,NA,,NA,NA
+dctob055,tobacco,,dropdown,You reported that (list some dependence symptoms from above).  How old were you the very first time you had these problems?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dctob036] = '1' or [dctob038] = '1' or [dctob039] = '1'  or [dctob043] = '1' or [dctob044] = '1'  or [dctob046] = '1' or [dctob047] = '1' or [dctob048] = '1'  or [dctob049] = '1' or [dctob050] = '1'  or [dctob051] = '1'  or [dctob053] = '1',,,NA,,NA,NA
+ctob10,tobacco,,descriptive,"
+OFFSET
+
+How old were you the last time you had these problems?",,,,NA,NA,NA,[dctob036] = '1' or [dctob038] = '1' or [dctob039] = '1'  or [dctob043] = '1' or [dctob044] = '1'  or [dctob046] = '1' or [dctob047] = '1' or [dctob048] = '1'  or [dctob049] = '1' or [dctob050] = '1'  or [dctob051] = '1'  or [dctob053] = '1',,,NA,,NA,NA
+dctob056,tobacco,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dctob036] = '1' or [dctob038] = '1' or [dctob039] = '1'  or [dctob043] = '1' or [dctob044] = '1'  or [dctob046] = '1' or [dctob047] = '1' or [dctob048] = '1'  or [dctob049] = '1' or [dctob050] = '1'  or [dctob051] = '1'  or [dctob053] = '1',,,NA,,NA,NA
+dctob057,tobacco,,dropdown,Month,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 97, 97 | 98, 98 | 99, 99",MONTH,autocomplete,NA,NA,NA,[dctob036] = '1' or [dctob038] = '1' or [dctob039] = '1'  or [dctob043] = '1' or [dctob044] = '1'  or [dctob046] = '1' or [dctob047] = '1' or [dctob048] = '1'  or [dctob049] = '1' or [dctob050] = '1'  or [dctob051] = '1'  or [dctob053] = '1',,RH,NA,,NA,NA
+dctob058,tobacco,,text,Year,,YEAR,number,1900,9999,NA,[dctob036] = '1' or [dctob038] = '1' or [dctob039] = '1'  or [dctob043] = '1' or [dctob044] = '1'  or [dctob046] = '1' or [dctob047] = '1' or [dctob048] = '1'  or [dctob049] = '1' or [dctob050] = '1'  or [dctob051] = '1'  or [dctob053] = '1',,RH,NA,,NA,NA
+ctob11,tobacco,,descriptive,"
+COURSE
+
+",,,,NA,NA,NA,[dctob036] = '1' or [dctob038] = '1' or [dctob039] = '1'  or [dctob043] = '1' or [dctob044] = '1'  or [dctob046] = '1' or [dctob047] = '1' or [dctob048] = '1'  or [dctob049] = '1' or [dctob050] = '1'  or [dctob051] = '1'  or [dctob053] = '1',,,NA,,NA,NA
+dctob059,tobacco,,radio,Did you ever have three (or more) (list symptoms) problems all in the same year?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob036] = '1' or [dctob038] = '1' or [dctob039] = '1'  or [dctob043] = '1' or [dctob044] = '1'  or [dctob046] = '1' or [dctob047] = '1' or [dctob048] = '1'  or [dctob049] = '1' or [dctob050] = '1'  or [dctob051] = '1'  or [dctob053] = '1',,RH,NA,,NA,NA
+dctob060,tobacco,,dropdown,How old were you the first time you had three (or more) of these problems in the same year?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dctob059] = '1',,,NA,,NA,NA
+ctob12,tobacco,,descriptive,"
+QUITTING
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dctob061,tobacco,,text,How many different times did you ever try really hard to quit smoking?,,TIMES,number,NA,NA,NA,,,,NA,,NA,NA
+dctob062,tobacco,,text,How many of these times have you gone without smoking for 3 months or longer?,,TIMES,number,NA,NA,NA,,,,NA,,NA,NA
+ctob13,tobacco,,descriptive,What was the longest period of time you have ever gone without smoking?,,,,NA,NA,NA,,,,NA,,NA,NA
+dctob063,tobacco,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dctob064,tobacco,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dctob065,tobacco,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+ctob13a,tobacco,,descriptive,"
+DISTRESS
+
+Please look at the thermometer/scale. 
+
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ctob14,tobacco,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ctob15,tobacco,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dctob066,tobacco,,dropdown,How much did smoking upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+ctob16,tobacco,,descriptive,"
+HELP-SEEKING TREATMENT (Lifetime)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dctob067,tobacco,,radio,Did you or your parents ever try to find help from a doctor or other professional for (list symptoms)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob067,NA,NA
+dctob068,tobacco,,radio,"Did anyone, like a teacher or family member, suggest that you get help for (smoking/tobacco use)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob067,NA,NA
+dctob069,tobacco,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, minister/priest or other professional to get help for (smoking/tobacco use)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dctob067,NA,NA
+ctob18,tobacco,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+ctob17,tobacco,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob070,tobacco,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob071,tobacco,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob072,tobacco,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob073,tobacco,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob074,tobacco,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob075,tobacco,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+ctob19,tobacco,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob076,tobacco,,radio,N/A,"7, N/A",,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob077,tobacco,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob078,tobacco,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob079,tobacco,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob080,tobacco,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob069] = '1',,RH,NA,,NA,NA
+dctob081,tobacco,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dctob080] = '0',,,NA,,NA,NA
+ctob20,tobacco,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dctob069] = '1',,,NA,,NA,NA
+dctob082,tobacco,,radio,Behavioral Therapy,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob069] = '1',,,NA,dctob028,NA,NA
+dctob083,tobacco,,radio,Group Therapy,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob069] = '1',,,NA,dctob028,NA,NA
+dctob084,tobacco,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob069] = '1',,,NA,dctob028,NA,NA
+dctob085,tobacco,,notes,Specify (Other),,,,NA,NA,NA,[dctob084] = '1',,LH,NA,,NA,NA
+dctob086,tobacco,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dctob069] = '1',,RH,NA,,NA,NA
+ctob21,tobacco,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+dctob087,tobacco,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+dctob088,tobacco,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+dctob089,tobacco,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+dctob090,tobacco,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+dctob091,tobacco,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+dctob092,tobacco,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+dctob093,tobacco,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+dctob094,tobacco,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dctob086] = '1',,,NA,,NA,NA
+ctob_end,tobacco,,descriptive,"
+INTERVIEWER: END Tobacco section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

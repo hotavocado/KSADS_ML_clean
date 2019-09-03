@@ -1,0 +1,177 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+csui0,suicideselfharm,,descriptive,"
+
+SUICIDE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsui001,suicideselfharm,,radio,Have you ever thought a lot about death or dying?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsui001,NA,NA
+dcsui002,suicideselfharm,,radio,Have you ever thought about killing yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsui001,NA,NA
+csui1,suicideselfharm,,descriptive,"
+INTERVIEWER: If no, SKIP to Self-Harm.
+
+",,,,NA,NA,NA,[dcsui002] = '0',,,NA,,NA,NA
+dcsui003,suicideselfharm,,notes,"Please tell me about this (context, situation, triggers, etc):",,,,NA,NA,NA,[dcsui002] = '1',,LH,NA,,NA,NA
+dcsui004,suicideselfharm,,dropdown,How old were you the first time (you thought about killing yourself)?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsui002] = '1',,,NA,,NA,NA
+dcsui005,suicideselfharm,,dropdown,How old were you the last time?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsui002] = '1',,,NA,,NA,NA
+csui2,suicideselfharm,,descriptive,"
+INTERVIEWER: If current, report to clinician.
+
+",,,,NA,NA,NA,[dcsui002] = '1',,,NA,,NA,NA
+dcsui006,suicideselfharm,,radio,Did you ever plan exactly how you would kill yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui002] = '1',,RH,NA,,NA,NA
+dcsui007,suicideselfharm,,notes,What did you plan?,,,,NA,NA,NA,[dcsui006] = '1',,LH,NA,,NA,NA
+dcsui008,suicideselfharm,,radio,Have you ever tried to kill yourself or done anything that could have killed you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui002] = '1',,RH,NA,,NA,NA
+csui3,suicideselfharm,,descriptive,"
+INTERVIEWER: If no suicide attempts, SKIP to Self-Harm.
+",,,,NA,NA,NA,[dcsui008] = '0',,,NA,,NA,NA
+dcsui009,suicideselfharm,,text,How many times have you tried?,,TIMES,number,NA,NA,NA,[dcsui008] = '1',,,NA,,NA,NA
+csui4,suicideselfharm,,descriptive,"Now I am going to ask you some things about that time/each of these times: 
+
+INTERVIEWER: Complete chart.
+",,,,NA,NA,NA,[dcsui009] > 0,,,NA,,NA,NA
+csui5,suicideselfharm,,descriptive,"
+ATTEMPT 1
+",,,,NA,NA,NA,[dcsui009] > 0,,,NA,,NA,NA
+dcsui010,suicideselfharm,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsui009] > 0,,,NA,,NA,NA
+dcsui011,suicideselfharm,,radio,Method,"1, Hanging, gunshot, jumping, stabbing | 2, Cutting wrists | 3, Overdose with pills | 4, Other | 9, Unknown",,,NA,NA,NA,[dcsui009] > 0,,LH,NA,,NA,NA
+dcsui012,suicideselfharm,,notes,Describe (Other),,,,NA,NA,NA,[dcsui011] = '4',,LH,NA,,NA,NA
+dcsui013,suicideselfharm,,radio,Required medical assessment?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 0,,RH,NA,,NA,NA
+dcsui014,suicideselfharm,,radio,Required medical admission?,"0, No | 1, Yes, Emergency Room | 2, Yes, Inpatient, Medical Ward | 9, Unknown",,,NA,NA,NA,[dcsui009] > 0,,LH,NA,,NA,NA
+dcsui015,suicideselfharm,,radio,Required psychiatric admission?,"0, No | 1, Yes, voluntary | 2, Yes, involuntary | 9, Unknown",,,NA,NA,NA,[dcsui009] > 0,,LH,NA,,NA,NA
+dcsui016,suicideselfharm,,radio,Did you want to die?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 0,,RH,NA,,NA,NA
+dcsui017,suicideselfharm,,radio,"
+INTERVIEWER: How serious was the attempt? 
+","1, No intent or minimal intent, manipulative gesture | 2, Definite intent, but ambivalent | 3, Serious intent, expected to die | 9, No information",,,NA,NA,NA,[dcsui009] > 0,,LV,NA,,NA,NA
+dcsui018,suicideselfharm,,radio,"
+INTERVIEWER: How potentially lethal was the attempt? 
+","1, No danger (no effects, held pills in hand) | 2, Moderate (10 seconds, briefly unconscious) | 3, Severe (cut throat) | 9, No information",,,NA,NA,NA,[dcsui009] > 0,,LV,NA,,NA,NA
+dcsui019,suicideselfharm,,checkbox,"
+INTERVIEWER:  Did this attempt occur in the context of: (Check all that apply) 
+","1, Depression | 2, Mania | 3, Mixed state | 4, Psychosis | 5, Alcohol abuse | 6, Drug abuse | 7, Other",,,NA,NA,NA,[dcsui009] > 0,,LV,NA,,NA,NA
+dcsui020,suicideselfharm,,notes,Specify (Other),,,,NA,NA,NA,[dcsui019(7)] = '1',,LH,NA,,NA,NA
+csui6,suicideselfharm,,descriptive,"
+ATTEMPT 2
+",,,,NA,NA,NA,[dcsui009] > 1,,,NA,,NA,NA
+dcsui028,suicideselfharm,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsui009] > 1,,,NA,,NA,NA
+dcsui029,suicideselfharm,,radio,Method,"1, Hanging, gunshot, jumping, stabbing | 2, Cutting wrists | 3, Overdose with pills | 4, Other | 9, Unknown",,,NA,NA,NA,[dcsui009] > 1,,LH,NA,,NA,NA
+dcsui030,suicideselfharm,,notes,Describe (Other),,,,NA,NA,NA,[dcsui029] = '4',,LH,NA,,NA,NA
+dcsui031,suicideselfharm,,radio,Required medical assessment?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 1,,RH,NA,,NA,NA
+dcsui032,suicideselfharm,,radio,Required medical admission?,"0, No | 1, Yes, Emergency Room | 2, Yes, Inpatient, Medical Ward | 9, Unknown",,,NA,NA,NA,[dcsui009] > 1,,LH,NA,,NA,NA
+dcsui033,suicideselfharm,,radio,Required psychiatric admission?,"0, No | 1, Yes, voluntary | 2, Yes, involuntary | 9, Unknown",,,NA,NA,NA,[dcsui009] > 1,,LH,NA,,NA,NA
+dcsui034,suicideselfharm,,radio,Did you want to die?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 1,,RH,NA,,NA,NA
+dcsui035,suicideselfharm,,radio,"
+INTERVIEWER: How serious was the attempt? 
+","1, No intent or minimal intent, manipulative gesture | 2, Definite intent, but ambivalent | 3, Serious intent, expected to die | 9, No information",,,NA,NA,NA,[dcsui009] > 1,,LV,NA,,NA,NA
+dcsui036,suicideselfharm,,radio,"
+INTERVIEWER: How potentially lethal was the attempt? 
+","1, No danger (no effects, held pills in hand) | 2, Moderate (10 seconds, briefly unconscious) | 3, Severe (cut throat) | 9, No information",,,NA,NA,NA,[dcsui009] > 1,,LV,NA,,NA,NA
+dcsui037,suicideselfharm,,checkbox,"
+INTERVIEWER:  Did this attempt occur in the context of: (Check all that apply) 
+","1, Depression | 2, Mania | 3, Mixed state | 4, Psychosis | 5, Alcohol abuse | 6, Drug abuse | 7, Other",,,NA,NA,NA,[dcsui009] > 1,,LV,NA,,NA,NA
+dcsui038,suicideselfharm,,notes,Specify (Other),,,,NA,NA,NA,[dcsui037(7)] = '1',,LH,NA,,NA,NA
+csui7,suicideselfharm,,descriptive,"
+ATTEMPT 3
+",,,,NA,NA,NA,[dcsui009] > 2,,,NA,,NA,NA
+dcsui046,suicideselfharm,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsui009] > 2,,,NA,,NA,NA
+dcsui047,suicideselfharm,,radio,Method,"1, Hanging, gunshot, jumping, stabbing | 2, Cutting wrists | 3, Overdose with pills | 4, Other | 9, Unknown",,,NA,NA,NA,[dcsui009] > 2,,LH,NA,,NA,NA
+dcsui048,suicideselfharm,,notes,Describe (Other),,,,NA,NA,NA,[dcsui047] = '4',,LH,NA,,NA,NA
+dcsui049,suicideselfharm,,radio,Required medical assessment?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 2,,RH,NA,,NA,NA
+dcsui050,suicideselfharm,,radio,Required medical admission?,"0, No | 1, Yes, Emergency Room | 2, Yes, Inpatient, Medical Ward | 9, Unknown",,,NA,NA,NA,[dcsui009] > 2,,LH,NA,,NA,NA
+dcsui051,suicideselfharm,,radio,Required psychiatric admission?,"0, No | 1, Yes, voluntary | 2, Yes, involuntary | 9, Unknown",,,NA,NA,NA,[dcsui009] > 2,,LH,NA,,NA,NA
+dcsui052,suicideselfharm,,radio,Did you want to die?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 2,,RH,NA,,NA,NA
+dcsui053,suicideselfharm,,radio,"
+INTERVIEWER: How serious was the attempt? 
+","1, No intent or minimal intent, manipulative gesture | 2, Definite intent, but ambivalent | 3, Serious intent, expected to die | 9, No information",,,NA,NA,NA,[dcsui009] > 2,,LV,NA,,NA,NA
+dcsui054,suicideselfharm,,radio,"
+INTERVIEWER: How potentially lethal was the attempt? 
+","1, No danger (no effects, held pills in hand) | 2, Moderate (10 seconds, briefly unconscious) | 3, Severe (cut throat) | 9, No information",,,NA,NA,NA,[dcsui009] > 2,,LV,NA,,NA,NA
+dcsui055,suicideselfharm,,checkbox,"
+INTERVIEWER:  Did this attempt occur in the context of: (Check all that apply) 
+","1, Depression | 2, Mania | 3, Mixed state | 4, Psychosis | 5, Alcohol abuse | 6, Drug abuse | 7, Other",,,NA,NA,NA,[dcsui009] > 2,,LV,NA,,NA,NA
+dcsui056,suicideselfharm,,notes,Specify (Other),,,,NA,NA,NA,[dcsui055(7)] = '1',,LH,NA,,NA,NA
+csui8,suicideselfharm,,descriptive,"
+ATTEMPT 4
+",,,,NA,NA,NA,[dcsui009] > 3,,,NA,,NA,NA
+dcsui064,suicideselfharm,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsui009] > 3,,,NA,,NA,NA
+dcsui065,suicideselfharm,,radio,Method,"1, Hanging, gunshot, jumping, stabbing | 2, Cutting wrists | 3, Overdose with pills | 4, Other | 9, Unknown",,,NA,NA,NA,[dcsui009] > 3,,LH,NA,,NA,NA
+dcsui066,suicideselfharm,,notes,Describe (Other),,,,NA,NA,NA,[dcsui065] = '4',,LH,NA,,NA,NA
+dcsui067,suicideselfharm,,radio,Required medical assessment?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 3,,RH,NA,,NA,NA
+dcsui068,suicideselfharm,,radio,Required medical admission?,"0, No | 1, Yes, Emergency Room | 2, Yes, Inpatient, Medical Ward | 9, Unknown",,,NA,NA,NA,[dcsui009] > 3,,LH,NA,,NA,NA
+dcsui069,suicideselfharm,,radio,Required psychiatric admission?,"0, No | 1, Yes, voluntary | 2, Yes, involuntary | 9, Unknown",,,NA,NA,NA,[dcsui009] > 3,,LH,NA,,NA,NA
+dcsui070,suicideselfharm,,radio,Did you want to die?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 3,,RH,NA,,NA,NA
+dcsui071,suicideselfharm,,radio,"
+INTERVIEWER: How serious was the attempt? 
+","1, No intent or minimal intent, manipulative gesture | 2, Definite intent, but ambivalent | 3, Serious intent, expected to die | 9, No information",,,NA,NA,NA,[dcsui009] > 3,,LV,NA,,NA,NA
+dcsui072,suicideselfharm,,radio,"
+INTERVIEWER: How potentially lethal was the attempt? 
+","1, No danger (no effects, held pills in hand) | 2, Moderate (10 seconds, briefly unconscious) | 3, Severe (cut throat) | 9, No information",,,NA,NA,NA,[dcsui009] > 3,,LV,NA,,NA,NA
+dcsui073,suicideselfharm,,checkbox,"
+INTERVIEWER:  Did this attempt occur in the context of: (Check all that apply) 
+","1, Depression | 2, Mania | 3, Mixed state | 4, Psychosis | 5, Alcohol abuse | 6, Drug abuse | 7, Other",,,NA,NA,NA,[dcsui009] > 3,,LV,NA,,NA,NA
+dcsui074,suicideselfharm,,notes,Specify (Other),,,,NA,NA,NA,[dcsui073(7)] = '1',,LH,NA,,NA,NA
+csui9,suicideselfharm,,descriptive,"
+ATTEMPT 5
+",,,,NA,NA,NA,[dcsui009] > 4,,,NA,,NA,NA
+dcsui082,suicideselfharm,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsui009] > 4,,,NA,,NA,NA
+dcsui083,suicideselfharm,,radio,Method,"1, Hanging, gunshot, jumping, stabbing | 2, Cutting wrists | 3, Overdose with pills | 4, Other | 9, Unknown",,,NA,NA,NA,[dcsui009] > 4,,LH,NA,,NA,NA
+dcsui084,suicideselfharm,,notes,Describe (Other),,,,NA,NA,NA,[dcsui083] = '4',,LH,NA,,NA,NA
+dcsui085,suicideselfharm,,radio,Required medical assessment?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 4,,RH,NA,,NA,NA
+dcsui086,suicideselfharm,,radio,Required medical admission?,"0, No | 1, Yes, Emergency Room | 2, Yes, Inpatient, Medical Ward | 9, Unknown",,,NA,NA,NA,[dcsui009] > 4,,LH,NA,,NA,NA
+dcsui087,suicideselfharm,,radio,Required psychiatric admission?,"0, No | 1, Yes, voluntary | 2, Yes, involuntary | 9, Unknown",,,NA,NA,NA,[dcsui009] > 4,,LH,NA,,NA,NA
+dcsui088,suicideselfharm,,radio,Did you want to die?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 4,,RH,NA,,NA,NA
+dcsui089,suicideselfharm,,radio,"
+INTERVIEWER: How serious was the attempt? 
+","1, No intent or minimal intent, manipulative gesture | 2, Definite intent, but ambivalent | 3, Serious intent, expected to die | 9, No information",,,NA,NA,NA,[dcsui009] > 4,,LV,NA,,NA,NA
+dcsui090,suicideselfharm,,radio,"
+INTERVIEWER: How potentially lethal was the attempt? 
+","1, No danger (no effects, held pills in hand) | 2, Moderate (10 seconds, briefly unconscious) | 3, Severe (cut throat) | 9, No information",,,NA,NA,NA,[dcsui009] > 4,,LV,NA,,NA,NA
+dcsui091,suicideselfharm,,checkbox,"
+INTERVIEWER:  Did this attempt occur in the context of: (Check all that apply) 
+","1, Depression | 2, Mania | 3, Mixed state | 4, Psychosis | 5, Alcohol abuse | 6, Drug abuse | 7, Other",,,NA,NA,NA,[dcsui009] > 4,,LV,NA,,NA,NA
+dcsui092,suicideselfharm,,notes,Specify (Other),,,,NA,NA,NA,[dcsui091(7)] = '1',,LH,NA,,NA,NA
+csui10,suicideselfharm,,descriptive,"
+ATTEMPT 6
+",,,,NA,NA,NA,[dcsui009] > 5,,,NA,,NA,NA
+dcsui100,suicideselfharm,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsui009] > 5,,,NA,,NA,NA
+dcsui101,suicideselfharm,,radio,Method,"1, Hanging, gunshot, jumping, stabbing | 2, Cutting wrists | 3, Overdose with pills | 4, Other | 9, Unknown",,,NA,NA,NA,[dcsui009] > 5,,LH,NA,,NA,NA
+dcsui102,suicideselfharm,,notes,Describe (Other),,,,NA,NA,NA,[dcsui101] = '4',,LH,NA,,NA,NA
+dcsui103,suicideselfharm,,radio,Required medical assessment?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 5,,RH,NA,,NA,NA
+dcsui104,suicideselfharm,,radio,Required medical admission?,"0, No | 1, Yes, Emergency Room | 2, Yes, Inpatient, Medical Ward | 9, Unknown",,,NA,NA,NA,[dcsui009] > 5,,LH,NA,,NA,NA
+dcsui105,suicideselfharm,,radio,Required psychiatric admission?,"0, No | 1, Yes, voluntary | 2, Yes, involuntary | 9, Unknown",,,NA,NA,NA,[dcsui009] > 5,,LH,NA,,NA,NA
+dcsui106,suicideselfharm,,radio,Did you want to die?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsui009] > 5,,RH,NA,,NA,NA
+dcsui107,suicideselfharm,,radio,"
+INTERVIEWER: How serious was the attempt? 
+","1, No intent or minimal intent, manipulative gesture | 2, Definite intent, but ambivalent | 3, Serious intent, expected to die | 9, No information",,,NA,NA,NA,[dcsui009] > 5,,LV,NA,,NA,NA
+dcsui108,suicideselfharm,,radio,"
+INTERVIEWER: How potentially lethal was the attempt? 
+","1, No danger (no effects, held pills in hand) | 2, Moderate (10 seconds, briefly unconscious) | 3, Severe (cut throat) | 9, No information",,,NA,NA,NA,[dcsui009] > 5,,LV,NA,,NA,NA
+dcsui109,suicideselfharm,,checkbox,"
+INTERVIEWER:  Did this attempt occur in the context of: (Check all that apply) 
+","1, Depression | 2, Mania | 3, Mixed state | 4, Psychosis | 5, Alcohol abuse | 6, Drug abuse | 7, Other",,,NA,NA,NA,[dcsui009] > 5,,LV,NA,,NA,NA
+dcsui110,suicideselfharm,,notes,Specify (Other),,,,NA,NA,NA,[dcsui109(7)] = '1',,LH,NA,,NA,NA
+csui11,suicideselfharm,,descriptive,"
+
+SELF-HARM
+
+
+INTERVIEWER:  This is self-mutilation or self-damage NOT accompanied by the wish or intention to die.  Code NO if only under context of suicidal ideation or behavior.
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsui118,suicideselfharm,,radio,"Have you ever cut, burned, or scratched yourself on purpose?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+csui12,suicideselfharm,,descriptive,"
+INTERVIEWER: If no, END Suicide/Self-Harm section.
+",,,,NA,NA,NA,[dcsui118] = '0',,,NA,,NA,NA
+dcsui119,suicideselfharm,,notes,Describe,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcsui120,suicideselfharm,,notes,Why did you do that? Describe:,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcsui121,suicideselfharm,,checkbox,Was there something that happened in your life that made you want to do this? (Check all that apply),"0, No | 1, Loss of loved one | 2, Relationship break-up | 3, Failure at school/job | 4, Learning of serious illness | 5, Other",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcsui122,suicideselfharm,,notes,Describe (Other),,,,NA,NA,NA,[dcsui121(5)] = '1',,LH,NA,,NA,NA
+csui13,suicideselfharm,,descriptive,Did you (cut/burn/scratch) yourself:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcsui128,suicideselfharm,,radio,Only when you were using alcohol?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsui128,NA,NA
+dcsui129,suicideselfharm,,radio,Only when you were using drugs?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsui128,NA,NA
+dcsui130,suicideselfharm,,radio,"
+If participant is female and reached menses:  
+Only around the time of your period?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcsui131,suicideselfharm,,text,How many times would you say you've harmed yourself in this way (without the intention to kill yourself)?,,NUMBER OF TIMES,,NA,NA,NA,,,,NA,,NA,NA
+dcsui132,suicideselfharm,,dropdown,How old were you the first time (you tried)?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+dcsui133,suicideselfharm,,dropdown,How old were you the last time?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+csui_end,suicideselfharm,,descriptive,"
+INTERVIEWER: END Suicide section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

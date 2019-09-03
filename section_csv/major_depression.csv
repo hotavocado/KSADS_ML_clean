@@ -1,0 +1,382 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cmdd0,major_depression,,descriptive,"
+Earlier, you told me there was a time you felt (insert participant's endorsed symptoms in Screener).  I'd now like to ask you more about that.
+
+
+CURRENT RECENT EPISODE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd001,major_depression,,radio,Do you feel this way now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcmdd002,major_depression,,dropdown,How old were you the last time you felt this way?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcmdd001]= '0',,RH,NA,,NA,NA
+cmdd1,major_depression,,descriptive,How long did you feel this way?,,,,NA,NA,NA,[dcmdd001]= '0',,,NA,,NA,NA
+dcmdd003,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,[dcmdd001]= '0',,,NA,,NA,NA
+dcmdd004,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcmdd001]= '0',,,NA,,NA,NA
+dcmdd005,major_depression,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcmdd001]= '0',,,NA,,NA,NA
+dcmdd006,major_depression,,dropdown,How old were you when this ended?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcmdd001]= '0',,RH,NA,,NA,NA
+cmdd2,major_depression,,descriptive,"If now, how long have you felt this way?",,,,NA,NA,NA,[dcmdd001]= '1',,,NA,,NA,NA
+dcmdd007,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,[dcmdd001]= '1',,,NA,,NA,NA
+dcmdd008,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcmdd001]= '1',,,NA,,NA,NA
+dcmdd009,major_depression,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcmdd001]= '1',,,NA,,NA,NA
+dcmdd010,major_depression,,radio,Was there ever a time you felt worse than this -- like for a really long time          or a very severe time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcmdd011,major_depression,,dropdown,How old were you when you felt this way?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcmdd010]= '1',,RH,NA,,NA,NA
+cmdd3,major_depression,,descriptive,How long did you feel this way?,,,,NA,NA,NA,[dcmdd010]= '1',,,NA,,NA,NA
+dcmdd012,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,[dcmdd010]= '1',,,NA,,NA,NA
+dcmdd013,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcmdd010]= '1',,,NA,,NA,NA
+dcmdd014,major_depression,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcmdd010]= '1',,,NA,,NA,NA
+dcmdd015,major_depression,,dropdown,How old were you when this ended?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcmdd010]= '1',,RH,NA,,NA,NA
+cmdd4,major_depression,,descriptive,"
+INTERVIEWER: Code WORST episode.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd5,major_depression,,descriptive,"
+SYMPTOMS
+
+
+DEPRESSED MOOD
+
+Now I would like to talk more about how you felt then.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd6,major_depression,,descriptive,"During this time, did you feel:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd016,major_depression,,radio,Sad or depressed?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd016,NA,NA
+dcmdd017,major_depression,,radio,Was this feeling different from the feeling you get when something really sad happens or when you see a really sad movie?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd016]= '1',,,NA,dcmdd016,NA,NA
+dcmdd018,major_depression,,radio,Hopeless?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd016,NA,NA
+dcmdd019,major_depression,,radio,Like there was nothing that you could do to stop the sadness (helplessness)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd016,NA,NA
+dcmdd020,major_depression,,radio,Like things would never get better?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd016,NA,NA
+cmdd7,major_depression,,descriptive,"
+IRRITABLE MOOD/ANGER
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd8,major_depression,,descriptive,"During this time, did you:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd021,major_depression,,radio,Feel grouchy or irritable?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd021,NA,NA
+dcmdd022,major_depression,,radio,Feel angry or like you were mad at almost everyone?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd021,NA,NA
+dcmdd023,major_depression,,radio,Get annoyed more easily with other people for little things?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd021,NA,NA
+cmdd9,major_depression,,descriptive,"
+ANHEDONIA/LOSS OF INTEREST
+
+INTERVIEWER: Loss of interest here does not refer to the inability to engage in activities.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd10,major_depression,,descriptive,"During this time, did you feel:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd024,major_depression,,radio,Like you just weren't interested in anything?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd024,NA,NA
+dcmdd025,major_depression,,radio,Like you couldn't have as much fun as usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd024,NA,NA
+dcmdd026,major_depression,,radio,Bored with things that used to be interesting to you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd024,NA,NA
+cmdd11,major_depression,,descriptive,"
+MOOD REACTIVITY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd027,major_depression,,radio,"If something good happened, or if someone tried to cheer you up, how much better would you feel, at least for a little while?","1, Not at all better | 2, A little better | 3, Somewhat better | 4, A lot better",,,NA,NA,NA,,,LV,NA,,NA,NA
+cmdd12,major_depression,,descriptive,"
+DIURNAL VARIATION
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd028,major_depression,,radio,"During this time, did you usually feel worse at (a) certain time(s) of the day or night?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cmdd13,major_depression,,descriptive,What time of day:,,,,NA,NA,NA,[dcmdd028]= '1',,,NA,,NA,NA
+dcmdd029,major_depression,,radio,Morning?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
+dcmdd030,major_depression,,radio,Afternoon?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
+dcmdd031,major_depression,,radio,Evening?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
+dcmdd032,major_depression,,radio,Late night?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
+cmdd14,major_depression,,descriptive,"
+SLEEP
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd033,major_depression,,radio,"During this time, did you have problems falling asleep?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd033,NA,NA
+dcmdd034,major_depression,,radio,Did you have problems with waking up in the middle of the night?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd033,NA,NA
+dcmdd035,major_depression,,radio,Did you wake up before you had to in the morning?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd033,NA,NA
+dcmdd036,major_depression,,text,How many hours earlier?,,HOURS,number,NA,NA,NA,[dcmdd035]= '1',,,NA,,NA,NA
+dcmdd037,major_depression,,radio,"
+Did you sleep much more than usual for you?
+
+INTERVIEWER: Count night and naps.
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cmdd15,major_depression,,descriptive,"
+EATING DISTURBANCES
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd038,major_depression,,radio,"During this time, did you eat less or feel less hungry than usual? (Did you lose weight)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd038,NA,NA
+dcmdd039,major_depression,,radio,Did you eat more or feel more hungry than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd038,NA,NA
+dcmdd040,major_depression,,radio,Did you gain weight?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd039]= '1',,,NA,dcmdd038,NA,NA
+dcmdd041,major_depression,,radio,"Did you crave or want to eat a lot of certain types of foods during this time? (e.g. chocolate, sweets, starchy food)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd038,NA,NA
+cmdd16,major_depression,,descriptive,"
+PSYCHOMOTOR CHANGES
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd042,major_depression,,radio,"During this time, did you have trouble sitting still?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd042,NA,NA
+dcmdd043,major_depression,,radio,Did you feel like you had to keep moving around? (Like walking back and forth?),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd042,NA,NA
+dcmdd044,major_depression,,radio,Did you move more slowly than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd042,NA,NA
+dcmdd045,major_depression,,radio,Did you think more slowly than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd042,NA,NA
+dcmdd046,major_depression,,radio,Did you speak more slowly than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd042,NA,NA
+dcmdd047,major_depression,,radio,Did anyone notice that you were (list endorsed psychomotor changes)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd042]= '1' or [dcmdd043]= '1' or [dcmdd044]= '1' or [dcmdd045]= '1' or [dcmdd046]= '1',,,NA,dcmdd042,NA,NA
+cmdd17,major_depression,,descriptive,"
+ENERGY/LEADEN PARALYSIS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd048,major_depression,,radio,Did you feel really tired or have less energy than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd048,NA,NA
+dcmdd049,major_depression,,radio,"Did doing even little things make you feel really tired, like going up stairs, getting out of a chair, or getting out of bed (for school)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd048,NA,NA
+dcmdd050,major_depression,,radio,"Did it take more time to do the things that you usually do, like getting dressed in the morning?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd048,NA,NA
+dcmdd051,major_depression,,radio,Did you have trouble getting started doing the activities that you usually do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd048,NA,NA
+dcmdd052,major_depression,,radio,"Did your arms and legs feel heavy, like you were weighed down by them?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd048,NA,NA
+cmdd18,major_depression,,descriptive,"
+COGNITION
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd053,major_depression,,radio,Was it harder to keep your mind on things--like when doing homework or trying to remember something?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd053,NA,NA
+dcmdd054,major_depression,,radio,Was it harder to think clearly?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd053,NA,NA
+dcmdd055,major_depression,,radio,Was it harder to make up your mind or make decisions?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd053,NA,NA
+dcmdd056,major_depression,,radio,Did you have problems remembering things?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd053,NA,NA
+cmdd19,major_depression,,descriptive,"
+GUILT/WORTHLESSNESS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd057,major_depression,,radio,Did you blame yourself for bad things that happened?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd057,NA,NA
+dcmdd058,major_depression,,radio,Did you feel like you didn't really matter?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd057,NA,NA
+dcmdd059,major_depression,,radio,"Did you feel bad about yourself even though there wasn't any real reason to feel like that? For example, did you start feeling that you weren't good-looking enough, that people wouldn't like you, that you weren't smart enough, or that you couldn't do anything well?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd057,NA,NA
+cmdd19a,major_depression,,descriptive,"
+INTERPERSONAL SENSITIVITY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd060,major_depression,,radio,"(Not specific to episode) In general, do you get your feelings hurt easily when other kids tease you or don't want to play with you?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd060,NA,NA
+dcmdd061,major_depression,,radio,Do you think that you are more sensitive or get your feelings hurt more easily than other kids your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd060,NA,NA
+dcmdd062,major_depression,,radio,Have other people ever told you that you were more sensitive than you should be?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd060,NA,NA
+dcmdd063,major_depression,,radio,"(Episode specific) When you were feeling (sad, grouchy, like nothing was fun) were you even more sensitive than usual?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd060,NA,NA
+cmdd20,major_depression,,descriptive,"
+MORBID THOUGHTS
+
+Sometimes kids who feel sad, down, or angry think about death or even wish they were dead.   
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd20a,major_depression,,descriptive,During this time:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd064,major_depression,,radio,Did you think about death?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd064,NA,NA
+dcmdd065,major_depression,,radio,Did you ever think about killing yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd064,NA,NA
+dcmdd066,major_depression,,radio,How often did you think about these things during this time?,"1, Most of the time | 2, Sometimes | 3, Not very often | 9, Don't know",,,NA,NA,NA,[dcmdd065]= '1',,LH,NA,,NA,NA
+dcmdd067,major_depression,,radio,Did you make a plan to kill yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd065]= '1',,,NA,dcmdd067,NA,NA
+dcmdd068,major_depression,,radio,Did you try to kill yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd065]= '1',,,NA,dcmdd067,NA,NA
+cmdd21,major_depression,,descriptive,"
+SYMPTOM FREQUENCY (EPISODE)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd069,major_depression,,radio,You just told me that when you felt (sad/ grouchy/ like nothing was fun) that you also had (list symptoms).  How often did you have these things?,"1, Most days | 2, About half of the days | 3, Less than half the days | 9, Don't know",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcmdd070,major_depression,,radio,"On the days you had these things, how much of the day did you have them?","1, All of the day | 2, Most of the day | 3, Half of the day | 4, Only a little part of the day",,,NA,NA,NA,,,LH,NA,,NA,NA
+cmdd22,major_depression,,descriptive,"
+PSYCHOSIS (EPISODE)
+
+
+
+DELUSIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd071,major_depression,,radio,"During this time, did you think that your (list symptoms) was a punishment for something you had done?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd071,NA,NA
+dcmdd072,major_depression,,radio,"Did you think that something terrible was going to happen, or that someone was trying to hurt you or was talking about you?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd071,NA,NA
+dcmdd073,major_depression,,radio,Did you think that something had gone wrong with your body?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd071,NA,NA
+dcmdd074,major_depression,,radio,"
+INTERVIEWER: Based on clinical judgment, were these 
+real delusions?(Get Examples)
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd071] = '1' or [dcmdd072] = '1' or [dcmdd073] = '1',,RH,NA,,NA,NA
+cmdd23,major_depression,,descriptive,"
+INTERVIEWER: If not real delusions, SKIP to Hallucinations. 
+",,,,NA,NA,NA,[dcmdd074]= '0',,,NA,,NA,NA
+dcmdd075a,major_depression,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcmdd074]= '1',,,NA,,NA,NA
+dcmdd075b,major_depression,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcmdd074]= '1',,,NA,,NA,NA
+dcmdd075c,major_depression,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcmdd074]= '1',,,NA,,NA,NA
+dcmdd075d,major_depression,,text,Example 4,,EXAMPLE,,NA,NA,NA,[dcmdd074]= '1',,,NA,,NA,NA
+dcmdd076,major_depression,,radio,"Did these (list endorsed delusions) start before, after or at the same time that you started feeling (sad, grouchy, like nothing was fun)?","1, Before | 2, During | 3, After | 9, Don't know",,,NA,NA,NA,[dcmdd074]= '1',,LH,NA,,NA,NA
+cmdd24,major_depression,,descriptive,"
+HALLUCINATIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd077,major_depression,,radio,"During this time, did you see or hear things that other people could not see or hear?
+PROBE: Like voices talking to you or noises, or visions? 
+","0, No | 1, Yes | 9, Unk | 7, N/A",,,NA,NA,NA,,,,NA,dcmdd077,NA,NA
+dcmdd078,major_depression,,radio,"Did you experience funny or unusual smells, tastes, or sensations in your body?","0, No | 1, Yes | 9, Unk | 7, N/A",,,NA,NA,NA,,,,NA,dcmdd077,NA,NA
+dcmdd079,major_depression,,radio,"
+INTERVIEWER:Based on clinical judgment, were these real hallucinations? Get examples. 
+","0, No | 1, Yes | 9, Unk | 7, N/A",,,NA,NA,NA,[dcmdd077] = '1' or [dcmdd078] = '1',,,NA,dcmdd077,NA,NA
+cmdd25,major_depression,,descriptive,"
+INTERVIEWER: If not really hallucinations, SKIP to Mood Congruency. 
+",,,,NA,NA,NA,[dcmdd079]= '0',,,NA,,NA,NA
+dcmdd080a,major_depression,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcmdd079]= '1',,,NA,,NA,NA
+dcmdd080b,major_depression,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcmdd079]= '1',,,NA,,NA,NA
+dcmdd080c,major_depression,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcmdd079]= '1',,,NA,,NA,NA
+dcmdd080d,major_depression,,text,Example 4,,EXAMPLE,,NA,NA,NA,[dcmdd079]= '1',,,NA,,NA,NA
+dcmdd081,major_depression,,radio,"Did these (list endorsed hallucinations) start before, after or at the same time that you started feeling (sad, grouchy, like nothing was fun)?","1, Before | 2, During | 3, After | 9, Don't know",,,NA,NA,NA,[dcmdd079]= '1',,RH,NA,,NA,NA
+dcmdd082,major_depression,,radio,"Did they stay even when you stopped feeling (sad, grouchy, like nothing was fun)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd079]= '1',,RH,NA,,NA,NA
+cmdd26,major_depression,,descriptive,For how long did you have them?,,,,NA,NA,NA,[dcmdd079]= '1',,,NA,,NA,NA
+dcmdd083,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,[dcmdd079]= '1',,,NA,,NA,NA
+dcmdd084,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcmdd079]= '1',,,NA,,NA,NA
+cmdd27,major_depression,,descriptive,"
+MOOD CONGRUENCY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd085,major_depression,,radio,"
+INTERVIEWER: If respondent had any psychotic symptoms, was the content consistent with depressive themes such as poverty, guilt, illness, personal inadequacy or catastrophe? 
+","0, No | 1, Yes | 9, Unk | 7, N/A",,,NA,NA,NA,,,RH,NA,,NA,NA
+cmdd28,major_depression,,descriptive,"
+ASSOCIATED CONDITIONS (EPISODE)
+
+INTERVIEWER: Associated condition questions apply ONLY to episode being coded. 
+
+
+
+MEDICAL
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd29,major_depression,,descriptive,"When you were feeling (sad, grouchy, like nothing was fun):",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd086,major_depression,,radio,"Did you have a serious physical problem or illness? 
+(Probe: Did the physical problem/illness happen before the sad/depressed feelings or after?)
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcmdd087,major_depression,,notes,"If yes, specify:",,,,NA,NA,NA,[dcmdd086]= '1',,LH,NA,,NA,NA
+dcmdd088,major_depression,,radio,"Were you taking any medicines that your doctor told you to take? 
+PROBE: Did you start taking the medicine before feeling sad/depressed or after? 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcmdd089,major_depression,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcmdd088]= '1',,,NA,,NA,NA
+dcmdd090,major_depression,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcmdd088]= '1',,,NA,,NA,NA
+dcmdd091,major_depression,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcmdd088]= '1',,,NA,,NA,NA
+cmdd30,major_depression,,radio,"
+INTERVIEWER: IS PARTICIPANT UNDER 12 YEARS OLD?
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cmdd31,major_depression,,descriptive,"
+INTERVIEWER: Ask to 12 years and older only. SKIP to Bereavement
+",,,,NA,NA,NA,[cmdd30]= '1',,,NA,,NA,NA
+cmdd32,major_depression,,descriptive,"
+ALCOHOL AND DRUGS
+",,,,NA,NA,NA,[cmdd30] = '0',,,NA,,NA,NA
+dcmdd092,major_depression,,checkbox,"Were you using alcohol often or drugs or both during this time?  
+
+PROBE: Did you increase how you use alcohol/drugs when you started feeling sad/depressed or were you using drugs/alcohol before you started to feel sad/depressed)? 
+","0, Neither | 1, Alcohol | 2, Drugs | 9, Don't know",,,NA,NA,NA,[cmdd30] = '0',,RH,NA,,NA,NA
+dcmdd093,major_depression,,notes,Specify (Alcohol and/or drug and quantity 1),,,,NA,NA,NA,[dcmdd092(1)] = '1' or [dcmdd092(2)] = '1',,LH,NA,,NA,NA
+dcmdd094,major_depression,,notes,Specify (Alcohol and/or drug and quantity 2),,,,NA,NA,NA,[dcmdd092(1)] = '1' or [dcmdd092(2)] = '1',,LH,NA,,NA,NA
+dcmdd095,major_depression,,notes,Specify (Alcohol and/or drug and quantity 3),,,,NA,NA,NA,[dcmdd092(1)] = '1' or [dcmdd092(2)] = '1',,LH,NA,,NA,NA
+cmdd33,major_depression,,descriptive,"
+BEREAVEMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd096,major_depression,,radio,"Did you start feeling (sad, grouchy, like nothing was fun) soon after someone close to you died?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcmdd097,major_depression,,notes,Specify (Relationship),,,,NA,NA,NA,[dcmdd096]= '1',,LH,NA,,NA,NA
+cmdd34,major_depression,,descriptive,Date of death,,,,NA,NA,NA,[dcmdd096]= '1',,,NA,,NA,NA
+dcmdd098,major_depression,,dropdown,Month,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 97, 97 | 98, 98 | 99, 99",MONTH,autocomplete,NA,NA,NA,[dcmdd096]= '1',,,NA,,NA,NA
+dcmdd099,major_depression,,text,Year,,YEAR,number,1900,9999,NA,[dcmdd096]= '1',,RH,NA,,NA,NA
+cmdd35,major_depression,,descriptive,"
+DISTRESS/IMPAIRMENT (EPISODE)
+
+DISTRESS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd35a,major_depression,,descriptive,"I want to know how much your depression and other symptoms caused problems for you. 
+
+Please look at the scale.",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd35b,major_depression,,descriptive,"
+INTERVIEWER: Remind child how to use scale, if necessary, and assess areas most pertinent to the disorder; e.g. family, school, peers. 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd36,major_depression,,descriptive,"
+Participant Card 8 (Distress/Impairment) 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd100,major_depression,,dropdown,"How much did your feeling (sad, grouchy, like nothing was fun) and (list other symptoms) upset or bother you?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cmdd37,major_depression,,descriptive,"
+IMPAIRMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd101,major_depression,,dropdown,"How much did your feeling (sad, grouchy, like nothing was fun) you told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcmdd102,major_depression,,radio,Did you stay home from school because of the way you were feeling?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcmdd103,major_depression,,text,How many days of school did you miss? (episode),,DAYS,number,NA,NA,NA,[dcmdd102]= '1',,,NA,,NA,NA
+cmdd38,major_depression,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd104,major_depression,,radio,Did you or your parents ever try to find help from a doctor or other professional for (list symptoms)?,"0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcmdd104,NA,NA
+dcmdd105,major_depression,,radio,"Did anyone, like a teacher or family member, suggest that you get help for (list symptoms)?","0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcmdd104,NA,NA
+dcmdd106,major_depression,,radio,"Did you ever go to see a doctor, nurse, counselor, social worker, psychologist, priest/minister or other professional to get help for (list symptoms)?","0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcmdd104,NA,NA
+cmdd39,major_depression,,descriptive,What kind of person did you get help from?,,,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+cmdd39a,major_depression,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd107,major_depression,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd108,major_depression,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd109,major_depression,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd110,major_depression,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd111,major_depression,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd112,major_depression,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+cmdd39b,major_depression,,descriptive,"
+
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd114,major_depression,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd113,major_depression,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd115,major_depression,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd116,major_depression,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd117,major_depression,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd106]= '1',,RH,NA,,NA,NA
+dcmdd118,major_depression,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcmdd117]= '0',,,NA,,NA,NA
+dcmdd119,major_depression,,radio,Did you get help during the first time we talked about?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd106]= '1',,RH,NA,,NA,NA
+dcmdd120,major_depression,,notes,What did the professional say that you had (diagnoses given)? List:,,,,NA,NA,NA,[dcmdd106]= '1',,LH,NA,,NA,NA
+cmdd40,major_depression,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcmdd106]= '1',,,NA,,NA,NA
+dcmdd121,major_depression,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd106]= '1',,,NA,dcmdd121,NA,NA
+dcmdd122,major_depression,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd106]= '1',,,NA,dcmdd121,NA,NA
+dcmdd123,major_depression,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd106]= '1',,,NA,dcmdd121,NA,NA
+dcmdd124,major_depression,,notes,Specify (Other),,,,NA,NA,NA,[dcmdd123]= '1',,LH,NA,,NA,NA
+dcmdd125,major_depression,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd106]= '1',,RH,NA,,NA,NA
+cmdd41,major_depression,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcmdd125]= '1',,,NA,,NA,NA
+dcmdd126,major_depression,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcmdd125]= '1',,RH,NA,,NA,NA
+dcmdd127,major_depression,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcmdd125]= '1',,,NA,,NA,NA
+dcmdd128,major_depression,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcmdd125]= '1',,RH,NA,,NA,NA
+dcmdd129,major_depression,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcmdd125]= '1',,,NA,,NA,NA
+dcmdd130,major_depression,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcmdd125]= '1',,RH,NA,,NA,NA
+dcmdd131,major_depression,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcmdd125]= '1',,,NA,,NA,NA
+dcmdd132,major_depression,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcmdd125]= '1',,RH,NA,,NA,NA
+dcmdd133,major_depression,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcmdd125]= '1',,,NA,,NA,NA
+cmdd42,major_depression,,descriptive,"
+EPISODES/COURSE (LIFETIME)
+
+INTERVIEWER: The following questions about course address episodes of depression across the lifetime. 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd134,major_depression,,radio,"
+INTERVIEWER: Is there more than one episode? 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cmdd44,major_depression,,descriptive,"
+INTERVIEWER: If No or Unknown, END Major Depression section.
+",,,,NA,NA,NA,[dcmdd134]= '0' or [dcmdd134]='9',,,NA,,NA,NA
+cmdd45,major_depression,,descriptive,"
+INTERVIEWER: Record age of onset and offset of the first episode, the worst episode, and most recent episode on the timeline.
+",,,,NA,NA,NA,[dcmdd134]= '1',,,NA,,NA,NA
+cmdd46,major_depression,,descriptive,"
+FIRST LIFETIME EPISODE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd135,major_depression,,dropdown,"How old were you the very first time in your life that you felt (sad, depressed/ grouchy, like nothing was fun)?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+cmdd47,major_depression,,descriptive,How long did it last?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd136,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd137,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd138,major_depression,,dropdown,How old were you when it ended?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+cmdd48,major_depression,,descriptive,"
+NUMBER OF EPISODES
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd139,major_depression,,text,"Including the times you just told me about, how many different times in your life have you felt (sad, grouchy, like nothing was fun)?",,NUMBER OF EPISODES,number,NA,NA,NA,,,,NA,,NA,NA
+cmdd49,major_depression,,descriptive,How long did each of these episodes typically last?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd140,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd141,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd142,major_depression,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+cmdd50,major_depression,,descriptive,"
+DURATION OF EPISODES
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd51a,major_depression,,descriptive,"How long was the longest time you felt (sad, grouchy/,like nothing was fun)?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd143,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd144,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd145,major_depression,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+cmdd51,major_depression,,descriptive,How long was the shortest time you felt this way?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd146,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd147,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd148,major_depression,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+cmdd52,major_depression,,descriptive,"How long do the (sad, depression, grouchy, like nothing was fun) feelings usually last?",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd149,major_depression,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd150,major_depression,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd151,major_depression,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcmdd152,major_depression,,radio,Have these sad feelings lasted most of the time for as long as one year?,"0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcmdd152,NA,NA
+dcmdd153,major_depression,,radio,"Would you say that you have been (sad, depressed, grouchy, like nothing was fun) more often than not during your lifetime?","0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcmdd152,NA,NA
+cmdd53,major_depression,,descriptive,"
+SEASONAL VARIATION
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd154,major_depression,,radio,"Did you feel (sad/ grouchy/ like nothing was fun) at certain times of the year, like in the winter, spring, summer, or fall?","0, No pattern | 1, Winter | 2, Spring | 3, Summer | 4, Fall | 9, Unknown",,,NA,NA,NA,,,LH,NA,,NA,NA
+cmdd54,major_depression,,descriptive,"
+EPISODE CHARACTERISTICS
+
+INTERVIEWER: You will probably want to draw a diagram of episodes to assess.  
+ 
+
+
+RETURN TO BASELINE
+
+I would now like to talk about the time in between the periods when you felt (sad, grouchy, like nothing was fun).
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd155,major_depression,,radio,"Between these times, did you return to how you usually feel?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cmdd55,major_depression,,descriptive,"
+ATYPICAL EPISODES
+
+INTERVIEWER: If episode coded was atypical in nature, i.e., the respondent had symptoms of mood reactivity, overeating, oversleeping, interpersonal sensitivity and leaden paralysis, proceed.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cmdd56,major_depression,,descriptive,"
+You mentioned earlier that you had changes in your eating, sleeping, and sensitivity during the times that we discussed.  Did you have any of the following during other times that you were depressed that we did not talk about?
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcmdd156,major_depression,,radio,Did you sleep more than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd156,NA,NA
+dcmdd157,major_depression,,radio,Were you more hungry or did you eat more?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd156,NA,NA
+dcmdd158,major_depression,,radio,"Were you able to cheer up, at least temporarily, when something happened to make you feel better?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd156,NA,NA
+dcmdd159,major_depression,,radio,Were you more sensitive than usual? (like things hurt your feelings more),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd156,NA,NA
+dcmdd160,major_depression,,radio,"Did you feel weighed down, like your arms, legs were heavy or that you couldn't move?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd156,NA,NA
+cmdd_end,major_depression,,descriptive,"
+INTERVIEWER: END Major Depression section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

@@ -1,0 +1,382 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cman0,maniahypomania,,descriptive,"
+Some young people have times when they are energetic, or cheerful, very different from how they usually feel.  At these times, they may also feel more talkative, more active, sleep less and feel more restless.
+
+
+CURRENT/MOST RECENT EPISODE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman00,maniahypomania,,descriptive,"So you said that you had a time when you've felt (more active, excited, energetic):",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman001,maniahypomania,,radio,Do you feel this way now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman002,maniahypomania,,dropdown,How old were you the last time you felt this way?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcman001]= '0',,RH,NA,,NA,NA
+cman1,maniahypomania,,descriptive,How long did you feel this way?,,,,NA,NA,NA,[dcman001]= '0',,,NA,,NA,NA
+dcman003,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,[dcman001]= '0',,,NA,,NA,NA
+dcman004,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcman001]= '0',,,NA,,NA,NA
+dcman005,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcman001]= '0',,,NA,,NA,NA
+cman2,maniahypomania,,descriptive,How old were you when this ended?,,,,NA,NA,NA,[dcman001]= '0',,,NA,,NA,NA
+dcman006,maniahypomania,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcman001]= '0',,RH,NA,,NA,NA
+dcman007,maniahypomania,,dropdown,Month,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 97, 97 | 98, 98 | 99, 99",MONTH,autocomplete,NA,NA,NA,[dcman001]= '0',,RH,NA,,NA,NA
+dcman008,maniahypomania,,text,Year,,YEAR,number,1900,9999,NA,[dcman001]= '0',,RH,NA,,NA,NA
+cman3,maniahypomania,,descriptive,"If now, how long have you felt this way?",,,,NA,NA,NA,[dcman001]= '1',,,NA,,NA,NA
+dcman009,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,[dcman001]= '1',,,NA,,NA,NA
+dcman010,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcman001]= '1',,,NA,,NA,NA
+dcman011,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcman001]= '1',,,NA,,NA,NA
+dcman012,maniahypomania,,radio,Was there a time that was more intense or lasted longer than this time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman013,maniahypomania,,dropdown,How old were you when you felt this way?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcman012]= '1',,RH,NA,,NA,NA
+cman4,maniahypomania,,descriptive,How long did you feel this way?,,,,NA,NA,NA,[dcman012]= '1',,,NA,,NA,NA
+dcman014,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,[dcman012]= '1',,,NA,,NA,NA
+dcman015,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcman012]= '1',,,NA,,NA,NA
+dcman016,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcman012]= '1',,,NA,,NA,NA
+cman5,maniahypomania,,descriptive,How old were you when this ended?,,,,NA,NA,NA,[dcman012]= '1',,,NA,,NA,NA
+dcman017,maniahypomania,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcman012]= '1',,RH,NA,,NA,NA
+dcman018,maniahypomania,,dropdown,Month,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 97, 97 | 98, 98 | 99, 99",MONTH,autocomplete,NA,NA,NA,[dcman012]= '1',,RH,NA,,NA,NA
+dcman019,maniahypomania,,text,Year,,YEAR,number,1900,9999,NA,[dcman012]= '1',,RH,NA,,NA,NA
+cman6,maniahypomania,,descriptive,"
+INTERVIEWER: Code the most intense episode.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman7,maniahypomania,,descriptive,"
+SYMPTOMS
+
+
+MOOD
+
+Now I would like to talk to you about that time.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman8,maniahypomania,,descriptive,"During this time, did you:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman020,maniahypomania,,radio,"Feel really, really happy or excited much more than usual?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman020,NA,NA
+dcman021,maniahypomania,,radio,"Was this just during holiday or fun situations, which normally make people your age excited?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman020]= '1',,,NA,dcman020,NA,NA
+dcman022,maniahypomania,,radio,"Feel grouchy, cranky, or irritable? When the smallest things would make you really mad?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman020,NA,NA
+dcman023,maniahypomania,,radio,Get easily mad or annoyed?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman020,NA,NA
+cman9,maniahypomania,,descriptive,"
+INCREASED ACTIVITY/RESTLESSNESS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman10,maniahypomania,,descriptive,During this time:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman024,maniahypomania,,radio,Did you get through your school work much more easily or faster than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman024,NA,NA
+dcman025,maniahypomania,,radio,Did you spend much more time with your friends or were you going out more than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman024,NA,NA
+dcman026,maniahypomania,,radio,Were you more involved with your family?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman024,NA,NA
+cman11,maniahypomania,,descriptive,"
+INTERVIEWER: Use discretion on whether to ask child next question.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman027,maniahypomania,,radio,"Were you interested in sex more than usual, or more sexually active?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman027,NA,NA
+dcman028,maniahypomania,,radio,Did you do more physical activities?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman027,NA,NA
+dcman029,maniahypomania,,radio,Were you really restless or did you have trouble sitting still?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman027,NA,NA
+cman12,maniahypomania,,descriptive,"
+SLEEP
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman030,maniahypomania,,text,How many hours of sleep do you usually get per night?,,HOURS,number,NA,NA,NA,,,RH,NA,,NA,NA
+dcman031,maniahypomania,,text,"During this time, how many hours, on average, do you sleep per night?",,HOURS,number,NA,NA,NA,,,RH,NA,,NA,NA
+cman13,maniahypomania,,descriptive,"
+If fewer hours than normal:
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman032,maniahypomania,,radio,Did you feel rested even though you slept less than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cman14,maniahypomania,,descriptive,"
+If no change in hours from normal:
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman033,maniahypomania,,radio,Were you able to do more activities than usual with the same amount of sleep?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cman15,maniahypomania,,descriptive,"
+TALKATIVE/PRESSURED SPEECH
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman034,maniahypomania,,radio,Did you talk more than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman034,NA,NA
+dcman035,maniahypomania,,radio,Did you feel you just couldn't stop talking?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman034,NA,NA
+dcman036,maniahypomania,,radio,Did you talk faster than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman034,NA,NA
+dcman037,maniahypomania,,radio,Did people have trouble understanding you or try to get you to talk slower?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman034,NA,NA
+cman16,maniahypomania,,descriptive,"
+RACING THOUGHTS/FLIGHT OF IDEAS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman038,maniahypomania,,radio,Did your thoughts go faster than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman038,NA,NA
+dcman039,maniahypomania,,radio,So fast it was hard to keep up with them?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman038]= '1',,,NA,dcman038,NA,NA
+dcman040,maniahypomania,,radio,Did they race through your head?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman038]= '1',,,NA,dcman038,NA,NA
+dcman041,maniahypomania,,radio,Did they make sense to you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman038]= '1',,,NA,dcman038,NA,NA
+dcman042,maniahypomania,,radio,Did they make sense to other people?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman038]= '1',,,NA,dcman038,NA,NA
+dcman043,maniahypomania,,radio,Did other people have trouble following what you were saying?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman038,NA,NA
+dcman044,maniahypomania,,radio,Did you have too many thoughts jumping through your mind?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman038,NA,NA
+cman17,maniahypomania,,descriptive,"
+DISTRACTIBILITY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman045,maniahypomania,,radio,"Did you have problems concentrating, or get distracted very easily?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman045,NA,NA
+dcman046,maniahypomania,,radio,Did you keep noticing things that you would've normally ignored?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman045,NA,NA
+dcman047,maniahypomania,,radio,Did you have trouble keeping your mind on things?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman045,NA,NA
+dcman048,maniahypomania,,radio,Did it interfere with schoolwork or reading?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman045,NA,NA
+dcman049,maniahypomania,,radio,Was this so much of a problem that other people noticed?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman045,NA,NA
+cman18,maniahypomania,,descriptive,"
+SELF-ESTEEM/GRANDIOSITY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dman050,maniahypomania,,radio,Did you feel more confident in yourself than usual?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman050,NA,NA
+dman051,maniahypomania,,radio,Did you feel like you could do anything?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman050,NA,NA
+dman052,maniahypomania,,radio,Did you feel you were a very important person?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman050,NA,NA
+dman053,maniahypomania,,radio,"Did you feel like you had abilities that made you more special, smarter, or better than other people?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman050,NA,NA
+cman19,maniahypomania,,descriptive,"
+RISK OF PAINFUL CONSEQUENCES
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman20,maniahypomania,,descriptive,"Did you do things that you usually wouldn't do, or did you do things that you later wished you hadn't done? For example, did you:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman054,maniahypomania,,radio,Spend or borrow a lot of money?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman054,NA,NA
+dcman055,maniahypomania,,radio,Do things that could get you into trouble?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman054,NA,NA
+dcman056,maniahypomania,,notes,Describe,,,,NA,NA,NA,[dcman055]= '1',,LH,NA,,NA,NA
+dcman057,maniahypomania,,radio,Do things from which you might get hurt?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman058,maniahypomania,,notes,Describe,,,,NA,NA,NA,[dcman057]= '1',,LH,NA,,NA,NA
+dcman059,maniahypomania,,radio,Make a lot of telephone calls or call people at strange hours?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman059,NA,NA
+dcman060,maniahypomania,,radio,Anything else?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman059,NA,NA
+dcman061,maniahypomania,,notes,Describe,,,,NA,NA,NA,[dcman060]= '1',,LH,NA,,NA,NA
+cman21,maniahypomania,,descriptive,"
+SYMPTOM FREQUENCY (EPISODE)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman062,maniahypomania,,radio,You just told me that when you felt (more active) that you also had (list symptoms).  How often did you have these things?,"1, Most days | 2, About half of the days | 3, Less than half the days | 9, Don't know",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcman063,maniahypomania,,radio,"On the days you had these things, how much of the day did you have them?","1, All of the day | 2, Most of the day | 3, Half of the day | 4, Only a little part of the day",,,NA,NA,NA,,,LH,NA,,NA,NA
+cman22,maniahypomania,,descriptive,"
+DEPRESSIVE SYMPTOMS
+
+During this period, did you also feel/have...?  (As I list these other symptoms, please recall if you have ever had any of them at the same time.)",,,,NA,NA,NA,,,,NA,,NA,NA
+cman23,maniahypomania,,descriptive,"
+INTERVIEWER: Refer to Course Patterns Card.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman24,maniahypomania,,descriptive,"
+Participant Card 7 (Course Pattern)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman25,maniahypomania,,descriptive,DEPRESSED/SAD MOOD:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman064,maniahypomania,,radio,Present during mania?,"0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman065,maniahypomania,,text,Duration of symptom (N of Days),,DAYS,number,NA,NA,NA,[dcman064]= '1',,RH,NA,,NA,NA
+cman26,maniahypomania,,descriptive,LOSS OF INTEREST OR PLEASURE:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman066,maniahypomania,,radio,Present during mania?,"0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman067,maniahypomania,,text,Duration of symptom (N of Days),,DAYS,number,NA,NA,NA,[dcman066]= '1',,RH,NA,,NA,NA
+cman27,maniahypomania,,descriptive,"
+INTERVIEWER: If no, SKIP to Psychosis Episode.
+",,,,NA,NA,NA,[dcman064]= '0' and [dcman066]= '0',,,NA,,NA,NA
+cman28,maniahypomania,,descriptive,CHANGES IN SLEEP:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman068,maniahypomania,,radio,Present during mania?,"0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman069,maniahypomania,,radio,Direction of symptom,"1, Decreased | 2, Increased",,,NA,NA,NA,[dcman068]= '1',,RH,NA,,NA,NA
+dcman070,maniahypomania,,text,Duration of symptom (N of Days),,DAYS,number,NA,NA,NA,[dcman068]= '1',,RH,NA,,NA,NA
+cman29,maniahypomania,,descriptive,CHANGES IN EATING:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman071,maniahypomania,,radio,Present during mania?,"0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman072,maniahypomania,,radio,Direction of symptom,"1, Decreased | 2, Increased",,,NA,NA,NA,[dcman071]= '1',,RH,NA,,NA,NA
+dcman073,maniahypomania,,text,Duration of symptom (N of Days),,DAYS,number,NA,NA,NA,[dcman071]= '1',,RH,NA,,NA,NA
+cman30,maniahypomania,,descriptive,CHANGES IN MOTOR ACTIVITY OR MOVEMENT:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman074,maniahypomania,,radio,Present during mania?,"0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman075,maniahypomania,,radio,Direction of symptom,"1, Decreased | 2, Increased",,,NA,NA,NA,[dcman074]= '1',,RH,NA,,NA,NA
+dcman076,maniahypomania,,text,Duration of symptom (N of Days),,DAYS,number,NA,NA,NA,[dcman074]= '1',,RH,NA,,NA,NA
+cman31,maniahypomania,,descriptive,CHANGES IN ENERGY:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman077,maniahypomania,,radio,Present during mania?,"0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman078,maniahypomania,,radio,Direction of symptom,"1, Decreased | 2, Increased",,,NA,NA,NA,[dcman077]= '1',,RH,NA,,NA,NA
+dcman079,maniahypomania,,text,Duration of symptom (N of Days),,DAYS,number,NA,NA,NA,[dcman077]= '1',,RH,NA,,NA,NA
+cman32,maniahypomania,,descriptive,CHANGES IN CONCENTRATION:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman080,maniahypomania,,radio,Present during mania?,"0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman081,maniahypomania,,radio,Direction of symptom,"1, Decreased | 2, Increased",,,NA,NA,NA,[dcman080]= '1',,RH,NA,,NA,NA
+dcman082,maniahypomania,,text,Duration of symptom (N of Days),,DAYS,number,NA,NA,NA,[dcman080]= '1',,RH,NA,,NA,NA
+cman33,maniahypomania,,descriptive,GUILT:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman083,maniahypomania,,radio,Present during mania?,"0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman084,maniahypomania,,text,Duration of symptom (N of Days),,DAYS,number,NA,NA,NA,[dcman083]= '1',,RH,NA,,NA,NA
+cman34,maniahypomania,,descriptive,"
+PSYCHOSIS (EPISODE)
+
+
+DELUSIONS
+During this time:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman085,maniahypomania,,radio,Did you think that someone was trying to harm you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman085,NA,NA
+dcman086,maniahypomania,,radio,Did you think that you had powers or abilities that others did not have?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman085,NA,NA
+dcman087,maniahypomania,,radio,Did you think that you had a special mission?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman085,NA,NA
+dcman088,maniahypomania,,radio,Did you believe things that other people didn't think were true?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman085,NA,NA
+dcman089,maniahypomania,,radio,"
+INTERVIEWER: Based on clinical judgment, were these 
+real delusions? Get examples. 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cman36,maniahypomania,,descriptive,"
+INTERVIEWER:If not real delusions, SKIP to Hallucinations. 
+",,,,NA,NA,NA,[dcman089]= '0',,,NA,,NA,NA
+dcman090a,maniahypomania,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcman089]= '1',,,NA,,NA,NA
+dcman090b,maniahypomania,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcman089]= '1',,,NA,,NA,NA
+dcman090c,maniahypomania,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcman089]= '1',,,NA,,NA,NA
+dcman090d,maniahypomania,,text,Example 4,,EXAMPLE,,NA,NA,NA,[dcman089]= '1',,,NA,,NA,NA
+dcman091,maniahypomania,,radio,"Did you start thinking these things before, after, or at the same time that you started feeling (too active /happy /excited/grouchy /energetic)?","1, Before | 2, During | 3, After | 9, Don't know",,,NA,NA,NA,[dcman089]= '1',,LH,NA,,NA,NA
+dcman092,maniahypomania,,radio,"Did you think this was true, even when you stopped feeling (too happy/excited/grouchy/energetic).","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman089]= '1',,RH,NA,,NA,NA
+cman37,maniahypomania,,descriptive,For how long did you think this was true?,,,,NA,NA,NA,[dcman089]= '1',,,NA,,NA,NA
+dcman093,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,[dcman089]= '1',,,NA,,NA,NA
+dcman094,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcman089]= '1',,,NA,,NA,NA
+cman38,maniahypomania,,descriptive,"
+HALLUCINATIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman095,maniahypomania,,radio,"During this time, did you see or hear things that other people could not see or hear?
+PROBE: Like voices talking to you or noises, or visions? 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman095,NA,NA
+dcman096,maniahypomania,,radio,"Did you experience funny or unusual smells, tastes, or sensations in your body?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcman095,NA,NA
+dcman097,maniahypomania,,radio,"
+INTERVIEWER:Based on clinical judgment, were these real hallucinations? Get examples. 
+","0, No | 1, Yes | 9, Unk | 7, N/A",,,NA,NA,NA,,,RH,NA,,NA,NA
+cman39,maniahypomania,,descriptive,"
+INTERVIEWER: If not really hallucinations, SKIP to Mood Congruency. 
+",,,,NA,NA,NA,[dcman097]= '0',,,NA,,NA,NA
+dcman098a,maniahypomania,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcman097]= '1',,,NA,,NA,NA
+dcman098b,maniahypomania,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcman097]= '1',,,NA,,NA,NA
+dcman098c,maniahypomania,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcman097]= '1',,,NA,,NA,NA
+dcman098d,maniahypomania,,text,Example 4,,EXAMPLE,,NA,NA,NA,[dcman097]= '1',,,NA,,NA,NA
+dcman099,maniahypomania,,radio,"Did these (list endorsed hallucinations) start before, after or at the same time that you started feeling (too happy/excited/grouchy/energetic)?","1, Before | 2, During | 3, After | 9, Don't know",,,NA,NA,NA,[dcman097]= '1',,LH,NA,,NA,NA
+dcman100,maniahypomania,,radio,Did they stay even when you stopped feeling (too happy/excited/grouchy/energetic)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman097]= '1',,RH,NA,,NA,NA
+cman40,maniahypomania,,descriptive,For how long did you have them?,,,,NA,NA,NA,[dcman097]= '1',,,NA,,NA,NA
+dcman101,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,[dcman097]= '1',,,NA,,NA,NA
+dcman102,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcman097]= '1',,,NA,,NA,NA
+cman41,maniahypomania,,descriptive,"
+MOOD CONGRUENCY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman103,maniahypomania,,radio,"
+INTERVIEWER: If respondent had any psychotic symptoms, was the content consistent with manic themes such as inflated worth, power, knowledge, identity or special relationship with a deity or famous person.
+","0, No | 1, Yes | 9, Unk | 7, N/A",,,NA,NA,NA,,,RH,NA,,NA,NA
+cman42,maniahypomania,,descriptive,"
+ASSOCIATED CONDITIONS (EPISODE)
+
+INTERVIEWER: Associated condition questions apply ONLY to episode being coded.
+
+
+
+MEDICAL
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman42a,maniahypomania,,descriptive,When you were feeling (too happy/excited/grouchy/energetic):,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman104,maniahypomania,,radio,"
+Did you have a serious physical problem or illness?
+
+(Probe: Did the physical problem or illness start before you started feeling (too happy/excited/grouchy/energetic) or after?)
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman105,maniahypomania,,notes,"If yes, specify:",,,,NA,NA,NA,[dcman104]= '1',,LH,NA,,NA,NA
+dcman106,maniahypomania,,radio,"
+Were you taking any medicines that your doctor told you to take? Did you take any over the counter medications?
+
+PROBE: Did you start to feel (too happy/excited/grouchy/energetic) before taking the medicine or after? 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman107,maniahypomania,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcman106]= '1',,,NA,,NA,NA
+dcman108,maniahypomania,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcman106]= '1',,,NA,,NA,NA
+dcman109,maniahypomania,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcman106]= '1',,,NA,,NA,NA
+cman42b,maniahypomania,,descriptive,"
+
+ALCOHOL AND DRUGS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman110,maniahypomania,,checkbox,"Were you using alcohol often or drugs or both during this time?  
+
+PROBE: Did you start feeling this way before using alcohol/drugs or after or did you increase the quantity after you had these feelings? 
+","0, Neither | 1, Alcohol | 2, Drugs | 9, Don't know",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman111,maniahypomania,,notes,Specify (Alcohol and/or drug and quantity 1),,,,NA,NA,NA,[dcman110(1)] = '1' or [dcman110(2)] = '1',,LH,NA,,NA,NA
+dcman112,maniahypomania,,notes,Specify (Alcohol and/or drug and quantity 2),,,,NA,NA,NA,[dcman110(1)] = '1' or [dcman110(2)] = '1',,LH,NA,,NA,NA
+dcman113,maniahypomania,,notes,Specify (Alcohol and/or drug and quantity 3),,,,NA,NA,NA,[dcman110(1)] = '1' or [dcman110(2)] = '1',,LH,NA,,NA,NA
+cman43,maniahypomania,,descriptive,"
+DISTRESS/IMPAIRMENT (EPISODE)
+
+
+
+DISTRESS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman43b,maniahypomania,,descriptive,"
+I want to know how your feeling (too happy/excited/grouchy/energetic) and other symptoms caused problems for you.
+
+Please look at the scale. 
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman43a,maniahypomania,,descriptive,"
+INTERVIEWER: Remind child how to use scale, if necessary, and assess areas most pertinent to the disorder; e.g. family, school, peers. 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman44,maniahypomania,,descriptive,"
+Participant Card 8 (Distress/Impairment) 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman114,maniahypomania,,dropdown,How much did your feeling (too happy/excited/grouchy/energetic) and (list other symptoms) upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cman47,maniahypomania,,descriptive,"
+IMPAIRMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman115,maniahypomania,,dropdown,"How much did the feeling (to happy/excited/grouchy/energetic) you told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcman116,maniahypomania,,radio,Did you stay home from school because of the way you were feeling?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman117,maniahypomania,,text,How many days of school did you miss? (episode),,DAYS,number,NA,NA,NA,[dcman116]= '1',,,NA,,NA,NA
+cman48,maniahypomania,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman118,maniahypomania,,radio,"Did anyone, like a teacher or family member, suggest that you get help for (list behaviors/feelings)?","0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcman118,NA,NA
+dcman119,maniahypomania,,radio,"Did you ever go to see a doctor, nurse, psychologist, social worker, school counselor, minister/priest or other professional to get help for (list behaviors/feelings)?","0, No | 1, Yes| 9, Unk",,,NA,NA,NA,,,,NA,dcman118,NA,NA
+cman49,maniahypomania,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+cman49a,maniahypomania,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman120,maniahypomania,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman121,maniahypomania,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman122,maniahypomania,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman123,maniahypomania,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman124,maniahypomania,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman125,maniahypomania,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+cman49b,maniahypomania,,descriptive,"
+
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman126,maniahypomania,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman127,maniahypomania,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman128,maniahypomania,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman129,maniahypomania,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman130,maniahypomania,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman119]= '1',,RH,NA,,NA,NA
+dcman131,maniahypomania,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcman130]= '0',,,NA,,NA,NA
+dcman132,maniahypomania,,notes,What did the professional say that you had (diagnoses given)? List:,,,,NA,NA,NA,[dcman119]= '1',,LH,NA,,NA,NA
+cman50,maniahypomania,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcman119]= '1',,,NA,,NA,NA
+dcman133,maniahypomania,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman119]= '1',,,NA,dcman133,NA,NA
+dcman134,maniahypomania,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman119]= '1',,,NA,dcman133,NA,NA
+dcman135,maniahypomania,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman119]= '1',,,NA,dcman133,NA,NA
+dcman136,maniahypomania,,notes,Specify (Other),,,,NA,NA,NA,[dcman135]= '1',,LH,NA,,NA,NA
+dcman137,maniahypomania,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcman119]= '1',,RH,NA,,NA,NA
+cman51,maniahypomania,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcman137]= '1',,,NA,,NA,NA
+dcman138,maniahypomania,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcman137]= '1',,RH,NA,,NA,NA
+dcman139,maniahypomania,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcman137]= '1',,,NA,,NA,NA
+dcman140,maniahypomania,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcman137]= '1',,RH,NA,,NA,NA
+dcman141,maniahypomania,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcman137]= '1',,,NA,,NA,NA
+dcman142,maniahypomania,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcman137]= '1',,RH,NA,,NA,NA
+dcman143,maniahypomania,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcman137]= '1',,,NA,,NA,NA
+dcman144,maniahypomania,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcman137]= '1',,RH,NA,,NA,NA
+dcman145,maniahypomania,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcman137]= '1',,,NA,,NA,NA
+cman52,maniahypomania,,descriptive,"
+INTERVIEWER: END of Episode Mania/Hypomania.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman53,maniahypomania,,descriptive,"
+EPISODES/COURSE (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman146,maniahypomania,,radio,Have there been other times when you felt (list symptoms)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cman54,maniahypomania,,descriptive,"
+INTERVIEWER: If no, END  Mania/Hypomania section.
+",,,,NA,NA,NA,[dcman146]= '0',,,NA,,NA,NA
+cman55,maniahypomania,,descriptive,"
+INTERVIEWER: Record age of onset and offset of the first episode, the worst episode, and most recent episode.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman56,maniahypomania,,descriptive,"
+FIRST EPISODE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman147,maniahypomania,,dropdown,How old were you when this happened for the very first time?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+cman57,maniahypomania,,descriptive,How long did it last then?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman148,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman149,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman150,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman151,maniahypomania,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+cman58,maniahypomania,,descriptive,"
+NUMBER OF EPISODES
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcman152,maniahypomania,,text,How many times have you felt this way in your lifetime?,,TIMES,number,NA,NA,NA,,,,NA,,NA,NA
+cman59,maniahypomania,,descriptive,What is the most number of episodes you've had in one year?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman153,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman154,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman155,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman156,maniahypomania,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+cman59a,maniahypomania,,descriptive,How long on average did each of these episodes typically last during that year?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman157,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman158,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman159,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman160,maniahypomania,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+cman60,maniahypomania,,descriptive,"
+DURATION
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cman61,maniahypomania,,descriptive,How long was the longest episode?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman161,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman162,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman163,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman164,maniahypomania,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+cman62,maniahypomania,,descriptive,How long was the shortest episode?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman165,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman166,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman167,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman168,maniahypomania,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+cman63,maniahypomania,,descriptive,How long does a typical episode last?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcman169,maniahypomania,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman170,maniahypomania,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman171,maniahypomania,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman172,maniahypomania,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+dcman173,maniahypomania,,radio,Would you say that you have felt this (list participant's endorsed symptoms) more often than not during your lifetime?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcman174,maniahypomania,,radio,Did the periods of these feelings tend to begin in any particular season?,"0, No pattern | 1, Winter | 2, Spring | 3, Summer | 4, Fall | 9, Unknown",,,NA,NA,NA,,,LH,NA,,NA,NA
+cman_end,maniahypomania,,descriptive,"
+INTERVIEWER: END Mania section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

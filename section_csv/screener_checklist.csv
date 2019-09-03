@@ -1,0 +1,5 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+checklist_a,screener_checklist,,descriptive,"
+INTERVIEWER: Use the following chart while completing the Screener.  The Screener, Timeline, and Social  Functioning are mandatory sections.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+checklist_b,screener_checklist,,checkbox,SECTIONS: NEED TO COMPLETE,"4, Separation Anxiety | 5, Generalized Anxiety/Overanxious Disorder | 6, Attention Deficit Hyperactivity Disorder | 7, Oppositional Defiant Disorder | 8, Conduct Disorder | 9, Specific Phobia | 10, Social Anxiety | 11, Panic | 12, Agoraphobia | 13, Obsessive-Compulsive Disorder | 14, Eating | 15, Major Depression | 16, Mania | 17, Suicide | 18, Psychosis | 19, Post-Traumatic Stress Disorder | 20, Tobacco | 21, Caffeine | 22, Alcohol | 24, Drug/Substance",,,NA,NA,NA,,,LV,NA,,NA,NA

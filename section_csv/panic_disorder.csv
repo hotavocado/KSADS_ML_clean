@@ -1,0 +1,190 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cpan0,panic_disorder,,descriptive,"
+Earlier you told me that you have had (an anxiety attack/anxiety attacks).  I'd like to ask you more about that/these.
+
+
+SYMPTOMS
+
+(During the worst times) when you suddenly felt very scared, anxious, or uncomfortable, did you have any physical feelings, like:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan001,panic_disorder,,radio,Trouble breathing?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan002,panic_disorder,,radio,You were suffocating or smothering?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan003,panic_disorder,,radio,Your heart beating very fast or extra hard?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan004,panic_disorder,,radio,Your chest hurting or feeling tight?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan005,panic_disorder,,radio,You were choking?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan006,panic_disorder,,radio,Your mouth feeling dry?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan007,panic_disorder,,radio,"Feeling dizzy, light-headed, or like things were spinning?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan008,panic_disorder,,radio,Feeling like you were going to faint or pass out?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan009,panic_disorder,,radio,"Feeling like the things around you were not real, like you're in a dream?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan010,panic_disorder,,radio,"Feeling that you were not real, like you were not really controlling your body or you were watching a movie of yourself?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan011,panic_disorder,,radio,Your hands or feet tingling or feeling numb?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan012,panic_disorder,,radio,Sweating or your hands feeling wet?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan013,panic_disorder,,radio,"A stomachache, nausea, diarrhea, or feeling like you were going to throw up or had to go to the bathroom?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan014,panic_disorder,,radio,Shaking or trembling?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan015,panic_disorder,,radio,You were afraid you were going crazy?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan016,panic_disorder,,radio,Losing control?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan017,panic_disorder,,radio,Feeling very hot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan018,panic_disorder,,radio,Feeling very cold?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+dcpan019,panic_disorder,,radio,You were afraid you were going to die?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan001,NA,NA
+cpan1,panic_disorder,,descriptive,"
+INTERVIEWER: If not to all, END Panic Disorder section.
+",,,,NA,NA,NA,[dcpan001] = '0' and [dcpan002] = '0' and [dcpan003] = '0' and [dcpan004] = '0' and [dcpan005] = '0' and [dcpan006] = '0' and [dcpan007] = '0' and [dcpan008] = '0' and [dcpan009] = '0' and [dcpan010] = '0' and [dcpan011] = '0' and [dcpan012] = '0' and [dcpan013] = '0' and [dcpan014] = '0' and [dcpan015] = '0' and [dcpan016] = '0' and [dcpan017] = '0' and [dcpan018] = '0' and [dcpan019] = '0',,,NA,,NA,NA
+cpan2,panic_disorder,,descriptive,"
+ATTACK CHARACTERISTICS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan020,panic_disorder,,radio,"Did (list endorsed symptoms) start within the same few minutes, like around the same time?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpan021,panic_disorder,,text,"For most of your attacks, how much time did it take to get from the beginning of the first feeling you told me about to most of the other feelings that you had?
+Probe: was it really fast or did it take a long time- you may have to probe to see if child has concept of 10 minute duration) Code for typical attack. 
+",,MINUTES,number,NA,NA,NA,,,,NA,,NA,NA
+dcpan022,panic_disorder,,radio,"
+If more than 10 minutes:
+ Have you ever had an attack that took less than 10 minutes from the beginning of the first feeling to most of the other feelings you had?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpan021] > 10,,,NA,dcpan022,NA,NA
+dcpan023,panic_disorder,,radio,"Did the attack/any of the attacks ever occur 'out of the blue' when nothing scary was happening, or when you least expected (it/them)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan022,NA,NA
+dcpan024,panic_disorder,,radio,Have you woken up because of a panic attack or had one when you were sleeping?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan022,NA,NA
+dcpan025,panic_disorder,,notes,Please describe the attack that awakened you.  Were you having a bad dream at the time? What woke you up? How were you feeling when you woke up?,,,,NA,NA,NA,[dcpan024] = '1',,LH,NA,,NA,NA
+dcpan026,panic_disorder,,radio,"Have you ever had an attack from having feelings that remind you of your attacks, like being out of breath when playing sports or while running around? 
+INTERVIEWER: You may have to explain this in more detail to younger children).
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpan027,panic_disorder,,radio,How often did you stay away from activities that remind you of these feelings?,"0, Never | 1, Rarely | 2, Sometimes | 3, Most of the time | 4, All the time | 9, Unknown",,,NA,NA,NA,[dcpan026] = '1',,LH,NA,,NA,NA
+cpan3,panic_disorder,,descriptive,"
+ANXIETY ABOUT ATTACKS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan028,panic_disorder,,radio,"After an attack like this, did you ever worry that it would happen again?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpan029,panic_disorder,,radio,How often did you worry?,"0, Never/not at all | 1, Sometimes/some days | 2, Always/almost every day | 9, Unknown",,,NA,NA,NA,[dcpan028] = '1',,LH,NA,,NA,NA
+dcpan030,panic_disorder,,radio,"Did having these attacks make you worry that there was something wrong with your heart, your mind or some other part of your body?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan030,NA,NA
+dcpan031,panic_disorder,,radio,Did having this/these attack(s) make you worry that you were going crazy or losing control?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan030,NA,NA
+cpan3a,panic_disorder,,descriptive,For how long after an attack would you worry that these feelings (list symptoms) would come back?,,,,NA,NA,NA,[dcpan030] = '1' or [dcpan031] = '1',,,NA,,NA,NA
+dcpan032,panic_disorder,,text,N of Days,,DAYS,,NA,NA,NA,[dcpan030] = '1' or [dcpan031] = '1',,,NA,,NA,NA
+dcpan033,panic_disorder,,text,N of Weeks,,WEEKS,,NA,NA,NA,[dcpan030] = '1' or [dcpan031] = '1',,,NA,,NA,NA
+cpan4,panic_disorder,,descriptive,"What is the longest time after an attack that you worried it would happen again? 
+
+ Probe: was it more than one month?
+",,,,NA,NA,NA,[dcpan030] = '1' or [dcpan031] = '1',,,NA,,NA,NA
+dcpan035,panic_disorder,,text,N of Days,,DAYS,,NA,NA,NA,[dcpan030] = '1' or [dcpan031] = '1',,,NA,,NA,NA
+dcpan036,panic_disorder,,text,N of Weeks,,WEEKS,,NA,NA,NA,[dcpan030] = '1' or [dcpan031] = '1',,,NA,,NA,NA
+cpan5,panic_disorder,,descriptive,"
+AVOIDANCE BEHAVIOR
+
+
+ INTERVIEWER: You may have to probe for the right response in younger children. 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan037,panic_disorder,,radio,(During the worst time) Did this/these attacks stop you from doing things or cause you to do things differently?,"0, No Avoidance | 1, Mild (no avoidance, endurance with dread only | 2, Moderate (activities limited) | 3, Severe (housebound)| 9, Unknown",,,NA,NA,NA,,,,NA,dcpan037,NA,NA
+dcpan038,panic_disorder,,radio,Did you stop going places by yourself?,"0, No Avoidance | 1, Mild (no avoidance, endurance with dread only | 2, Moderate (activities limited) | 3, Severe (housebound)| 9, Unknown",,,NA,NA,NA,,,,NA,dcpan037,NA,NA
+dcpan039,panic_disorder,,radio,"Would you go places with your mom, dad, a friend or someone else?","0, No Avoidance | 1, Mild (no avoidance, endurance with dread only | 2, Moderate (activities limited) | 3, Severe (housebound)| 9, Unknown",,,NA,NA,NA,,,,NA,dcpan037,NA,NA
+cpan6,panic_disorder,,descriptive,"
+ASSOCIATED CONDITIONS
+
+
+ANXIETY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan040,panic_disorder,,radio,Did you only have this/these attack(s) when you were separated from your parents?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan040,NA,NA
+dcpan041,panic_disorder,,radio,Did you only have this/these attack(s) when you were in a very dangerous situation?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan040,NA,NA
+dcpan042,panic_disorder,,radio,"Did you have attacks only when other people were looking at you or listening to you, or you were the center of attention?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan040,NA,NA
+dcpan043,panic_disorder,,radio,"Did you have attacks only when you saw something or you were in a situation that almost always makes you upset, nervous, or anxious such as heights or elevators (list specific phobias if they have any)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan040,NA,NA
+dcpan044,panic_disorder,,radio,Did you have attacks only when you felt trapped and unable to get away?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan040,NA,NA
+cpan7,panic_disorder,,descriptive,"
+ALCOHOL AND DRUGS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpan8,panic_disorder,,radio,"
+ INTERVIEWER: IS PARTICIPANT AGE 12 OR OLDER? 
+","0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+cpan8b,panic_disorder,,descriptive,"
+ INTERVIEWER: If under 12 years old, SKIP to Distress.
+",,,,NA,NA,NA,[cpan8] = '0',,,NA,,NA,NA
+cpan8a,panic_disorder,,descriptive,"
+ INTERVIEWER: Ask to 12 and over ONLY. 
+",,,,NA,NA,NA,[cpan8] = '1',,,NA,,NA,NA
+cpan9,panic_disorder,,descriptive,Did you only have attacks when you were using alcohol or drugs:,,,,NA,NA,NA,[cpan8] = '1',,,NA,,NA,NA
+dcpan045,panic_disorder,,radio,Alcohol?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[cpan8] = '1',,,NA,dcpan045,NA,NA
+dcpan046,panic_disorder,,radio,"Cannabis (pot, marijuana)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[cpan8] = '1',,,NA,dcpan045,NA,NA
+dcpan047,panic_disorder,,radio,Caffeine?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[cpan8] = '1',,,NA,dcpan045,NA,NA
+dcpan048,panic_disorder,,radio,Tobacco/nictoine (cigarettes)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[cpan8] = '1',,,NA,dcpan045,NA,NA
+dcpan049,panic_disorder,,radio,Other drugs?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[cpan8] = '1',,,NA,dcpan045,NA,NA
+cpan10,panic_disorder,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at the thermometer/scale.
+
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpan11,panic_disorder,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cpan12,panic_disorder,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan053,panic_disorder,,dropdown,How much did having these attacks upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cpan13,panic_disorder,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan054,panic_disorder,,dropdown,"How much did the attacks you have told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcpan055,panic_disorder,,radio,Did you stay home from school because of your attacks?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcpan056,panic_disorder,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcpan055] = '1',,,NA,,NA,NA
+cpan14,panic_disorder,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan057,panic_disorder,,text,How many attacks like this have you had in your life?,,ATTACKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcpan058,panic_disorder,,dropdown,"How old were you when you first had one of these attacks? 
+
+
+INTERVIEWER: If only one attack, code age here.
+","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+dcpan059,panic_disorder,,dropdown,How old were you the last time you had one of these attacks?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+cpan15,panic_disorder,,descriptive,"
+INTERVIEWER: Ask only of people who had 2 or more attacks.
+",,,,NA,NA,NA,[dcpan057] > 1,,,NA,,NA,NA
+cpan16,panic_disorder,,descriptive,"
+INTERVIEWER: If only one attack, SKIP to Help-Seeking Treatment.
+",,,,NA,NA,NA,[dcpan057] < 2,,,NA,,NA,NA
+cpan17,panic_disorder,,descriptive,Thinking about all of your panic attacks:,,,,NA,NA,NA,[dcpan057] > 1,,,NA,,NA,NA
+cpan18,panic_disorder,,descriptive,What was the longest period of time that the attacks did not bother you?,,,,NA,NA,NA,[dcpan057] > 1,,,NA,,NA,NA
+dcpan060,panic_disorder,,text,N of Days,,DAYS,number,NA,NA,NA,[dcpan057] > 1,,RH,NA,,NA,NA
+dcpan061,panic_disorder,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcpan057] > 1,,RH,NA,,NA,NA
+dcpan062,panic_disorder,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcpan057] > 1,,RH,NA,,NA,NA
+dcpan063,panic_disorder,,radio,"From your first to last panic attack (between ages) what was the pattern of your attacks, would you say:","1, Only had a few scattered over many years | 2, A few attacks per year for several years | 3, Many attacks per year spread out during the year | 4, Panic attacks clustered together over a brief period | 5, Many attacks per year that came in groups during the year | 9, NA/No Information",,,NA,NA,NA,[dcpan057] > 1,,LV,NA,,NA,NA
+cpan19,panic_disorder,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcpan064,panic_disorder,,radio,"Did anyone, like a teacher or relative, suggest that you get help for (list symptoms)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan064,NA,NA
+dcpan065,panic_disorder,,radio,"Did you ever go to see a doctor, nurse, counselor, social worker, psychologist, minister/priest or other professional to get help for (list symptoms)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcpan064,NA,NA
+cpan21,panic_disorder,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+cpan20,panic_disorder,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan066,panic_disorder,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan067,panic_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan068,panic_disorder,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan069,panic_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan070,panic_disorder,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan071,panic_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+cpan21a,panic_disorder,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan072,panic_disorder,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan073,panic_disorder,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan074,panic_disorder,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan075,panic_disorder,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan076,panic_disorder,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpan065] = '1',,RH,NA,,NA,NA
+dcpan077,panic_disorder,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcpan076] = '0',,,NA,,NA,NA
+dcpan078,panic_disorder,,notes,What did the professional(s) (doctors) say that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dcpan065] = '1',,LH,NA,,NA,NA
+cpan22,panic_disorder,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcpan065] = '1',,,NA,,NA,NA
+dcpan079,panic_disorder,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpan065] = '1',,RH,NA,dcpan079,NA,NA
+dcpan080,panic_disorder,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpan065] = '1',,RH,NA,dcpan079,NA,NA
+dcpan081,panic_disorder,,radio,Going to the Emergency Room,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpan065] = '1',,RH,NA,dcpan079,NA,NA
+dcpan082,panic_disorder,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpan065] = '1',,RH,NA,dcpan079,NA,NA
+dcpan083,panic_disorder,,notes,Specify (Other),,,,NA,NA,NA,[dcpan082] = '1',,LH,NA,,NA,NA
+dcpan084,panic_disorder,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcpan065] = '1',,RH,NA,,NA,NA
+cpan23,panic_disorder,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+dcpan085,panic_disorder,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+dcpan086,panic_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+dcpan087,panic_disorder,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+dcpan088,panic_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+dcpan089,panic_disorder,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+dcpan090,panic_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+dcpan091,panic_disorder,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+dcpan092,panic_disorder,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcpan084] = '1',,,NA,,NA,NA
+cpan_end,panic_disorder,,descriptive,"
+INTERVIEWER: END Panic Disorder section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

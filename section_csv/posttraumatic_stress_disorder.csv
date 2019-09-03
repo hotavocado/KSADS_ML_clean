@@ -1,0 +1,185 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cptd0,posttraumatic_stress_disorder,,descriptive,"
+Earlier I asked about different experiences you might have had or witnessed. I am going to ask you a little about those now.
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd1,posttraumatic_stress_disorder,,descriptive,"
+INTERVIEWER: If any events potentially qualify for PTSD, LIST them below and prioritize the one which has had the most impact on the subject.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd2,posttraumatic_stress_disorder,,descriptive,"
+Participant Card 5 (Stressful Experiences)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd3,posttraumatic_stress_disorder,,descriptive,"Which one do you think about the most or upsets you the most, 2nd most, etc?
+
+
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd001a,posttraumatic_stress_disorder,,text,Event 1,,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd001b,posttraumatic_stress_disorder,,text,Event 2,,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd001c,posttraumatic_stress_disorder,,text,Event 3,,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd001d,posttraumatic_stress_disorder,,text,Event 4,,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd001e,posttraumatic_stress_disorder,,text,Event 5,,,,NA,NA,NA,,,,NA,,NA,NA
+cptd4,posttraumatic_stress_disorder,,descriptive,"
+Now I want to ask you about some of your thoughts/feelings/behaviors after (insert worst event name here).
+
+
+SYMPTOMS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd5,posttraumatic_stress_disorder,,descriptive,"After the (event name) happened, did you ever feel:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd002,posttraumatic_stress_disorder,,radio,Very afraid?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd002,NA,NA
+dcptd003,posttraumatic_stress_disorder,,radio,Helpless or feel bad that you couldn't do anything to stop it?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd002,NA,NA
+dcptd004,posttraumatic_stress_disorder,,radio,Like you didn't know what to do next?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd002,NA,NA
+dcptd005,posttraumatic_stress_disorder,,radio,Like you were going crazy?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd002,NA,NA
+dcptd006,posttraumatic_stress_disorder,,radio,Very nervous?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd002,NA,NA
+cptd6,posttraumatic_stress_disorder,,descriptive,"
+
+Re-experiencing
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd7,posttraumatic_stress_disorder,,descriptive,Following the (event name):,,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd007,posttraumatic_stress_disorder,,radio,Have you often thought about what happened even though you didn't want to think about it?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd007,NA,NA
+dcptd008,posttraumatic_stress_disorder,,radio,"Have repeated, frightening dreams about (the event)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd007,NA,NA
+dcptd009,posttraumatic_stress_disorder,,radio,Act (or feel) as though (the event) were happening all over again?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd007,NA,NA
+dcptd010,posttraumatic_stress_disorder,,radio,Get very upset when something reminded you of (the event)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd007,NA,NA
+dcptd011,posttraumatic_stress_disorder,,radio,"When something reminded you of (this event), did you start to sweat or feel like you would faint?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd007,NA,NA
+cptd8,posttraumatic_stress_disorder,,descriptive,"
+
+Avoidance
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd9,posttraumatic_stress_disorder,,descriptive,After the (event name):,,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd012,posttraumatic_stress_disorder,,radio,Have you tried hard not to think or hear about what happened?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd012,NA,NA
+dcptd013,posttraumatic_stress_disorder,,radio,Have you tried to stay away from places/people who might remind you of what happened?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd012,NA,NA
+dcptd014,posttraumatic_stress_disorder,,radio,Have you not been able to remember an important part of what happened?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd012,NA,NA
+dcptd015,posttraumatic_stress_disorder,,radio,"Did you lose interest in doing things that you used to enjoy, like things are not as much fun as before?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd012,NA,NA
+dcptd016,posttraumatic_stress_disorder,,radio,"Did you feel separate or far away from other people, or have a hard time trusting other people, or feel alone even when you are with other people?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd012,NA,NA
+dcptd017,posttraumatic_stress_disorder,,radio,"Did you have trouble expressing normal feelings, like love, happiness, or anger toward other people, or did you sometimes feel like a robot, or was it hard to tell how you were feeling?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd012,NA,NA
+dcptd018,posttraumatic_stress_disorder,,radio,Did you stop thinking about the future or about things you might do when you grew up or got older?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd012,NA,NA
+cptd10,posttraumatic_stress_disorder,,descriptive,"
+
+Increased Arousal
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd11,posttraumatic_stress_disorder,,descriptive,After the (event name):,,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd019,posttraumatic_stress_disorder,,radio,Did you have trouble sleeping? (falling asleep or staying asleep),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd019,NA,NA
+dcptd020,posttraumatic_stress_disorder,,radio,Has it been hard to keep your mind on things?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd019,NA,NA
+dcptd021,posttraumatic_stress_disorder,,radio,Were you more jumpy or easily scared when people moved around you or touched you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd019,NA,NA
+dcptd022,posttraumatic_stress_disorder,,radio,"More alert or watchful, even when there was no real reason to be?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd019,NA,NA
+dcptd023,posttraumatic_stress_disorder,,radio,Have you often jumped at sudden noises more so than before the event happened?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd019,NA,NA
+dcptd024,posttraumatic_stress_disorder,,radio,Have you lost your temper a lot or been more grouchy?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd019,NA,NA
+cptd12,posttraumatic_stress_disorder,,radio,"
+INTERVIEWER: IS CHILD AGE 12 OR UNDER,OR IMMATURE FOR THEIR AGE?
+","0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+cptd13,posttraumatic_stress_disorder,,descriptive,"
+INTERVIEWER: ONLY ask next question to those under 12 and under, or if child is immature for their age. 
+",,,,NA,NA,NA,[cptd12] = '1',,,NA,,NA,NA
+dcptd025,posttraumatic_stress_disorder,,radio,Did you ever act out what happened to you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[cptd12] = '1',,RH,NA,,NA,NA
+cptd14,posttraumatic_stress_disorder,,radio,"
+INTERVIEWER: IS CHILD OVER 12 YEARS OLD?
+","0, No | 1, Yes",,,NA,NA,NA,,,RH,NA,,NA,NA
+cptd15,posttraumatic_stress_disorder,,descriptive,"
+INTERVIEWER: Ask next question to those over 12 years.
+",,,,NA,NA,NA,[cptd14] = '1',,,NA,,NA,NA
+dcptd026,posttraumatic_stress_disorder,,radio,Do you sometimes feel like the event is happening all over again?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[cptd14] = '1',,RH,NA,,NA,NA
+cptd16,posttraumatic_stress_disorder,,descriptive,"
+
+Dissociative Episodes
+ (All participants)",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd027,posttraumatic_stress_disorder,,radio,Do people say that you daydream a lot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd027,NA,NA
+dcptd028,posttraumatic_stress_disorder,,radio,Do you lose track of time a lot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd027,NA,NA
+cptd17,posttraumatic_stress_disorder,,descriptive,"
+
+Hallucinations
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd029,posttraumatic_stress_disorder,,radio,"Since (event name) happened, have you had any experiences in which you saw things that other people couldn't see, or heard things that other people couldn't hear?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcptd030,posttraumatic_stress_disorder,,notes,What did you see?  Explain:,,,,NA,NA,NA,[dcptd029] = '1',,LH,NA,,NA,NA
+cptd18,posttraumatic_stress_disorder,,descriptive,"
+EPISODE/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd031,posttraumatic_stress_disorder,,text,When did the event occur?,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcptd032,posttraumatic_stress_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+dcptd033,posttraumatic_stress_disorder,,dropdown,Month,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 97, 97 | 98, 98 | 99, 99",MONTH,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+dcptd034,posttraumatic_stress_disorder,,text,Year,,YEAR,number,1900,9999,NA,,,RH,NA,,NA,NA
+dcptd035,posttraumatic_stress_disorder,,text,How long after the event did you begin having (insert specific endorced symptoms) related to the event?,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcptd036,posttraumatic_stress_disorder,,text,N of Days,,DAYS,number,NA,NA,NA,,,,NA,,NA,NA
+dcptd037,posttraumatic_stress_disorder,,text,N of Weeks,,WEEKS,number,NA,NA,NA,,,,NA,,NA,NA
+dcptd038,posttraumatic_stress_disorder,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcptd039,posttraumatic_stress_disorder,,radio,How often did you have these feelings/behaviors?,"0, Never | 1, Rarely (A little bit) | 2, Sometimes | 3, Often (More days than not) | 4, Almost Always (Everyday or almost everyday) | 9, Don't know",,,NA,NA,NA,,,LV,NA,,NA,NA
+dcptd040,posttraumatic_stress_disorder,,text,"
+INTERVIEWER: Record age of onset of symptoms.
+",,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcptd041,posttraumatic_stress_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+dcptd042,posttraumatic_stress_disorder,,dropdown,Month,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 97, 97 | 98, 98 | 99, 99",MONTH,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+dcptd043,posttraumatic_stress_disorder,,text,Year,,YEAR,number,1900,9999,NA,,,RH,NA,,NA,NA
+dcptd044,posttraumatic_stress_disorder,,text,When was the last time you had feelings/behaviors related to this event?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd045,posttraumatic_stress_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+dcptd046,posttraumatic_stress_disorder,,dropdown,Month,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 97, 97 | 98, 98 | 99, 99",MONTH,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+dcptd047,posttraumatic_stress_disorder,,text,Year,,YEAR,number,1900,9999,NA,,,RH,NA,,NA,NA
+dcptd048,posttraumatic_stress_disorder,,text,"
+INTERVIEWER: Record duration of symptoms. If not clear, ask if it was more or less than one month.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd049,posttraumatic_stress_disorder,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dcptd050,posttraumatic_stress_disorder,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+cptd19,posttraumatic_stress_disorder,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at the thermometer/scale. 
+
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd20,posttraumatic_stress_disorder,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cptd21,posttraumatic_stress_disorder,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd051,posttraumatic_stress_disorder,,dropdown,How much did your feelings/behaviors associated with this event upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cptd22,posttraumatic_stress_disorder,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd052,posttraumatic_stress_disorder,,dropdown,"How much have the feelings/behaviors you have told me about, caused problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcptd053,posttraumatic_stress_disorder,,radio,Did you stay home from school because of the way you were feeling?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcptd054,posttraumatic_stress_disorder,,text,"If yes, how  many days of school did you miss? (lifetime)",,DAYS,number,NA,NA,NA,[dcptd053] = '1',,,NA,,NA,NA
+cptd23,posttraumatic_stress_disorder,,descriptive,"
+HELP-SEEKING TREATMENT (Lifetime)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcptd055,posttraumatic_stress_disorder,,radio,"Did anyone, like a teacher or family member, suggest that you get help for (list behaviors/feelings)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd055,NA,NA
+dcptd056,posttraumatic_stress_disorder,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, minister/priest or other professional to get help for (list behaviors/feelings)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcptd055,NA,NA
+cptd25,posttraumatic_stress_disorder,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+cptd24,posttraumatic_stress_disorder,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd057,posttraumatic_stress_disorder,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd058,posttraumatic_stress_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd059,posttraumatic_stress_disorder,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd060,posttraumatic_stress_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd061,posttraumatic_stress_disorder,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd062,posttraumatic_stress_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+cptd26,posttraumatic_stress_disorder,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd063,posttraumatic_stress_disorder,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd064,posttraumatic_stress_disorder,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd065,posttraumatic_stress_disorder,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd066,posttraumatic_stress_disorder,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd067,posttraumatic_stress_disorder,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcptd056] = '1',,RH,NA,,NA,NA
+dcptd068,posttraumatic_stress_disorder,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcptd067] = '0',,,NA,,NA,NA
+dcptd069,posttraumatic_stress_disorder,,notes,What did the professional(s) (doctors) say was the problem that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dcptd056] = '1',,LH,NA,,NA,NA
+cptd27,posttraumatic_stress_disorder,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcptd056] = '1',,,NA,,NA,NA
+dcptd070,posttraumatic_stress_disorder,,radio,Out-patient (Going to see someone at an office or participating in a group not in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcptd056] = '1',,,NA,dcptd070,NA,NA
+dcptd071,posttraumatic_stress_disorder,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcptd056] = '1',,,NA,dcptd070,NA,NA
+dcptd072,posttraumatic_stress_disorder,,radio,Other (Anything else child tells you),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcptd056] = '1',,,NA,dcptd070,NA,NA
+dcptd073,posttraumatic_stress_disorder,,notes,Specify (Other),,,,NA,NA,NA,[dcptd072] = '1',,LH,NA,,NA,NA
+dcptd074,posttraumatic_stress_disorder,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcptd056] = '1',,RH,NA,,NA,NA
+cptd28,posttraumatic_stress_disorder,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+dcptd075,posttraumatic_stress_disorder,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+dcptd076,posttraumatic_stress_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+dcptd077,posttraumatic_stress_disorder,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+dcptd078,posttraumatic_stress_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+dcptd079,posttraumatic_stress_disorder,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+dcptd080,posttraumatic_stress_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+dcptd081,posttraumatic_stress_disorder,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+dcptd082,posttraumatic_stress_disorder,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcptd074] = '1',,,NA,,NA,NA
+cptd_end,posttraumatic_stress_disorder,,descriptive,"
+INTERVIEWER: END Post-Traumatic Stress Disorder section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

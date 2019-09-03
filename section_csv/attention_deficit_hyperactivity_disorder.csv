@@ -1,0 +1,248 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cadd0,attention_deficit_hyperactivity_disorder,,descriptive,"
+Everyone has times when they have trouble concentrating or keeping their mind on what they are doing.  The next questions are about whether you have had more difficulty than most people with concentration or attention. 
+
+
+GENERAL PROBES-INATTENTION
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cadd1,attention_deficit_hyperactivity_disorder,,descriptive,"
+Loses Things
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd001,attention_deficit_hyperactivity_disorder,,radio,"Have you often lost things you needed for school, like assignments or books or other things, or things you needed for projects at home?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd2,attention_deficit_hyperactivity_disorder,,descriptive,"
+Difficulty Sustaining Attention in Tasks
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd002,attention_deficit_hyperactivity_disorder,,radio,Have you often had trouble paying attention or keeping your mind on your school work or other things that you were doing?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd3,attention_deficit_hyperactivity_disorder,,descriptive,"
+Difficulty Sustaining Attention in Play
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd003,attention_deficit_hyperactivity_disorder,,radio,When you are doing something you usually enjoy (like playing with toys or games) do you have a hard time paying attention for more than a short time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd4,attention_deficit_hyperactivity_disorder,,descriptive,"
+Carelessness
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd004,attention_deficit_hyperactivity_disorder,,radio,Have you often made careless mistakes in school work or other activities?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd5,attention_deficit_hyperactivity_disorder,,descriptive,"
+Forgetful
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd005,attention_deficit_hyperactivity_disorder,,radio,Have you often forgotten what you were supposed to be doing or what you had planned to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd6,attention_deficit_hyperactivity_disorder,,descriptive,"
+Does Not Listen
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd006,attention_deficit_hyperactivity_disorder,,radio,Have people often said that you did not seem to be listening when they spoke to you or that you were daydreaming?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd7,attention_deficit_hyperactivity_disorder,,descriptive,"
+Easily Distracted
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd007,attention_deficit_hyperactivity_disorder,,radio,Have even little things taken your mind away from what you are doing?  (Were you unable to keep your mind on what you were doing if things were going on nearby?),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd8,attention_deficit_hyperactivity_disorder,,descriptive,"
+Avoids/Dislikes Tasks Requiring Attention
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd008,attention_deficit_hyperactivity_disorder,,radio,"Have you often disliked, avoided, or put off doing things that required a lot of concentration like your school work, homework, or other tasks?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd9,attention_deficit_hyperactivity_disorder,,descriptive,"
+Difficulty Organizing Work/Activities
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd009,attention_deficit_hyperactivity_disorder,,radio,"Have you ever had trouble making plans, doing things that had to be done in a certain kind of order, or that had a lot of different steps?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd10,attention_deficit_hyperactivity_disorder,,descriptive,"
+Difficulty Following Through on Tasks
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd010,attention_deficit_hyperactivity_disorder,,radio,"Have you often left chores, homework or other work unfinished even when you meant to get them done, and understood how to do them?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd11,attention_deficit_hyperactivity_disorder,,descriptive,"
+INTERVIEWER: If no to all, SKIP to Hyperactivity/Impulsivity.
+",,,,NA,NA,NA,[dcadd001] = '0' and [dcadd002] = '0' and [dcadd003] = '0' and [dcadd004] = '0' and [dcadd005] = '0' and [dcadd006] = '0' and [dcadd007] = '0' and [dcadd008] = '0' and [dcadd009] = '0' and [dcadd010] = '0',,,NA,,NA,NA
+cadd12,attention_deficit_hyperactivity_disorder,,descriptive,"
+
+You had several concentration and attention difficulties, such as (key phrases for first 3 items endorsed above). 
+
+",,,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,,NA,,NA,NA
+dcadd011,attention_deficit_hyperactivity_disorder,,dropdown,About how old were you the first time (you had any of these difficulties)?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,,NA,,NA,NA
+dcadd012,attention_deficit_hyperactivity_disorder,,radio,"If 'All my life' or 'As long as I can remember', or age unknown, 
+Probe: Was it before you were seven?  Did you have these problems in kindergarten or first grade? 
+","1, Before seven year old | 2, Not before seven years old | 9, Unknown",,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,LH,NA,,NA,NA
+dcadd013,attention_deficit_hyperactivity_disorder,,radio,"Did you have these problems for six months or more? 
+Probe: like for most of a school year?
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,RH,NA,,NA,NA
+cadd12a,attention_deficit_hyperactivity_disorder,,descriptive,Did you have these difficulties:,,,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,,NA,,NA,NA
+dcadd014,attention_deficit_hyperactivity_disorder,,radio,With your parents?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,RH,NA,dcadd014,NA,NA
+dcadd015,attention_deficit_hyperactivity_disorder,,radio,With your teachers?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,RH,NA,dcadd014,NA,NA
+dcadd016,attention_deficit_hyperactivity_disorder,,radio,With other adults?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,RH,NA,dcadd014,NA,NA
+dcadd017,attention_deficit_hyperactivity_disorder,,radio,At school?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,RH,NA,dcadd014,NA,NA
+dcadd018,attention_deficit_hyperactivity_disorder,,radio,At home?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,RH,NA,dcadd014,NA,NA
+dcadd019,attention_deficit_hyperactivity_disorder,,radio,Do you still have a lot of difficulty with concentration and attention?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1',,RH,NA,dcadd014,NA,NA
+cadd13,attention_deficit_hyperactivity_disorder,,descriptive,How old were you the last time you had a period of six months or longer when you had a lot of difficulty with concentration or attention?,,,,NA,NA,NA,[dcadd019] = '0',,,NA,,NA,NA
+dcadd020,attention_deficit_hyperactivity_disorder,,radio,Unknown,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd019] = '0',,RH,NA,,NA,NA
+dcadd021,attention_deficit_hyperactivity_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcadd019] = '0',,RH,NA,,NA,NA
+cadd14,attention_deficit_hyperactivity_disorder,,descriptive,About how many years altogether (did you have/have you had) these difficulties?,,,,NA,NA,NA,[dcadd019] = '0',,,NA,,NA,NA
+dcadd022,attention_deficit_hyperactivity_disorder,,radio,Unknown,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd019] = '0',,RH,NA,,NA,NA
+dcadd023,attention_deficit_hyperactivity_disorder,,dropdown,Years,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",YEARS,autocomplete,NA,NA,NA,[dcadd019] = '0',,RH,NA,,NA,NA
+cadd15,attention_deficit_hyperactivity_disorder,,descriptive,"
+
+Everyone has times when they are very active.  I would now like to ask you whether you ever had times when you had a lot more trouble than most people with being very restless, fidgety, or impatient. 
+
+
+GENERAL PROBES-HYPERACTIVITY/IMPULSIVITY
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cadd16,attention_deficit_hyperactivity_disorder,,descriptive,"
+Runs or Climbs Excessively
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd024,attention_deficit_hyperactivity_disorder,,radio,"Have you often been very active even when you were not supposed to be - for example, climbing on things or running around - even after being asked to keep still?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd17,attention_deficit_hyperactivity_disorder,,descriptive,"
+Always on the  Go
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd025,attention_deficit_hyperactivity_disorder,,radio,"Are you always 'on the go', or do you move around as if you are 'driven by a motor'?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd18,attention_deficit_hyperactivity_disorder,,descriptive,"
+Difficulty Playing Quietly
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd026,attention_deficit_hyperactivity_disorder,,radio,"Have you had trouble playing quietly or doing quiet activities, like reading or being read to, for more than a few minutes at a time?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd19,attention_deficit_hyperactivity_disorder,,descriptive,"
+Fidgeting
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd027,attention_deficit_hyperactivity_disorder,,radio,Have you often fidgeted with your hands or feet or wiggled in your seat?  Have you had a hard time sitting still?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd20,attention_deficit_hyperactivity_disorder,,descriptive,"
+Difficulty Staying Seated 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd028,attention_deficit_hyperactivity_disorder,,radio,"Did you often get up from your seat when you were not supposed to - like at dinner, at school, or religious services?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd21,attention_deficit_hyperactivity_disorder,,descriptive,"
+Talks Excessively 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd029,attention_deficit_hyperactivity_disorder,,radio,Were you often extremely talkative? (Did you talk more than other people your age?),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd22,attention_deficit_hyperactivity_disorder,,descriptive,"
+Blurts Out Answers
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd030,attention_deficit_hyperactivity_disorder,,radio,Did you often blurt out answers to other people's questions even before they finished speaking?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd23,attention_deficit_hyperactivity_disorder,,descriptive,"
+Interrupts Others 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd031,attention_deficit_hyperactivity_disorder,,radio,Did you often interrupt people or abruptly join other people's conversations without being asked to do so?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd24,attention_deficit_hyperactivity_disorder,,descriptive,"
+Trouble Waiting for Turn 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd032,attention_deficit_hyperactivity_disorder,,radio,"Did you have a lot of trouble waiting your turn - for example, was it very hard for you to wait in a line or to wait for a teacher to call on you in class before you spoke out loud?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd25,attention_deficit_hyperactivity_disorder,,descriptive,"
+INTERVIEWER: If no positive attention or hyperactivity symptoms, END Attention Deficit Hyperactivity section.
+",,,,NA,NA,NA,([dcadd001] = '0' and [dcadd002] = '0' and [dcadd003] = '0' and [dcadd004] = '0' and [dcadd005] = '0' and [dcadd006] = '0' and [dcadd007] = '0' and [dcadd008] = '0' and [dcadd009] = '0' and [dcadd010] = '0') and ([dcadd024] = '0' and [dcadd025] = '0' and [dcadd026] = '0' and [dcadd027] = '0' and [dcadd028] = '0' and [dcadd029] = '0' and [dcadd030] = '0' and [dcadd031] = '0' and [dcadd032] = '0'),,,NA,,NA,NA
+cadd26,attention_deficit_hyperactivity_disorder,,descriptive,"
+INTERVIEWER: If no hyperactivity symptoms, SKIP to Episodes/Course.
+",,,,NA,NA,NA,([dcadd001] = '1' or [dcadd002] = '1' or [dcadd003] = '1' or [dcadd004] = '1' or [dcadd005] = '1' or [dcadd006] = '1' or [dcadd007] = '1' or [dcadd008] = '1' or [dcadd009] = '1' or [dcadd010] = '1') and ([dcadd024] = '0' and [dcadd025] = '0' and [dcadd026] = '0' and [dcadd027] = '0' and [dcadd028] = '0' and [dcadd029] = '0' and [dcadd030] = '0' and [dcadd031] = '0' and [dcadd032] = '0'),,,NA,,NA,NA
+cadd27,attention_deficit_hyperactivity_disorder,,descriptive,"
+
+You had several difficulties with restlessness and impatience, such as (key phrases for first 3 items endorsed above). 
+
+",,,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,,NA,,NA,NA
+dcadd033,attention_deficit_hyperactivity_disorder,,dropdown,About how old were you the first time (you had any of these difficulties)?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,,NA,,NA,NA
+dcadd034,attention_deficit_hyperactivity_disorder,,radio,"If 'All my life' or 'As long as I can remember', or age unknown, 
+Probe: Was it before you were seven?  Did you have these problems in kindergarten or first grade? 
+","1, Before seven year old | 2, Not before seven years old | 9, Unknown",,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,LH,NA,,NA,NA
+dcadd035,attention_deficit_hyperactivity_disorder,,radio,"Did you have these problems for six months or more? 
+Probe: like for most of a school year? 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,RH,NA,,NA,NA
+cadd28,attention_deficit_hyperactivity_disorder,,descriptive,Did you have these difficulties:,,,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,,NA,,NA,NA
+dcadd036,attention_deficit_hyperactivity_disorder,,radio,With your parents?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,RH,NA,dcadd036,NA,NA
+dcadd037,attention_deficit_hyperactivity_disorder,,radio,With your teachers?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,RH,NA,dcadd036,NA,NA
+dcadd038,attention_deficit_hyperactivity_disorder,,radio,With other adults?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,RH,NA,dcadd036,NA,NA
+dcadd039,attention_deficit_hyperactivity_disorder,,radio,At school?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,RH,NA,dcadd036,NA,NA
+dcadd040,attention_deficit_hyperactivity_disorder,,radio,At home?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,RH,NA,dcadd036,NA,NA
+dcadd041,attention_deficit_hyperactivity_disorder,,radio,Do you still have a lot of difficulty with restlessness and impatience?,"0, No| 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd024] = '1' or [dcadd025] = '1' or [dcadd026] = '1' or [dcadd027] = '1' or [dcadd028] = '1' or [dcadd029] = '1' or [dcadd030] = '1' or [dcadd031] = '1' or [dcadd032] = '1',,RH,NA,dcadd036,NA,NA
+cadd29,attention_deficit_hyperactivity_disorder,,descriptive,"If no, how old were you the last time you had a period of six months or longer when you had a lot of difficulty with restlessness and impatience?",,,,NA,NA,NA,[dcadd041] = '0',,,NA,,NA,NA
+dcadd042,attention_deficit_hyperactivity_disorder,,radio,Unknown,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd041] = '0',,RH,NA,,NA,NA
+dcadd043,attention_deficit_hyperactivity_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcadd041] = '0',,RH,NA,,NA,NA
+cadd30,attention_deficit_hyperactivity_disorder,,descriptive,About how many years altogether (did you have/have you had) these difficulties?,,,,NA,NA,NA,[dcadd041] = '0',,,NA,,NA,NA
+dcadd044,attention_deficit_hyperactivity_disorder,,radio,Unknown,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd041] = '0',,RH,NA,,NA,NA
+dcadd045,attention_deficit_hyperactivity_disorder,,dropdown,Years,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",YEARS,autocomplete,NA,NA,NA,[dcadd041] = '0',,RH,NA,,NA,NA
+cadd31,attention_deficit_hyperactivity_disorder,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cadd32,attention_deficit_hyperactivity_disorder,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cadd32a,attention_deficit_hyperactivity_disorder,,descriptive,How old were you the first time you did these (list behaviors)?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd046,attention_deficit_hyperactivity_disorder,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcadd047,attention_deficit_hyperactivity_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+cadd33,attention_deficit_hyperactivity_disorder,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd048,attention_deficit_hyperactivity_disorder,,radio,Do you still have any of these (list behaviors)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcadd049,attention_deficit_hyperactivity_disorder,,dropdown,How old were you the last time you did this behavior?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcadd048] = '0',,,NA,,NA,NA
+cadd34,attention_deficit_hyperactivity_disorder,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd050,attention_deficit_hyperactivity_disorder,,radio,"Since you were (age of onset), was there ever a time when you were not (behavior)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cadd34a,attention_deficit_hyperactivity_disorder,,descriptive,What was the longest period of time that (list behavior) did not bother you?,,,,NA,NA,NA,[dcadd050] = '1',,,NA,,NA,NA
+dcadd051,attention_deficit_hyperactivity_disorder,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcadd050] = '1',,RH,NA,,NA,NA
+dcadd052,attention_deficit_hyperactivity_disorder,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcadd050] = '1',,RH,NA,,NA,NA
+dcadd053,attention_deficit_hyperactivity_disorder,,text,N of Years,,YEARS,number,NA,NA,NA,[dcadd050] = '1',,RH,NA,,NA,NA
+cadd35,attention_deficit_hyperactivity_disorder,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at the thermometer/scale. Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cadd36,attention_deficit_hyperactivity_disorder,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cadd37,attention_deficit_hyperactivity_disorder,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd054,attention_deficit_hyperactivity_disorder,,dropdown,How much did having thoughts/behaviors upset or bother you? How much did you ever feel upset or disappointed with yourself because of your thoughts/behaivors?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cadd38,attention_deficit_hyperactivity_disorder,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd055,attention_deficit_hyperactivity_disorder,,dropdown,"Family: Did your family seem upset, angry, or annoyed with you because of your difficulties?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcadd056,attention_deficit_hyperactivity_disorder,,dropdown,Socially (with peers):  Did these behaviors/inattention bother your friends?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcadd057,attention_deficit_hyperactivity_disorder,,dropdown,School:  Did teachers or classmates complain about your inattention/behavior?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcadd057a,attention_deficit_hyperactivity_disorder,,notes,Specify:,,,,NA,NA,NA,,,LH,NA,,NA,NA
+dcadd058,attention_deficit_hyperactivity_disorder,,radio,"Did you stay home from school because of your difficulties with inattention or overactivity?  
+(Probe:  Were you sent home?)
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcadd059,attention_deficit_hyperactivity_disorder,,text,How many days of school did you miss because of your difficulties with attention or overactivity? (lifetime),,DAYS,number,NA,NA,NA,[dcadd058] = '1',,,NA,,NA,NA
+cadd39,attention_deficit_hyperactivity_disorder,,descriptive,"
+GLOBAL IMPAIRMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd060,attention_deficit_hyperactivity_disorder,,dropdown,"
+INTERVIEWER: What number describes how impaired the participant was during the episode?
+","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",GLOBAL IMPAIRMENT,autocomplete,0,10,NA,,,,NA,,NA,NA
+cadd40,attention_deficit_hyperactivity_disorder,,descriptive,"
+HELP-SEEKING TREATMENT
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcadd061,attention_deficit_hyperactivity_disorder,,radio,"Did anyone, like a teacher or family member, suggest that you get help for (list behaviors/feelings)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcadd061,NA,NA
+dcadd062,attention_deficit_hyperactivity_disorder,,radio,Were you placed in special classes at school because of your (list symptoms)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcadd061,NA,NA
+dcadd063,attention_deficit_hyperactivity_disorder,,radio,"Did you ever go to see a doctor, nurse, psychologist, social worker, school counselor, minister/priest or other professional to get help for (list behaviors/feelings)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcadd061,NA,NA
+cadd41,attention_deficit_hyperactivity_disorder,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+cadd41a,attention_deficit_hyperactivity_disorder,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd064,attention_deficit_hyperactivity_disorder,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd065,attention_deficit_hyperactivity_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd066,attention_deficit_hyperactivity_disorder,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd067,attention_deficit_hyperactivity_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd068,attention_deficit_hyperactivity_disorder,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd069,attention_deficit_hyperactivity_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+cadd42,attention_deficit_hyperactivity_disorder,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd070,attention_deficit_hyperactivity_disorder,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd071,attention_deficit_hyperactivity_disorder,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd072,attention_deficit_hyperactivity_disorder,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd073,attention_deficit_hyperactivity_disorder,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd074,attention_deficit_hyperactivity_disorder,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd063] = '1',,RH,NA,,NA,NA
+dcadd075,attention_deficit_hyperactivity_disorder,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcadd074] = '0',,,NA,,NA,NA
+dcadd076,attention_deficit_hyperactivity_disorder,,notes,What did the professional(s) (doctors) say was the problem that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dcadd063] = '1',,LH,NA,,NA,NA
+cadd43,attention_deficit_hyperactivity_disorder,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcadd063] = '1',,,NA,,NA,NA
+dcadd077,attention_deficit_hyperactivity_disorder,,radio,Out-patient (Seeing someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd063] = '1',,,NA,dcadd077,NA,NA
+dcadd078,attention_deficit_hyperactivity_disorder,,radio,In-patient (Staying in a hospital or a residential program),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd063] = '1',,,NA,dcadd077,NA,NA
+dcadd079,attention_deficit_hyperactivity_disorder,,radio,Special classes at school (IEP etc),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd063] = '1',,,NA,dcadd077,NA,NA
+dcadd080,attention_deficit_hyperactivity_disorder,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd063] = '1',,,NA,dcadd077,NA,NA
+dcadd081,attention_deficit_hyperactivity_disorder,,notes,Specify (Other),,,,NA,NA,NA,[dcadd080] = '1',,LH,NA,,NA,NA
+dcadd082,attention_deficit_hyperactivity_disorder,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcadd063] = '1',,RH,NA,,NA,NA
+cadd44,attention_deficit_hyperactivity_disorder,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+dcadd083,attention_deficit_hyperactivity_disorder,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+dcadd084,attention_deficit_hyperactivity_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+dcadd085,attention_deficit_hyperactivity_disorder,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+dcadd086,attention_deficit_hyperactivity_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+dcadd087,attention_deficit_hyperactivity_disorder,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+dcadd088,attention_deficit_hyperactivity_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+dcadd089,attention_deficit_hyperactivity_disorder,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+dcadd090,attention_deficit_hyperactivity_disorder,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcadd082] = '1',,,NA,,NA,NA
+cadd_end,attention_deficit_hyperactivity_disorder,,descriptive,"
+INTERVIEWER: END Attention Deficit Hyperactivity Disorder section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

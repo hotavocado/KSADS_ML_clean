@@ -1,0 +1,228 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+ceat0,eating_disorders,,descriptive,"
+Earlier you told me some things about your eating habits and your weight. Now I would like to ask you some questions about that. 
+
+
+GENERAL PROBES
+
+
+Bulimia
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dceat001,eating_disorders,,radio,"
+Now I am going to ask you about eating binges.  An eating binge is when someone stuffs themselves with a whole lot of food in a short time - like several whole pizzas or a whole chocolate cake or several containers of ice cream - and they don't seem to be able to control how much they eat. 
+ 
+
+Have you ever had an eating binge like that?  
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+ceat2,eating_disorders,,descriptive,"
+INTERVIEWER: If no, SKIP to Compensatory Behavior.
+",,,,NA,NA,NA,[dceat001] = '0',,,NA,,NA,NA
+dceat002,eating_disorders,,radio,"During these binges were you afraid you could not stop eating, or that your eating was out of control?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat001] = '1',,RH,NA,,NA,NA
+ceat3,eating_disorders,,descriptive,"On average, how often per week or month did you have eating binges?",,,,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+dceat003,eating_disorders,,text,Binge Frequency Per Week,,TIMES PER WEEK,number,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+dceat004,eating_disorders,,text,Binge Frequency Per Month,,TIMES PER MONTH,number,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+ceat4,eating_disorders,,descriptive,How long did this period of over-eating last?,,,,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+dceat005,eating_disorders,,text,N of Days,,DAYS,number,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+dceat006,eating_disorders,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+dceat007,eating_disorders,,text,N of Months,,MONTHS,number,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+ceat5,eating_disorders,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+ceat6,eating_disorders,,descriptive,"
+ONSET
+",,,,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+dceat008,eating_disorders,,dropdown,How old were you the first time you did these (list behaviors)?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",ONSET AGE,autocomplete,NA,NA,NA,[dceat001] = '1',,RH,NA,,NA,NA
+ceat7,eating_disorders,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,[dceat001] = '1',,,NA,,NA,NA
+dceat009,eating_disorders,,radio,Do you currently have times when you do these behaviors?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat001] = '1',,RH,NA,,NA,NA
+dceat010,eating_disorders,,dropdown,How old were you the last time you did this behavior?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",OFFSET AGE,autocomplete,NA,NA,NA,[dceat009] = '0',,,NA,,NA,NA
+ceat8,eating_disorders,,descriptive,"
+COMPENSATORY BEHAVIOR
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ceat9,eating_disorders,,descriptive,"Did you do anything to make yourself thin, like:",,,,NA,NA,NA,,,,NA,,NA,NA
+dceat011,eating_disorders,,radio,Making yourself throw up?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat011,NA,NA
+dceat012,eating_disorders,,radio,Taking diet pills or any other pills/medicine to help you lose weight?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat011,NA,NA
+dceat013,eating_disorders,,notes,Which substances?,,,,NA,NA,NA,[dceat012] = '1',,LH,NA,,NA,NA
+dceat014,eating_disorders,,radio,Going on a very strict diet (eating very few calories)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat014,NA,NA
+dceat015,eating_disorders,,radio,Fasting (not eating at all)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat014,NA,NA
+dceat016,eating_disorders,,radio,Exercising a lot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat014,NA,NA
+dceat017,eating_disorders,,radio,Chewing and spitting out food rather than swallowing?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat014,NA,NA
+dceat018,eating_disorders,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat014,NA,NA
+dceat019,eating_disorders,,notes,Specify (Other),,,,NA,NA,NA,[dceat018] = '1',,LH,NA,,NA,NA
+ceat10,eating_disorders,,descriptive,"
+INTERVIEWER: If no to all Compensatory, SKIP to Body Image.
+",,,,NA,NA,NA,[dceat011] = '0' and [dceat012] = '0' and [dceat014] = '0' and [dceat015] = '0' and [dceat016] = '0' and [dceat017] = '0' and  [dceat018] = '0',,,NA,,NA,NA
+dceat020,eating_disorders,,dropdown,How old were you the first time you did any of these behaviors (list)?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dceat011] = '1' or [dceat012] = '1' or [dceat014] = '1' or [dceat015] = '1' or [dceat016] = '1' or [dceat017] = '1' or  [dceat018] = '1',,,NA,,NA,NA
+ceat11,eating_disorders,,descriptive,"On average, how often did you engage in (name compensatory behavior)?",,,,NA,NA,NA,[dceat011] = '1' or [dceat012] = '1' or [dceat014] = '1' or [dceat015] = '1' or [dceat016] = '1' or [dceat017] = '1' or  [dceat018] = '1',,,NA,,NA,NA
+dceat021,eating_disorders,,text,Number of Times Per Week,,TIMES,number,NA,NA,NA,[dceat011] = '1' or [dceat012] = '1' or [dceat014] = '1' or [dceat015] = '1' or [dceat016] = '1' or [dceat017] = '1' or  [dceat018] = '1',,,NA,,NA,NA
+dceat022,eating_disorders,,text,Number of Times Per Month,,TIMES,number,NA,NA,NA,[dceat011] = '1' or [dceat012] = '1' or [dceat014] = '1' or [dceat015] = '1' or [dceat016] = '1' or [dceat017] = '1' or  [dceat018] = '1',,,NA,,NA,NA
+ceat12,eating_disorders,,descriptive,How long did this (name compensatory behavior) period last?,,,,NA,NA,NA,[dceat011] = '1' or [dceat012] = '1' or [dceat014] = '1' or [dceat015] = '1' or [dceat016] = '1' or [dceat017] = '1' or  [dceat018] = '1',,,NA,,NA,NA
+dceat023,eating_disorders,,text,N of Days,,DAYS,number,NA,NA,NA,[dceat011] = '1' or [dceat012] = '1' or [dceat014] = '1' or [dceat015] = '1' or [dceat016] = '1' or [dceat017] = '1' or  [dceat018] = '1',,,NA,,NA,NA
+dceat024,eating_disorders,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dceat011] = '1' or [dceat012] = '1' or [dceat014] = '1' or [dceat015] = '1' or [dceat016] = '1' or [dceat017] = '1' or  [dceat018] = '1',,,NA,,NA,NA
+dceat025,eating_disorders,,text,N of Months,,MONTHS,number,NA,NA,NA,[dceat011] = '1' or [dceat012] = '1' or [dceat014] = '1' or [dceat015] = '1' or [dceat016] = '1' or [dceat017] = '1' or  [dceat018] = '1',,,NA,,NA,NA
+ceat13,eating_disorders,,descriptive,"
+BODY IMAGE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dceat026,eating_disorders,,radio,During this time (did you ever have a time when you) were you a lot more concerned about your weight and/or shape than most people your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ceat14,eating_disorders,,descriptive,"
+ANOREXIA NERVOSA
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dceat027,eating_disorders,,radio,Was there ever a time when you weighed much less than other people thought you ought to weigh?  Has anyone ever worried that you were much too thin?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+ceat15,eating_disorders,,descriptive,"
+INTERVIEWER: If no to Anorexia, SKIP to Distress/Impairment.
+",,,,NA,NA,NA,[dceat027] = '0',,,NA,,NA,NA
+ceat16,eating_disorders,,descriptive,"
+WEIGHT LOSS
+",,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat028,eating_disorders,,radio,"At that time, had you lost a lot of weight on purpose?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,dceat028,NA,NA
+dceat029,eating_disorders,,radio,"In the past, did you keep your weight down on purpose?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,dceat028,NA,NA
+dceat030,eating_disorders,,text,What was your lowest weight at that time?,,POUNDS,number,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+ceat17,eating_disorders,,descriptive,About how tall were you at that time? (Record feet - 1 digit; inches - 2 digits),,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat031,eating_disorders,,text,Height (Feet),,FEET,number,1,7,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat032,eating_disorders,,text,Height (Inches),,INCHES,number,0,12,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat033,eating_disorders,,dropdown,How old were you at the time?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+ceat18,eating_disorders,,descriptive,Age range (N to N),,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat034,eating_disorders,,text,Age range 1,,AGE RANGE,number,1,18,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat035,eating_disorders,,text,Age range 2,,AGE RANGE,number,1,18,NA,[dceat027] = '1',,,NA,,NA,NA
+ceat16a,eating_disorders,,descriptive,"
+Participant Card (Height/Weight)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dceat036,eating_disorders,,radio,"
+INTERVIEWER: Is participant's lowest weight 85% or lower than normal?  See Height/Weight Chart in Cards. 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,,NA,NA
+ceat19,eating_disorders,,descriptive,"
+INTERVIEWER: If YES, to underweight and endorsed binge eating- ask next question. 
+",,,,NA,NA,NA,[dceat036] = '1' and [dceat001] = '1',,,NA,,NA,NA
+ceat20,eating_disorders,,descriptive,"
+ANOREXIA BINGING TYPE/BULIMIA DIFFERENTIAL
+",,,,NA,NA,NA,[dceat036] = '1' and [dceat001] = '1',,,NA,,NA,NA
+dceat037,eating_disorders,,radio,Did your episodes of binge eating only occur when you refused to maintain an appropriate weight?,"7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat036] = '1' and [dceat001] = '1',,RH,NA,,NA,NA
+ceat21,eating_disorders,,descriptive,"
+FEAR OF GAINING WEIGHT
+",,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat038,eating_disorders,,radio,At that time did you still feel fat or did you see yourself as too fat in some ways?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,,NA,dceat038,NA,NA
+dceat039,eating_disorders,,radio,"Were you still very much afraid that you could become fat, even after you'd lost a lot of weight?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,,NA,dceat038,NA,NA
+ceat22,eating_disorders,,descriptive,"
+DISTORTED BODY IMAGE
+",,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat040,eating_disorders,,radio,At the time you were losing weight were you a lot more concerned about your weight and/or shape than most people your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,dceat040,NA,NA
+dceat041,eating_disorders,,radio,Did you feel that parts of your body were still too fat when others thought that you were thin?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,dceat040,NA,NA
+ceat23a,eating_disorders,,radio,"
+INTERVIEWER: IS PARTICIPANT FEMALE? 
+","0, No | 1, Yes",,,NA,NA,NA,[dceat027] = '1',,RH,NA,,NA,NA
+ceat23,eating_disorders,,descriptive,"
+AMENORRHEA
+",,,,NA,NA,NA,[ceat23a] = '1',,,NA,,NA,NA
+dceat042,eating_disorders,,radio,Have you begun to have menstrual periods?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[ceat23a] = '1',,RH,NA,,NA,NA
+ceat24,eating_disorders,,descriptive,"
+INTERVIEWER: If no, SKIP to Medical/Drugs.
+",,,,NA,NA,NA,[dceat042] = '0',,,NA,,NA,NA
+dceat043,eating_disorders,,radio,"Do you have regular periods, meaning every month for at least six months?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat042] = '1',,,NA,dceat043,NA,NA
+dceat044,eating_disorders,,radio,If female & applicable: Did your periods ever stop?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat042] = '1',,,NA,dceat043,NA,NA
+dceat045,eating_disorders,,text,How many months (maxium) did you miss in a row?,,MISSED CYCLES,number,NA,NA,NA,[dceat042] = '1',,,NA,,NA,NA
+dceat046,eating_disorders,,radio,"
+INTERVIEWER: Did participant miss at least 3 cycles in a row? 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat042] = '1',,RH,NA,,NA,NA
+ceat26,eating_disorders,,descriptive,"
+MEDICAL/DRUGS
+",,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat047,eating_disorders,,radio,Was there a physical cause for your weight loss?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,,NA,NA
+dceat048,eating_disorders,,notes,What was the medical disorder?  Specify:,,,,NA,NA,NA,[dceat047] = '1',,LH,NA,,NA,NA
+dceat049,eating_disorders,,radio,Did a doctor tell you this?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat047] = '1',,RH,NA,,NA,NA
+dceat050,eating_disorders,,notes,Specify,,,,NA,NA,NA,[dceat049] = '1',,LH,NA,,NA,NA
+ceat27,eating_disorders,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+ceat28,eating_disorders,,descriptive,"
+ONSET
+",,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+ceat29,eating_disorders,,descriptive,How old were you the first time you had these concerns about your weight?,,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat051,eating_disorders,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,,NA,NA
+dceat052,eating_disorders,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dceat027] = '1',,RH,NA,,NA,NA
+ceat30,eating_disorders,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat053,eating_disorders,,radio,Do you have these concerns now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,,NA,NA
+dceat054,eating_disorders,,dropdown,How old were you the last time you had these concerns?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dceat053] = '0',,,NA,,NA,NA
+ceat31,eating_disorders,,descriptive,"
+COURSE
+",,,,NA,NA,NA,[dceat027] = '1',,,NA,,NA,NA
+dceat055,eating_disorders,,radio,"Since you were (age of onset), was there ever a time when you were not concerned about your weight?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat027] = '1',,RH,NA,,NA,NA
+ceat32,eating_disorders,,descriptive,What was the longest period of time that you did not have these concerns?,,,,NA,NA,NA,[dceat055] = '1',,,NA,,NA,NA
+dceat056,eating_disorders,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dceat055] = '1',,RH,NA,,NA,NA
+dceat057,eating_disorders,,text,N of Months,,MONTHS,number,NA,NA,NA,[dceat055] = '1',,RH,NA,,NA,NA
+dceat058,eating_disorders,,text,N of Years,,YEARS,number,NA,NA,NA,[dceat055] = '1',,RH,NA,,NA,NA
+ceat33,eating_disorders,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+
+INTERVIEWER: Access for Anorexia or Bulimia or Both if applicable. 
+
+
+INTERVIEWER: If no to all previous eating probes,  END Eating Disorders section.
+
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ceat34,eating_disorders,,descriptive,"
+INTERVIEWER: Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ceat35,eating_disorders,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+ceat36,eating_disorders,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dceat059,eating_disorders,,dropdown,How much did having these behavior(s) upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+ceat37,eating_disorders,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dceat060,eating_disorders,,dropdown,"I want to know how much the eating binges/behaviors to control eating/weight you have told me about have caused problems for you at home, at school, or with your family or friends.","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dceat061,eating_disorders,,radio,Did you stay home from school because of your eating binges/behaviors to control eating/weight?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dceat062,eating_disorders,,text,How  many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dceat061] = '1',,,NA,,NA,NA
+ceat35a,eating_disorders,,descriptive,"
+HELP-SEEKING TREATMENT (Lifetime)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dceat063,eating_disorders,,radio,"Did anyone, like a teacher or family member, suggest that you get help for problems with your eating or weight?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat063,NA,NA
+dceat064,eating_disorders,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, psychologist, minister/priest or other professional to get help for problems with your eating or weight?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dceat063,NA,NA
+ceat37a,eating_disorders,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+ceat36a,eating_disorders,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat065,eating_disorders,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat066,eating_disorders,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat067,eating_disorders,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat068,eating_disorders,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat069,eating_disorders,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat070,eating_disorders,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+ceat38,eating_disorders,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat071,eating_disorders,,radio,N/A,"7, N/A",,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat072,eating_disorders,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat073,eating_disorders,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat074,eating_disorders,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat075,eating_disorders,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat064] = '1',,RH,NA,,NA,NA
+dceat076,eating_disorders,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dceat075] = '0',,,NA,,NA,NA
+dceat077,eating_disorders,,notes,What did the professional(s) (doctors) say was the problem that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dceat064] = '1',,LH,NA,,NA,NA
+ceat39,eating_disorders,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dceat064] = '1',,,NA,,NA,NA
+dceat078,eating_disorders,,radio,Out-patient (Going to an office to see someone or participating in a group not in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat064] = '1',,,NA,dceat078,NA,NA
+dceat079,eating_disorders,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat064] = '1',,,NA,dceat078,NA,NA
+dceat080,eating_disorders,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat064] = '1',,,NA,dceat078,NA,NA
+dceat081,eating_disorders,,notes,Specify (Other),,,,NA,NA,NA,[dceat080] = '1',,LH,NA,,NA,NA
+dceat082,eating_disorders,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dceat064] = '1',,RH,NA,,NA,NA
+ceat40,eating_disorders,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+dceat083,eating_disorders,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+dceat084,eating_disorders,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+dceat085,eating_disorders,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+dceat086,eating_disorders,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+dceat087,eating_disorders,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+dceat088,eating_disorders,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+dceat089,eating_disorders,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+dceat090,eating_disorders,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dceat082] = '1',,,NA,,NA,NA
+ceat_end,eating_disorders,,descriptive,"
+INTERVIEWER: END Eating Disorder section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

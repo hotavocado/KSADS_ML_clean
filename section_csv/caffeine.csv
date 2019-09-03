@@ -1,0 +1,44 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+ccaf0,caffeine,,descriptive,"
+The next questions are about caffeine use. 
+
+
+INTERVIEWER: DO NOT complete section if never used caffeine once a month or more.
+
+
+CAFFEINE USE
+
+
+CURRENT USE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccaf001,caffeine,,radio,Have you drunk coffee in the past year?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccaf002,caffeine,,text,How many 8oz. cups of coffee do you usually consume per day?  (On the days you drink coffee),,NUMBER PER DAY,number,NA,NA,NA,[dccaf001] = '1',,,NA,,NA,NA
+dccaf003,caffeine,,radio,Have you drunk caffeinated tea in the past year?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccaf004,caffeine,,text,How many 8oz. cups of caffeinated tea do you usually consume per day?  (On the days you drink coffee),,NUMBER PER DAY,number,NA,NA,NA,[dccaf003] = '1',,,NA,,NA,NA
+dccaf005,caffeine,,radio,Have you drunk caffeinated soda in the past year?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccaf006,caffeine,,text,How many 12oz. cups of caffeinated soda do you usually consume per day?  (On the days you drink coffee),,NUMBER PER DAY,number,NA,NA,NA,[dccaf005] = '1',,,NA,,NA,NA
+dccaf007,caffeine,,notes,Specify (Soda Name),,,,NA,NA,NA,[dccaf005] = '1',,LH,NA,,NA,NA
+dccaf008,caffeine,,text,How many total days per month do you usually drink (insert name of beverage)?,,DAYS PER MONTH,number,NA,NA,NA,[dccaf001] = '1' or [dccaf003] = '1' or [dccaf005] = '1',,,NA,,NA,NA
+ccaf1,caffeine,,descriptive,"How long have you been drinking this amount?
+
+1 Standard Drink= 8 oz. Coffee/Tea 
+                              12 oz. Soda (20 oz.=1.5)",,,,NA,NA,NA,[dccaf001] = '1' or [dccaf003] = '1' or [dccaf005] = '1',,,NA,,NA,NA
+dccaf009,caffeine,,text,N of Months,,NUMBER OF MONTHS,,NA,NA,NA,[dccaf001] = '1' or [dccaf003] = '1' or [dccaf005] = '1',,,NA,,NA,NA
+dccaf0092_83a,caffeine,,text,N of Years,,NUMBER OF YEARS,,NA,NA,NA,[dccaf001] = '1' or [dccaf003] = '1' or [dccaf005] = '1',,,NA,,NA,NA
+ccaf2,caffeine,,descriptive,"
+PAST CAFFEINE USE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccaf011,caffeine,,dropdown,How old were you the first time you drank a (insert name of beverage)?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+ccaf3,caffeine,,descriptive,"
+Now I would like you to think about the time in your life when you drank the most caffeine.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dccaf012,caffeine,,radio,Which did you drink the most?,"1, coffee | 2, tea | 3, soda | 4, other",,,NA,NA,NA,,,RH,NA,,NA,NA
+dccaf0013,caffeine,,dropdown,How old were you then?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,,NA,,NA,NA
+dccaf014,caffeine,,text,How many (insert name of beverage) did you usually drink each day? (on the days you drank...),,NUMBER PER DAY,number,NA,NA,NA,,,,NA,,NA,NA
+dccaf015,caffeine,,text,How many days per month did you  usually drink (insert name of beverage)?,,DAYS PER MONTH,number,NA,NA,NA,,,,NA,,NA,NA
+ccaf4,caffeine,,descriptive,How long did you drink (insert name of beverage) this way in total?,,,,NA,NA,NA,,,,NA,,NA,NA
+dccaf016,caffeine,,text,N of Months,,MONTHS,number,NA,NA,NA,,,,NA,,NA,NA
+dccaf0162_9c8,caffeine,,text,N of Years,,YEARS,number,NA,NA,NA,,,,NA,,NA,NA
+ccaf_end,caffeine,,descriptive,"
+INTERVIEWER: END Caffeine section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

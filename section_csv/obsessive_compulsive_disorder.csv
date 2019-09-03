@@ -1,0 +1,214 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+cocd0,obsessive_compulsive_disorder,,descriptive,"
+Earlier I asked you about thoughts or ideas that come into your head over and over again. I would like to ask you more about (that/those) now. 
+
+
+GENERAL PROBES-OBSESSIONS
+
+
+Recurrent and persistent ideas, thoughts, impulses (initially experienced as intrusive and senseless).
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd001,obsessive_compulsive_disorder,,radio,"Have you ever been bothered by thoughts in your head, that come over and over again and won't go away, or that didn't make sense?  (Like silly words or ideas about harming others/self, germs, illness, need to have things an exact way or anything else the child said)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcocd002,obsessive_compulsive_disorder,,radio,Did you try to push the thoughts away?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcocd003,obsessive_compulsive_disorder,,radio,"Have you ever been bothered by pictures in your mind that kept coming back, such as pictures of violent things, like people being hurt?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcocd004,obsessive_compulsive_disorder,,radio,Did you worry a lot about getting an illness or bad disease?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cocd2,obsessive_compulsive_disorder,,descriptive,"
+INTERVIEWER: If answers no to all,  SKIP to  Compulsion.
+",,,,NA,NA,NA,[dcocd001] = '0' and [dcocd002] = '0'  and [dcocd003] = '0'  and [dcocd004] = '0',,,NA,,NA,NA
+dcocd005,obsessive_compulsive_disorder,,notes,"If yes: What kind of thoughts, images or impulses have you had? (Interviewer: Not simply excessive worries about real life problems.)",,,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,LH,NA,,NA,NA
+cocd3,obsessive_compulsive_disorder,,descriptive,"
+SPECIFIC THOUGHTS
+
+I would like to ask you about some thoughts that people sometimes have. 
+ 
+Have you had thoughts about:",,,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,,NA,,NA,NA
+dcocd006,obsessive_compulsive_disorder,,radio,Concern with harming others/self?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd007,obsessive_compulsive_disorder,,radio,"Pictures of violent things, like people being hurt?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd008,obsessive_compulsive_disorder,,radio,"A fear that you would do something or say something bad, even though you didn't want to (insults,  obscenities, stealing)?
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd009,obsessive_compulsive_disorder,,radio,Feelings that the bad things that happened were your fault?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd010,obsessive_compulsive_disorder,,radio,Contamination/germs/illness?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd011,obsessive_compulsive_disorder,,radio,Forbidden/bad thoughts?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd012,obsessive_compulsive_disorder,,radio,Need for symmetry/exactness?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd013,obsessive_compulsive_disorder,,radio,Religious obsessions?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd014,obsessive_compulsive_disorder,,radio,Any other obsessions?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+dcocd015,obsessive_compulsive_disorder,,notes,Specify (Other obsessions),,,,NA,NA,NA,[dcocd014] = '1',,LH,NA,,NA,NA
+cocd4,obsessive_compulsive_disorder,,descriptive,"
+SYMPTOMS- OBSESSIONS
+
+
+INTERVIEWER: Read grouped questions one at a time in a probing fashion then use responses to indicate the appropriate coded answer.
+",,,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,,NA,,NA,NA
+dcocd016,obsessive_compulsive_disorder,,radio,"
+Attempts to suppress/neutralize
+  Did you try not to think about [insert obsession here]? Or keep them out of your head? How? Did you try to think of something else, instead? Could you? Did you try to push the thoughts away? Where did you think the thoughts were coming from?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,,NA,dcocd016,NA,NA
+dcocd017,obsessive_compulsive_disorder,,radio,"
+Person recognizes that the obsessions are the product of his/her own mind, not imposed from without
+ Are these your own thoughts, or does someone else put them in your head?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,,NA,dcocd016,NA,NA
+dcocd018,obsessive_compulsive_disorder,,radio,Did having to think about [insert obsesssion here] seem silly? Did it make sense to you? Did you think you were thinking about [insert obsesssion here] too much?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,,NA,dcocd016,NA,NA
+dcocd019,obsessive_compulsive_disorder,,radio,"
+Marked distress
+ Did thoughts about [insert obsession here] upset you? Make you feel bad, nervous? A lot?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,,NA,dcocd016,NA,NA
+dcocd020,obsessive_compulsive_disorder,,radio,Did trying not to think about [insert obsession here] upset you a lot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,,NA,dcocd016,NA,NA
+dcocd021,obsessive_compulsive_disorder,,radio,"
+
+Time consumption
+
+How much of the time did you have these thoughts about [insert obsession here]? Every day? Less? (If less, read responses)
+","1, Less than once/week | 2, 1-2 times/week | 3, 3-5 times/week | 4, 6-7 times/week | 9, Unknown",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,LH,NA,,NA,NA
+dcocd022,obsessive_compulsive_disorder,,radio,"For how long? A few minutes? Longer?  How many times in a day? (RATE TOTAL TIME DURING A DAY, EVEN IF INTERMITTENT)","1, Less than 1 hour/day | 2, 1-2 hours/day | 3, More than 2 hours/day | 9, Unknown",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,LH,NA,,NA,NA
+dcocd023,obsessive_compulsive_disorder,,radio,"
+INTERVIEWER:Does participant meet criteria for obsessions? 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1' or  [dcocd004] = '1',,RH,NA,,NA,NA
+cocd5,obsessive_compulsive_disorder,,descriptive,"
+Some people feel like they have to repeat things over and over again to get rid of the thoughts in their head. Now I'm going to ask you some questions about this. 
+
+
+GENERAL PROBES-COMPULSIONS
+
+
+INTERVIEWER:Behavior is designed to neutralize/prevent discomfort or something dreaded from happening, but activity is either not appropriate or is excessive.
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd024,obsessive_compulsive_disorder,,radio,Have you ever saved up so many things that they got in the way? (Hoarding),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcocd024,NA,NA
+dcocd025,obsessive_compulsive_disorder,,radio,"Have you ever had to do something over and over again that you couldn't keep yourself from doing?  Things like washing your hands over and over again, counting things, or having to check on things?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcocd024,NA,NA
+dcocd026,obsessive_compulsive_disorder,,radio,"What about having to do something exactly the same way each time, and feeling you have to start over if you make a mistake?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcocd024,NA,NA
+dcocd027,obsessive_compulsive_disorder,,notes,What did you have to do?,,,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,LH,NA,,NA,NA
+cocd6,obsessive_compulsive_disorder,,descriptive,"
+INTERVIEWER: If no to BOTH Obsessions and Compulsions, END Obsession-Compulsion section.
+",,,,NA,NA,NA,([dcocd001] = '0' and [dcocd002] = '0'  and [dcocd003] = '0'  and [dcocd004] = '0' ) and ([dcocd024] = '0' and [dcocd025] = '0' and [dcocd026] = '0'),,,NA,,NA,NA
+cocd7,obsessive_compulsive_disorder,,descriptive,"
+INTERVIEWER: If no to Compulsions, SKIP to Associated Conditions.
+",,,,NA,NA,NA,([dcocd001] = '1' or [dcocd002] = '1'  or [dcocd003] = '1'  or [dcocd004] = '1' ) and ([dcocd024] = '0' and [dcocd025] = '0' and [dcocd026] = '0'),,,NA,,NA,NA
+cocd8,obsessive_compulsive_disorder,,descriptive,I would like to ask you about some things that people sometimes do. Do you often:,,,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,,NA,NA
+dcocd028,obsessive_compulsive_disorder,,radio,"Clean/wash (hands, house)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd029,obsessive_compulsive_disorder,,radio,Count?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd030,obsessive_compulsive_disorder,,radio,"Check (doors, locks, ovens)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd031,obsessive_compulsive_disorder,,radio,Go in and out a door over and over again?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd032,obsessive_compulsive_disorder,,radio,Order/arrange things?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd033,obsessive_compulsive_disorder,,radio,Dress?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd034,obsessive_compulsive_disorder,,radio,"Do things over and over again at bedtime, like arranging the pillows, sheets etc.?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd035,obsessive_compulsive_disorder,,radio,Save up things you don't need or avoid throwing things away (Hoarding)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd036,obsessive_compulsive_disorder,,radio,Other compulsions?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd028,NA,NA
+dcocd037,obsessive_compulsive_disorder,,notes,Specify (Other compulsions),,,,NA,NA,NA,[dcocd036] = '1',,LH,NA,,NA,NA
+cocd8a,obsessive_compulsive_disorder,,descriptive,"
+SYMPTOMS-COMPULSIONS
+",,,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,,NA,NA
+dcocd038,obsessive_compulsive_disorder,,notes,What did you imagine might happen if you didn't do (insert compulsion)?,,,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,LH,NA,,NA,NA
+dcocd039,obsessive_compulsive_disorder,,notes,How would you feel if you didn't do it?,,,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,LH,NA,,NA,NA
+dcocd040,obsessive_compulsive_disorder,,radio,"
+Recognizes that behavior is excessive / unreasonable - may not be present for children.
+ Did having to do [insert compulsion here] seem silly? Did it make sense to you? Did you think you were doing [insert compulsion here] too much?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd040,NA,NA
+dcocd041,obsessive_compulsive_disorder,,radio,"Did having to do [insert compulsion here] upset you? Make you feel bad, nervous?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd040,NA,NA
+dcocd042,obsessive_compulsive_disorder,,radio,How about trying not to think about [insert compulsion here]? Did it upset you a lot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,,NA,dcocd040,NA,NA
+dcocd043,obsessive_compulsive_disorder,,radio,How much of the time would you do [insert compulsion here]?  Every day? Less? (If less read responses),"1, Less than once/week | 2, 1-2 times/week | 3, 3-5 times/week | 4, 6-7 times/week | 9, Unknown",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,LH,NA,,NA,NA
+dcocd044,obsessive_compulsive_disorder,,radio,"For how long? A few minutes? Longer?  How many times in a day? (RATE TOTAL TIME DURING A DAY, EVEN IF INTERMITTENT)","1, Less than 1 hour/day | 2, 1-2 hours/day | 3, More than 2 hours/day | 9, Unknown",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,LH,NA,,NA,NA
+dcocd045,obsessive_compulsive_disorder,,radio,"
+INTERVIEWER: Does participant meet criteria for compulsions? 
+","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd024] = '1' or [dcocd025] = '1' or [dcocd026] = '1',,RH,NA,,NA,NA
+cocd9,obsessive_compulsive_disorder,,descriptive,"
+ASSOCIATED CONDITIONS (EPISODE)
+
+
+MEDICAL
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd046,obsessive_compulsive_disorder,,radio,Just before you began having (insert obsessions/compulsions) were you taking any drugs or medicines?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcocd046,NA,NA
+dcocd047,obsessive_compulsive_disorder,,radio,"Did you have these (insert obsessions/compulsions) only when you had a serious physical problem or illness? (e.g., PANDAS)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcocd046,NA,NA
+dcocd048,obsessive_compulsive_disorder,,notes,Specify:,,,,NA,NA,NA,[dcocd047] = '1',,LH,NA,,NA,NA
+dcocd049,obsessive_compulsive_disorder,,radio,Did you have these worries only when you were using a specific kind of medicine that your doctor told you to take?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcocd050,obsessive_compulsive_disorder,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcocd049] = '1',,,NA,,NA,NA
+dcocd051,obsessive_compulsive_disorder,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcocd049] = '1',,,NA,,NA,NA
+dcocd052,obsessive_compulsive_disorder,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcocd049] = '1',,,NA,,NA,NA
+cocd10,obsessive_compulsive_disorder,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at the thermometer/scale. Remind child how to use scale, if necessary.
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cocd11,obsessive_compulsive_disorder,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cocd12,obsessive_compulsive_disorder,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd053,obsessive_compulsive_disorder,,dropdown,How much did having thoughts/behaviors upset or bother you? How much did you ever feel upset or disappointed with yourself because of your thoughts/behaivors?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+cocd13,obsessive_compulsive_disorder,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd054,obsessive_compulsive_disorder,,dropdown,"How much did the thoughts/behaviors you have told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,,,,NA,,NA,NA
+dcocd055,obsessive_compulsive_disorder,,radio,Did you stay home from school because of your behaviors/thoughts?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcocd056,obsessive_compulsive_disorder,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcocd055] = '1',,,NA,,NA,NA
+cocd14,obsessive_compulsive_disorder,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cocd15,obsessive_compulsive_disorder,,descriptive,"
+ONSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cocd15a,obsessive_compulsive_disorder,,descriptive,How old were you the first time you had this (insert obsessions/compulsions)?,,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd057,obsessive_compulsive_disorder,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcocd058,obsessive_compulsive_disorder,,dropdown,Age,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,,,RH,NA,,NA,NA
+cocd16,obsessive_compulsive_disorder,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd059,obsessive_compulsive_disorder,,radio,Do you have this (insert obsessions/compulsions) now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcocd060,obsessive_compulsive_disorder,,dropdown,How old were you the last time you had these thoughts/behaviors?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcocd059] = '0',,,NA,,NA,NA
+cocd17,obsessive_compulsive_disorder,,descriptive,"
+COURSE
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd061,obsessive_compulsive_disorder,,radio,"Since you were (age of onset), was there ever a time when did not have (insert obsessions/compulsions)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+cocd17a,obsessive_compulsive_disorder,,descriptive,What was the longest period of time that you did not have (insert obsessions/compulsions)?,,,,NA,NA,NA,[dcocd061] = '1',,,NA,,NA,NA
+dcocd062,obsessive_compulsive_disorder,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcocd061] = '1',,RH,NA,,NA,NA
+dcocd063,obsessive_compulsive_disorder,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcocd061] = '1',,RH,NA,,NA,NA
+dcocd064,obsessive_compulsive_disorder,,text,N of Years,,YEARS,number,NA,NA,NA,[dcocd061] = '1',,RH,NA,,NA,NA
+cocd18,obsessive_compulsive_disorder,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcocd065,obsessive_compulsive_disorder,,radio,"Did anyone, like a teacher or relative, suggest that you get help for (list symptoms)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcocd065,NA,NA
+dcocd066,obsessive_compulsive_disorder,,radio,"Did you ever go to see a doctor, nurse, counselor, social worker, psychologist, minister/priest or other professional to get help for (list symptoms)","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcocd065,NA,NA
+cocd20,obsessive_compulsive_disorder,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+cocd19,obsessive_compulsive_disorder,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd067,obsessive_compulsive_disorder,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd068,obsessive_compulsive_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd069,obsessive_compulsive_disorder,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd070,obsessive_compulsive_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd071,obsessive_compulsive_disorder,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd072,obsessive_compulsive_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+cocd21,obsessive_compulsive_disorder,,descriptive,"
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd073,obsessive_compulsive_disorder,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd074,obsessive_compulsive_disorder,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd075,obsessive_compulsive_disorder,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd076,obsessive_compulsive_disorder,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd077,obsessive_compulsive_disorder,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd066] = '1',,RH,NA,,NA,NA
+dcocd078,obsessive_compulsive_disorder,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcocd077] = '0',,,NA,,NA,NA
+dcocd079,obsessive_compulsive_disorder,,notes,What did the professional(s) (doctors) say that you had  (diagnoses given)? List:,,,,NA,NA,NA,[dcocd066] = '1',,LH,NA,,NA,NA
+cocd22,obsessive_compulsive_disorder,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcocd066] = '1',,,NA,,NA,NA
+dcocd080,obsessive_compulsive_disorder,,radio,Out-patient (Going to see someone in an office or a group not in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd066] = '1',,RH,NA,dcocd080,NA,NA
+dcocd081,obsessive_compulsive_disorder,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd066] = '1',,RH,NA,dcocd080,NA,NA
+dcocd082,obsessive_compulsive_disorder,,radio,Self-help,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd066] = '1',,RH,NA,dcocd080,NA,NA
+dcocd083,obsessive_compulsive_disorder,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd066] = '1',,RH,NA,dcocd080,NA,NA
+dcocd084,obsessive_compulsive_disorder,,notes,Specify (Other),,,,NA,NA,NA,[dcocd083] = '1',,LH,NA,,NA,NA
+dcocd085,obsessive_compulsive_disorder,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcocd066] = '1',,RH,NA,,NA,NA
+cocd23,obsessive_compulsive_disorder,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+dcocd086,obsessive_compulsive_disorder,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+dcocd087,obsessive_compulsive_disorder,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+dcocd088,obsessive_compulsive_disorder,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+dcocd089,obsessive_compulsive_disorder,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+dcocd090,obsessive_compulsive_disorder,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+dcocd091,obsessive_compulsive_disorder,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+dcocd092,obsessive_compulsive_disorder,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+dcocd093,obsessive_compulsive_disorder,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcocd085] = '1',,,NA,,NA,NA
+cocd24,obsessive_compulsive_disorder,,descriptive,"
+INTERVIEWER: If either HOARDING question in the compulsion general probes or in the list of Compulsions was endorced, complete the followign questions; otherwise END section.
+",,,,NA,NA,NA,[dcocd024] = '1' or [dcocd035] = '1',,,NA,,NA,NA
+dcocd094,obsessive_compulsive_disorder,,radio,"Because of the number of toys/stuff you collect or save, how difficult is it for you to use ('play in' if < 12 years of age) your room, playroom, closet, or other room in your home?","1, mild problem, occasionally (less than weekly) acquires items not needed, or acquires a few unneeded items | 2, moderate, regularly (once or twice weekly) acquires items not needed, or acquires some unneeded itms, or frequently (several times per week) acquires items not needed, or acquires many unneeded items | 3, severe, very often (daily) acquires items not needed, or acquires large numbers of unneeded items | 9, Unknown",,,NA,NA,NA,[dcocd024] = '1' or [dcocd035] = '1',,LV,NA,,NA,NA
+dcocd095,obsessive_compulsive_disorder,,radio,How much more difficult is it to throw away (or give away) toys and/or other stuff you collect than it is for other children your age?,"1, mild problem, occasionally (less than weekly) acquires items not needed, or acquires a few unneeded items | 2, moderate, regularly (once or twice weekly) acquires items not needed, or acquires some unneeded itms, or frequently (several times per week) acquires items not needed, or acquires many unneeded items | 3, severe, very often (daily) acquires items not needed, or acquires large numbers of unneeded items | 9, Unknown",,,NA,NA,NA,[dcocd024] = '1' or [dcocd035] = '1',,LV,NA,,NA,NA
+dcocd096,obsessive_compulsive_disorder,,radio,"How much does yoru family get upset due to your clutter, difficulty throwing things away or problems with keeping things?","1, mild problem, occasionally (less than weekly) acquires items not needed, or acquires a few unneeded items | 2, moderate, regularly (once or twice weekly) acquires items not needed, or acquires some unneeded itms, or frequently (several times per week) acquires items not needed, or acquires many unneeded items | 3, severe, very often (daily) acquires items not needed, or acquires large numbers of unneeded items | 9, Unknown",,,NA,NA,NA,[dcocd024] = '1' or [dcocd035] = '1',,LV,NA,,NA,NA
+cocd_end,obsessive_compulsive_disorder,,descriptive,"
+INTERVIEWER: END Obsessive-Compulsive section.
+",,,,NA,NA,NA,,,,NA,,NA,NA

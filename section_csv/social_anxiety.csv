@@ -1,0 +1,269 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+csoc0,social_anxiety,,descriptive,"
+Earlier you said that you were very afraid of or uncomfortable about (list endorsed fears).  I'd now like to ask you more about (that/those).
+
+
+SYMPTOMS
+
+
+INTERVIEWER: For each situation endorsed, ask about Frequency, Distress and Avoidance using the questions and response choices below. If fear is not current, ask about worst time.     
+",,,,NA,NA,NA,,,,NA,,NA,NA
+csoc1,social_anxiety,,descriptive,"
+Participant Card 3 (Social/Performance)
+
+",,,,NA,NA,NA,,,,NA,,NA,NA
+csoc1a,social_anxiety,,descriptive,"
+SOCIAL SITUATIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+csoc1b,social_anxiety,,descriptive,Have you ever been very afraid or felt uncomfortable:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcsoc001,social_anxiety,,radio,1. Meeting new people your own age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc001,NA,NA
+dcsoc002,social_anxiety,,radio,"2. Talking to adults in authority, like teachers or coaches?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc001,NA,NA
+dcsoc003,social_anxiety,,radio,"3. Being with a large group of people your own age, like at a big party or in the lunchroom at school?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc001,NA,NA
+dcsoc004,social_anxiety,,radio,"4. Being with a small group of people your own age, like at a small party or a small class at school?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc001,NA,NA
+dcsoc005,social_anxiety,,radio,"5. Eating, drinking, writing (e.g., signing name, writing on dry erase/blackboard) or doing homework while someone watches?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc001,NA,NA
+dcsoc006,social_anxiety,,radio,6. Talking on the telephone?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc001,NA,NA
+dcsoc007,social_anxiety,,radio,7. Talking with people your own age who you don't know very well?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc001,NA,NA
+csoc2a,social_anxiety,,descriptive,"
+PERFORMANCE SITUATIONS
+",,,,NA,NA,NA,,,,NA,,NA,NA
+csoc2b,social_anxiety,,descriptive,Have you ever been very afraid or felt uncomfortable:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcsoc008,social_anxiety,,radio,8. Speaking in class when a teacher calls on you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc008,NA,NA
+dcsoc009,social_anxiety,,radio,"9. Acting, performing or giving a talk/speech in front of a group of people?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc008,NA,NA
+dcsoc010,social_anxiety,,radio,10. Playing sports or doing a musical performance in front of people?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc008,NA,NA
+dcsoc011,social_anxiety,,radio,11. Taking an important test or exam even though you studied enough?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc008,NA,NA
+dcsoc012,social_anxiety,,radio,12. Is there any other situation you can think of where you  have been the center of attention or where you were concerned something embarrassing might happen and you  felt very afraid of felt uncomfortable?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc008,NA,NA
+dcsoc013,social_anxiety,,notes,Specify (Other situation),,,,NA,NA,NA,[dcsoc012] = '1',,LH,NA,,NA,NA
+csoc3,social_anxiety,,descriptive,"
+INTERVIEWER: If no to all, END Social Anxiety section.
+",,,,NA,NA,NA,[dcsoc001] = '0' and [dcsoc002] = '0' and [dcsoc003] = '0' and [dcsoc004] = '0' and [dcsoc005] = '0' and [dcsoc006] = '0' and [dcsoc007] = '0' and [dcsoc008] = '0' and [dcsoc009] = '0' and [dcsoc010] = '0' and [dcsoc011] = '0' and [dcsoc012] = '0',,,NA,,NA,NA
+csoc4,social_anxiety,,descriptive,"
+NATURE OF FEAR
+",,,,NA,NA,NA,,,,NA,,NA,NA
+csoc5,social_anxiety,,descriptive,"When you were in these situations (list specific examples from above), were you afraid or uncomfortable because:",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsoc014,social_anxiety,,radio,"You'd look silly, foolish, be laughed at, or do something embarrassing?","0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc014,NA,NA
+dcsoc015,social_anxiety,,radio,You'd be the center of attention?,"0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc014,NA,NA
+dcsoc016,social_anxiety,,radio,You'd look nervous or blush?,"0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc014,NA,NA
+dcsoc017,social_anxiety,,radio,You'd make mistakes?,"0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,,,,NA,dcsoc014,NA,NA
+dcsoc018,social_anxiety,,notes,Why were you afraid or uncomfortable to be in these situations?,,,,NA,NA,NA,[dcsoc014] = '0' and [dcsoc015] = '0' and [dcsoc016] = '0' and [dcsoc017] = '0',,LH,NA,,NA,NA
+csoc6,social_anxiety,,descriptive,"
+INTERVIEWER: If only a performance situation is endorced, SKIP to Performance Fear category.
+",,,,NA,NA,NA,([dcsoc001] = '0' and [dcsoc002] = '0' and [dcsoc003] = '0' and [dcsoc004] = '0' and [dcsoc005] = '0' and [dcsoc006] = '0' and [dcsoc007] = '0') and ([dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1'),,,NA,,NA,NA
+csoc7,social_anxiety,,descriptive,"
+SOCIAL FEAR CATEGORY
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+csoc8a,social_anxiety,,descriptive,"
+INTERVIEWER: List the worst social fear below.  Assist the participant in choosing a situation coded with some distress or avoidance. Record the number corresponding to the social situation.
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+csoc8,social_anxiety,,descriptive,You said that you were very afraid or uncomfortable about (list social situations).  Which one of these things upsets you the most?,,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc020,social_anxiety,,text,Most distressing and avoided SOCIAL situation:,,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc020a,social_anxiety,,text,Most distressing and avoided SOCIAL code:,,CODE RESPONSE,number,1,12,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+csoc9,social_anxiety,,descriptive,"
+INTERVIEWER: When you were most afraid of (social situations): 
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc021,social_anxiety,,radio,Were you much more scared of (insert situation) than other kids/teenagers your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,dcsoc021,NA,NA
+dcsoc022,social_anxiety,,radio,"When you had to do (social situation), did you feel very nervous, scared, or upset?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,dcsoc021,NA,NA
+dcsoc023,social_anxiety,,radio,Did being afraid of (social situation) keep you from doing things you should or wanted to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,dcsoc021,NA,NA
+dcsoc024a,social_anxiety,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcsoc023] = '1',,RH,NA,,NA,NA
+dcsoc024b,social_anxiety,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcsoc023] = '1',,RH,NA,,NA,NA
+dcsoc024c,social_anxiety,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcsoc023] = '1',,RH,NA,,NA,NA
+dcsoc025,social_anxiety,,radio,Was this fear so upsetting that you tried to get out of doing (social situation)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,dcsoc025,NA,NA
+dcsoc026,social_anxiety,,radio,Did you start to get nervous when you knew that you had to face (social situation)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,dcsoc025,NA,NA
+csoc10,social_anxiety,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at  the thermometer on this card.
+
+
+INTERVIEWER: Remind child how to use scale. 
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+csoc11,social_anxiety,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+csoc12,social_anxiety,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc027,social_anxiety,,text,How much did having this fear upset or bother you?,,CODE RESPONSE,number,0,10,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+csoc13,social_anxiety,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc028,social_anxiety,,text,"How much did the fear you told me about cause problems for you at home, at school, or with your family or friends?",,CODE RESPONSE,number,0,10,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc029,social_anxiety,,radio,Did you stay home from school because of your fear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,RH,NA,,NA,NA
+dcsoc030,social_anxiety,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcsoc029] = '1',,,NA,,NA,NA
+dcsoc031,social_anxiety,,radio,Did you ever avoid going to social events like birthday parties or other social activities because of your fear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,RH,NA,,NA,NA
+dcsoc032,social_anxiety,,text,How many times?,,TIMES,number,NA,NA,NA,[dcsoc031] = '1',,,NA,,NA,NA
+csoc14,social_anxiety,,descriptive,"
+ASSOCIATED CONDITIONS
+
+
+
+MEDICAL
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc033,social_anxiety,,radio,Was your fear related to being embarrassed by a physical problem like stuttering or acne or eating problems?,"0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,dcsoc033,NA,NA
+dcsoc034,social_anxiety,,radio,Did you have this fear only when you had a serious physical problem/ illness?,"0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,dcsoc033,NA,NA
+dcsoc035,social_anxiety,,notes,Specify (Problem/Illness),,,,NA,NA,NA,[dcsoc033] = '1' or [dcsoc034] = '1',,LH,NA,,NA,NA
+csoc15,social_anxiety,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+csoc16,social_anxiety,,descriptive,"
+ONSET
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+csoc17,social_anxiety,,descriptive,How old were you the first time you were afraid of (social situation)?,,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc036,social_anxiety,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,LH,NA,,NA,NA
+dcsoc037,social_anxiety,,dropdown,"Age
+
+INTERVIEWER: If age unknown, translate from grade in school. 
+
+","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,RH,NA,,NA,NA
+csoc18,social_anxiety,,descriptive,"
+OFFSET
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc038,social_anxiety,,radio,Are you still afraid of (social situation listed)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,RH,NA,,NA,NA
+dcsoc039,social_anxiety,,dropdown,How old were you the last time you had this fear?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsoc038] = '0',,,NA,,NA,NA
+csoc19,social_anxiety,,descriptive,"
+COURSE
+",,,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,,NA,,NA,NA
+dcsoc040,social_anxiety,,radio,"Since you were (age of onset), was there ever a time when you were not afraid of (social situation)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,RH,NA,,NA,NA
+csoc20,social_anxiety,,descriptive,What was the longest period of time that (social situation) did not bother you?,,,,NA,NA,NA,[dcsoc040] = '1',,,NA,,NA,NA
+dcsoc041,social_anxiety,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcsoc040] = '1',,RH,NA,,NA,NA
+dcsoc042,social_anxiety,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcsoc040] = '1',,RH,NA,,NA,NA
+dcsoc043,social_anxiety,,text,N of Years,,YEARS,number,NA,NA,NA,[dcsoc040] = '1',,RH,NA,,NA,NA
+dcsoc044,social_anxiety,,radio,Has this fear lasted for at least 6 months (most of the school year)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1',,RH,NA,,NA,NA
+csoc21,social_anxiety,,descriptive,"
+INTERVIEWER: If no performance fear, SKIP to Help-Seeking Treatment.
+",,,,NA,NA,NA,([dcsoc001] = '1' or [dcsoc002] = '1' or [dcsoc003] = '1' or [dcsoc004] = '1' or [dcsoc005] = '1' or [dcsoc006] = '1' or [dcsoc007] = '1')  and ([dcsoc008] = '0' and [dcsoc009] = '0' and [dcsoc010] = '0' and [dcsoc011] = '0' and [dcsoc012] = '0'),,,NA,,NA,NA
+csoc22,social_anxiety,,descriptive,"
+PERFORMANCE FEAR CATEGORY
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc22a,social_anxiety,,descriptive,"
+INTERVIEWER: List the worst performance fear below.  Assist the participant in choosing a situation coded with some distress or avoidance. Record the number corresponding to the social situation.
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc23,social_anxiety,,descriptive,You said that you were very afraid or uncomfortable about (list performance situations).  Which one of these things upsets you the most?,,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc22b,social_anxiety,,descriptive,"
+Participant Card 3 (Social Performance)
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc045,social_anxiety,,text,Most distressing and avoided PERFORMANCE situation:,,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc046,social_anxiety,,text,Most distressing and avoided PERFORMANCE code:,,CODE RESPONSE,number,8,12,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc24,social_anxiety,,descriptive,"
+INTERVIEWER: When you were most afraid of (performance situations): 
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc047,social_anxiety,,radio,Were you much more scared of (insert situation) than other kids/teenagers your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,dcsoc047,NA,NA
+dcsoc048,social_anxiety,,radio,"When you had to do (performance situation), did you feel very nervous, scared, or upset?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,dcsoc047,NA,NA
+dcsoc049,social_anxiety,,radio,Did being afraid of (performance situation) keep you from doing things you should or wanted to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,dcsoc047,NA,NA
+dcsoc050a,social_anxiety,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcsoc049] = '1',,RH,NA,,NA,NA
+dcsoc050b,social_anxiety,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcsoc049] = '1',,RH,NA,,NA,NA
+dcsoc050c,social_anxiety,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcsoc049] = '1',,RH,NA,,NA,NA
+dcsoc051,social_anxiety,,radio,Was this fear so upsetting that you tried to get out of doing (performance situation)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,dcsoc051,NA,NA
+dcsoc052,social_anxiety,,radio,Did you start to get nervous when you knew that you had to face (performance situation)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,dcsoc051,NA,NA
+csoc25,social_anxiety,,descriptive,"
+DISTRESS/IMPAIRMENT
+
+Please look at  the thermometer on this card.
+
+
+INTERVIEWER: Remind child how to use scale. 
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc26,social_anxiety,,descriptive,"
+Participant Card 8 (Distress/Impairment)
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc27,social_anxiety,,descriptive,"
+DISTRESS 
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc053,social_anxiety,,dropdown,How much did having this fear upset or bother you?,"0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc28,social_anxiety,,descriptive,"
+IMPAIRMENT
+
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc054,social_anxiety,,dropdown,"How much did the fear you have told me about cause problems for you at home, at school, or with your family or friends?","0, 0 | 1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10 | 997, 997 | 998, 998 | 999, 999",CODE RESPONSE,autocomplete,0,10,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc055,social_anxiety,,radio,Did you stay home from school because of your fear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,RH,NA,,NA,NA
+dcsoc056,social_anxiety,,text,How many days of school did you miss? (lifetime),,DAYS,number,NA,NA,NA,[dcsoc055] = '1',,,NA,,NA,NA
+dcsoc057,social_anxiety,,radio,Did you ever miss a game or performance (like a play or recital) because of your fear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,RH,NA,,NA,NA
+dcsoc058,social_anxiety,,text,How many times did you miss a game or performance?,,TIMES,number,NA,NA,NA,[dcsoc057] = '1',,,NA,,NA,NA
+csoc29,social_anxiety,,descriptive,"
+ASSOCIATED CONDITIONS
+
+
+
+MEDICAL
+
+
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc059,social_anxiety,,radio,Was your fear related to being embarrassed by a physical problem like stuttering or acne or eating problems?,"0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,dcsoc059,NA,NA
+dcsoc060,social_anxiety,,radio,Did you have this fear only when you had a serious physical problem/ illness?,"0, No | 1, Yes | 7, N/A | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,dcsoc059,NA,NA
+dcsoc061,social_anxiety,,notes,Specify (Problem/Illness),,,,NA,NA,NA,[dcsoc059] = '1' or [dcsoc060] = '1',,LH,NA,,NA,NA
+csoc30,social_anxiety,,descriptive,"
+EPISODES/COURSE
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc31,social_anxiety,,descriptive,"
+ONSET
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+csoc32,social_anxiety,,descriptive,How old were you the first time you were afraid of (performance situation)?,,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dsoc062,social_anxiety,,radio,Always,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,LH,NA,,NA,NA
+dsoc063,social_anxiety,,dropdown,"Age
+
+INTERVIEWER: If age unknown, translate from grade in school. 
+
+","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,RH,NA,,NA,NA
+csoc33,social_anxiety,,descriptive,"
+
+OFFSET
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc064,social_anxiety,,radio,Are you still afraid of (performance situation listed)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,RH,NA,,NA,NA
+dcsoc065,social_anxiety,,dropdown,How old were you the last time you had this fear?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsoc064] = '0',,,NA,,NA,NA
+csoc34,social_anxiety,,descriptive,"
+COURSE
+",,,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,,NA,,NA,NA
+dcsoc066,social_anxiety,,radio,"Since you were (age of onset), was there ever a time when you were not afraid of (performance situation)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,RH,NA,,NA,NA
+csoc35,social_anxiety,,descriptive,What was the longest period of time that (performance situation) did not bother you?,,,,NA,NA,NA,[dcsoc066] = '1',,,NA,,NA,NA
+dcsoc067,social_anxiety,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcsoc066] = '1',,RH,NA,,NA,NA
+dcsoc068,social_anxiety,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcsoc066] = '1',,RH,NA,,NA,NA
+dcsoc069,social_anxiety,,text,N of Years,,YEARS,number,NA,NA,NA,[dcsoc066] = '1',,RH,NA,,NA,NA
+dcsoc070,social_anxiety,,radio,Has this fear lasted for at least 6 months (most of the school year)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc008] = '1' or [dcsoc009] = '1' or [dcsoc010] = '1' or [dcsoc011] = '1' or [dcsoc012] = '1',,RH,NA,,NA,NA
+csoc36,social_anxiety,,descriptive,"
+HELP-SEEKING TREATMENT (LIFETIME)
+",,,,NA,NA,NA,,,,NA,,NA,NA
+dcsoc071,social_anxiety,,radio,"Did anyone, like a teacher or relative, suggest that you get help for  any of these fears?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+dcsoc072,social_anxiety,,radio,"Did you ever go to see a doctor, nurse, social worker, psychologist, school counselor, minister/priest or other professional to get help for (list fears)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
+csoc38,social_anxiety,,descriptive,What kind of person/people did you get help from?,,,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+csoc37,social_anxiety,,descriptive,"
+Participant Card 13 (Professional/Treatment)
+",,,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc073,social_anxiety,,text,Specify (Professional/Treatment 1),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc074,social_anxiety,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc075,social_anxiety,,text,Specify (Professional/Treatment 2),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc076,social_anxiety,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc077,social_anxiety,,text,Specify (Professional/Treatment 3),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc078,social_anxiety,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+csoc39,social_anxiety,,descriptive,"
+
+If from multiple people:
+ Who did you get help from the first time?",,,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc079,social_anxiety,,radio,N/A,"7, N/A",,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc080,social_anxiety,,text,Specify (Professional/Treatment),,PROFESSIONAL/TREATMENT,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc081,social_anxiety,,text,Specify (Code),,CODE RESPONSE,number,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc082,social_anxiety,,dropdown,How old were you the first time you got help?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc083,social_anxiety,,radio,Are you getting help now?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc072] = '1',,RH,NA,,NA,NA
+dcsoc084,social_anxiety,,dropdown,"If no, how old were you the last time you got help?","1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcsoc083] = '0',,,NA,,NA,NA
+dcsoc085,social_anxiety,,notes,"What did the professional(s) (doctors) say that you had 
+(diagnoses given)? List:",,,,NA,NA,NA,[dcsoc072] = '1',,LH,NA,,NA,NA
+csoc40,social_anxiety,,descriptive,What kind of treatment(s) have you gotten...(Code all that apply)?,,,,NA,NA,NA,[dcsoc072] = '1',,,NA,,NA,NA
+dcsoc086,social_anxiety,,radio,Out-patient (Going to see someone in an office),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc072] = '1',,RH,NA,dcsoc086,NA,NA
+dcsoc087,social_anxiety,,radio,In-patient (Staying in a hospital),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc072] = '1',,RH,NA,dcsoc086,NA,NA
+dcsoc088,social_anxiety,,radio,Social Skills Group,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc072] = '1',,RH,NA,dcsoc086,NA,NA
+dcsoc089,social_anxiety,,radio,Other,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc072] = '1',,RH,NA,dcsoc086,NA,NA
+dcsoc090,social_anxiety,,notes,Specify (Other),,,,NA,NA,NA,[dcsoc089] = '1',,LH,NA,,NA,NA
+dcsoc091,social_anxiety,,radio,Medications *Refer to Medication Card,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcsoc072] = '1',,RH,NA,,NA,NA
+csoc41,social_anxiety,,descriptive,"
+Participant Card 9 (Medications)
+",,,,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+dcsoc092,social_anxiety,,text,Specify (Medication 1),,MEDICATION,,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+dcsoc093,social_anxiety,,text,Specify (Code 1),,CODE RESPONSE,number,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+dcsoc094,social_anxiety,,text,Specify (Medication 2),,MEDICATION,,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+dcsoc095,social_anxiety,,text,Specify (Code 2),,CODE RESPONSE,number,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+dcsoc096,social_anxiety,,text,Specify (Medication 3),,MEDICATION,,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+dcsoc097,social_anxiety,,text,Specify (Code 3),,CODE RESPONSE,number,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+dcsoc098,social_anxiety,,text,Specify (Medication 4),,MEDICATION,,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+dcsoc099,social_anxiety,,text,Specify (Code 4),,CODE RESPONSE,number,NA,NA,NA,[dcsoc091] = '1',,,NA,,NA,NA
+soc_end,social_anxiety,,descriptive,"
+INTERVIEWER: END Social Anxiety section.
+",,,,NA,NA,NA,,,,NA,,NA,NA
