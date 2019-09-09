@@ -1,4 +1,6 @@
 #testing new format
+library(tidyverse)
+
 
 a <- read_csv('section_csv/register_interview_child_psychiatric.csv')
 
@@ -14,4 +16,4 @@ MLtest3[is.na(MLtest3)] <- ""
 
 MLtest3 <- MLtest3 %>% mutate(`Field Type` = recode(`Field Type`, descriptive = 'text'))
 
-write_csv(MLtest3, 'MLtest3.csv')
+write_csv(MLtest3, 'MLtest3.1.csv')

@@ -33,14 +33,10 @@ dcmdd025,major_depression,WORST EPISODE: ANHEDONIA/LOSS OF INTEREST,radio,Like y
 dcmdd026,major_depression,WORST EPISODE: ANHEDONIA/LOSS OF INTEREST,radio,Bored with things that used to be interesting to you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd024,NA,NA
 dcmdd027,major_depression,WORST EPISODE: MOOD REACTIVITY,radio,"If something good happened, or if someone tried to cheer you up, how much better would you feel, at least for a little while?","1, Not at all better | 2, A little better | 3, Somewhat better | 4, A lot better",,,NA,NA,NA,,,LV,NA,,NA,NA
 dcmdd028,major_depression,WORST EPISODE: DIURNAL VARIATION,radio,"During this time, did you usually feel worse at (a) certain time(s) of the day or night?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,,NA,NA
-dcmdd029,major_depression,"WORST EPISODE: DIURNAL VARIATION
-What time of day:",radio,Morning?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
-dcmdd030,major_depression,"WORST EPISODE: DIURNAL VARIATION
-What time of day:",radio,Afternoon?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
-dcmdd031,major_depression,"WORST EPISODE: DIURNAL VARIATION
-What time of day:",radio,Evening?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
-dcmdd032,major_depression,"WORST EPISODE: DIURNAL VARIATION
-What time of day:",radio,Late night?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
+dcmdd029,major_depression,WORST EPISODE: DIURNAL VARIATION,radio,Morning?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
+dcmdd030,major_depression,WORST EPISODE: DIURNAL VARIATION,radio,Afternoon?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
+dcmdd031,major_depression,WORST EPISODE: DIURNAL VARIATION,radio,Evening?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
+dcmdd032,major_depression,WORST EPISODE: DIURNAL VARIATION,radio,Late night?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcmdd028]= '1',,,NA,dcmdd029,NA,NA
 dcmdd033,major_depression,WORST EPISODE: SLEEP,radio,"During this time, did you have problems falling asleep?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd033,NA,NA
 dcmdd034,major_depression,WORST EPISODE: SLEEP,radio,Did you have problems with waking up in the middle of the night?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd033,NA,NA
 dcmdd035,major_depression,WORST EPISODE: SLEEP,radio,Did you wake up before you had to in the morning?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcmdd033,NA,NA
