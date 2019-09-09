@@ -17,13 +17,13 @@ datadic <- datadic %>% mutate(`Field Label` = str_replace_all(`Field Label`, "<[
 
 #divide into sections then hand clean
 
-for (i in sections) {
+#for (i in sections) {
   
-  sec <- datadic %>% filter(`Form Name` == i)
+#  sec <- datadic %>% filter(`Form Name` == i)
   
-  write_csv(sec, paste0("section_csv/", i, ".csv"))
+#  write_csv(sec, paste0("section_csv/", i, ".csv"))
   
-}
+#}
 
 
 

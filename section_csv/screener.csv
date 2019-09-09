@@ -1,392 +1,434 @@
 Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
-cscr0,screener,,descriptive,"
-GENERAL PROBES
+cscr0,screener,GENERAL PROBES,descriptive,"
+
 
 INTERVIEWER: Use timeline to date treatment, symptoms, etc. 
 
 
 
-TREATMENT
+
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr005,screener,,radio,"Have you ever talked to a counselor, psychologist, social worker, psychiatrist or some other professional about your feelings or problems with your mood or behaviors? Or are you currently taking medication because of your emotions and/or behaviors?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-cscr1,screener,,descriptive,"
-INTERVIEWER: If no, SKIP to Help Suggested.
-",,,,NA,NA,NA,[dcscr005] = '0',,,NA,,NA,NA
-dcscr006,screener,,notes,Who was it and why did you speak to them?,,,,NA,NA,NA,[dcscr005] = '1',,LH,NA,,NA,NA
-dcscr007,screener,,text,"How many separate times did you go to see someone?
+dcscr005,screener,TREATMENT,radio,"Have you ever talked to a counselor, psychologist, social worker, psychiatrist or some other professional about your feelings or problems with your mood or behaviors? Or are you currently taking medication because of your emotions and/or behaviors?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr006,screener,TREATMENT,notes,Who was it and why did you speak to them?,,,,NA,NA,NA,[dcscr005] = '1',,LH,NA,,NA,NA
+dcscr007,screener,TREATMENT,text,"How many separate times did you go to see someone?
 
 
 INTERVIEWER: Clarify that these are distinct periods of outpatient services, not individual appointments.
 ",,TIMES,number,NA,NA,NA,[dcscr005] = '1',,,NA,,NA,NA
-dcscr008,screener,,radio,How long did you see someone in total?,"1, Less than 6 months | 2, 6 months to 2 years | 3, Over 2 years",,,NA,NA,NA,[dcscr005] = '1',,LH,NA,,NA,NA
-dcscr009,screener,,text,About how many talk sessions did you have in total?,,NUMBER,number,NA,NA,NA,[dcscr005] = '1',,,NA,,NA,NA
-cscr2,screener,,descriptive,"
+dcscr008,screener,TREATMENT,radio,How long did you see someone in total?,"1, Less than 6 months | 2, 6 months to 2 years | 3, Over 2 years",,,NA,NA,NA,[dcscr005] = '1',,LH,NA,,NA,NA
+dcscr009,screener,TREATMENT,text,About how many talk sessions did you have in total?,,NUMBER,number,NA,NA,NA,[dcscr005] = '1',,,NA,,NA,NA
+dcscr010,screener,"
 IN-PATIENT TREATMENT
-",,,,NA,NA,NA,[dcscr005] = '1',,,NA,,NA,NA
-dcscr010,screener,,radio,"Have you ever had to go to a hospital and stay overnight because of problems with your mood, feelings, or how you were acting?
+",radio,"Have you ever had to go to a hospital and stay overnight because of problems with your mood, feelings, or how you were acting?
 
 
 INTERVIEWER:  Refer to Table of Hospitalizations in the Medical History section. 
 ","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr005] = '1',,LH,NA,,NA,NA
-dcscr011,screener,,notes,When and what happened that lead to you going to the hospital?,,,,NA,NA,NA,[dcscr010] = '1',,LH,NA,,NA,NA
-cscr2a,screener,,descriptive,"
-INTERVIEWER: If yes, SKIP to Screening Probes.
-",,,,NA,NA,NA,[dcscr010] = '1',,,NA,,NA,NA
-cscr3,screener,,descriptive,"
+dcscr011,screener,"
+IN-PATIENT TREATMENT
+",notes,When and what happened that lead to you going to the hospital?,,,,NA,NA,NA,[dcscr010] = '1',,LH,NA,,NA,NA
+dcscr012,screener,"
 HELP SUGGESTED
-",,,,NA,NA,NA,[dcscr005] = '0' or [dcscr010] = '0',,,NA,,NA,NA
-dcscr012,screener,,radio,"Have you or anyone else (like your friends, parents, or teachers) ever thought you needed help because of problems with your mood, feelings, or how you were acting?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr005] = '0' or [dcscr010] = '0',,LH,NA,,NA,NA
-dcscr013,screener,,notes,"If so, who and what did they say?",,,,NA,NA,NA,[dcscr012] = '1',,LH,NA,,NA,NA
-cscr4,screener,,descriptive,"
-SCREENING PROBES
-
+",radio,"Have you or anyone else (like your friends, parents, or teachers) ever thought you needed help because of problems with your mood, feelings, or how you were acting?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr005] = '0' or [dcscr010] = '0',,LH,NA,,NA,NA
+dcscr013,screener,"
+HELP SUGGESTED
+",notes,"If so, who and what did they say?",,,,NA,NA,NA,[dcscr012] = '1',,LH,NA,,NA,NA
+cscr4.5,screener,SCREENING PROBES,descriptive,"
 I'm now going to ask you some more questions about your feelings, behavior and mood.
 
 
+",,,,NA,NA,NA,,,,NA,,NA,NA
+cscr4,screener,OVERANXIOUS/GENERALIZED ANXIETY DISORDER,descriptive,"
 
-OVERANXIOUS/GENERALIZED ANXIETY DISORDER
+
+
 
 Some young people worry a lot. They may often feel nervous, anxious or unable to relax.  They may have times when they worry a lot more than usual.
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr014,screener,,radio,Have you ever been a worrier?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr014,NA,NA
-dcscr015,screener,,radio,Did you worry a lot more than most children your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr014,NA,NA
-dcscr016,screener,,radio,Has there ever been a time when you felt nervous or scared a lot of the time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr014,NA,NA
-dcscr017,screener,,radio,Has anyone said that you are a worrier or that you worry too much?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr015] = '1' or [dcscr016] = '1' or [dcscr014] = '1',,,NA,dcscr014,NA,NA
-dcscr018,screener,,notes,Who said that you were a worrier?,,,,NA,NA,NA,[dcscr015] = '1' or [dcscr016] = '1' or [dcscr014] = '1',,LH,NA,,NA,NA
-dcscr019,screener,,notes,Why did he/she say that you were a worrier?,,,,NA,NA,NA,[dcscr015] = '1' or [dcscr016] = '1' or [dcscr014] = '1',,LH,NA,,NA,NA
-cscr5,screener,,descriptive,"
-SEPARATION ANXIETY 
+dcscr014,screener,OVERANXIOUS/GENERALIZED ANXIETY DISORDER,radio,Have you ever been a worrier?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr014,NA,NA
+dcscr015,screener,OVERANXIOUS/GENERALIZED ANXIETY DISORDER,radio,Did you worry a lot more than most children your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr014,NA,NA
+dcscr016,screener,OVERANXIOUS/GENERALIZED ANXIETY DISORDER,radio,Has there ever been a time when you felt nervous or scared a lot of the time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr014,NA,NA
+dcscr017,screener,OVERANXIOUS/GENERALIZED ANXIETY DISORDER,radio,Has anyone said that you are a worrier or that you worry too much?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr015] = '1' or [dcscr016] = '1' or [dcscr014] = '1',,,NA,dcscr014,NA,NA
+dcscr018,screener,OVERANXIOUS/GENERALIZED ANXIETY DISORDER,notes,Who said that you were a worrier?,,,,NA,NA,NA,[dcscr015] = '1' or [dcscr016] = '1' or [dcscr014] = '1',,LH,NA,,NA,NA
+dcscr019,screener,OVERANXIOUS/GENERALIZED ANXIETY DISORDER,notes,Why did he/she say that you were a worrier?,,,,NA,NA,NA,[dcscr015] = '1' or [dcscr016] = '1' or [dcscr014] = '1',,LH,NA,,NA,NA
+cscr5,screener,SEPARATION ANXIETY,descriptive,"
+
 
 Some young people worry a lot about being away from their parents or the grown-up who takes care of them.   
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr020,screener,,radio,"Since you were 5 years old, has there ever been a time when you had a lot of worries about your (attachment figures) and were very upset when you were away from him/her?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr020,NA,NA
-dcscr021,screener,,radio,Did you worry about this more than most children your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr020] = '1',,,NA,dcscr020,NA,NA
-dcscr022,screener,,radio,Has there ever been a time when you wanted to stay home from school or not go to other places without your (attachment figures)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr020,NA,NA
+dcscr020,screener,SEPARATION ANXIETY ,radio,"Since you were 5 years old, has there ever been a time when you had a lot of worries about your (attachment figures) and were very upset when you were away from him/her?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr020,NA,NA
+dcscr021,screener,SEPARATION ANXIETY ,radio,Did you worry about this more than most children your age?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr020] = '1',,,NA,dcscr020,NA,NA
+dcscr022,screener,SEPARATION ANXIETY ,radio,Has there ever been a time when you wanted to stay home from school or not go to other places without your (attachment figures)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr020,NA,NA
 cscr6,screener,,descriptive,"
 
 
 INTERVIEWER: For disruptive behavior disorders (ADHD, ODD, CD), complete the diagnostic section if any of the probes are endorsed.
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr7,screener,,descriptive,"
-ATTENTION DEFICIT HYPERACTIVITY DISORDER (ADHD) 
-
+cscr7,screener,ATTENTION DEFICIT HYPERACTIVITY DISORDER (ADHD) ,descriptive,"
 Some children have trouble paying attention and following instructions. They may be distracted easily and forget what they are supposed to do. These children often have difficulty staying still, are always on the go and often interrupt people. 
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr8,screener,,descriptive,Did you often:,,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr023,screener,,radio,"Have trouble paying attention or keeping your mind on your school work, chores, or other activities that you were doing?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr023,NA,NA
-dcscr024,screener,,radio,"Have problems following instructions and often fail to finish school, work, or other things you meant to get done?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr023,NA,NA
-dcscr025,screener,,radio,Have difficulty sitting still for more than a few minutes at a time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr023,NA,NA
-dcscr026,screener,,radio,Did a teacher ever talk to your parents about problems paying attention or sitting still?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr023,NA,NA
-cscr9,screener,,descriptive,"
-OPPOSITIONAL DEFIANT DISORDER (ODD)
+dcscr023,screener,"ATTENTION DEFICIT HYPERACTIVITY DISORDER (ADHD) 
+Did you often: ",radio,"Have trouble paying attention or keeping your mind on your school work, chores, or other activities that you were doing?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr023,NA,NA
+dcscr024,screener,"ATTENTION DEFICIT HYPERACTIVITY DISORDER (ADHD) 
+Did you often: ",radio,"Have problems following instructions and often fail to finish school, work, or other things you meant to get done?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr023,NA,NA
+dcscr025,screener,"ATTENTION DEFICIT HYPERACTIVITY DISORDER (ADHD) 
+Did you often: ",radio,Have difficulty sitting still for more than a few minutes at a time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr023,NA,NA
+dcscr026,screener,"ATTENTION DEFICIT HYPERACTIVITY DISORDER (ADHD) 
+Did you often: ",radio,Did a teacher ever talk to your parents about problems paying attention or sitting still?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr023,NA,NA
+cscr9,screener,OPPOSITIONAL DEFIANT DISORDER (ODD),descriptive,"
 
-Some children and adolescents do things that can get them into trouble with adults, like getting angry, arguing or talking back to adults, refusing to do what adults ask them to do, annoying people on purpose, or being touchy, grouchy, or irritable.
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr027,screener,,radio,"Was there a time when you did things that got you into trouble with adults such as losing your temper, arguing with or talking back to adults, or being grouchy or irritable with them?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr027,NA,NA
-dcscr028,screener,,radio,Was there a time when you got into trouble with adults for refusing to do what they told you to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr027,NA,NA
-dcscr029,screener,,radio,Did you often annoy other people on purpose?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr027,NA,NA
-dcscr030,screener,,radio,"Did you ever get into trouble for getting even with other people by doing things to hurt them, telling lies about them, or messing up their things?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr027,NA,NA
-cscr10,screener,,descriptive,"
-CONDUCT DISORDER
 
-Some young people do other things that may get them into trouble with adults like breaking rules or getting into trouble with the police or other authorities if they get caught. They may lie a lot, steal, skip school, smoke or drink.
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr031,screener,,radio,"Was there ever a time when you did things that got you into trouble with adults like lying, stealing or breaking rules?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr031,NA,NA
-dcscr032,screener,,radio,"Did you ever skip school, stay out at night later than you were supposed to, or run away from home overnight?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr031,NA,NA
-dcscr033,screener,,radio,"Did you ever set fires, break into cars, or destroy someone else's property on purpose?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr031,NA,NA
-dcscr034,screener,,radio,Do you have a probation officer or have you ever been on probation?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr031,NA,NA
-dcscr035,screener,,notes,"If yes, what happened?",,,,NA,NA,NA,[dcscr034] = '1',,LH,NA,,NA,NA
-cscr11,screener,,descriptive,"
-SPECIFIC PHOBIA
+Some children and adolescents do things that can get them into trouble with adults, like getting angry, arguing or talking back to adults, refusing to do what adults ask them to do, annoying people on purpose, or being touchy, grouchy, or irritable.",,,,NA,NA,NA,,,,NA,,NA,NA
+dcscr027,screener,OPPOSITIONAL DEFIANT DISORDER (ODD),radio,"Was there a time when you did things that got you into trouble with adults such as losing your temper, arguing with or talking back to adults, or being grouchy or irritable with them?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr027,NA,NA
+dcscr028,screener,OPPOSITIONAL DEFIANT DISORDER (ODD),radio,Was there a time when you got into trouble with adults for refusing to do what they told you to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr027,NA,NA
+dcscr029,screener,OPPOSITIONAL DEFIANT DISORDER (ODD),radio,Did you often annoy other people on purpose?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr027,NA,NA
+dcscr030,screener,OPPOSITIONAL DEFIANT DISORDER (ODD),radio,"Did you ever get into trouble for getting even with other people by doing things to hurt them, telling lies about them, or messing up their things?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr027,NA,NA
+cscr10,screener,CONDUCT DISORDER,descriptive,"
+
+
+Some young people do other things that may get them into trouble with adults like breaking rules or getting into trouble with the police or other authorities if they get caught. They may lie a lot, steal, skip school, smoke or drink.",,,,NA,NA,NA,,,,NA,,NA,NA
+dcscr031,screener,CONDUCT DISORDER,radio,"Was there ever a time when you did things that got you into trouble with adults like lying, stealing or breaking rules?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr031,NA,NA
+dcscr032,screener,CONDUCT DISORDER,radio,"Did you ever skip school, stay out at night later than you were supposed to, or run away from home overnight?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr031,NA,NA
+dcscr033,screener,CONDUCT DISORDER,radio,"Did you ever set fires, break into cars, or destroy someone else's property on purpose?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr031,NA,NA
+dcscr034,screener,CONDUCT DISORDER,radio,Do you have a probation officer or have you ever been on probation?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr031,NA,NA
+dcscr035,screener,CONDUCT DISORDER,notes,"If yes, what happened?",,,,NA,NA,NA,[dcscr034] = '1',,LH,NA,,NA,NA
+cscr11,screener,SPECIFIC PHOBIA,descriptive,"
+
 
 Some people have fears of things, like spiders, heights, elevators, dogs, blood, or shots.  When they are faced with the thing that they fear, they become very frightened and upset even though there is no real danger.  They may go out of their way to stay away from the thing that they fear.
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr12,screener,,descriptive,"
-INTERVIEWER: Read the card to ages 7-12 or for those children with learning/reading problems.
+dcscr036,screener,"SPECIFIC PHOBIA 
+Have you ever been very nervous or afraid of:",radio,"Animals or bugs, like dogs, snakes, or spiders?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
+dcscr037,screener,"SPECIFIC PHOBIA 
+Have you ever been very nervous or afraid of:",radio,"Being in really high places, like a roof or tall building?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
+dcscr038,screener,"SPECIFIC PHOBIA 
+Have you ever been very nervous or afraid of:",radio,"Water or situations involving water, such as a swimming pool, lake, or ocean?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
+dcscr039,screener,"SPECIFIC PHOBIA 
+Have you ever been very nervous or afraid of:",radio,"Storms, thunder, or lightning?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
+dcscr040,screener,"SPECIFIC PHOBIA 
+Have you ever been very nervous or afraid of:",radio,"Doctors, needles, or blood?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
+dcscr041,screener,"SPECIFIC PHOBIA 
+Have you ever been very nervous or afraid of:",radio,"Closed spaces, like elevators or closets?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
+dcscr042,screener,"SPECIFIC PHOBIA 
+Have you ever been very nervous or afraid of:",radio,Flying or airplanes?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
+dcscr043,screener,"SPECIFIC PHOBIA 
+Have you ever been very nervous or afraid of:",radio,Other?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
+cscr15,screener,SOCIAL/PERFORMANCE ANXIETY,descriptive,"
 
-Participant Card 2 (Fears) 
 
-
-
-",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr13,screener,,descriptive,"
-[Looking at this card]
-Have you ever been very nervous or afraid of:",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr036,screener,,radio,"Animals or bugs, like dogs, snakes, or spiders?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
-dcscr037,screener,,radio,"Being in really high places, like a roof or tall building?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
-dcscr038,screener,,radio,"Water or situations involving water, such as a swimming pool, lake, or ocean?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
-dcscr039,screener,,radio,"Storms, thunder, or lightning?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
-dcscr040,screener,,radio,"Doctors, needles, or blood?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
-dcscr041,screener,,radio,"Closed spaces, like elevators or closets?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
-dcscr042,screener,,radio,Flying or airplanes?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
-dcscr043,screener,,radio,Other?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr036,NA,NA
-cscr15,screener,,descriptive,"
-SOCIAL ANXIETY
-
-Most people feel uncomfortable when they have to speak in front of people, meet new people, or when they are in situations in which they may say or do something embarrassing.  Some people become so uncomfortable in these situations that they either stay away from them or become very upset, even though they know that it doesn't make sense.
-",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr16,screener,,descriptive,"
-Participant Card 3 (Social/Performance)
-
-",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr17,screener,,descriptive,"
-[Looking at this card]
-Was there ever a time in your life:",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr044,screener,,radio,"When you felt very afraid or really, really shy with people, like meeting new people, going to parties, or eating or drinking in front of others?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr044,NA,NA
-dcscr045,screener,,radio,"When you felt very afraid or uncomfortable when you had to do something in front of a group of people, like speaking in class?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr044,NA,NA
-cscr18,screener,,descriptive,"
-PANIC DISORDER
-
-Some people have what we call ""panic or anxiety attacks"".  In these kinds of attacks, people become very scared, even though there is nothing around to frighten them.  Sometimes, they feel they can't breathe or their heart beats fast.  The attacks come on very quickly and then go away.
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr046,screener,,radio,Have you ever had an attack like this?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr047,screener,,notes,Describe,,,,NA,NA,NA,[dcscr046] = '1',,LH,NA,,NA,NA
-cscr19,screener,,descriptive,"
-INTERVIEWER: If yes, SKIP to Panic Disorder Course.
-",,,,NA,NA,NA,[dcscr046] = '1',,,NA,,NA,NA
-dcscr048,screener,,radio,"Has there ever been a time when all of a sudden you felt very, very scared or uncomfortable and your chest hurt, you couldn't catch your breath, your heart beat very fast, or you felt very shaky?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr046] = '0',,,NA,dcscr048,NA,NA
-dcscr049,screener,,radio,"Has there ever been a time when all of a sudden, you felt that something terrible was going to happen, that you were going crazy, or going to die?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr046] = '0',,,NA,dcscr048,NA,NA
-cscr19a,screener,,descriptive,"
+Most people feel uncomfortable when they have to speak in front of people, meet new people, or when they are in situations in which they may say or do something embarrassing.  Some people become so uncomfortable in these situations that they either stay away from them or become very upset, even though they know that it doesn't make sense.",,,,NA,NA,NA,,,,NA,,NA,NA
+dcscr044,screener,"SOCIAL/PERFORMANCE ANXIETY
+Was there ever a time in your life:",radio,"When you felt very afraid or really, really shy with people, like meeting new people, going to parties, or eating or drinking in front of others?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr044,NA,NA
+dcscr045,screener,"SOCIAL/PERFORMANCE ANXIETY
+Was there ever a time in your life:",radio,"When you felt very afraid or uncomfortable when you had to do something in front of a group of people, like speaking in class?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr044,NA,NA
+cscr18,screener,PANIC DISORDER,descriptive,"
+Some people have what we call ""panic or anxiety attacks"".  In these kinds of attacks, people become very scared, even though there is nothing around to frighten them.  Sometimes, they feel they can't breathe or their heart beats fast.  The attacks come on very quickly and then go away.",,,,NA,NA,NA,,,,NA,,NA,NA
+dcscr046,screener,PANIC DISORDER,radio,Have you ever had an attack like this?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr047,screener,PANIC DISORDER,notes,Describe,,,,NA,NA,NA,[dcscr046] = '1',,LH,NA,,NA,NA
+dcscr048,screener,PANIC DISORDER,radio,"Has there ever been a time when all of a sudden you felt very, very scared or uncomfortable and your chest hurt, you couldn't catch your breath, your heart beat very fast, or you felt very shaky?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr046] = '0',,,NA,dcscr048,NA,NA
+dcscr049,screener,PANIC DISORDER,radio,"Has there ever been a time when all of a sudden, you felt that something terrible was going to happen, that you were going crazy, or going to die?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr046] = '0',,,NA,dcscr048,NA,NA
+dcscr050,screener,"
 PANIC DISORDER COURSE
-",,,,NA,NA,NA,[dcscr046] = '1' or [dcscr048] = '1' or [dcscr049] = '1',,,NA,,NA,NA
-dcscr050,screener,,text,How many of these attacks have you had?,,NUMBER OF ATTACKS,,NA,NA,NA,[dcscr046] = '1' or [dcscr048] = '1' or [dcscr049] = '1',,RH,NA,,NA,NA
-cscr20,screener,,descriptive,"
-AGORAPHOBIA
-",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr21,screener,,descriptive,"
-INTERVIEWER: Read the card to ages 7-12 or for those children with learning/reading problems.
-
-Participant Card 4 (Other fears) 
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr051,screener,,radio,"
-[Looking at this card]
+",text,How many of these attacks have you had?,,NUMBER OF ATTACKS,,NA,NA,NA,[dcscr046] = '1' or [dcscr048] = '1' or [dcscr049] = '1',,RH,NA,,NA,NA
+dcscr051,screener,"
+AGORAPHOBIA",radio,"
 Have you ever been very nervous or afraid of being in crowds, going to public places, traveling by yourself, traveling away from home, or using public transportation like a bus or the metro?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr052,screener,,radio,Have you been afraid about (insert situation) because you were worried about having a scary/strange feeling in your body or other body problem(s)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr051] = '1',,,NA,dcscr052,NA,NA
-dcscr053,screener,,radio,"Have you been afraid of being in places because you were worried that you might get trapped, couldn't escape, would be embarrassed to escape or couldn't get help?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr051] = '1',,,NA,dcscr052,NA,NA
-cscr23,screener,,descriptive,"
-INTERVIEWER: If no to all, do not complete section; consider other phobias.
-",,,,NA,NA,NA,[dcscr052] = '0' and [dcscr053] = '0',,,NA,,NA,NA
-cscr24,screener,,descriptive,"
-OBSESSIVE COMPULSIVE DISORDER
-
-Some people have unpleasant thoughts or feelings to do things that keep coming back over and over again and they can't get them out of their head. These thoughts sometimes make these people feel like they have to do things over and over again (like washing their hands, counting, or checking things). 
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr054,screener,,radio,"Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr054,NA,NA
-dcscr055,screener,,radio,Did these thoughts continue to bother you no matter how hard you tried to get rid of them or ignore them?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr054] = '1',,,NA,dcscr054,NA,NA
-dcscr056,screener,,radio,"Have you ever had to do something over and over again like washing your hands, or re-arranging or touching things in a certain way that would have made you feel really nervous if you couldn't do it?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr054,NA,NA
-dcscr057,screener,,radio,"Have you ever saved up so many things that people complain or they got in the way? 
+dcscr052,screener,"
+AGORAPHOBIA",radio,Have you been afraid about (insert situation) because you were worried about having a scary/strange feeling in your body or other body problem(s)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr051] = '1',,,NA,dcscr052,NA,NA
+dcscr053,screener,"
+AGORAPHOBIA",radio,"Have you been afraid of being in places because you were worried that you might get trapped, couldn't escape, would be embarrassed to escape or couldn't get help?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr051] = '1',,,NA,dcscr052,NA,NA
+cscr24,screener,OBSESSIVE COMPULSIVE DISORDER,descriptive,"
+Some people have unpleasant thoughts or feelings to do things that keep coming back over and over again and they can't get them out of their head. These thoughts sometimes make these people feel like they have to do things over and over again (like washing their hands, counting, or checking things). ",,,,NA,NA,NA,,,,NA,,NA,NA
+dcscr054,screener,OBSESSIVE COMPULSIVE DISORDER,radio,"Have you ever been bothered by thoughts that don't make sense to you, that come over and over again and won't go away?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr054,NA,NA
+dcscr055,screener,OBSESSIVE COMPULSIVE DISORDER,radio,Did these thoughts continue to bother you no matter how hard you tried to get rid of them or ignore them?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr054] = '1',,,NA,dcscr054,NA,NA
+dcscr056,screener,OBSESSIVE COMPULSIVE DISORDER,radio,"Have you ever had to do something over and over again like washing your hands, or re-arranging or touching things in a certain way that would have made you feel really nervous if you couldn't do it?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr054,NA,NA
+dcscr057,screener,OBSESSIVE COMPULSIVE DISORDER,radio,"Have you ever saved up so many things that people complain or they got in the way? 
 INTERVIEWER: Clarify that this is NOT parents complaining that child needs to clean room/tidy up. 
 ","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr054,NA,NA
-dcscr058,screener,,notes,Please explain:,,,,NA,NA,NA,[dcscr057] = '1',,LH,NA,,NA,NA
-dcscr059,screener,,radio,Do you feel the need to do things just right (like they have to be perfect)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-cscr25,screener,,descriptive,What is the longest period that you have had these thoughts or behaviors?,,,,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,,NA,NA
-dcscr060,screener,,text,N of Days,,DAYS,number,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,,NA,NA
-dcscr061,screener,,text,N of Weeks,,WEEKS,number,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,,NA,NA
-dcscr062,screener,,text,N of Months,,MONTHS,number,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,,NA,NA
-dcscr063,screener,,text,N of Years,,YEARS,number,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,,NA,NA
-dcscr064,screener,,radio,Did they prevent you from doing things you normally would do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,dcscr064,NA,NA
-dcscr065,screener,,radio,Did having these thoughts or behaviors bother you a lot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,dcscr064,NA,NA
-cscr26,screener,,descriptive,"
+dcscr058,screener,OBSESSIVE COMPULSIVE DISORDER,notes,Please explain:,,,,NA,NA,NA,[dcscr057] = '1',,LH,NA,,NA,NA
+dcscr059,screener,OBSESSIVE COMPULSIVE DISORDER,radio,Do you feel the need to do things just right (like they have to be perfect)?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cscr25,screener,OBSESSIVE COMPULSIVE DISORDER,text,"What is the longest period that you have had these thoughts or behaviors? (N Days, Weeks, Months, Years)",,,,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,,NA,NA
+dcscr064,screener,OBSESSIVE COMPULSIVE DISORDER,radio,Did they prevent you from doing things you normally would do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,dcscr064,NA,NA
+dcscr065,screener,OBSESSIVE COMPULSIVE DISORDER,radio,Did having these thoughts or behaviors bother you a lot?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr054] = '1' or [dcscr056] = '1' or [dcscr057] = '1' or [dcscr059] = '1',,,NA,dcscr064,NA,NA
+dcscr066,screener,"
 EATING DISORDERS
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr066,screener,,radio,"Was there ever a time when you felt really fat or heavy, but other people said that you were too thin?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr066,NA,NA
-dcscr067,screener,,radio,"At that time, did you lose a lot of weight on purpose (like you were trying to do so)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr066] = '1',,,NA,dcscr066,NA,NA
-dcscr068,screener,,radio,Has there been a time when your eating was out of control - you'd eat a large amount of food in a short period of time and could not stop yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr066,NA,NA
-dcscr069,screener,,radio,"At that time, did you ever do anything to stop yourself from gaining weight like taking pills or making yourself throw up?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr068] = '1',,,NA,dcscr066,NA,NA
+",radio,"Was there ever a time when you felt really fat or heavy, but other people said that you were too thin?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr066,NA,NA
+dcscr067,screener,"
+EATING DISORDERS
+",radio,"At that time, did you lose a lot of weight on purpose (like you were trying to do so)?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr066] = '1',,,NA,dcscr066,NA,NA
+dcscr068,screener,"
+EATING DISORDERS
+",radio,Has there been a time when your eating was out of control - you'd eat a large amount of food in a short period of time and could not stop yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr066,NA,NA
+dcscr069,screener,"
+EATING DISORDERS
+",radio,"At that time, did you ever do anything to stop yourself from gaining weight like taking pills or making yourself throw up?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr068] = '1',,,NA,dcscr066,NA,NA
 cscr27,screener,,descriptive,"
 INTERVIEWER: If any probes are endorsed, complete entire eating section.
 ",,,,NA,NA,NA,[dcscr066] = '1' or [dcscr068] = '1',,,NA,,NA,NA
-cscr28,screener,,descriptive,"
-DEPRESSION
-
+cscr28,screener,DEPRESSION,descriptive,"
 Some people have times when they feel sad, depressed, irritable or moody. They no longer enjoy the things they used to do; they may feel tired and have less energy than usual.  These changes are much different from their usual selves.
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr070,screener,,radio,Has there ever been a time when you felt sad or depressed most of the time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr070,NA,NA
-dcscr071,screener,,radio,"Has there ever been a time when you cried a lot, or felt like crying?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr070,NA,NA
-dcscr072,screener,,radio,Was this different from how you usually are?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr070] = '1' or [dcscr071] = '1',,,NA,dcscr070,NA,NA
-cscr29,screener,,descriptive,"
+dcscr070,screener,DEPRESSION,radio,Has there ever been a time when you felt sad or depressed most of the time?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr070,NA,NA
+dcscr071,screener,DEPRESSION,radio,"Has there ever been a time when you cried a lot, or felt like crying?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr070,NA,NA
+dcscr072,screener,DEPRESSION,radio,Was this different from how you usually are?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr070] = '1' or [dcscr071] = '1',,,NA,dcscr070,NA,NA
+cscr29,screener,DEPRESSION,descriptive,"
 
 INTERVIEWER: Sometimes a child will initially give a negative answer; if current sadness/depressed affect/state is evident, ask about current mood.
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr073,screener,,radio,"Has there ever been a time when you felt grouchy, irritable or in a bad mood most of the time; even little things would make you mad?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr073,NA,NA
-dcscr074,screener,,radio,Was this different from how you usually are?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr073] = '1',,,NA,dcscr073,NA,NA
-dcscr075,screener,,radio,Has there ever been a time when nothing was fun for you and you just weren't interested in anything?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr073,NA,NA
-dcscr076,screener,,radio,Was this different from how you usually are?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr075] = '1',,,NA,dcscr073,NA,NA
-dcscr077,screener,,radio,"Did other people say that you seemed (more sad, more grouchy, or like you weren't having as much fun as usual)?","7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-cscr30,screener,,descriptive,"
-MANIA/HYPOMANIA
+dcscr073,screener,DEPRESSION,radio,"Has there ever been a time when you felt grouchy, irritable or in a bad mood most of the time; even little things would make you mad?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr073,NA,NA
+dcscr074,screener,DEPRESSION,radio,Was this different from how you usually are?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr073] = '1',,,NA,dcscr073,NA,NA
+dcscr075,screener,DEPRESSION,radio,Has there ever been a time when nothing was fun for you and you just weren't interested in anything?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr073,NA,NA
+dcscr076,screener,DEPRESSION,radio,Was this different from how you usually are?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr075] = '1',,,NA,dcscr073,NA,NA
+dcscr077,screener,DEPRESSION,radio,"Did other people say that you seemed (more sad, more grouchy, or like you weren't having as much fun as usual)?","7, N/A | 0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+cscr30,screener,MANIA/HYPOMANIA,descriptive,"
+
 
 Some people have periods when they feel much more active, energetic, and talkative.  They may think more quickly.  They talk a lot.  They may be fidgety or unable to sit still and they sometimes do things that are unusual for them, like spending too much money.  
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr31,screener,,descriptive,"
-INCREASED MOTOR ACTIVITY
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr078,screener,,radio,"Have there been times when you were much more active than usual, had problems sitting still, or needed to move around a lot?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-cscr32,screener,,descriptive,"
-INCREASED ENERGY
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr079,screener,,radio,Has there ever been a time when you felt so full of energy that you couldn't stop doing things and you didn't get tired?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr079,NA,NA
-dcscr080,screener,,radio,"Has there ever been a time when you felt like you hardly needed sleep?  
+dcscr078,screener,"
+MANIA/HYPOMANIA: INCREASED MOTOR ACTIVITY",radio,"Have there been times when you were much more active than usual, had problems sitting still, or needed to move around a lot?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr079,screener,"
+MANIA/HYPOMANIA: INCREASED ENERGY",radio,Has there ever been a time when you felt so full of energy that you couldn't stop doing things and you didn't get tired?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr079,NA,NA
+dcscr080,screener,"
+MANIA/HYPOMANIA: INCREASED ENERGY",radio,"Has there ever been a time when you felt like you hardly needed sleep?  
 INTERVIEWER: Do NOT include isolated events, like a slumber party.
 ","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr079,NA,NA
-dcscr081,screener,,radio,"Have there been times when you kept talking a lot, or had so many ideas in your head that you could hardly keep track of them?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-cscr34,screener,,descriptive,"
-ELEVATED MOOD
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr082,screener,,radio,"Have you ever had a time when you felt much more happy or excited than you usually do; when there was nothing special going on? 
+dcscr081,screener,"
+MANIA/HYPOMANIA: INCREASED ENERGY",radio,"Have there been times when you kept talking a lot, or had so many ideas in your head that you could hardly keep track of them?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr082,screener,"
+MANIA/HYPOMANIA: ELEVATED MOOD
+",radio,"Have you ever had a time when you felt much more happy or excited than you usually do; when there was nothing special going on? 
 
 
 INTERVIEWER: NOT mild elation.
 ","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,RH,NA,dcscr082,NA,NA
-dcscr083,screener,,radio,Have you ever had a time when you felt like you could do almost anything?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr082,NA,NA
-cscr36,screener,,descriptive,"
-IRRITABLE MOOD
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr084,screener,,radio,"Has there ever been a time when you felt unusually grouchy, cranky, or irritable; when the smallest things would make you really mad?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr084,NA,NA
-dcscr085,screener,,radio,"Did other people, like parents or teachers, notice this change or worry about you?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr078]= '1' or [dcscr079]= '1' or [dcscr080]= '1' or [dcscr081]= '1' or [dcscr082]= '1' or [dcscr083]= '1' or [dcscr084]= '1',,,NA,dcscr084,NA,NA
-dcscr086,screener,,radio,Was this different from how you usually are?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr078]= '1' or [dcscr079]= '1' or [dcscr080]= '1' or [dcscr081]= '1' or [dcscr082]= '1' or [dcscr083]= '1' or [dcscr084]= '1' or  [dcscr085] = '1' or [dcscr085] = '0',,,NA,dcscr084,NA,NA
-dcscr087,screener,,radio,"If yes, During that time/those times, how often did you feel that way?","1, Almost every day | 2, About half of the days | 3, Less than half the days | 9, Unknown",,,NA,NA,NA,[dcscr086] = '1',,LH,NA,,NA,NA
-dcscr088,screener,,radio,"If yes, On the days you felt this way, how much of the day did it last?","1, All of the day | 2, Most of the day | 3, Half of the day | 4, Only a small part of the day | 9, Unknown",,,NA,NA,NA,[dcscr086] = '1',,LH,NA,,NA,NA
-dcscr089,screener,,text,How many times a year?,,TIMES,number,NA,NA,NA,[dcscr086] = '1',,,NA,,NA,NA
-cscr37,screener,,descriptive,"
-PSYCHOSIS
+dcscr083,screener,"
+MANIA/HYPOMANIA: ELEVATED MOOD
+",radio,Have you ever had a time when you felt like you could do almost anything?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr082,NA,NA
+dcscr084,screener,"
+MANIA/HYPOMANIA: IRRITABLE MOOD
+",radio,"Has there ever been a time when you felt unusually grouchy, cranky, or irritable; when the smallest things would make you really mad?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr084,NA,NA
+dcscr085,screener,"
+MANIA/HYPOMANIA: IRRITABLE MOOD
+",radio,"Did other people, like parents or teachers, notice this change or worry about you?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr078]= '1' or [dcscr079]= '1' or [dcscr080]= '1' or [dcscr081]= '1' or [dcscr082]= '1' or [dcscr083]= '1' or [dcscr084]= '1',,,NA,dcscr084,NA,NA
+dcscr086,screener,"
+MANIA/HYPOMANIA: IRRITABLE MOOD
+",radio,Was this different from how you usually are?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr078]= '1' or [dcscr079]= '1' or [dcscr080]= '1' or [dcscr081]= '1' or [dcscr082]= '1' or [dcscr083]= '1' or [dcscr084]= '1' or  [dcscr085] = '1' or [dcscr085] = '0',,,NA,dcscr084,NA,NA
+dcscr087,screener,"
+MANIA/HYPOMANIA: IRRITABLE MOOD
+",radio,"If yes, During that time/those times, how often did you feel that way?","1, Almost every day | 2, About half of the days | 3, Less than half the days | 9, Unknown",,,NA,NA,NA,[dcscr086] = '1',,LH,NA,,NA,NA
+dcscr088,screener,"
+MANIA/HYPOMANIA: IRRITABLE MOOD
+",radio,"If yes, On the days you felt this way, how much of the day did it last?","1, All of the day | 2, Most of the day | 3, Half of the day | 4, Only a small part of the day | 9, Unknown",,,NA,NA,NA,[dcscr086] = '1',,LH,NA,,NA,NA
+dcscr089,screener,"
+MANIA/HYPOMANIA: IRRITABLE MOOD
+",text,How many times a year?,,TIMES,number,NA,NA,NA,[dcscr086] = '1',,,NA,,NA,NA
+cscr37,screener,PSYCHOSIS,descriptive,"
 
-Now I am going to ask you some questions about things that happen to people during stressful times.
-",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr38,screener,,descriptive,"
-INTERVIEWER: When asking psychosis questions, ask child/parent to give examples.
-",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr39,screener,,descriptive,"
-HALLUCINATIONS
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr090,screener,,radio,Have you ever heard voices when no one was there?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
-dcscr091,screener,,radio,Have you ever seen things that other people couldn't see?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
-dcscr092,screener,,radio,Have you ever seen visions?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
-dcscr093,screener,,radio,Have you ever heard things other people couldn't hear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
-dcscr094,screener,,radio,Has there ever been anything unusual about the way things smelled or felt or looked?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
-dcscr095,screener,,descriptive,"
-INTERVIEWER: List examples.
-",,,,NA,NA,NA,[dcscr090] = '1' or [dcscr091] = '1' or [dcscr092] = '1' or [dcscr093] = '1' or [dcscr094] = '1',,,NA,,NA,NA
-dcscr095a,screener,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcscr090] = '1' or [dcscr091] = '1' or [dcscr092] = '1' or [dcscr093] = '1' or [dcscr094] = '1',,RH,NA,,NA,NA
-dcscr095b,screener,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcscr090] = '1' or [dcscr091] = '1' or [dcscr092] = '1' or [dcscr093] = '1' or [dcscr094] = '1',,RH,NA,,NA,NA
-dcscr095c,screener,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcscr090] = '1' or [dcscr091] = '1' or [dcscr092] = '1' or [dcscr093] = '1' or [dcscr094] = '1',,RH,NA,,NA,NA
-dcscr095d,screener,,text,Example 4,,EXAMPLE,,NA,NA,NA,[dcscr090] = '1' or [dcscr091] = '1' or [dcscr092] = '1' or [dcscr093] = '1' or [dcscr094] = '1',,RH,NA,,NA,NA
-cscr40,screener,,descriptive,"
+
+Now I am going to ask you some questions about things that happen to people during stressful times. 
+
+INTERVIEWER: When asking psychosis questions, ask child/parent to give examples.",,,,NA,NA,NA,,,,NA,,NA,NA
+dcscr090,screener,PSYCHOSIS: HALLUCINATIONS,radio,Have you ever heard voices when no one was there?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
+dcscr095a,screener,PSYCHOSIS: HALLUCINATIONS,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcscr090] = '1' ,,RH,NA,,NA,NA
+dcscr091,screener,PSYCHOSIS: HALLUCINATIONS,radio,Have you ever seen things that other people couldn't see?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
+dcscr095b,screener,PSYCHOSIS: HALLUCINATIONS,text,Example 2,,EXAMPLE,,NA,NA,NA, [dcscr091] = '1' ,,RH,NA,,NA,NA
+dcscr092,screener,PSYCHOSIS: HALLUCINATIONS,radio,Have you ever seen visions?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
+dcscr095c,screener,PSYCHOSIS: HALLUCINATIONS,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcscr092] = '1' ,,RH,NA,,NA,NA
+dcscr093,screener,PSYCHOSIS: HALLUCINATIONS,radio,Have you ever heard things other people couldn't hear?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
+dcscr095d,screener,PSYCHOSIS: HALLUCINATIONS,text,Example 4,,EXAMPLE,,NA,NA,NA,[dcscr093] = '1' ,,RH,NA,,NA,NA
+dcscr094,screener,PSYCHOSIS: HALLUCINATIONS,radio,Has there ever been anything unusual about the way things smelled or felt or looked?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr090,NA,NA
+dcscr095e,screener,PSYCHOSIS: HALLUCINATIONS,text,Example 5,,EXAMPLE,,NA,NA,NA,[dcscr094] = '1',,RH,NA,,NA,NA
+cscr40,screener,PSYCHOSIS: HALLUCINATIONS,descriptive,"
 INTERVIEWER: If any hallucination questions endorsed, ask next question ONLY to parent.
 ",,,,NA,NA,NA,[dcscr090] = '1' or [dcscr091] = '1' or [dcscr092] = '1' or [dcscr093] = '1' or [dcscr094] = '1',,,NA,,NA,NA
-dcscr096,screener,,radio,Is this something that is considered unusual for the child?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr090] = '1' or [dcscr091] = '1' or [dcscr092] = '1' or [dcscr093] = '1' or [dcscr094] = '1',,LH,NA,,NA,NA
-dcscr097,screener,,notes,What is it?,,,,NA,NA,NA,[dcscr096] = '1',,LH,NA,,NA,NA
-cscr41,screener,,descriptive,"
-DELUSIONS
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr098,screener,,radio,Have you ever had your imagination play tricks on you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr099,NA,NA
-dcscr099,screener,,radio,Have you ever believed in things that most other people or your parents don't believe in? What?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr099,NA,NA
-dcscr100,screener,,radio,"Have you ever believed in things and later found out they weren't true, like people being out to get you, or talking about you behind your back, or controlling what you do or think?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr099,NA,NA
-dcscr101,screener,,radio,Were you sure of that at the time or did you think it just might be so?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr099,NA,NA
-dcscr102,screener,,descriptive,"
-INTERVIEWER: List examples.
-",,,,NA,NA,NA,[dcscr098] = '1' or [dcscr099] = '1' or [dcscr100] = '1' or [dcscr101] = '1',,,NA,,NA,NA
-dcscr102a,screener,,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcscr098] = '1' or [dcscr099] = '1' or [dcscr100] = '1' or [dcscr101] = '1',,RH,NA,,NA,NA
-dcscr102b,screener,,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcscr098] = '1' or [dcscr099] = '1' or [dcscr100] = '1' or [dcscr101] = '1',,RH,NA,,NA,NA
-dcscr102c,screener,,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcscr098] = '1' or [dcscr099] = '1' or [dcscr100] = '1' or [dcscr101] = '1',,RH,NA,,NA,NA
-dcscr102d,screener,,text,Example 4,,EXAMPLE,,NA,NA,NA,[dcscr098] = '1' or [dcscr099] = '1' or [dcscr100] = '1' or [dcscr101] = '1',,RH,NA,,NA,NA
+dcscr096,screener,PSYCHOSIS: HALLUCINATIONS,radio,Is this something that is considered unusual for the child?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr090] = '1' or [dcscr091] = '1' or [dcscr092] = '1' or [dcscr093] = '1' or [dcscr094] = '1',,LH,NA,,NA,NA
+dcscr097,screener,PSYCHOSIS: HALLUCINATIONS,notes,What is it?,,,,NA,NA,NA,[dcscr096] = '1',,LH,NA,,NA,NA
+dcscr098,screener,PSYCHOSIS: DELUSIONS,radio,Have you ever had your imagination play tricks on you?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr099,NA,NA
+dcscr102a,screener,PSYCHOSIS: DELUSIONS,text,Example 1,,EXAMPLE,,NA,NA,NA,[dcscr098] = '1',,RH,NA,,NA,NA
+dcscr099,screener,PSYCHOSIS: DELUSIONS,radio,Have you ever believed in things that most other people or your parents don't believe in? What?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr099,NA,NA
+dcscr102b,screener,PSYCHOSIS: DELUSIONS,text,Example 2,,EXAMPLE,,NA,NA,NA,[dcscr099] = '1' ,,RH,NA,,NA,NA
+dcscr100,screener,PSYCHOSIS: DELUSIONS,radio,"Have you ever believed in things and later found out they weren't true, like people being out to get you, or talking about you behind your back, or controlling what you do or think?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr099,NA,NA
+dcscr102c,screener,PSYCHOSIS: DELUSIONS,text,Example 3,,EXAMPLE,,NA,NA,NA,[dcscr100] = '1' ,,RH,NA,,NA,NA
+dcscr101,screener,PSYCHOSIS: DELUSIONS,radio,Were you sure of that at the time or did you think it just might be so?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr099,NA,NA
+dcscr102d,screener,PSYCHOSIS: DELUSIONS,text,Example 4,,EXAMPLE,,NA,NA,NA,[dcscr101] = '1',,RH,NA,,NA,NA
 cscr42,screener,,descriptive,"
 INTERMITTENT EXPLOSIVE DISORDER
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr103,screener,,radio,Have you ever had a time when you became so angry you could not control your temper and ended up hitting someone or breaking things?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr104,screener,,notes,"If yes, what did you do?",,,,NA,NA,NA,[dcscr103] = '1',,LH,NA,,NA,NA
-cscr43,screener,,descriptive,"
+dcscr103,screener,"
+INTERMITTENT EXPLOSIVE DISORDER
+",radio,Have you ever had a time when you became so angry you could not control your temper and ended up hitting someone or breaking things?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr104,screener,"
+INTERMITTENT EXPLOSIVE DISORDER
+",notes,"If yes, what did you do?",,,,NA,NA,NA,[dcscr103] = '1',,LH,NA,,NA,NA
+cscr43,screener,"
+INTERMITTENT EXPLOSIVE DISORDER
+",descriptive,"
 INTERVIEWER: Use clinical judgement here to rate positively. The item broken should be something of value like a car window or punching holes in the wall, not minor things like breaking a pencil.
 ",,,,NA,NA,NA,[dcscr103] = '1',,,NA,,NA,NA
-dcscr105,screener,,text,How many times has this happened?,,NUMBER OF TIMES,,NA,NA,NA,[dcscr103] = '1',,,NA,,NA,NA
-dcscr106,screener,,notes,What set it off?,,,,NA,NA,NA,[dcscr103] = '1',,LH,NA,,NA,NA
-cscr44,screener,,radio,"
+dcscr105,screener,"
+INTERMITTENT EXPLOSIVE DISORDER
+",text,How many times has this happened?,,NUMBER OF TIMES,,NA,NA,NA,[dcscr103] = '1',,,NA,,NA,NA
+dcscr106,screener,"
+INTERMITTENT EXPLOSIVE DISORDER
+",notes,What set it off?,,,,NA,NA,NA,[dcscr103] = '1',,LH,NA,,NA,NA
+cscr44,screener,"
+INTERMITTENT EXPLOSIVE DISORDER
+",radio,"
 INTERVIEWER: Was the reaction grossly out of proportion to the precipitating event?
 ","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr103] = '1',,RH,NA,,NA,NA
-dcscr107,screener,,dropdown,How old were you when this happened the most?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr103] = '1',,RH,NA,,NA,NA
-cscr45,screener,,descriptive,"
-INTERVIEWER: There is no IED section.
-",,,,NA,NA,NA,[dcscr103] = '1',,,NA,,NA,NA
+dcscr107,screener,"
+INTERMITTENT EXPLOSIVE DISORDER
+",dropdown,How old were you when this happened the most?,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr103] = '1',,RH,NA,,NA,NA
 cscr46,screener,,descriptive,"
 SUICIDE
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr108,screener,,radio,Have you ever thought a lot about death or dying?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr108,NA,NA
-dcscr109,screener,,radio,Have you ever thought about killing yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr108,NA,NA
-cscr47,screener,,descriptive,"
+dcscr108,screener,"
+SUICIDE
+",radio,Have you ever thought a lot about death or dying?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr108,NA,NA
+dcscr109,screener,"
+SUICIDE
+",radio,Have you ever thought about killing yourself?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr108,NA,NA
+cscr47,screener,"
+SUICIDE
+",descriptive,"
 INTERVIEWER: If yes to either suicide probe, SKIP to suicide section and assess current risk level.
 ",,,,NA,NA,NA,[dcscr108] = '1' or [dcscr109] = '1',,,NA,,NA,NA
-cscr48,screener,,descriptive,"
-POST TRAUMATIC STRESS
+cscr48,screener,POST TRAUMATIC STRESS,descriptive,"
 
-Now I'm going to ask you about upsetting things that sometimes happen to children or teenagers.
-",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr49,screener,,descriptive,"
-Participant Card 5 (Stressful Experiences) 
-",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr110,screener,,radio,Have you ever been in a flood or a tornado or an earthquake or hurricane or some other natural disaster where you thought you were going to die or be seriously hurt?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
-dcscr111,screener,,radio,Have you ever been in a situation where you thought you or someone close to you was going to be killed or be hurt very badly? (e.g. family violence),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
-dcscr112,screener,,radio,Have you ever been attacked by somebody or badly beaten?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
-dcscr113,screener,,radio,Have you ever been very upset by someone forcing you to do something sexual that you really didn't want to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
-dcscr114,screener,,radio,Have you ever been attacked sexually or raped?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr113] = '1',,,NA,dcscr110,NA,NA
-dcscr115,screener,,radio,Have you ever been threatened with a weapon?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
-dcscr116,screener,,radio,Have you ever been in a bad accident?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
-dcscr117,screener,,radio,"Other than television or at the movies, have you ever seen or heard somebody get killed or get hurt very badly or die?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
-dcscr118,screener,,radio,Have you ever been very upset by seeing a dead body or by seeing pictures of the dead body of somebody you knew well?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
+
+Now I'm going to ask you about upsetting things that sometimes happen to children or teenagers.",,,,NA,NA,NA,,,,NA,,NA,NA
+dcscr110,screener,POST TRAUMATIC STRESS,radio,Have you ever been in a flood or a tornado or an earthquake or hurricane or some other natural disaster where you thought you were going to die or be seriously hurt?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
+dcscr111,screener,POST TRAUMATIC STRESS,radio,Have you ever been in a situation where you thought you or someone close to you was going to be killed or be hurt very badly? (e.g. family violence),"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
+dcscr112,screener,POST TRAUMATIC STRESS,radio,Have you ever been attacked by somebody or badly beaten?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
+dcscr113,screener,POST TRAUMATIC STRESS,radio,Have you ever been very upset by someone forcing you to do something sexual that you really didn't want to do?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
+dcscr114,screener,POST TRAUMATIC STRESS,radio,Have you ever been attacked sexually or raped?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,[dcscr113] = '1',,,NA,dcscr110,NA,NA
+dcscr115,screener,POST TRAUMATIC STRESS,radio,Have you ever been threatened with a weapon?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
+dcscr116,screener,POST TRAUMATIC STRESS,radio,Have you ever been in a bad accident?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
+dcscr117,screener,POST TRAUMATIC STRESS,radio,"Other than television or at the movies, have you ever seen or heard somebody get killed or get hurt very badly or die?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
+dcscr118,screener,POST TRAUMATIC STRESS,radio,Have you ever been very upset by seeing a dead body or by seeing pictures of the dead body of somebody you knew well?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,,NA,dcscr110,NA,NA
 cscr50,screener,,descriptive,"
 SUBSTANCE USE
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-cscr51,screener,,descriptive,Have you ever used any of the following:,,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr119,screener,,radio,Tobacco- like cigarettes or chewing tobacco: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr120,screener,,dropdown,Tobacco: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr119] = '1',,,NA,,NA,NA
-cscr52,screener,,descriptive,"
-INTERVIEWER: If no to Use, ask Tobacco questions in section below.
-",,,,NA,NA,NA,[dcscr119] = '0',,,NA,,NA,NA
-dcscr121,screener,,radio,"Caffeine- like coffee, tea, or soda (1x month or more to complete section): Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr122,screener,,dropdown,Caffeine: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr121] = '1',,,NA,,NA,NA
-dcscr123,screener,,radio,"Alcohol- lilke beer, wine, or liquor: Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr124,screener,,dropdown,Alcohol: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr123] = '1',,,NA,,NA,NA
-dcscr125,screener,,radio,Cannabis- like marijuana: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr126,screener,,dropdown,Cannabis: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr125] = '1',,,NA,,NA,NA
-dcscr127,screener,,radio,Inhalants- like sniffing glue or paint: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr128,screener,,dropdown,Inhalants: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr127] = '1',,,NA,,NA,NA
-dcscr129,screener,,radio,LSD/Hallucinogens- like mushrooms or acid: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr130,screener,,dropdown,LSD/Hallucinogens: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr129] = '1',,,NA,,NA,NA
-dcscr131,screener,,radio,"Stimulants- like diet pills to get high, ecstasy, crystal meth: Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr132,screener,,dropdown,Stimulants: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr131] = '1',,,NA,,NA,NA
-dcscr133,screener,,radio,"Cocaine- crack, powder, crank: Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr134,screener,,dropdown,Cocaine: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr133] = '1',,,NA,,NA,NA
-dcscr135,screener,,radio,"Sedatives- like ""downers"" (valium): Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr136,screener,,dropdown,Sedatives: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr135] = '1',,,NA,,NA,NA
-dcscr137,screener,,radio,"Opiates- like heroin, oxycontin, percocet: Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr138,screener,,dropdown,Opiates: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr137] = '1',,,NA,,NA,NA
-dcscr139,screener,,radio,Steroids- to help improve your performance at sports or to get bigger: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr140,screener,,dropdown,Steroids: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr139] = '1',,,NA,,NA,NA
-dcscr141,screener,,radio,"Have you ever taken more perscription medicine or over the counter medicine than you were supposed to, or used someone else's prescription medicine to get high? 
+cscr51,screener,"
+SUBSTANCE USE
+",descriptive,Have you ever used any of the following:,,,,NA,NA,NA,,,,NA,,NA,NA
+dcscr119,screener,"
+SUBSTANCE USE
+",radio,Tobacco- like cigarettes or chewing tobacco: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr120,screener,"
+SUBSTANCE USE
+",dropdown,Tobacco: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr119] = '1',,,NA,,NA,NA
+dcscr121,screener,"
+SUBSTANCE USE
+",radio,"Caffeine- like coffee, tea, or soda (1x month or more to complete section): Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr122,screener,"
+SUBSTANCE USE
+",dropdown,Caffeine: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr121] = '1',,,NA,,NA,NA
+dcscr123,screener,"
+SUBSTANCE USE
+",radio,"Alcohol- lilke beer, wine, or liquor: Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr124,screener,"
+SUBSTANCE USE
+",dropdown,Alcohol: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr123] = '1',,,NA,,NA,NA
+dcscr125,screener,"
+SUBSTANCE USE
+",radio,Cannabis- like marijuana: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr126,screener,"
+SUBSTANCE USE
+",dropdown,Cannabis: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr125] = '1',,,NA,,NA,NA
+dcscr127,screener,"
+SUBSTANCE USE
+",radio,Inhalants- like sniffing glue or paint: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr128,screener,"
+SUBSTANCE USE
+",dropdown,Inhalants: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr127] = '1',,,NA,,NA,NA
+dcscr129,screener,"
+SUBSTANCE USE
+",radio,LSD/Hallucinogens- like mushrooms or acid: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr130,screener,"
+SUBSTANCE USE
+",dropdown,LSD/Hallucinogens: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr129] = '1',,,NA,,NA,NA
+dcscr131,screener,"
+SUBSTANCE USE
+",radio,"Stimulants- like diet pills to get high, ecstasy, crystal meth: Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr132,screener,"
+SUBSTANCE USE
+",dropdown,Stimulants: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr131] = '1',,,NA,,NA,NA
+dcscr133,screener,"
+SUBSTANCE USE
+",radio,"Cocaine- crack, powder, crank: Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr134,screener,"
+SUBSTANCE USE
+",dropdown,Cocaine: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr133] = '1',,,NA,,NA,NA
+dcscr135,screener,"
+SUBSTANCE USE
+",radio,"Sedatives- like ""downers"" (valium): Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr136,screener,"
+SUBSTANCE USE
+",dropdown,Sedatives: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr135] = '1',,,NA,,NA,NA
+dcscr137,screener,"
+SUBSTANCE USE
+",radio,"Opiates- like heroin, oxycontin, percocet: Ever used","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr138,screener,"
+SUBSTANCE USE
+",dropdown,Opiates: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr137] = '1',,,NA,,NA,NA
+dcscr139,screener,"
+SUBSTANCE USE
+",radio,Steroids- to help improve your performance at sports or to get bigger: Ever used,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr140,screener,"
+SUBSTANCE USE
+",dropdown,Steroids: Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr139] = '1',,,NA,,NA,NA
+dcscr141,screener,"
+SUBSTANCE USE
+",radio,"Have you ever taken more perscription medicine or over the counter medicine than you were supposed to, or used someone else's prescription medicine to get high? 
 
 
 INTERVIEWER: If yes, get name of substance and code under appropriate section.
 ","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr142,screener,,text,Name of substance,,SUBSTANCE,,NA,NA,NA,[dcscr141] = '1',,,NA,,NA,NA
-dcscr142a,screener,,dropdown,Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr141] = '1',,,NA,,NA,NA
-dcscr143,screener,,radio,"Have you ever felt like you got hooked on presciption or over the counter medicine? 
+dcscr142,screener,"
+SUBSTANCE USE
+",text,Name of substance,,SUBSTANCE,,NA,NA,NA,[dcscr141] = '1',,,NA,,NA,NA
+dcscr142a,screener,"
+SUBSTANCE USE
+",dropdown,Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr141] = '1',,,NA,,NA,NA
+dcscr143,screener,"
+SUBSTANCE USE
+",radio,"Have you ever felt like you got hooked on presciption or over the counter medicine? 
 
 
 INTERVIEWER: If yes, get name of substance and code under appropriate section.
 ","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr144,screener,,text,Name of substance,,SUBSTANCE,,NA,NA,NA,[dcscr143] = '1',,,NA,,NA,NA
-dcscr144a,screener,,dropdown,Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr143] = '1',,,NA,,NA,NA
+dcscr144,screener,"
+SUBSTANCE USE
+",text,Name of substance,,SUBSTANCE,,NA,NA,NA,[dcscr143] = '1',,,NA,,NA,NA
+dcscr144a,screener,"
+SUBSTANCE USE
+",dropdown,Age when used the most,"1, 1| 2, 2 | 3, 3| 4, 4| 5, 5| 6, 6|7, 7 | 8, 8 | 9, 9 | 10, 10 | 11, 11 | 12, 12 | 13, 13 | 14, 14 | 15, 15 | 16, 16 | 17, 17 | 18, 18 | 997, 997 | 998, 998 | 999, 999",AGE,autocomplete,NA,NA,NA,[dcscr143] = '1',,,NA,,NA,NA
 cscr53,screener,,descriptive,"
-TOBACCO
+SUBSTANCE USE: TOBACCO
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr145,screener,,radio,"Have you ever smoked a cigarette, cigar, pipe or other tobacco product, even a single puff?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr146,screener,,checkbox,What is the reason(s) that you never smoked or used tobacco?,"1, Never had opportunity | 2, Never interested | 3, Didn't like smell | 4, Exposure to smoke from parents or other family members | 5, Concern about health risks | 6, Religious or cultural beliefs | 7, Parents told child not to smoke | 8, Not legal | 9, Unknown | 10, Other",,,NA,NA,NA,[dcscr145] = '0',,LV,NA,,NA,NA
-dcscr148,screener,,notes,What is the reason(s) that you never smoked or used tobacco? Other 1,,,,NA,NA,NA,[dcscr146(10)] = '1',,LH,NA,,NA,NA
-dcscr149,screener,,notes,What is the reason(s) that you never smoked or used tobacco? Other 2,,,,NA,NA,NA,[dcscr146(10)] = '1',,LH,NA,,NA,NA
+dcscr145,screener,"
+SUBSTANCE USE: TOBACCO
+",radio,"Have you ever smoked a cigarette, cigar, pipe or other tobacco product, even a single puff?","0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr146,screener,"
+SUBSTANCE USE: TOBACCO
+",checkbox,What is the reason(s) that you never smoked or used tobacco?,"1, Never had opportunity | 2, Never interested | 3, Didn't like smell | 4, Exposure to smoke from parents or other family members | 5, Concern about health risks | 6, Religious or cultural beliefs | 7, Parents told child not to smoke | 8, Not legal | 9, Unknown | 10, Other",,,NA,NA,NA,[dcscr145] = '0',,LV,NA,,NA,NA
+dcscr148,screener,"
+SUBSTANCE USE: TOBACCO
+",notes,What is the reason(s) that you never smoked or used tobacco? Other 1,,,,NA,NA,NA,[dcscr146] = '10',,LH,NA,,NA,NA
+dcscr149,screener,"
+SUBSTANCE USE: TOBACCO
+",notes,What is the reason(s) that you never smoked or used tobacco? Other 2,,,,NA,NA,NA,[dcscr146] = '10',,LH,NA,,NA,NA
 cscr54,screener,,descriptive,"
 OTHER DISORDERS
 ",,,,NA,NA,NA,,,,NA,,NA,NA
-dcscr150,screener,,radio,Was there ever a time when you or someone else thought you needed help or treatment for any problems we haven't discussed?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
-dcscr151,screener,,notes,Describe,,,,NA,NA,NA,[dcscr150] = '1',,LH,NA,,NA,NA
+dcscr150,screener,"
+OTHER DISORDERS
+",radio,Was there ever a time when you or someone else thought you needed help or treatment for any problems we haven't discussed?,"0, No | 1, Yes | 9, Unk",,,NA,NA,NA,,,LH,NA,,NA,NA
+dcscr151,screener,"
+OTHER DISORDERS
+",notes,Describe,,,,NA,NA,NA,[dcscr150] = '1',,LH,NA,,NA,NA
 cscr_end,screener,,descriptive,"
 INTERVIEWER: END Screener section.
 ",,,,NA,NA,NA,,,,NA,,NA,NA
